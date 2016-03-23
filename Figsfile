@@ -1,0 +1,4 @@
+--- !ruby/object:Figs::Figsfile
+locations:
+- config/vars.yml
+method: path

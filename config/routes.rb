@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
   root to: "catalog#index"
   blacklight_for :catalog
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+devise_scope :user do
+  get 'logout', to: 'devise/sessions#destroy', as: :logout
+  get 'login', to: redirect { |params, request| "#{Rails.application.config.relative_url_root}/users/auth/nyulibraries?#{request.query_string}" }, as: :login
+end
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -92,4 +92,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       @omniauth_patron_status ||= omniauth_aleph_identity.properties.patron_status
     end
   end
+
+def failure
+  render :text => omniauth.inspect + '<br><br>' + @user.inspect
+end
+
 end

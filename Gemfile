@@ -5,6 +5,8 @@ gem 'geoblacklight'
 gem 'figs'
 gem 'mysql2', '~> 0.3.20'
 gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries'
+gem 'devise', '~> 3.4.1'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -52,4 +54,3 @@ end
 
 
 gem 'rsolr', '~> 1.0.6'
-gem 'devise'

@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  protect_from_forgery with: :null_session
+  protect_from_forgery with: :exception
 
 # Alias new_session_path as login_path for default devise config
 def new_session_path(scope)
@@ -27,9 +27,7 @@ def after_sign_out_path_for(resource_or_scope)
 end
 
 def logout_path
-  if ENV['LOGIN_URL'].present? && ENV['SSO_LOGOUT_PATH'].present?
-    "#{ENV['LOGIN_URL']}#{ENV['SSO_LOGOUT_PATH']}"
-  end
+	"https://login.library.nyu.edu/logout"
 end
 private :logout_path
 

@@ -17,3 +17,8 @@
 /tmp
 # Ignore application configuration
 /config/vars.yml
+
+# Ignore old migrations
+/db/old/*
+
+

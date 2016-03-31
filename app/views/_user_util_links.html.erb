@@ -12,7 +12,7 @@
     <ul class="nav navbar-nav">
       <% if current_user %>
       <li>
-        <%= link_to t('blacklight.header_links.logout'), '/logout'  %>
+        <%= link_to t('blacklight.header_links.logout'), logout_path  %>
       </li>
       <% unless current_user.to_s.blank? -%>
       <li>
@@ -21,7 +21,7 @@
       <% end %>
       <% else %>
       <li>
-        <%= link_to t('blacklight.header_links.login'), '/users/auth/nyulibraries' %>
+        <%= link_to t('blacklight.header_links.login'), login_path %>
       </li>
       <% end %>
       </ul>

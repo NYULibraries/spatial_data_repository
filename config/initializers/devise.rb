@@ -3,7 +3,7 @@ Figs.load() # Load app secrets into ENV
 Devise.setup do |config|
   config.mailer_sender = 'lib-no-reply@nyu.edu'
   require 'devise/orm/active_record'
-  config.secret_key = ENV['SECRET_TOKEN']
+  config.secret_key = ENV['DEVISE_SECRET_TOKEN']
   config.strip_whitespace_keys = [ :email ]
   config.skip_session_storage = [:http_auth]
   config.stretches = Rails.env.test? ? 1 : 10

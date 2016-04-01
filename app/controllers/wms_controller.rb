@@ -1,4 +1,5 @@
 class WmsController < ApplicationController
+before_action :format_url
   def handle
     response = Geoblacklight::WmsLayer.new(params).feature_info
 

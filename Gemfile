@@ -1,9 +1,19 @@
 source 'https://rubygems.org'
 
+
 gem 'blacklight'
 gem 'geoblacklight'
+
+# Range limit gem for slider on Solr integer fields (year)
+gem 'blacklight_range_limit'
+
+# Figs for var management
 gem 'figs'
+
+# MySQL for Rails backend db
 gem 'mysql2', '~> 0.3.20'
+
+# Loads NYU Libaries omniauth strategy
 gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries'
 gem 'devise', '~> 3.4.1'
 

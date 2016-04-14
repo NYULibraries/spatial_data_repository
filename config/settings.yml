@@ -1,5 +1,5 @@
 # Configurable Logo Used for CartoDB export
-APPLICATION_LOGO_URL: 'https://geo.nyu.edu/assets/real250.png'
+APPLICATION_LOGO_URL: 'https://geo.nyu.edu/assets/real250-c393c31c117191fd87d686168c6784ecb75159bec4969597b4b0d56e6ddcbc11.png'
 
 # CartoDB OneClick Service https://cartodb.com/open-in-cartodb/
 CARTODB_ONECLICK_LINK: 'http://oneclick.cartodb.com/'

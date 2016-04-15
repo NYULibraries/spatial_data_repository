@@ -21,4 +21,5 @@
 # Ignore old migrations
 /db/old/*
 
-
+# Ignore assets
+/public/assets/*

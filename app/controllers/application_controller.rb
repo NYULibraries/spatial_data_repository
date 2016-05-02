@@ -16,6 +16,11 @@ def after_sign_in_path_for(resource)
   request.env['omniauth.origin'] || stored_location_for(resource) || root_path
 end
 
+def current_user_dev
+  @current_user ||= User.find_by_username('admin') || User.new
+end
+alias_method :current_user, :current_user_dev if Rails.env.development?
+
 # After signing out from the local application,
 # redirect to the logout path for the Login app
 def after_sign_out_path_for(resource_or_scope)

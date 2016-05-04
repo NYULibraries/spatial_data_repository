@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'blacklight'
-gem 'geoblacklight', :path => '/Users/sgb334/git/geoblacklight'
+gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :ref => '8d5494a8e7bfabbd17c405d7c1234faec3f2c158'
 
 # Range limit gem for slider on Solr integer fields (year)
 gem 'blacklight_range_limit'

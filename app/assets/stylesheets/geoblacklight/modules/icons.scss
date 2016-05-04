@@ -13,3 +13,7 @@
 .geoblacklight-public {
   color: #777777;
 }
+
+.geoblacklight-documentation {
+  @extend .fa, .fa-book;
+}

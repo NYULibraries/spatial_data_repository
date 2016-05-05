@@ -23,3 +23,6 @@
 
 # Ignore assets
 /public/assets/*
+
+# Ignore IDE stuff
+/.idea

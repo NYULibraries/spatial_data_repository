@@ -32,8 +32,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def valid_omniauth?
-    omniauth.present? && omniauth.provider.to_s == 'nyulibraries'
-  end
+    omniauth.present? && omniauth.provider.to_s == 'nyulibraries' && !omniauth_aleph_identity.blank?
+	# Only accept users with an Aleph ID, authenticated via nyulibraries
+  end 
 
   def omniauth
     @omniauth ||= request.env["omniauth.auth"]
@@ -93,8 +94,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
-def failure
-  render :text => omniauth.inspect + '<br><br>' + @user.inspect
-end
+  def failure
+    redirect_to root_path
+  end
 
 end

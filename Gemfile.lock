@@ -101,7 +101,7 @@ GEM
       geoblacklight-icons (>= 0.2)
       leaflet-rails (~> 0.7.3)
       rails_config (~> 0.4.2)
-    geoblacklight-icons (0.2.1)
+    geoblacklight-icons (0.2.2)
     git (1.2.9.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)

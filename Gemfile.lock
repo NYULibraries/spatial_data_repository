@@ -5,6 +5,18 @@ GIT
     omniauth-nyulibraries (2.1.0)
       omniauth-oauth2 (~> 1.2.0)
 
+PATH
+  remote: /Users/sgb334/git/geoblacklight
+  specs:
+    geoblacklight (0.12.1)
+      blacklight (~> 5.12, < 6)
+      coderay
+      faraday
+      font-awesome-rails (~> 4.1.0.0)
+      geoblacklight-icons (>= 0.2)
+      leaflet-rails (~> 0.7.3)
+      rails_config (~> 0.4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -93,14 +105,6 @@ GEM
       rake (~> 10.1)
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
-    geoblacklight (0.12.1)
-      blacklight (~> 5.12, < 6)
-      coderay
-      faraday
-      font-awesome-rails (~> 4.1.0.0)
-      geoblacklight-icons (>= 0.2)
-      leaflet-rails (~> 0.7.3)
-      rails_config (~> 0.4.2)
     geoblacklight-icons (0.2.2)
     git (1.2.9.1)
     globalid (0.3.6)
@@ -232,7 +236,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.1)
   figs
-  geoblacklight
+  geoblacklight!
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.20)
@@ -248,4 +252,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.1

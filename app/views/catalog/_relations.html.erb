@@ -1,0 +1,6 @@
+<% if document.parent_relation.present? %>
+    <i>Derived from:</i>
+    <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{document.parent_relation[:parent]}" do %>
+        <code><%= document.parent_relation[:parent] %></code>
+    <% end %>
+<% end %>

@@ -12,6 +12,10 @@ class SolrDocument
   def documentation_download
     return references.documentation.to_hash unless references.documentation.blank?
   end
+
+  def parent_relation
+    return references.parent.to_hash unless references.parent.blank?
+  end
   
   # Email uses the semantic field mappings below to generate the body of an email.
   SolrDocument.use_extension( Blacklight::Document::Email )

@@ -1,0 +1,5 @@
+<% if document.documentation_download.present? %>
+    <%= link_to document.documentation_download[:documentation] do %>
+        <span class='geoblacklight geoblacklight-documentation'></span>Documentation / Codebook
+    <% end %>
+<% end %>

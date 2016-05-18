@@ -32,6 +32,7 @@ TIMEOUT_WMS: 4
 WEBSERVICES_SHOWN:
   - 'wms'
   - 'wfs'
+  - 'iiif'
   - 'feature_layer'
   - 'tiled_map_layer'
   - 'dynamic_map_layer'
@@ -46,3 +47,45 @@ WMS_PARAMS:
   :SRS: 'EPSG:4326'
   :EXCEPTIONS: 'application/json'
   :INFO_FORMAT: 'text/html'
+
+FIELDS:
+  :FILE_FORMAT: 'dc_format_s'
+  :GEOMETRY: 'solr_geom'
+  :WXS_IDENTIFIER: 'layer_id_s'
+  :RIGHTS: 'dc_rights_s'
+  :PROVENANCE: 'dct_provenance_s'
+  :GEOM_TYPE: 'layer_geom_type_s'
+  :SPATIAL_COVERAGE: 'dct_spatial_sm'
+  :SUBJECT: 'dc_subject_sm'
+  :REFERENCES: 'dct_references_s'
+  :YEAR: 'solr_year_i'
+  :CREATOR: 'dc_creator_sm'
+  :DESCRIPTION: 'dc_description_s'
+  :PUBLISHER: 'dc_publisher_s'
+  :PART_OF: 'dct_isPartOf_sm'
+  :TEMPORAL: 'dct_temporal_sm'
+  :TITLE: 'dc_title_s'
+
+LOCAL_CONSTANTS:
+  :documentation: 'http://schema.org/additionalType'
+  :parent: 'http://schema.org/isBasedOn'
+
+# Settings for leaflet
+OPACITY_CONTROL: &opacity_control
+  CONTROLS:
+    - 'Opacity'
+
+LEAFLET:
+  MAP:
+  LAYERS:
+  VIEWERS:
+    WMS:
+      <<: *opacity_control
+    TILEDMAPLAYER:
+      <<: *opacity_control
+    FEATURELAYER:
+      <<: *opacity_control
+    DYNAMICMAPLAYER:
+      <<: *opacity_control
+    IMAGEMAPLAYER:
+      <<: *opacity_control

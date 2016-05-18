@@ -1,6 +1,18 @@
-<% if document.parent_relation.present? %>
-    <i>Derived from:</i>
-    <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{document.parent_relation[:parent]}" do %>
-        <code><%= document.parent_relation[:parent] %></code>
-    <% end %>
+<% if @document.parent_relation.present? %>
+    <div class="panel panel-default show-tools">
+      <div class="panel-heading">
+        Data Relations
+      </div>
+
+      <div class="panel-body">
+        <ul class="nav">
+          <div class="well-sm">
+            <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{@document.parent_relation[:parent]}" do %>
+                <span class='geoblacklight geoblacklight-relations'></span><code><%= @document.parent_relation[:parent] %></code>
+            <% end %>
+          </div>
+
+        </ul>
+      </div>
+    </div>
 <% end %>

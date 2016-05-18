@@ -66,6 +66,10 @@ FIELDS:
   :TEMPORAL: 'dct_temporal_sm'
   :TITLE: 'dc_title_s'
 
+LOCAL_CONSTANTS:
+  :documentation: 'http://schema.org/additionalType'
+  :parent: 'http://schema.org/isBasedOn'
+
 # Settings for leaflet
 OPACITY_CONTROL: &opacity_control
   CONTROLS:

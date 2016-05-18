@@ -5,8 +5,10 @@ GIT
     omniauth-nyulibraries (2.1.0)
       omniauth-oauth2 (~> 1.2.0)
 
-PATH
-  remote: /Users/sgb334/git/geoblacklight
+GIT
+  remote: https://github.com/geoblacklight/geoblacklight.git
+  revision: 8d5494a8e7bfabbd17c405d7c1234faec3f2c158
+  ref: 8d5494a8e7bfabbd17c405d7c1234faec3f2c158
   specs:
     geoblacklight (0.12.1)
       blacklight (~> 5.12, < 6)

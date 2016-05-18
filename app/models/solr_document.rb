@@ -7,6 +7,12 @@ class SolrDocument
 
   # self.unique_key = 'id'
   self.unique_key = 'layer_slug_s'
+
+  ## Support for documentation references within dct_references; no constant exists for this field,
+  ## so we refer to it via the URI string
+  def documentation_download
+    return references.references('http://schema.org/additionalType').to_hash unless references.references('http://schema.org/additionalType').blank?
+  end
   
   # Email uses the semantic field mappings below to generate the body of an email.
   SolrDocument.use_extension( Blacklight::Document::Email )

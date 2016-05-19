@@ -1,4 +1,4 @@
-<% if @document.parent_relation.present? %>
+<% if @document.relations.exist? %>
     <div class="panel panel-default show-tools">
       <div class="panel-heading">
         Data Relations
@@ -6,11 +6,26 @@
 
       <div class="panel-body">
         <ul class="nav">
-          <div class="well-sm">
-            <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{@document.parent_relation[:parent]}" do %>
-                <span class='geoblacklight geoblacklight-relations'></span><code><%= @document.parent_relation[:parent] %></code>
-            <% end %>
-          </div>
+          <% unless @document.relations.ancestors.blank? %>
+              Ancestors:
+              <% @document.relations.ancestors.each do |ancestor| %>
+                  <li>
+                    <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{ancestor['layer_slug_s']}" do %>
+                        <span class='geoblacklight geoblacklight-relations'></span> <%= ancestor['dc_title_s'] %>
+                    <% end %>
+                  </li>
+              <% end %>
+          <% end %>
+          <% unless @document.relations.descendents.blank? %>
+              Descendents:
+              <% @document.relations.descendents.each do |descendent| %>
+                  <li>
+                    <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{descendent['layer_slug_s']}" do %>
+                        <span class='geoblacklight geoblacklight-relations'></span> <%= descendent['dc_title_s'] %>
+                    <% end %>
+                  </li>
+              <% end %>
+          <% end %>
 
         </ul>
       </div>

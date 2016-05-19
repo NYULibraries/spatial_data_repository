@@ -5,22 +5,10 @@ class SolrDocument
   include Geoblacklight::SolrDocument
   include WmsRewriteConcern
   include DocumentationDownload
+  include RelationsConcern
 
   self.unique_key = 'layer_slug_s'
 
-<<<<<<< HEAD
-  ## Support for documentation references within dct_references; no constant exists for this field,
-  ## so we refer to it via the URI string
-  def documentation_download
-    return references.documentation.to_hash unless references.documentation.blank?
-  end
-
-  def parent_relation
-    return references.parent.to_hash unless references.parent.blank?
-  end
-  
-=======
->>>>>>> master
   # Email uses the semantic field mappings below to generate the body of an email.
   SolrDocument.use_extension( Blacklight::Document::Email )
   

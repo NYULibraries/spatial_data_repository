@@ -10,7 +10,7 @@
               <% @document.relations.ancestors.each do |ancestor| %>
                   <li>
                     <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{ancestor['layer_slug_s']}" do %>
-                        <span class='geoblacklight geoblacklight-relations'></span> <%= ancestor['dc_title_s'] %>
+                        <span class='geoblacklight geoblacklight-relations-ancestor'></span> <%= ancestor['dc_title_s'] %>
                     <% end %>
                   </li>
               <% end %>
@@ -20,7 +20,7 @@
               <% @document.relations.descendents[0..4].each do |descendent| %>
                   <li>
                     <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{descendent['layer_slug_s']}" do %>
-                        <span class='geoblacklight geoblacklight-relations'></span> <%= descendent['dc_title_s'] %>
+                        <span class='geoblacklight geoblacklight-relations-descendant'></span> <%= descendent['dc_title_s'] %>
                     <% end %>
                   </li>
               <% end %>

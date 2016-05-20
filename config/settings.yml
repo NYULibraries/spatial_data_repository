@@ -65,6 +65,7 @@ FIELDS:
   :PART_OF: 'dct_isPartOf_sm'
   :TEMPORAL: 'dct_temporal_sm'
   :TITLE: 'dc_title_s'
+  :SOURCE: 'dct_source_sm'
 
 LOCAL_CONSTANTS:
   :documentation: 'http://schema.org/additionalType'

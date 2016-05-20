@@ -6,7 +6,7 @@ class Relations
 
     @ancestors = []
     unless @document['dct_source_sm'].blank?
-      @ancestors = solr.get 'select', :params => {:q => "layer_slug_s:#{@document['dct_source_sm'].join('OR')}", :fl => ['dc_title_s', 'layer_slug_s']}
+      @ancestors = solr.get 'select', :params => {:fq => "layer_slug_s:#{@document['dct_source_sm'].join('OR layer_slug_s:')}", :fl => ['dc_title_s', 'layer_slug_s']}
     end
 
     @descendants = solr.get 'select', :params => {:q => "dct_source_sm:#{@document['layer_slug_s']}", :fl => ['dc_title_s', 'layer_slug_s']}

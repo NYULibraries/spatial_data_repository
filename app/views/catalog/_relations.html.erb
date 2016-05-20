@@ -15,18 +15,18 @@
                   </li>
               <% end %>
           <% end %>
-          <% unless @document.relations.descendents.blank? %>
-              <b>Descendents</b>
-              <% @document.relations.descendents[0..4].each do |descendent| %>
+          <% unless @document.relations.descendants.blank? %>
+              <b>Descendants</b>
+              <% @document.relations.descendants[0..4].each do |descendant| %>
                   <li>
-                    <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{descendent['layer_slug_s']}" do %>
-                        <span class='geoblacklight geoblacklight-relations-descendant'></span> <%= descendent['dc_title_s'] %>
+                    <%= link_to "#{Rails.application.config.relative_url_root}/catalog/#{descendant['layer_slug_s']}" do %>
+                        <span class='geoblacklight geoblacklight-relations-descendant'></span> <%= descendant['dc_title_s'] %>
                     <% end %>
                   </li>
               <% end %>
               <ul class="list-group">
-                <%= link_to "#{root_url}#{@document.relations.search[:descendents]}", class: "list-group-item" do %>
-                    <%= "View all #{@document.relations.count[:descendents]} items..." %>
+                <%= link_to "#{root_url}#{@document.relations.search[:descendants]}", class: "list-group-item" do %>
+                    <%= "View all #{@document.relations.count[:descendants]} items..." %>
                 <% end %>
               </ul>
           <% end %>

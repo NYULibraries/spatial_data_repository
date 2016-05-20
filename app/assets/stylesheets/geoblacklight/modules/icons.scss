@@ -17,3 +17,12 @@
 .geoblacklight-documentation {
   @extend .fa, .fa-book;
 }
+
+.geoblacklight-relations-ancestor {
+  @extend .fa, .fa-pagelines;
+}
+
+.geoblacklight-relations-descendant {
+  @extend .fa, .fa-leaf;
+}
+

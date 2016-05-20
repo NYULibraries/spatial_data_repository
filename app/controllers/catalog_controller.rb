@@ -78,6 +78,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'dc_subject_sm', :label => 'Subject', :limit => 8
     config.add_facet_field 'dct_spatial_sm', :label => 'Place', :limit => 8
     config.add_facet_field 'dct_isPartOf_sm', :label => 'Collection', :limit => 8
+    config.add_facet_field 'dct_source_sm', :label => 'Source Dataset', :limit => 0
 
     config.add_facet_field 'solr_year_i', :label => 'Year', :limit => 10, range: true
 

@@ -19,7 +19,7 @@
 #footer {
   @extend .container;
   display: table;
-  height: 125px;
+  height: 85px;
   padding-top: 0px;
 
   ul {
@@ -36,7 +36,8 @@
 
   li a {
     white-space: nowrap;
-    color: #730E15;
+    color: #57068c;
+    font-weight: bold;
   }
 }
 

@@ -1,6 +1,10 @@
 <% document ||= @document %>
 <div class="geoblacklight-view-panel">
-  
+  <% if @document.rights_text %>
+      <div class="alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= @document.rights_text.html_safe %></div>
+  <% end %>
+
   <%# From https://github.com/projectblacklight/blacklight/blob/master/app/views/catalog/_show_default.html.erb %>
   <%# default partial to display solr document fields in catalog show view -%>
   <dl class="dl-horizontal">
@@ -12,7 +16,7 @@
       <% end %>
     <% end %>
     <% if !@document.references.nil? && !@document.references.url.nil? %>
-      <dt>Documentation at:</dt>
+      <dt>Preservation record:</dt>
       <dd itemprop="url"><%= link_to @document.references.url.endpoint, @document.references.url.endpoint %></dd>
     <% end %>
   </dl>

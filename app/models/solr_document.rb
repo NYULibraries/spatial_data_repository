@@ -4,6 +4,7 @@ class SolrDocument
   include Blacklight::Solr::Document
   include Geoblacklight::SolrDocument
   include WmsRewriteConcern
+  include RightsConcern
   include DocumentationDownload
   include RelationsConcern
 

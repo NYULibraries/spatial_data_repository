@@ -1,0 +1,64 @@
+#nyu-all-site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#nyu-sdr-content {
+  flex: 1;
+}
+
+#footer-container {
+  background-color: #ededed;
+  clear: both;
+  margin-top: 25px;
+  position: relative;
+  width: 100%;
+}
+
+#footer {
+  @extend .container;
+  display: table;
+  height: 85px;
+  padding-top: 0px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin: 0 13px 3px 0;
+      padding: 0;
+    }
+  }
+
+  li a {
+    white-space: nowrap;
+    color: #515151;
+    font-weight: bold;
+  }
+}
+
+#nyu-libraries-img {
+  display: table-cell;
+
+  vertical-align: middle;
+  width: 162px;
+}
+
+#nyu-data-services-img {
+  display: table-cell;
+
+  vertical-align: middle;
+  width: 162px;
+}
+
+#footer-links {
+  display: table-cell;
+  font-size: small;
+  padding-left: 15px;
+  text-align: left;
+  vertical-align: middle;
+}

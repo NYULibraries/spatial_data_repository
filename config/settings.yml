@@ -75,6 +75,7 @@ LOCAL_CONSTANTS:
 OPACITY_CONTROL: &opacity_control
   CONTROLS:
     - 'Opacity'
+    - 'Fullscreen'
 
 LEAFLET:
   MAP:

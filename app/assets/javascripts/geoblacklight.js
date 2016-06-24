@@ -7,3 +7,10 @@
 //= require leaflet-iiif
 //= require esri-leaflet
 //= require readmore.min
+//= require Leaflet.fullscreen.js
+
+GeoBlacklight.Controls.Fullscreen = function() {
+    this.map.addControl(new L.Control.Fullscreen({
+        position: 'topright'
+    }));
+};

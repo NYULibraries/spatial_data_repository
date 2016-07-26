@@ -223,6 +223,12 @@ class CatalogController < ApplicationController
     # 'positron' http://cartodb.com/basemaps/
     # 'darkMatter' http://cartodb.com/basemaps/
     config.basemap_provider = 'positron'
+
+
+    # Configuration for autocomplete suggestor
+    config.autocomplete_enabled = true
+    config.autocomplete_path = 'suggest'
+
   end
 
 

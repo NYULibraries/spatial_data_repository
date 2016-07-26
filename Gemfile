@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 gem 'blacklight'
 gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :branch => 'bl-6'
-#gem 'geoblacklight', :path => '/Users/stephen/git/geoblacklight'
 
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 

@@ -21,7 +21,7 @@ class CatalogController < ApplicationController
         :q => '{!raw f=layer_slug_s v=$id}'
     }
 
-    config.search_builder_class = Geoblacklight::SearchBuilder
+    config.index.document_presenter_class = Geoblacklight::DocumentPresenter
 
     # solr field configuration for search results/index views
     # config.index.show_link = 'title_display'

@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'blacklight'
-gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :ref => '8d5494a8e7bfabbd17c405d7c1234faec3f2c158'
+gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :branch => 'bl-6'
 #gem 'geoblacklight', :path => '/Users/stephen/git/geoblacklight'
 
 # Range limit gem for slider on Solr integer fields (year)
@@ -18,6 +18,7 @@ gem 'mysql2', '~> 0.3.20'
 gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries'
 gem 'devise', '~> 3.4.1'
 
+gem 'rsolr'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -61,6 +62,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
-
-gem 'rsolr', '~> 1.0.6'

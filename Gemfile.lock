@@ -7,10 +7,10 @@ GIT
 
 GIT
   remote: https://github.com/geoblacklight/geoblacklight.git
-  revision: dd3b26e719651af49a9edb85ec04b77152b1fd82
-  branch: bl-6
+  revision: 8752ad078c45bcebadbb046958f86dd34082926b
+  branch: master
   specs:
-    geoblacklight (0.12.1)
+    geoblacklight (1.0.0)
       blacklight (~> 6.3)
       coderay
       faraday
@@ -63,7 +63,7 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    blacklight (6.3.1)
+    blacklight (6.4.0)
       bootstrap-sass (~> 3.2)
       deprecation
       globalid
@@ -71,7 +71,7 @@ GEM
       nokogiri (~> 1.6)
       rails (>= 4.2, < 6)
       rsolr (~> 1.0, >= 1.0.6)
-      twitter-typeahead-rails (~> 0.11)
+      twitter-typeahead-rails (= 0.11.1.pre.corejavascript)
     blacklight_range_limit (6.0.0)
       blacklight (>= 6.0.0.pre2, < 7)
       jquery-rails
@@ -109,9 +109,9 @@ GEM
       rake (~> 10.1)
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
-    geoblacklight-icons (0.2.2)
+    geoblacklight-icons (0.3.0)
     git (1.2.9.1)
-    globalid (0.3.6)
+    globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.4.4)
     i18n (0.7.0)
@@ -227,7 +227,7 @@ GEM
       railties (>= 3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (3.0.0)
+    uglifier (3.0.1)
       execjs (>= 0.3.0, < 3)
     warden (1.2.6)
       rack (>= 1.0)

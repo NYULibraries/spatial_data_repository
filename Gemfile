@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 
 gem 'blacklight'
-gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :branch => 'bl-6'
+gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :branch => 'master'
+#gem 'geoblacklight', :path => '/Users/sgb334/git/geoblacklight'
 
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 
@@ -12,7 +13,7 @@ gem 'blacklight_range_limit'
 # Figs for var management
 gem 'figs'
 
-# MySQL for Rails backend db
+# MySQL for Rails backend dbter
 gem 'mysql2', '~> 0.3.20'
 
 # Loads NYU Libaries omniauth strategy

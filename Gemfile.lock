@@ -194,6 +194,8 @@ GEM
       railties (>= 4.2.0, < 5.1)
     rsolr (1.1.1)
       builder (>= 2.1.2)
+    ruby-progressbar (1.8.1)
+    rubyzip (1.2.0)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -204,6 +206,10 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    solr_wrapper (0.14.2)
+      faraday
+      ruby-progressbar
+      rubyzip
     spring (1.7.2)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
@@ -254,6 +260,7 @@ DEPENDENCIES
   rsolr
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  solr_wrapper
   spring
   sqlite3
   turbolinks

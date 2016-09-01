@@ -5,20 +5,6 @@ GIT
     omniauth-nyulibraries (2.1.0)
       omniauth-oauth2 (~> 1.2.0)
 
-GIT
-  remote: https://github.com/geoblacklight/geoblacklight.git
-  revision: 8752ad078c45bcebadbb046958f86dd34082926b
-  branch: master
-  specs:
-    geoblacklight (1.0.0)
-      blacklight (~> 6.3)
-      coderay
-      faraday
-      font-awesome-rails (~> 4.1.0.0)
-      geoblacklight-icons (>= 0.2)
-      leaflet-rails (~> 0.7.3)
-      rails_config (~> 0.4.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -90,7 +76,11 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
+    config (1.2.1)
+      activesupport (>= 3.0)
+      deep_merge (~> 1.0, >= 1.0.1)
     debug_inspector (0.0.2)
+    deep_merge (1.1.1)
     deprecation (1.0.0)
       activesupport
     devise (3.4.1)
@@ -107,8 +97,18 @@ GEM
     figs (2.0.3)
       git (~> 1.2.6)
       rake (~> 10.1)
-    font-awesome-rails (4.1.0.0)
-      railties (>= 3.2, < 5.0)
+    font-awesome-rails (4.6.3.1)
+      railties (>= 3.2, < 5.1)
+    geoblacklight (1.1.2)
+      blacklight (~> 6.3)
+      coderay
+      config
+      deprecation
+      faraday
+      font-awesome-rails
+      geoblacklight-icons (>= 0.2)
+      leaflet-rails (~> 0.7.3)
+      rails (>= 4.2.0, < 6)
     geoblacklight-icons (0.3.0)
     git (1.2.9.1)
     globalid (0.3.7)
@@ -182,8 +182,6 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_config (0.4.2)
-      activesupport (>= 3.0)
     railties (4.2.4)
       actionpack (= 4.2.4)
       activesupport (= 4.2.4)
@@ -247,7 +245,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.1)
   figs
-  geoblacklight!
+  geoblacklight (~> 1.1.2)
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.20)

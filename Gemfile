@@ -2,8 +2,9 @@ source 'https://rubygems.org'
 
 
 gem 'blacklight'
-gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :branch => 'master'
+#gem 'geoblacklight', :git => 'https://github.com/geoblacklight/geoblacklight.git', :branch => 'master'
 #gem 'geoblacklight', :path => '/Users/sgb334/git/geoblacklight'
+gem 'geoblacklight', '~> 1.1.2'
 
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 

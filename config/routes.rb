@@ -1,67 +1,56 @@
 Rails.application.routes.draw do
-  root to: "catalog#index"
-  blacklight_for :catalog
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
-devise_scope :user do
-  get 'logout', to: 'devise/sessions#destroy', as: :logout
-  get 'login', to: redirect { |params, request| "#{Rails.application.config.relative_url_root}/users/auth/nyulibraries?#{request.query_string}" }, as: :login
-end
+  concern :range_searchable, BlacklightRangeLimit::Routes::RangeSearchable.new
+  devise_for :users, controllers: {omniauth_callbacks: 'users/omniauth_callbacks'}
+  devise_scope :user do
+    get 'logout', to: 'devise/sessions#destroy', as: :logout
+    get 'login', to: redirect { |params, request| "#{Rails.application.config.relative_url_root}/users/auth/nyulibraries?#{request.query_string}" }, as: :login
 
+    resources :suggest, only: :index, defaults: {format: 'json'}
 
+    resource :feedback_form, path: 'feedback', only: [:new, :create]
+    get 'feedback' => 'feedback_forms#new'
 
+    concern :gbl_exportable, Geoblacklight::Routes::Exportable.new
+    resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
+      concerns :gbl_exportable
+    end
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+    concern :gbl_wms, Geoblacklight::Routes::Wms.new
+    namespace :wms do
+      concerns :gbl_wms
+    end
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+    concern :gbl_downloadable, Geoblacklight::Routes::Downloadable.new
+    namespace :download do
+      concerns :gbl_downloadable
+    end
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+    resources :download, only: [:show]
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+    mount Geoblacklight::Engine => 'geoblacklight'
+    mount Blacklight::Engine => '/'
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+    root to: "catalog#index"
+    concern :searchable, Blacklight::Routes::Searchable.new
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+    resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
+      concerns :searchable
+      concerns :range_searchable
 
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+    end
 
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
+    concern :exportable, Blacklight::Routes::Exportable.new
 
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
+    resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
+      concerns :exportable
+    end
 
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+    resources :bookmarks do
+      concerns :exportable
+
+      collection do
+        delete 'clear'
+      end
+    end
+  end
 end

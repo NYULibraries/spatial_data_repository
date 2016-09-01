@@ -3,6 +3,8 @@ require 'blacklight/catalog'
 
 class CatalogController < ApplicationController
 
+  include BlacklightRangeLimit::ControllerOverride
+
   include Blacklight::Catalog
 
   configure_blacklight do |config|
@@ -21,7 +23,7 @@ class CatalogController < ApplicationController
         :q => '{!raw f=layer_slug_s v=$id}'
     }
 
-    config.search_builder_class = Geoblacklight::SearchBuilder
+    config.index.document_presenter_class = Geoblacklight::DocumentPresenter
 
     # solr field configuration for search results/index views
     # config.index.show_link = 'title_display'
@@ -223,6 +225,12 @@ class CatalogController < ApplicationController
     # 'positron' http://cartodb.com/basemaps/
     # 'darkMatter' http://cartodb.com/basemaps/
     config.basemap_provider = 'positron'
+
+
+    # Configuration for autocomplete suggestor
+    config.autocomplete_enabled = true
+    config.autocomplete_path = 'suggest'
+
   end
 
 

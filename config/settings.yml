@@ -68,7 +68,6 @@ FIELDS:
   :SOURCE: 'dct_source_sm'
 
 LOCAL_CONSTANTS:
-  :documentation: 'http://schema.org/additionalType'
   :parent: 'http://schema.org/isBasedOn'
 
 # Settings for leaflet
@@ -80,6 +79,7 @@ OPACITY_CONTROL: &opacity_control
 LEAFLET:
   MAP:
   LAYERS:
+    DETECT_RETINA: true
   VIEWERS:
     WMS:
       <<: *opacity_control

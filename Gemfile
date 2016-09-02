@@ -9,7 +9,8 @@ gem 'geoblacklight', '~> 1.1.2'
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 
 # Range limit gem for slider on Solr integer fields (year)
-gem 'blacklight_range_limit'
+# Currently broken (9/2/2016)
+# gem 'blacklight_range_limit'
 
 # Figs for var management
 gem 'figs'

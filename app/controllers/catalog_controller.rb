@@ -3,7 +3,7 @@ require 'blacklight/catalog'
 
 class CatalogController < ApplicationController
 
-  include BlacklightRangeLimit::ControllerOverride
+  # include BlacklightRangeLimit::ControllerOverride
 
   include Blacklight::Catalog
 
@@ -78,7 +78,7 @@ class CatalogController < ApplicationController
     config.add_facet_field Settings.FIELDS.PART_OF, :label => 'Collection', :limit => 8
     config.add_facet_field Settings.FIELDS.SOURCE, :label => 'Source Dataset', :limit => 0
 
-    config.add_facet_field Settings.FIELDS.YEAR, :label => 'Year', :limit => 10, range: true
+    config.add_facet_field Settings.FIELDS.YEAR, :label => 'Year', :limit => 10
 
     config.add_facet_field Settings.FIELDS.RIGHTS, label: 'Access', limit: 8, partial: "icon_facet"
     config.add_facet_field Settings.FIELDS.GEOM_TYPE, label: 'Data type', limit: 8, partial: "icon_facet"

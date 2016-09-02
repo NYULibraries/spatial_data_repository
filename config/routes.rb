@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  concern :range_searchable, BlacklightRangeLimit::Routes::RangeSearchable.new
   devise_for :users, controllers: {omniauth_callbacks: 'users/omniauth_callbacks'}
   devise_scope :user do
     get 'logout', to: 'devise/sessions#destroy', as: :logout
@@ -35,7 +34,6 @@ Rails.application.routes.draw do
 
     resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
       concerns :searchable
-      concerns :range_searchable
 
     end
 

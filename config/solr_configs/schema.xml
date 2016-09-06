@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema name="geoblacklight-schema" version="1.5">
-  <uniqueKey>uuid</uniqueKey>
+<schema name="geoblacklight-schema" version="1.6">
+  <uniqueKey>layer_slug_s</uniqueKey>
   <fields>
     <field name="_version_" type="long"   stored="true" indexed="true"/>
     <field name="timestamp" type="date"   stored="true" indexed="true" default="NOW"/>
-    <field name="uuid"      type="string" stored="true" indexed="true" required="true"/>
+    <field name="layer_slug_s" type="string" stored="true" indexed="true" required="true"/>
+    <field name="geoblacklight_version" type="string" stored="true" indexed="true"/>
+    <field name="uuid"      type="string" stored="true" indexed="true"/><!-- deprecated -->
 
     <!-- core generated fields -->
     <field name="text" type="text_en" stored="false" indexed="true" multiValued="true"
-                       termVectors="true" termPositions="true" termOffsets="true" />
+           termVectors="true" termPositions="true" termOffsets="true" />
 
     <!-- dynamic field with simple types by suffix -->
     <dynamicField name="*_b"    type="boolean" stored="true"  indexed="true"/>
@@ -16,6 +18,7 @@
     <dynamicField name="*_dt"   type="date"    stored="true"  indexed="true"/>
     <dynamicField name="*_f"    type="float"   stored="true"  indexed="true"/>
     <dynamicField name="*_i"    type="int"     stored="true"  indexed="true"/>
+    <dynamicField name="*_im"   type="int"     stored="true"  indexed="true" multiValued="true" />
     <dynamicField name="*_l"    type="long"    stored="true"  indexed="true"/>
     <dynamicField name="*_s"    type="string"  stored="true"  indexed="true"/>
     <dynamicField name="*_ss"   type="string"  stored="true"  indexed="false"/>
@@ -27,18 +30,19 @@
 
     <!-- dynamic Text fields by suffix without storage -->
     <dynamicField name="*_t"    type="text_en" stored="false"  indexed="true"
-                                termVectors="true" termPositions="true" termOffsets="true"/>
+                  termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_tm"   type="text_en" stored="false"  indexed="true" multiValued="true"
-                                termVectors="true" termPositions="true" termOffsets="true"/>
+                  termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_ti"   type="text_en" stored="false" indexed="true"
-                                termVectors="true" termPositions="true" termOffsets="true"/>
+                  termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_tmi"  type="text_en" stored="false" indexed="true" multiValued="true"
-                                termVectors="true" termPositions="true" termOffsets="true"/>
+                  termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_sort" type="text_sort" stored="false" indexed="true" multiValued="false"/>
 
     <dynamicField name="*spell" type="textSpell" indexed="true" stored="false" multiValued="true" />
 
     <dynamicField name="*suggest" type="textSuggest" indexed="true" stored="false" multiValued="true" />
+
     <!-- Spatial field types:
 
          Solr3:
@@ -58,9 +62,8 @@
 
       -->
     <dynamicField name="*_pt"   type="location"     stored="true" indexed="true"/>
-    <dynamicField name="*_bbox" type="location_rpt" stored="true" indexed="true"/><!-- DEPRECATED -->
+    <dynamicField name="*_bbox" type="location_rpt" stored="true" indexed="true"/><!-- deprecated -->
     <dynamicField name="*_geom" type="location_rpt" stored="true" indexed="true"/>
-    <!-- <dynamicField name="*_jts"  type="location_jts" stored="true" indexed="true"/> -->
   </fields>
 
   <types>
@@ -82,20 +85,25 @@
 
     <!-- A text field with defaults appropriate for English: it
          tokenizes with StandardTokenizer, removes English stop words
-         (lang/stopwords_en.txt), down cases, protects words from protwords.txt, and
+         (stopwords_en.txt), down cases, protects words from protwords.txt, and
          finally applies Porter's stemming.  The query time analyzer
          also applies synonyms from synonyms.txt. -->
     <fieldType name="text_en" class="solr.TextField" positionIncrementGap="100">
       <analyzer type="index">
         <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords_en.txt"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
         <filter class="solr.PorterStemFilterFactory"/>
       </analyzer>
       <analyzer type="query">
         <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords_en.txt"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.EnglishPossessiveFilterFactory"/>
+        <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
         <filter class="solr.PorterStemFilterFactory"/>
       </analyzer>
     </fieldType>
@@ -110,16 +118,6 @@
       </analyzer>
     </fieldType>
 
-    <!-- for autocomplete suggester -->
-    <fieldType name="textSuggest" class="solr.TextField" positionIncrementGap="100">
-       <analyzer>
-          <tokenizer class="solr.KeywordTokenizerFactory"/>
-          <filter class="solr.StandardFilterFactory"/>
-          <filter class="solr.LowerCaseFilterFactory"/>
-          <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
-       </analyzer>
-    </fieldType>
-
     <!-- for spell checking -->
     <fieldType name="textSpell" class="solr.TextField" positionIncrementGap="100" >
       <analyzer>
@@ -131,22 +129,22 @@
       </analyzer>
     </fieldType>
 
+    <!-- for suggestions -->
+    <fieldType class="solr.TextField" name="textSuggest" positionIncrementGap="100">
+      <analyzer>
+        <tokenizer class="solr.KeywordTokenizerFactory"/>
+        <filter class="solr.StandardFilterFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+        <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
     <!-- Spatial field types -->
     <fieldType name="location" class="solr.LatLonType" subFieldSuffix="_d"/>
 
     <fieldType name="location_rpt" class="solr.SpatialRecursivePrefixTreeFieldType"
-               distErrPct="0.025"
-               maxDistErr="0.000009"
-               distanceUnits="degrees"
-            />
+               geo="true" distErrPct="0.025" maxDistErr="0.001" distanceUnits="kilometers"/>
 
-    <!-- JTS-enabled spatial predicates; requires JTS installation -->
-    <!-- <fieldType name="location_jts" class="solr.SpatialRecursivePrefixTreeFieldType"
-               spatialContextFactory="com.spatial4j.core.context.jts.JtsSpatialContextFactory"
-               distErrPct="0.025"
-               maxDistErr="0.000009"
-               distanceUnits="degrees"
-            /> -->
   </types>
 
   <!-- for scoring formula -->

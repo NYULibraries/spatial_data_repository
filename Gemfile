@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'blacklight'
 gem 'geoblacklight', '~> 1.3.0'
 
+
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 
 # Range limit gem for slider on Solr integer fields (year)

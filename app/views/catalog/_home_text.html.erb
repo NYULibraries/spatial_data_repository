@@ -50,101 +50,19 @@
   </div>
 
   <div class="curated">
-    <div class="curated-collections">
 
-      <h4>Featured Collections...</h4>
+    <div class="row">
 
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card-collection">
-            <div class="card-block">
-              <h4 class="card-title">New York City Open Data</h4>
-
-              <p class="card-text">A collection of datasets related to NYC infrastructure, real estate, transportation, and political geography</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card-collection">
-            <div class="card-block">
-              <h4 class="card-title">NYU Research Data</h4>
-
-              <p class="card-text">Geospatial data submitted for preservation by NYU students, faculty, and staff</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card-collection">
-            <div class="card-block">
-              <h4 class="card-title">U.S. Census Data</h4>
-
-              <p class="card-description">Datasets which package data from the U.S. Census, or American Community Survey, along with geographic boundaries</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card-collection">
-            <div class="card-block">
-              <h4 class="card-title">Soviet Topographic Maps of the Arabian Peninsula</h4>
-
-              <p class="card-description">Raster scans of Soviet military topographic maps produced in the late 1970s</p>
-            </div>
-          </div>
-        </div>
-
+      <div class="col-md-6">
+        <%= construct_curated_collections %>
+      </div>
+      <div class="col-md-6">
+        <%= construct_recent_collections %>
       </div>
     </div>
 
-    <div class="curated-maps">
+    <%= construct_curated_maps %>
 
-      <h4>Featured Maps...</h4>
-
-
-      <div class="row">
-        <a style="display:block" href="./catalog/harvard-ams7810-s250-u54-nh49-16">
-          <div class="col-md-4">
-            <div class="card-map">
-              <img class="card-img-top" src="http://localhost:3000/assets/thmb1.jpg" alt="Card image cap">
-
-              <div class="card-block">
-                <h4 class="card-title">China : Ch'ang-sha Region</h4>
-
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a style="display:block" href="./catalog/nyu_2451_36739">
-          <div class="col-md-4">
-            <div class="card-map">
-              <img class="card-img-top" src="http://localhost:3000/assets/thmb2.jpg" alt="Card image cap">
-
-              <div class="card-block">
-                <h4 class="card-title">1967 Communist Chinese Agriculture</h4>
-
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a class="map-link" href="./catalog/nyu_2451_34678">
-          <div class="col-md-4">
-            <div class="card-map">
-              <img class="card-img-top" src="http://localhost:3000/assets/thmb3.jpg" alt="Card image cap">
-
-              <div class="card-block">
-                <h4 class="card-title">2015 New York City Real Estate Sales</h4>
-
-              </div>
-            </div>
-          </div>
-        </a>
-
-      </div>
-    </div>
 
   </div>
 

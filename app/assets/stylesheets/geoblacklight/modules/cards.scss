@@ -3,12 +3,11 @@
 }
 
 .curated-maps {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .curated-collections {
 }
-
 
 
 .card-map {
@@ -20,7 +19,7 @@
   border-width: 1px;
   border-color: #cccccc;
   background-color: #f6f6f6;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card-collection {
@@ -33,7 +32,12 @@
   border-color: #cccccc;
   border-radius: 0 0 10px 10px;
   background-color: #f6f6f6;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.curated-card {
+  text-decoration: none;
+  color: #333333;
 }
 
 .map-link {
@@ -66,10 +70,12 @@
 /* On mouse-over, add a deeper shadow */
 .card-map:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 5000;
 }
 
 .card-collection:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 5000;
 }
 
 /* Add some padding inside the card container */

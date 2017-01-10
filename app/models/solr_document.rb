@@ -5,8 +5,6 @@ class SolrDocument
   include Geoblacklight::SolrDocument
   include WmsRewriteConcern
   include RightsConcern
-  include DocumentationDownload
-  include RelationsConcern
 
   self.unique_key = 'layer_slug_s'
 

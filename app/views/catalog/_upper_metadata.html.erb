@@ -4,6 +4,9 @@
       <div class="alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <%= @document.rights_text.html_safe %></div>
   <% end %>
+  <% if (document["dc_creator_sm"]) && (document["dc_creator_sm"].include? ("Debra F. Laefer")) %>
+      <%= render 'laefer_notice' %>
+  <% end %>
 
   <%# From https://github.com/projectblacklight/blacklight/blob/master/app/views/catalog/_show_default.html.erb %>
   <%# default partial to display solr document fields in catalog show view -%>

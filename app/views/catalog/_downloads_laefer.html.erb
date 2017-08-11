@@ -1,8 +1,6 @@
 <%# Renders the secondary downloads displayed in the split dropdown %>
 <% document ||= @document %>
 
-
-
       <% if document.multi_direct_downloads.present? %>
           <li role="presentation" class="dropdown-header"><strong>All Downloads:</strong></li>
           <% document.multi_direct_downloads.each do |dd| %>

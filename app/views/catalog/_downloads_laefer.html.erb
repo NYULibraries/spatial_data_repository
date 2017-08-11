@@ -1,0 +1,19 @@
+<%# Renders the secondary downloads displayed in the split dropdown %>
+<% document ||= @document %>
+
+
+
+      <% if document.multi_direct_downloads.present? %>
+          <li role="presentation" class="dropdown-header"><strong>All Downloads:</strong></li>
+          <% document.multi_direct_downloads.each do |dd| %>
+              <%= content_tag(:li, class: "bookmark") do %>
+                  <%= link_to(download_text_laefer_alt(dd[0]), dd[1], 'contentUrl' => dd[1], data: {download: 'trigger', download_type: 'direct', download_id: document.id}) %>
+              <% end %>
+          <% end %>
+      <% elsif document.direct_download.present? %>
+          <li role="presentation" class="dropdown-header">Original</li>
+          <li>
+            <%= link_to(download_text_alt(document.file_format[0]), document.direct_download[:download], 'contentUrl' => document.direct_download[:download], data: { download: 'trigger', download_type: 'direct', download_id: document.id }) %>
+          </li>
+      <% end %>
+

@@ -44,12 +44,13 @@ WMS_PARAMS:
   :VERSION: '1.1.1'
   :REQUEST: 'GetFeatureInfo'
   :STYLES: ''
+  :FEATURE_COUNT: '5'
   :SRS: 'EPSG:4326'
   :EXCEPTIONS: 'application/json'
   :INFO_FORMAT: 'text/html'
 
 FIELDS:
-  :FILE_FORMAT: 'dc_format_s'
+  :FILE_FORMAT: 'nyu_addl_format_sm'
   :GEOMETRY: 'solr_geom'
   :WXS_IDENTIFIER: 'layer_id_s'
   :RIGHTS: 'dc_rights_s'
@@ -66,6 +67,7 @@ FIELDS:
   :TEMPORAL: 'dct_temporal_sm'
   :TITLE: 'dc_title_s'
   :SOURCE: 'dct_source_sm'
+  :MULTI_DOWNLOADS: 'nyu_addl_downloads_s'
 
 LOCAL_CONSTANTS:
   :parent: 'http://schema.org/isBasedOn'

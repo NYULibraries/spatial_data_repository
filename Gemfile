@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 
 gem 'blacklight'
-gem 'geoblacklight', '~> 1.3.0'
+gem 'geoblacklight', '~> 1.5.1'
+#gem 'geoblacklight', '~> 1.4.0'
 
 
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
@@ -19,13 +20,13 @@ gem 'mysql2', '~> 0.3.20'
 
 # Loads NYU Libaries omniauth strategy
 gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries'
-gem 'devise', '~> 3.4.1'
+gem 'devise', '>= 3.4.1'
 
 gem 'rsolr'
 gem 'solr_wrapper'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '>= 5.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets

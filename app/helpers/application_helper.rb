@@ -13,6 +13,15 @@ module ApplicationHelper
     toReturn.html_safe
   end
 
+  def download_text_alt(format)
+    "#{t 'geoblacklight.download.download'} #{format}".html_safe
+  end
+
+  def download_text_laefer_alt(format)
+    "#{format}".html_safe
+  end
+
+
   def create_map_portion(map)
     toReturn = "<a class=\"curated-card\" style=\"display:block\" href=\"./catalog/#{map[:slug]}\">
           <div class=\"col-md-4\">

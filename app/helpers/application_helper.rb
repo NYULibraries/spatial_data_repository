@@ -1,7 +1,6 @@
 module ApplicationHelper
-
   def construct_curated_maps
-    maps = NyuGeoblacklight::CuratedCollections.maps.shuffle[0..2]
+    maps = NyuGeoblacklight::CuratedCollections.maps.sample(3)
     toReturn = "<div class=\"curated-maps\">
       <h4>Featured Maps</h4>
       <div class=\"row\">"
@@ -18,15 +17,14 @@ module ApplicationHelper
   end
 
   def download_text_laefer_alt(format)
-    "#{format}".html_safe
+    format.to_s.html_safe
   end
-
 
   def create_map_portion(map)
     toReturn = "<a class=\"curated-card\" style=\"display:block\" href=\"./catalog/#{map[:slug]}\">
           <div class=\"col-md-4\">
             <div class=\"card-map\">"
-    toReturn += (image_tag "thumb/#{map[:slug]}.jpg", {:class => "card-img-top", :"data-svg-fallback" => "#{image_path('real250.png')}", :alt => 'NYU Spatial Data Repository'})
+    toReturn += (image_tag "thumb/#{map[:slug]}.jpg", :class => 'card-img-top', :"data-svg-fallback" => image_path('real250.png').to_s, :alt => 'NYU Spatial Data Repository')
     toReturn += "<div class=\"card-block\">
                 <h4 class=\"card-title\">#{map[:title]}</h4>
               </div>
@@ -37,7 +35,7 @@ module ApplicationHelper
   end
 
   def construct_curated_collections
-    collections = NyuGeoblacklight::CuratedCollections.collections.shuffle[0..1]
+    collections = NyuGeoblacklight::CuratedCollections.collections.sample(2)
     toReturn = "<div class=\"curated-collections\">
       <h4>Featured Collections</h4>
       <div class=\"row\">"
@@ -50,7 +48,7 @@ module ApplicationHelper
   end
 
   def create_collection_portion(collection)
-    toReturn = link_to search_catalog_path({f: collection[:f]}), {class: "curated-card"} do
+    toReturn = link_to search_catalog_path(f: collection[:f]), class: 'curated-card' do
       "
     <div class=\"col-md-6\">
           <div class=\"card-collection\">
@@ -79,7 +77,7 @@ module ApplicationHelper
   end
 
   def create_recent_portion(collection)
-    toReturn = link_to search_catalog_path({f: collection[:f]}), {class: "curated-card"} do
+    toReturn = link_to search_catalog_path(f: collection[:f]), class: 'curated-card' do
       "
     <div class=\"col-md-6\">
           <div class=\"card-collection\">
@@ -93,6 +91,4 @@ module ApplicationHelper
     end
     toReturn.html_safe
   end
-
-
 end

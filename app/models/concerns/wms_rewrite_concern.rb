@@ -6,7 +6,7 @@ module WmsRewriteConcern
 
   def viewer_endpoint
     if is_nyu_restricted?
-    	'https://ezproxy.library.nyu.edu/login?url=https://maps-restricted.geo.nyu.edu/geoserver/sdr/wms?'
+      'https://ezproxy.library.nyu.edu/login?url=https://maps-restricted.geo.nyu.edu/geoserver/sdr/wms?'
     else
       super
     end
@@ -17,6 +17,6 @@ module WmsRewriteConcern
   end
 
   def nyu?
-    fetch(:dct_provenance_s).downcase == 'nyu'
+    fetch(:dct_provenance_s).casecmp('nyu').zero?
   end
 end

@@ -8,15 +8,15 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     if @user.persisted?
       sign_in_and_redirect @user, event: :authentication
-      logger.info(find_message(:success, kind: "NYU Libraries"))
+      logger.info(find_message(:success, kind: 'NYU Libraries'))
     else
-      session["devise.nyulibraries_data"] = request.env["omniauth.auth"]
+      session['devise.nyulibraries_data'] = request.env['omniauth.auth']
       redirect_to root_path
     end
   end
 
   def find_user_with_or_without_provider
-    @find_user_with_or_without_provider ||= (find_user_with_provider.present?) ? find_user_with_provider : find_user_without_provider
+    @find_user_with_or_without_provider ||= find_user_with_provider.present? ? find_user_with_provider : find_user_without_provider
   end
 
   def find_user_with_provider
@@ -24,7 +24,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def find_user_without_provider
-    @find_user_without_provider ||= User.where(username: omniauth.uid, provider: "")
+    @find_user_without_provider ||= User.where(username: omniauth.uid, provider: '')
   end
 
   def require_valid_omniauth
@@ -33,11 +33,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def valid_omniauth?
     omniauth.present? && omniauth.provider.to_s == 'nyulibraries' && !omniauth_aleph_identity.blank?
-	# Only accept users with an Aleph ID, authenticated via nyulibraries
-  end 
+    # Only accept users with an Aleph ID, authenticated via nyulibraries
+  end
 
   def omniauth
-    @omniauth ||= request.env["omniauth.auth"]
+    @omniauth ||= request.env['omniauth.auth']
   end
 
   def omniauth_provider
@@ -97,5 +97,4 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def failure
     redirect_to root_path
   end
-
 end

@@ -10,7 +10,7 @@
 
     <!-- core generated fields -->
     <field name="text" type="text_en" stored="false" indexed="true" multiValued="true"
-           termVectors="true" termPositions="true" termOffsets="true" />
+                       termVectors="true" termPositions="true" termOffsets="true" />
 
     <!-- dynamic field with simple types by suffix -->
     <dynamicField name="*_b"    type="boolean" stored="true"  indexed="true"/>
@@ -30,13 +30,13 @@
 
     <!-- dynamic Text fields by suffix without storage -->
     <dynamicField name="*_t"    type="text_en" stored="false"  indexed="true"
-                  termVectors="true" termPositions="true" termOffsets="true"/>
+                                termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_tm"   type="text_en" stored="false"  indexed="true" multiValued="true"
-                  termVectors="true" termPositions="true" termOffsets="true"/>
+                                termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_ti"   type="text_en" stored="false" indexed="true"
-                  termVectors="true" termPositions="true" termOffsets="true"/>
+                                termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_tmi"  type="text_en" stored="false" indexed="true" multiValued="true"
-                  termVectors="true" termPositions="true" termOffsets="true"/>
+                                termVectors="true" termPositions="true" termOffsets="true"/>
     <dynamicField name="*_sort" type="text_sort" stored="false" indexed="true" multiValued="false"/>
 
     <dynamicField name="*spell" type="textSpell" indexed="true" stored="false" multiValued="true" />

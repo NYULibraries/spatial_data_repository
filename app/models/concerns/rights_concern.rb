@@ -8,7 +8,6 @@ module RightsConcern
   end
 
   def nyu?
-    fetch(:dct_provenance_s).downcase == 'nyu'
+    fetch(:dct_provenance_s).casecmp('nyu').zero?
   end
-
 end

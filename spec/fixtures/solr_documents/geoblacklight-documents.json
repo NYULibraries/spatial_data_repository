@@ -1,0 +1,285 @@
+[
+{
+  "geoblacklight_version": "1.0",
+  "dc_description_s": "Panel title. Depths shown by isolines. \"Geological map [copyright] NERC 1996.\" Also available on flat sheet. \"Sheet 1\"--on panel. Includes text, notes, organizations' logos, and ancillary map of \"Orogenic terranes of Britain, Ireland and surrounding seas.\"",
+  "dc_format_s": "Paper",
+  "dc_identifier_s": "urn:arrowsmith.mit.edu:MIT.001145244",
+  "dc_language_s": "English",
+  "dc_publisher_s": "British Geological Survey",
+  "dc_rights_s": "Public",
+  "dc_title_s": "1:1 500 000 series [cartographic material] : tectonic map of Britain, Ireland and adjacent areas / British Geological Survey ; Geological Survey of Ireland ; Geological Survey of Northern Ireland.",
+  "dc_type_s": "Dataset",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://library.mit.edu/item/001145244\",\"http://www.opengis.net/cat/csw/csdgm\":\"http://opengeometadata.stanford.edu/metadata/org.opengeoportal/MIT:001145244/fgdc.xml\",\"http://www.w3.org/1999/xhtml\":\"http://opengeometadata.stanford.edu/metadata/org.opengeoportal/MIT:001145244/fgdc.html\"}",
+  "dct_temporal_sm": [
+    "1996"
+  ],
+  "dct_issued_s": "2000",
+  "dct_provenance_s": "MIT",
+  "georss_box_s": "49.0 -13.0 62.0 4.0",
+  "georss_polygon_s": "62.0 -13.0 62.0 4.0 49.0 4.0 49.0 -13.0 62.0 -13.0",
+  "layer_slug_s": "mit-001145244",
+  "layer_id_s": "MIT:001145244",
+  "layer_geom_type_s": "Paper Map",
+  "layer_modified_dt": "2014-12-04T21:32:59Z",
+  "solr_geom": "ENVELOPE(-13.0, 4.0, 62.0, 49.0)",
+  "solr_year_i": 1996
+},
+{
+  "geoblacklight_version": "1.0",
+  "dc_description_s": "Actual Evapotrans is a point theme representing the sum of evaporation and plant transpiration to the atmosphere from throughout the world.  Measurements are represented by points at every.5 degrees and provided for every month of the year. This dataset is a part of the Global Climate Database from the Global Change Department National Institute of Public Health and Environmental Protection.",
+  "dc_format_s": "Shapefile",
+  "dc_identifier_s": "urn:columbia.edu:Columbia.landinfo_global_aet",
+  "dc_language_s": "English",
+  "dc_rights_s": "Public",
+  "dc_title_s": "Actual Evapotrans",
+  "dc_type_s": "Dataset",
+  "dct_references_s": "{\"http://www.opengis.net/cat/csw/csdgm\":\"http://opengeometadata.stanford.edu/metadata/org.opengeoportal/Columbia:Columbia.landinfo_global_aet/fgdc.xml\",\"http://www.w3.org/1999/xhtml\":\"http://opengeometadata.stanford.edu/metadata/org.opengeoportal/Columbia:Columbia.landinfo_global_aet/fgdc.html\"}",
+  "dct_spatial_sm": [
+    "World"
+  ],
+  "dct_temporal_sm": [
+    "1996"
+  ],
+  "dct_provenance_s": "Columbia",
+  "georss_box_s": "-56.0 -179.5 83.0 180.0",
+  "georss_polygon_s": "83.0 -179.5 83.0 180.0 -56.0 180.0 -56.0 -179.5 83.0 -179.5",
+  "layer_slug_s": "columbia-columbia-landinfo-global-aet",
+  "layer_id_s": "Columbia:Columbia.landinfo_global_aet",
+  "layer_geom_type_s": "Point",
+  "layer_modified_dt": "2014-12-12T19:54:57Z",
+  "solr_geom": "ENVELOPE(-179.5, 180.0, 83.0, -56.0)",
+  "solr_year_i": 1996
+},
+{
+  "geoblacklight_version": "1.0",
+  "dc_description_s": "This polygon dataset is a 100 foot grid overlay for Cambridge, MA.",
+  "dc_format_s": "Shapefile",
+  "dc_identifier_s": "urn:geodata.tufts.edu:Tufts.CambridgeGrid100_04",
+  "dc_language_s": "English",
+  "dc_publisher_s": "Cambridge (Mass.) Geographic Information Systems",
+  "dc_rights_s": "Public",
+  "dc_title_s": "100 Foot Grid Cambridge MA 2004",
+  "dc_type_s": "Dataset",
+  "dct_references_s": "{\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"http://geoserver01.uit.tufts.edu/wfs\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"http://geoserver01.uit.tufts.edu/wms\",\"http://www.opengis.net/cat/csw/csdgm\":\"http://opengeometadata.stanford.edu/metadata/org.opengeoportal/sde:GISPORTAL.GISOWNER01.CAMBRIDGEGRID100_04/fgdc.xml\",\"http://www.w3.org/1999/xhtml\":\"http://opengeometadata.stanford.edu/metadata/org.opengeoportal/sde:GISPORTAL.GISOWNER01.CAMBRIDGEGRID100_04/fgdc.html\"}",
+  "dct_temporal_sm": [
+    "2004"
+  ],
+  "dct_issued_s": "2005",
+  "dct_provenance_s": "Tufts",
+  "georss_box_s": "42.34757 -71.163984 42.408316 -71.052581",
+  "georss_polygon_s": "42.408316 -71.163984 42.408316 -71.052581 42.34757 -71.052581 42.34757 -71.163984 42.408316 -71.163984",
+  "layer_slug_s": "tufts-cambridgegrid100-04",
+  "layer_id_s": "sde:GISPORTAL.GISOWNER01.CAMBRIDGEGRID100_04",
+  "layer_geom_type_s": "Polygon",
+  "layer_modified_dt": "2014-12-04T21:33:07Z",
+  "solr_geom": "ENVELOPE(-71.163984, -71.052581, 42.408316, 42.34757)",
+  "solr_year_i": 2004
+},
+{
+  "geoblacklight_version": "1.0",
+  "dc_identifier_s": "http://purl.stanford.edu/dp018hs9766",
+  "dc_title_s": "1-Meter Shaded Relief Multibeam Bathymetry Image (Color): Elkhorn Slough, California, 2005",
+  "dc_description_s": "This layer is a 10-color shaded relief GeoTIFF that contains high-resolution bathymetric data collected from the Elkhorn Slough region of Monterey Bay, California. The survey for Elkhorn Slough was conducted 8/12/2005 - 8/15/2005. Elkhorn Slough, one of the largest remaining coastal wetlands in California, has been directly subjected to tidal scour since the opening of Moss Landing Harbor in 1946. This erosion endangers the habitat of several rare and endangered species and disrupts the wetland ecosystem as a whole. In 2003, the Seafloor Mapping Lab of California State University, Monterey Bay created the most detailed bathymetry model of the Slough to date using a combination of multi-beam sonar, single-beam sonar and aerial photography. This layer was created as part of the California Seafloor Mapping Project.This project was conducted to determine changes in the pattern of erosion and deposition in Elkhorn Slough since surveys conducted in 1993, 2001 and 2003. Marine data offered here represent the efforts of a comprehensive state waters mapping program for California launched by the California State Coastal Conservancy, Ocean Protection Council, Department of Fish and Game, and the NOAA National Marine Sanctuary Program. The ultimate goal is the creation of a high-resolution 1:24,000 scale geologic and habitat base map series covering all of California's 14,500 km2 state waters out to the 3 mile limit, and support of the state's Marine Life Protection Act Initiative (MLPA) goal to create a statewide network of Marine Protected Areas (MPAs). This statewide project requires, involves and leverages expertise from industry, resource management agencies and academia. The tiered mapping campaign involves the use of state-of-the-art sonar, LIDAR (aerial laser) and video seafloor mapping technologies; computer aided classification and visualization; expert geologic and habitat interpretations codified into strip maps spanning California's land/sea boundary; and the creation of an online, publicly accessible data repository for the dissemination of all mapping products.\n",
+  "dc_rights_s": "Restricted",
+  "dct_provenance_s": "Stanford",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://purl.stanford.edu/dp018hs9766\",\"http://schema.org/downloadUrl\":\"http://stacks.stanford.edu/file/druid:dp018hs9766/data.zip\",\"http://www.loc.gov/mods/v3\":\"http://purl.stanford.edu/dp018hs9766.mods\",\"http://www.isotc211.org/schemas/2005/gmd/\":\"http://opengeometadata.stanford.edu/metadata/edu.stanford.purl/druid:dp018hs9766/iso19139.xml\",\"http://www.w3.org/1999/xhtml\":\"http://opengeometadata.stanford.edu/metadata/edu.stanford.purl/druid:dp018hs9766/default.html\",\"http://www.opengis.net/def/serviceType/ogc/wcs\":\"http://kurma-podd1.stanford.edu/geoserver/wcs\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"http://kurma-podd1.stanford.edu/geoserver/wms\"}",
+  "layer_id_s": "druid:dp018hs9766",
+  "layer_slug_s": "stanford-dp018hs9766",
+  "layer_geom_type_s": "Raster",
+  "layer_modified_dt": "2014-12-03T02:15:20Z",
+  "dc_format_s": "GeoTIFF",
+  "dc_language_s": "English",
+  "dc_type_s": "Dataset",
+  "dc_publisher_s": "Seafloor Mapping Lab",
+  "dc_creator_sm": [
+    "Seafloor Mapping Lab"
+  ],
+  "dc_subject_sm": [
+    "Continental margins",
+    "Multibeam mapping",
+    "Elevation",
+    "Imagery and Base Maps",
+    "Inland Waters"
+  ],
+  "dct_issued_s": "2006",
+  "dct_temporal_sm": [
+    "2005"
+  ],
+  "dct_spatial_sm": [
+    "Elkhorn Slough (Calif.)",
+    "Monterey Bay (Calif.)"
+  ],
+  "georss_box_s": "36.8085911 -121.7948738 36.8606925 -121.7389503",
+  "georss_polygon_s": "36.8085911 -121.7948738 36.8606925 -121.7948738 36.8606925 -121.7389503 36.8085911 -121.7389503 36.8085911 -121.7948738",
+  "solr_geom": "ENVELOPE(-121.7948738, -121.7389503, 36.8606925, 36.8085911)",
+  "solr_year_i": 2005
+},
+{
+  "geoblacklight_version": "1.0",
+  "dc_description_s": "This layer is a georeferenced raster image of the historic paper map entitled: [Karta mesta zanimaemago Sanktpeterburgom : v tom vide v kakom onoe nakhodilos' za god do osnovaniia goroda; sostavlena dlia panoramy S. Peterburga, 1834]. It was published in 1834. Scale [ca. 1:76,000]. Covers Saint Petersburg Region, Russia. Map in Russian and Swedish.\n\nThe image inside the map neatline is georeferenced to the surface of the earth and fit to the 'Pulkovo 1995 Gauss Kruger Zone 6N' coordinate system. All map collar and inset information is also available as part of the raster image, including any inset maps, profiles, statistical tables, directories, text, illustrations, index maps, legends, or other information associated with the principal map.\n\nThis map shows features such as roads, drainage, built-up areas and selected buildings, ground cover, and more. Relief is shown by hachures. Depths shown by soundings. Includes insets: [Retusari island] -- [Sluselberg]. \n\nThis layer is part of a selection of digitally scanned and georeferenced historic maps from The Harvard Map Collection as part of the Imaging the Urban Environment project.  Maps selected for this project represent major urban areas and cities of the world, at various time periods.  These maps typically portray both natural and manmade features at a large scale. The selection represents a range of regions, originators, ground condition dates, scales, and purposes.",
+  "dc_format_s": "GeoTIFF",
+  "dc_identifier_s": "urn:hul.harvard.edu:HARVARD.SDE2.G7064_S2_1834_K3",
+  "dc_language_s": "English",
+  "dc_publisher_s": "Harvard Map Collection, Harvard College Library",
+  "dc_rights_s": "Public",
+  "dc_subject_sm": [
+    "Maps",
+    "Human",
+    "settlements",
+    "Cities",
+    "and",
+    "towns",
+    "Land",
+    "use",
+    "Landforms",
+    "Infrastructure",
+    "(Economics)",
+    "Transportation",
+    "Bodies",
+    "of",
+    "water",
+    "imageryBaseMapsEarthCover"
+  ],
+  "dc_title_s": "Saint Petersburg Region, Russia, 1834 (Raster Image)",
+  "dc_type_s": "Dataset",
+  "dct_references_s": "{\"http://schema.org/DownloadAction\":\"http://hgl.harvard.edu:8080/HGL/HGLOpenDelivery\",\"http://www.opengis.net/def/serviceType/ogc/wcs\":\"http://hgl.harvard.edu:8080/geoserver/wcs\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"http://hgl.harvard.edu:8080/geoserver/wms\"}",
+  "dct_spatial_sm": [
+    "Russia Saint Petersburg"
+  ],
+  "dct_temporal_sm": [
+    "1834"
+  ],
+  "dct_issued_s": "2000",
+  "dct_provenance_s": "Harvard",
+  "georss_box_s": "59.669749 30.013108 60.041712 30.875309",
+  "georss_polygon_s": "60.041712 30.013108 60.041712 30.875309 59.669749 30.875309 59.669749 30.013108 60.041712 30.013108",
+  "layer_slug_s": "harvard-g7064-s2-1834-k3",
+  "layer_id_s": "cite:SDE2.G7064_S2_1834_K3",
+  "layer_geom_type_s": "Raster",
+  "layer_modified_dt": "2014-05-27T18:09:36Z",
+  "solr_geom": "ENVELOPE(30.013108, 30.875309, 60.041712, 59.669749)",
+  "solr_year_i": 1834,
+  "solr_issued_dt": "2000-01-01T00:00:00Z"
+},
+{
+  "geoblacklight_version": "1.0",
+  "dc_description_s": "Partly colored. Relief shown pictorially. Shows administrative divisions. From Thomas Jefferys's The American atlas, or, A geographical description of the whole continent of America (London : Printed by R. Sayer and Bennett, 1778). Insets: A chart of the mouth of Hudson's River, from Sandy Hook to New York. A plan of the city of New York. Plan of Amboy, with its environs, from an actual survey.",
+  "dc_format_s": "Raster",
+  "dc_identifier_s": "http://arks.princeton.edu/ark:/88435/02870w62c",
+  "dc_language_s": "English",
+  "dc_publisher_s": "London, Robt. Sayer & John Bennett",
+  "dc_rights_s": "Public",
+  "dc_subject_sm": [
+    "New York (State)‒Maps",
+    "New Jersey‒Maps"
+  ],
+  "dc_title_s": "The provinces of New York and New Jersey, with part of Pensilvania, and the Province of Quebec : drawn by Major Holland, Surveyor General, of the Northern District in America. Corrected and improved, from the original materials, by Governr. Pownall, Member of Parliament, 1776",
+  "dc_type_s": "Dataset",
+  "dc_creator_sm": [
+    "Rogers, Henry Darwin",
+    "Pownall, Thomas"
+  ],
+  "dct_references_s": "{\"http://schema.org/url\":\"http://arks.princeton.edu/ark:/88435/02870w62c\",\"http://schema.org/thumbnailUrl\":\"http://libimages.princeton.edu/loris2/pudl0076%2Fmap_pownall%2F00000001.jp2/full/50,/0/default.jpg\",\"http://iiif.io/api/image\":\"http://libimages.princeton.edu/loris2/pudl0076%2Fmap_pownall%2F00000001.jp2/info.json\"}",
+  "dct_spatial_sm": [
+    "New York (State)",
+    "New Jersey",
+    "Pennsylvania"
+  ],
+  "dct_temporal_sm": [
+    "1778"
+  ],
+  "dct_issued_s": "1778",
+  "dct_provenance_s": "Princeton",
+  "georss_box_s": "38.6693 -76.3394 46.5798 -72.1916",
+  "layer_slug_s": "princeton-02870w62c",
+  "layer_id_s": "02870w62c",
+  "layer_geom_type_s": "Raster",
+  "layer_modified_dt": "2014-10-09T18:00:18Z",
+  "solr_geom": "ENVELOPE(-76.3394, -72.1916, 46.5798, 38.6693)",
+  "solr_year_i": 1778
+},
+{
+  "geoblacklight_version": "1.0",
+  "dc_format_s": "Shapefile",
+  "dc_identifier_s": "urn:arrowsmith.mit.edu:MIT.SDE_DATA.US_MA_E25ZCTA5DCT_2000",
+  "dc_language_s": "English",
+  "dc_publisher_s": "U.S. Census Bureau",
+  "dc_rights_s": "Public",
+  "dc_subject_sm": [
+    "polygon",
+    "Zip",
+    "Code",
+    "Tabulation",
+    "Areas",
+    "demographics",
+    "population",
+    "census",
+    "boundaries",
+    "ZCTAs",
+    "zip",
+    "codes"
+  ],
+  "dc_title_s": "Massachusetts (ZCTA - 5 digit zip code tabulation area, 2000)",
+  "dc_type_s": "Dataset",
+  "dct_references_s": "{\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"http://arrowsmith.mit.edu:8080/geoserver/wfs\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"http://arrowsmith.mit.edu:8080/geoserver/wms\"}",
+  "dct_spatial_sm": [
+    "Massachusetts MA USA"
+  ],
+  "dct_temporal_sm": [
+    "2000"
+  ],
+  "dct_issued_s": "2000",
+  "dct_provenance_s": "MIT",
+  "georss_box_s": "41.230345 -73.533237 42.888068 -69.898565",
+  "georss_polygon_s": "42.888068 -73.533237 42.888068 -69.898565 41.230345 -69.898565 41.230345 -73.533237 42.888068 -73.533237",
+  "layer_slug_s": "mit-us-ma-e25zcta5dct-2000",
+  "layer_id_s": "sde:SDE_DATA.US_MA_E25ZCTA5DCT_2000",
+  "layer_geom_type_s": "Polygon",
+  "layer_modified_dt": "2014-05-27T18:09:34Z",
+  "solr_ne_pt": "42.888068,-69.898565",
+  "solr_sw_pt": "41.230345,-73.533237",
+  "solr_geom": "ENVELOPE(-73.533237, -69.898565, 42.888068, 41.230345)",
+  "solr_year_i": 2000,
+  "solr_issued_dt": "2000-01-01T00:00:00Z",
+  "solr_wms_url": "http://arrowsmith.mit.edu:8080/geoserver/wms",
+  "solr_wfs_url": "http://arrowsmith.mit.edu:8080/geoserver/wfs"
+},
+{
+  "geoblacklight_version": "1.0",
+  "dc_identifier_s": "http://purl.stanford.edu/cg357zz0321",
+  "dc_title_s": "10 Meter Countours: Russian River Basin, California",
+  "dc_description_s": "This line shapefile contains contours that were derived from a mosiac of 10 meter digital elevation models for the extent of the Russian River basin, located in Sonoma and Mendocino Counties, California.This layer can be used for watershed analysis and planning in the Russian River region of California.",
+  "dc_rights_s": "Restricted",
+  "dct_provenance_s": "Stanford",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://purl.stanford.edu/cg357zz0321\",\"http://schema.org/downloadUrl\":\"http://stacks.stanford.edu/file/druid:cg357zz0321/data.zip\",\"http://www.loc.gov/mods/v3\":\"http://purl.stanford.edu/cg357zz0321.mods\",\"http://www.isotc211.org/schemas/2005/gmd/\":\"http://opengeometadata.stanford.edu/metadata/edu.stanford.purl/druid:cg357zz0321/iso19139.xml\",\"http://www.w3.org/1999/xhtml\":\"http://opengeometadata.stanford.edu/metadata/edu.stanford.purl/druid:cg357zz0321/default.html\",\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"http://geowebservices-restricted.stanford.edu/geoserver/wfs\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"http://geowebservices-restricted.stanford.edu/geoserver/wms\"}",
+  "layer_id_s": "druid:cg357zz0321",
+  "layer_slug_s": "stanford-cg357zz0321",
+  "layer_geom_type_s": "Line",
+  "layer_modified_dt": "2014-12-03T01:20:46Z",
+  "dc_format_s": "Shapefile",
+  "dc_language_s": "English",
+  "dc_type_s": "Dataset",
+  "dc_publisher_s": "Circuit Rider Productions",
+  "dc_creator_sm": [
+    "United States. National Oceanic and Atmospheric Administration",
+    "Circuit Rider Productions"
+  ],
+  "dc_subject_sm": [
+    "Contours (Cartography)",
+    "Elevation",
+    "Inland Waters"
+  ],
+  "dct_issued_s": "2003",
+  "dct_temporal_sm": [
+    "2002"
+  ],
+  "dct_spatial_sm": [
+    "Sonoma County (Calif.)",
+    "Mendocino County (Calif.)"
+  ],
+  "georss_box_s": "38.302994 -123.387366 39.398403 -122.52958",
+  "georss_polygon_s": "38.302994 -123.387366 39.398403 -123.387366 39.398403 -122.52958 38.302994 -122.52958 38.302994 -123.387366",
+  "solr_geom": "ENVELOPE(-123.387366, -122.52958, 39.398403, 38.302994)",
+  "solr_year_i": 2002
+}
+]

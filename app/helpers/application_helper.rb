@@ -14,7 +14,15 @@ module ApplicationHelper
   end
 
   def download_text_alt(format)
-    "#{t 'geoblacklight.download.download'} #{format}".html_safe
+    "#{t 'geoblacklight.download.download'} #{proper_case_format_alt(format)}".html_safe
+  end
+
+  def proper_case_format_alt(format)
+    if t "geoblacklight.formats.#{format.downcase}"
+      t "geoblacklight.formats.#{format.downcase}"
+    else
+      format
+    end
   end
 
   def download_text_laefer_alt(format)

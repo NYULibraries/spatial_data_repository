@@ -19,7 +19,7 @@ gem 'figs'
 gem 'mysql2', '~> 0.3.20'
 
 # Loads NYU Libaries omniauth strategy
-gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries'
+gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries', tag: 'v2.1.2'
 gem 'devise', '>= 3.4.1'
 
 gem 'rsolr'

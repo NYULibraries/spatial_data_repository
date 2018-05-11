@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'blacklight'
-gem 'geoblacklight', '~> 1.5.1'
+gem 'geoblacklight', '~> 1.8.0'
 #gem 'geoblacklight', '~> 1.4.0'
 
 

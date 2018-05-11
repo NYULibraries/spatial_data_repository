@@ -1,3 +1,4 @@
+//= require handlebars.runtime
 //= require geoblacklight/geoblacklight
 //= require geoblacklight/basemaps
 //= require geoblacklight/controls
@@ -8,6 +9,7 @@
 //= require esri-leaflet
 //= require readmore.min
 //= require Leaflet.fullscreen.js
+//= require leaflet-label-src
 
 GeoBlacklight.Controls.Fullscreen = function() {
     this.map.addControl(new L.Control.Fullscreen({

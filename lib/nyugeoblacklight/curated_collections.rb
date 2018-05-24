@@ -22,17 +22,16 @@ module NyuGeoblacklight
 
     def CuratedCollections.maps
       [
-          {title: "2015 Aerial Laser and Photogrammetry Survey of Dublin", slug: "nyu_2451_38684"},
+          {title: "2015 Aerial Laser and Photogrammetry Survey of Dublin", slug: "nyu-2451-38684"},
           {title: "China: Ch'ang-sha Region", slug: "harvard-ams7810-s250-u54-nh49-16"},
-          {title: "1967 Communist China Agriculture", slug: "nyu_2451_36739"},
-          {title: "2015 New York City Real Estate Sales", slug: "nyu_2451_34678"},
-          {title: "1978 Soviet Map of Abu Dhabi", slug: "nyu_2451_34737"},
-          {title: "2015 MapPLUTO Brooklyn V. 1", slug: "nyu_2451_34521"},
+          {title: "1967 Communist China Agriculture", slug: "nyu-2451-36739"},
+          {title: "2015 New York City Real Estate Sales", slug: "nyu-2451-34678"},
+          {title: "1978 Soviet Map of Abu Dhabi", slug: "nyu-2451-34737"},
+          {title: "2015 MapPLUTO Brooklyn V. 1", slug: "nyu-2451-34521"},
           {title: "100-Meter Resolution Land Cover of the Conterminous United States", slug: "stanford-wv372bn9329"},
-          {title: "2016 LION Single Line Map for New York City", slug: "nyu_2451_34565"}
+          {title: "2016 LION Single Line Map for New York City", slug: "nyu-2451-34565"}
       ]
     end
 
   end
 end
-

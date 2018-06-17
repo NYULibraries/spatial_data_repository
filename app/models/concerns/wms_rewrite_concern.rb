@@ -6,7 +6,7 @@ module WmsRewriteConcern
 
   def viewer_endpoint
     if is_nyu_restricted?
-    	'https://ezproxy.library.nyu.edu/login?url=https://maps-restricted.geo.nyu.edu/geoserver/sdr/wms?'
+    	'http://proxy.library.nyu.edu/login?url=https://maps-restricted.geo.nyu.edu/geoserver/sdr/wms?'
     else
       super
     end

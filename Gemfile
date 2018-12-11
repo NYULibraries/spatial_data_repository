@@ -23,7 +23,7 @@ gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries', tag: 
 gem 'devise', '>= 3.4.1'
 
 gem 'rsolr'
-gem 'solr_wrapper'
+gem 'solr_wrapper', '~> 2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0'

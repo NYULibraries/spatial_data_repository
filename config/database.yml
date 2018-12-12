@@ -9,9 +9,10 @@ default: &default
   password: <%= ENV['SQL_PASS'] %>
 
 development:
-  <<: *default
+  adapter: sqlite3
   pool: 5
   timeout: 5000
+  database: db/development.sqlite3
 
 staging:
   <<: *default

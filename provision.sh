@@ -7,7 +7,7 @@ sudo yum install -y epel-release
 sudo yum install -y curl git java-1.8.0-openjdk-devel nodejs yum-utils gcc bzip2 kernel-devel dkms mysql mysql-devel
 
 # Install RVM and Ruby
-su - vagrant -c 'gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3'
+su - vagrant -c 'gpg --keyserver hkp://keys.gnupg.net:80 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB'
 su - vagrant -c 'curl -sSL https://get.rvm.io | bash -s stable'
 su - vagrant -c 'rvm 2.5.3 --install --default'
 

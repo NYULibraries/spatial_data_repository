@@ -20,11 +20,11 @@ vagrant up
 vagrant ssh
 cd /vagrant/sdr
 
-# Init database
-bundle exec rake db:schema:load
-
 # FIGS - Set Dev/Test ENV variables
 cp config/vars.yml.example config/vars.yml
+
+# Init database
+bundle exec rake db:schema:load
 
 # Run Solr and Rails App server
 bundle exec rake sdr:server
@@ -32,5 +32,5 @@ bundle exec rake sdr:server
 
 Application should now be running.
 
-* Rails app at: http://localhost:3000
 * Solr admin panel at: http://localhost:8983/
+* Rails app at: http://localhost:3000

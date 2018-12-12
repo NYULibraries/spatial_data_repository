@@ -29,3 +29,4 @@
 
 # Ignore Vagrant
 /.vagrant
+/sdr.box

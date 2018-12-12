@@ -8,8 +8,8 @@ Check out the [wiki](https://github.com/NYULibraries/spatial_data_repository/wik
 
 ### Vagrant / Virtualbox
 
-Install Vagrant: https://www.vagrantup.com/downloads.html
-Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
+* Install Vagrant: https://www.vagrantup.com/downloads.html
+* Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
 #### Run app via these commands
 

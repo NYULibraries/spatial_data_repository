@@ -19,6 +19,14 @@ cd <project-root>
 vagrant up
 vagrant ssh
 cd /vagrant/sdr
+
+# Init database
+bundle exec rake db:schema:load
+
+# FIGS - Set Dev/Test ENV variables
+cp config/vars.yml.example config/vars.yml
+
+# Run Solr and Rails App server
 bundle exec rake sdr:server
 ```
 

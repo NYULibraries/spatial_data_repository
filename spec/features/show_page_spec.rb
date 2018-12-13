@@ -6,6 +6,18 @@ describe 'Show page' do
       visit solr_document_path 'nyu-2451-34626'
       expect(page).to have_content 'This dataset is only available to members of the New York University community'
     end
+
+    it 'does not display download' do
+      visit solr_document_path 'nyu-2451-34626'
+      expect(page).to_not have_content 'Download'
+    end
+
+    it 'includes link to login' do
+      visit solr_document_path 'nyu-2451-34626'
+      expect(page).to have_link(
+        'Login to view and download', href: '/login'
+      )
+    end
   end
 
   context 'Suppressed download - nyu-2451-38684' do

@@ -1,5 +1,6 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
-  before_filter :require_valid_omniauth, only: :nyulibraries
+  before_action :require_valid_omniauth, only: :nyulibraries
+
   def nyulibraries
     # Find existing or initialize new user,
     # and save new attributes each time
@@ -34,7 +35,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def valid_omniauth?
     omniauth.present? && omniauth.provider.to_s == 'nyulibraries' && !omniauth_aleph_identity.blank?
 	# Only accept users with an Aleph ID, authenticated via nyulibraries
-  end 
+  end
 
   def omniauth
     @omniauth ||= request.env["omniauth.auth"]

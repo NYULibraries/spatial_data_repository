@@ -1,0 +1,41 @@
+{
+  "dc_description_s": "This polygon shapefile represents the 1964 County Boundaries for China. The layer includes population census data and was primarily based on the \"Historical Administrative Maps of the People's Republic of China,\" published by China Map Press, and some other yearly administrative maps. See the documentation for more information and a list of the layer variables.",
+  "dc_format_s": "Shapefile",
+  "dc_identifier_s": "http://hdl.handle.net/2451/34626",
+  "dc_language_s": "English",
+  "dc_publisher_s": "Beijing Hua tong ren shi chang xin xi you xian ze ren gong si",
+  "dc_relation_sm": [
+    "http://sws.geonames.org/1814991/about/rdf"
+  ],
+  "dc_rights_s": "Restricted",
+  "dc_subject_sm": [
+    "Boundaries",
+    "Demographic surveys",
+    "Population"
+  ],
+  "dc_title_s": "1964 County Boundaries of China with Population Census Data",
+  "dc_type_s": "Dataset",
+  "dct_isPartOf_sm": [
+    "Historical China County Population Census Data"
+  ],
+  "dct_issued_s": "2005",
+  "dct_provenance_s": "NYU",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/34626\",\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"https://maps-restricted.geo.nyu.edu/geoserver/sdr/wfs\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"https://maps-restricted.geo.nyu.edu/geoserver/sdr/wms\",\"http://schema.org/downloadUrl\":\"https://archive.nyu.edu/retrieve/74851/nyu_2451_34626.zip\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/74896/nyu_2451_34626_doc.zip\"}",
+  "dct_spatial_sm": [
+    "People's Republic of China, China"
+  ],
+  "dct_temporal_sm": [
+    "1964"
+  ],
+  "geoblacklight_version": "1.0",
+  "layer_geom_type_s": "Polygon",
+  "layer_id_s": "sdr:nyu_2451_34626",
+  "layer_modified_dt": "2016-11-10T15:51:38Z",
+  "layer_slug_s": "nyu-2451-34626",
+  "nyu_addl_dspace_s": "35559",
+  "solr_geom": "ENVELOPE(73.557693, 134.773911, 53.56086, 10.175472)",
+  "solr_year_i": 1964,
+  "nyu_addl_format_sm": [
+    "Shapefile"
+  ]
+}

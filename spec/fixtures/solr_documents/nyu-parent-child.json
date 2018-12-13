@@ -1,0 +1,54 @@
+{
+  "dc_creator_sm": [
+    "GIS Lab, Newman Library, Baruch CUNY"
+  ],
+  "dc_description_s": "This point layer was created from Detailed Annual Sales Reports by Borough published by New York City Department of Finance. It represents locations of all properties sold in New York City. Several Python scripts were written to read-in each borough's sales data and combine them into sales for New York City as whole. NYC Geoclient API, developed by NYC DOITT, was used in a script to geocode locations of the properties sold. Locations geocoded by the script were matched by property address or by property block and lot information, if the address was missing or incomplete. For some properties lot information has changed from the year of the property sale (e.g. lot has been split and renumbered) and doesn’t exist in the city's current property and address database. Manual matching was performed for those records by examining archival tax maps. Due to the vertical nature of the real estate market in New York, multiple points / transactions may coincide in the same location. The coordinate reference system for this layer is NY State Plane Long Island in feet. The unique identifier of the dataset is Sale_id. Bbl_id is a unique identifier for the property and may repeat in the dataset if the property was sold more than once in the same year. The user should be cautious of sales with values less than $10 or equal to $0, which are marked as non-usable in this dataset. These sales are transfers of property and are not considered representative of true market conditions. This layer was created as a part of the NYC Geocoded Real Estate Sales data series.",
+  "dc_format_s": "Shapefile",
+  "dc_identifier_s": "http://hdl.handle.net/2451/34666",
+  "dc_language_s": "English",
+  "dc_publisher_s": "Newman Library (Bernard M. Baruch College)",
+  "dc_rights_s": "Public",
+  "dc_subject_sm": [
+    "Real property",
+    "Property",
+    "Real estate business"
+  ],
+  "dc_title_s": "2003 New York City Real Estate Sales",
+  "dc_type_s": "Dataset",
+  "dct_isPartOf_sm": [
+    "NYC Geocoded Real Estate Sales"
+  ],
+  "dct_issued_s": "5/31/2016",
+  "dct_provenance_s": "Baruch CUNY",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/34666\",\"http://schema.org/downloadUrl\":\"https://archive.nyu.edu/retrieve/75037/nyu_2451_34666.zip\",\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"https://maps-public.geo.nyu.edu/geoserver/sdr/wfs\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"https://maps-public.geo.nyu.edu/geoserver/sdr/wms\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/75023/nyu_2451_34666_doc.zip\"}",
+  "dct_source_sm": [
+    "nyu-2451-34679"
+  ],
+  "dct_spatial_sm": [
+    "New York City, New York, United States",
+    "Bronx County, New York, United States",
+    "Kings County, New York, United States",
+    "New York County, New York, United States",
+    "Queens County, New York, United States",
+    "Richmond County, New York, United States",
+    "Borough of Bronx, New York, United States",
+    "Borough of Brooklyn, New York, United States",
+    "Borough of Manhattan, New York, United States",
+    "Borough of Queens, New York, United States",
+    "Borough of Staten Island, New York, United States"
+  ],
+  "dct_temporal_sm": [
+    "2003"
+  ],
+  "geoblacklight_version": "1.0",
+  "layer_geom_type_s": "Point",
+  "layer_id_s": "sdr:nyu_2451_34666",
+  "layer_modified_dt": "2016-06-13T15:21:26Z",
+  "layer_slug_s": "nyu-2451-34666",
+  "nyu_addl_dspace_s": "35608",
+  "solr_geom": "ENVELOPE(-74.2535114980638, -73.7006302537027, 40.9128742591852, 40.4985796357109)",
+  "solr_year_i": 2003,
+  "nyu_addl_format_sm": [
+    "Shapefile"
+  ]
+}

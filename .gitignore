@@ -26,3 +26,7 @@
 
 # Ignore assets
 /public/assets/*
+
+# Ignore Vagrant
+/.vagrant
+/sdr.box

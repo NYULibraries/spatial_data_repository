@@ -1,12 +1,12 @@
 require 'rails_helper'
+
 describe 'routes for users' do
   describe 'GET /users/auth/nyulibraries' do
     subject { get('/users/auth/nyulibraries') }
     it do
       should route_to({
         controller: 'users/omniauth_callbacks',
-        action: 'passthru',
-        provider: 'nyulibraries'
+        action: 'passthru'
       })
     end
   end
@@ -16,8 +16,7 @@ describe 'routes for users' do
     it do
       should route_to({
         controller: 'users/omniauth_callbacks',
-        action: 'passthru',
-        provider: 'nyulibraries'
+        action: 'passthru'
       })
     end
   end

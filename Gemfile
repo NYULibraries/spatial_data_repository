@@ -15,20 +15,15 @@ gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 # Figs for var management
 gem 'figs'
 
-# MySQL for Rails backend dbter
-gem 'mysql2', '~> 0.3.20'
-
 # Loads NYU Libaries omniauth strategy
 gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries', tag: 'v2.1.2'
 gem 'devise', '>= 3.4.1'
 
 gem 'rsolr'
-gem 'solr_wrapper'
+gem 'solr_wrapper', '~> 2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -59,6 +54,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'database_cleaner'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'spring'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -66,4 +68,9 @@ group :development do
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+  # MySQL for Rails backend dbter
+  gem 'mysql2', '~> 0.3.20'
 end

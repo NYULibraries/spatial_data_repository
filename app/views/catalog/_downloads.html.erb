@@ -2,11 +2,6 @@
 <% if document_downloadable? %>
       <% if (document["dc_creator_sm"]) && (document["dc_creator_sm"].include? ("Debra F. Laefer")) %>
           <%= render 'downloads_laefer' %>
-      <% else %>
-        <div class='btn-group' itemprop='distribution' itemscope='itemscope' itemtype='http://schema.org/DataDownload'>
-          <%= render 'downloads_primary' %>
-          <%= render 'downloads_secondary' %>
-        </div>
       <% end %>
 
 <% elsif document.restricted? && document.same_institution? %>

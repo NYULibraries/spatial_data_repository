@@ -60,6 +60,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'database_cleaner'
+  gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'spring'
   gem 'sqlite3'

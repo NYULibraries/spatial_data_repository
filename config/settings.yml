@@ -18,6 +18,7 @@ METADATA_SHOWN:
   - 'fgdc'
   - 'iso19139'
   - 'mods'
+  - 'html'
 
 PROXY_URL: 'http://proxy.library.nyu.edu/login?url=https://maps-restricted.geo.nyu.edu'
 RESTRICTED_URL: 'https://maps-restricted.geo.nyu.edu/geoserver/wms'

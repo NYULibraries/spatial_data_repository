@@ -15,3 +15,6 @@ en:
       jpg: 'JPG'
       esri_geodatabase: 'ESRI Geodatabase'
       sqlite_database: 'SQLite Database'
+    download:
+      export_formats: 'Other Formats'
+      export_link: 'Export'

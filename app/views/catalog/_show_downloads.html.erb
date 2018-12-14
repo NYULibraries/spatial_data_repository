@@ -1,7 +1,28 @@
 <% document ||= @document %>
 
 <% if document_downloadable? %>
-  <% if document.direct_download.present? || document.hgl_download.present? || document.iiif_download.present? %>
+  <% if document.multi_direct_downloads.present? %>
+    <div class="panel panel-default exports">
+      <div class="panel-heading">
+        <h3 class="h5"><%= t('geoblacklight.download.download').pluralize %></h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <% document.multi_direct_downloads.each do |dd| %>
+          <%= content_tag(:li, class: "list-group-item export") do %>
+            <%= content_tag(:div, class:"export-label") do %>
+              <%= download_text_laefer_alt(dd[0]) %>
+            <% end %>
+
+            <%= content_tag(:div, class:"export-link-container") do %>
+              <%= link_to("Export", dd[1], 'contentUrl' => dd[1], data: {download: 'trigger', download_type: 'direct', download_id: document.id}, class: 'btn btn-primary btn-block download download-generated') %>
+            <% end %>
+
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+
+  <% elsif document.direct_download.present? || document.hgl_download.present? || document.iiif_download.present? %>
     <div class="panel panel-default downloads">
       <div class="panel-heading">
         <h3 class="h5"><%= t('geoblacklight.download.download').pluralize %></h3>
@@ -21,28 +42,6 @@
 
       <ul class="list-group list-group-flush">
         <%= render 'downloads_generated' %>
-      </ul>
-    </div>
-  <% end %>
-
-  <% if document.multi_direct_downloads.present? %>
-    <div class="panel panel-default exports">
-      <div class="panel-heading">
-        <h3 class="h5"><%= t('geoblacklight.download.export_formats') %></h3>
-      </div>
-      <ul class="list-group list-group-flush">
-        <% document.multi_direct_downloads.each do |dd| %>
-          <%= content_tag(:li, class: "list-group-item export") do %>
-            <%= content_tag(:div, class:"export-label") do %>
-              <%= download_text_laefer_alt(dd[0]) %>
-            <% end %>
-
-            <%= content_tag(:div, class:"export-link-container") do %>
-              <%= link_to("Export", dd[1], 'contentUrl' => dd[1], data: {download: 'trigger', download_type: 'direct', download_id: document.id}, class: 'btn btn-primary btn-block download download-generated') %>
-            <% end %>
-
-          <% end %>
-        <% end %>
       </ul>
     </div>
   <% end %>

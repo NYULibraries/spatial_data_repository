@@ -47,7 +47,7 @@ describe 'Show page' do
   context 'Multiple downloads - nyu-2451-38645' do
     it 'includes six download links' do
       visit solr_document_path 'nyu-2451-38645'
-      expect(page).to have_content 'Export Formats'
+      expect(page).to have_content 'Downloads'
 
       expect(page).to have_content('LAZ (Point-cloud)')
       expect(page).to have_link(

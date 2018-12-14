@@ -16,7 +16,11 @@ Check out the [wiki](https://github.com/NYULibraries/spatial_data_repository/wik
 ```bash
 
 cd <project-root>
+
+# If you have never run vagrant, run "up" command to provision VM
 vagrant up
+
+# If you have previously run vagrant "up", just run "ssh"
 vagrant ssh
 cd /vagrant/sdr
 

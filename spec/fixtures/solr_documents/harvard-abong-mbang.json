@@ -1,0 +1,23 @@
+{
+  "dc_identifier_s": "urn:hul.harvard.edu:HARVARD.SDE2.AM_AMS_NA3301L",
+  "dct_provenance_s": "Harvard",
+  "dc_publisher_s": "Harvard Map Collection, Harvard College Library",
+  "dc_description_s": "This layer is a georeferenced raster image of the Army Map Service (AMS) Series G504, West Africa, 1:250,000 AMS Series sheet map entitled: Abong Mbang. Compilation date: 1963. Printed in: 1965. Covers portions of Abong Mbang region, Cameroon.\n\nMap quadrangle number: NA 33-1.  \nEdition statement:  Ed. 1 - AMS.\n\nCompiled in 1963 from Carte de l'Afrique ... 1:200,000, Service Geographique a Brazzaville, Sheets ... 33-XX, published 1958.\n\nThe image inside the map neatline is georeferenced to the surface of the earth and fit to World Geodetic System (1984) coordinates. All map collar information is also available as part of the raster image. Series source sheets are of varying compilation dates (1952-1963) and editions, published by the Army Map Service.\n\nAMS Series G504 maps are in English. Each source map in the series is printed in color at a scale of 1:250,000. \n\nThe source map was selected and downloaded from the University of Texas Libraries Web site by the Harvard University Center for Geographic Analysis (CGA) and georeferenced for the CGA's AfricaMap project by East View Cartographic. Individual AMS sheets covering a small portion of Africa (146 sheets in total) were selected from AMS series of: North Africa (P502), West Africa (G504), and South Africa (Z501).\n\nAMS Series maps are typical topographic maps portraying both natural and manmade features. They show and name works of nature, such as mountains, valleys, lakes, rivers, vegetation, etc.  They also identify the principal works of humans, such as roads, railroads, boundaries, transmission lines, major buildings, etc.  Relief is shown with standard contour intervals of 40 meters, with some sheets having supplemental meter contours, form lines, hachures, shading, and/or spot heights. Depths shown by bathymetric isolines.\n\nPlease pay close attention to map collar information on projections, spheroid, planimetric revision methods and dates, and keys to grid numbering and other numbers which appear inside the neatline.",
+  "dc_title_s": "Abong Mbang region, Cameroon, 1963, Army Map Service (AMS) NA 33-1 (Raster Image)",
+  "solr_geom": "ENVELOPE(11.919305, 13.577675, 4.085477, 2.81795)",
+  "layer_slug_s": "harvard-am_ams_na3301l",
+  "layer_id_s": "AM_AMS_NA3301L",
+  "dc_type_s": "Dataset",
+  "dc_rights_s": "Public",
+  "layer_geom_type_s": "Raster",
+  "dct_temporal_sm": [
+    "1963"
+  ],
+  "solr_year_i": 1963,
+  "dc_language_s": "English",
+  "dct_references_s": "{\"http://www.opengis.net/def/serviceType/ogc/wms\":\"http://pelham.lib.harvard.edu:8090/geoserver/wms\",\"http://www.opengis.net/def/serviceType/ogc/wcs\":\"http://pelham.lib.harvard.edu:8090/geoserver/wcs\",\"http://schema.org/DownloadAction\":\"http://pelham.lib.harvard.edu:8080/HGL/HGLOpenDelivery\"}",
+  "dc_format_s": "GeoTIFF",
+  "nyu_addl_format_sm": [
+    "GeoTIFF"
+  ]
+}

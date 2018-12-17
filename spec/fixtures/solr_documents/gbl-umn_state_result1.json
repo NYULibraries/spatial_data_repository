@@ -31,6 +31,9 @@
   ],
   "layer_slug_s": "2eddde2f-c222-41ca-bd07-2fd74a21f4de",
   "layer_geom_type_s": "Raster",
+  "nyu_addl_format_sm": [
+    "ArcGRID"
+  ],
   "layer_modified_dt": "2018-08-02T17:47:58Z",
   "solr_geom": "ENVELOPE(-97.612501, -88.842351, 49.464145, 42.906949)",
   "solr_year_i": 2015,

@@ -17,5 +17,8 @@
   "layer_geom_type_s": "Raster",
   "layer_modified_dt": "2015-07-15T00:41:49Z",
   "solr_geom": "ENVELOPE(-124.88, -116.41, 46.34, 41.91)",
+  "nyu_addl_format_sm": [
+    "GeoTIFF"
+  ],
   "solr_year_i": 2008
 }

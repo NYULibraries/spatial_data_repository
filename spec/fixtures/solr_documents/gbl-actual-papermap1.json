@@ -18,6 +18,9 @@
   "layer_id_s": "MIT:001145244",
   "layer_geom_type_s": "Paper Map",
   "layer_modified_dt": "2014-12-04T21:32:59Z",
+  "nyu_addl_format_sm": [
+    "Paper Map"
+  ],
   "solr_geom": "ENVELOPE(-13.0, 4.0, 62.0, 49.0)",
   "solr_year_i": 1996
 }

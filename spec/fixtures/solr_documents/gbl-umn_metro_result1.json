@@ -34,6 +34,9 @@
   ],
   "layer_slug_s": "02236876-9c21-42f6-9870-d2562da8e44f",
   "layer_geom_type_s": "Polygon",
+  "nyu_addl_format_sm": [
+    "Shapefile"
+  ],
   "layer_modified_dt": "2018-08-02T17:42:57Z",
   "solr_geom": "ENVELOPE(-94.012, -92.732, 45.415, 44.471)",
   "solr_year_i": 2014,

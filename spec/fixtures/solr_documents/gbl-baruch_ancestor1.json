@@ -42,5 +42,8 @@
   ],
   "solr_geom": "ENVELOPE(-74.255895, -73.700272, 40.9152819999998, 40.4959289999998)",
   "solr_year_i": 2016,
+  "nyu_addl_format_sm": [
+    "SQLite Database"
+  ],
   "geoblacklight_version": "1.0"
 }

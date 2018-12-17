@@ -32,6 +32,9 @@
   "layer_slug_s": "e9c71086-6b25-4950-8e1c-84c2794e3382",
   "layer_geom_type_s": "Raster",
   "layer_modified_dt": "2018-08-02T17:49:48Z",
+  "nyu_addl_format_sm": [
+    "GeoTIFF"
+  ],
   "solr_geom": "ENVELOPE(-97.991522, -87.177541, 49.892443, 42.891013)",
   "solr_year_i": 1998,
   "geoblacklight_version": "1.0"

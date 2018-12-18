@@ -5,16 +5,12 @@ en:
       search_heading: 'Get started here'
       category_heading: 'Browse by category'
       map_heading: 'Browse by location'
-    formats:
-      arcgrid: 'ArcGRID'
-      geojson: 'GeoJSON'
-      tiff: 'TIFF'
-      geotiff: 'GeoTIFF'
-      kmz: 'KMZ'
-      shapefile: 'Shapefile'
-      jpg: 'JPG'
-      esri_geodatabase: 'ESRI Geodatabase'
-      sqlite_database: 'SQLite Database'
     download:
+      download_link: '{download_format}'
       export_formats: 'Other Formats'
-      export_link: 'Export'
+      export_link: 'Download'
+      export_shapefile_link: 'Generated Shapefile'
+    show:
+      attribute: 'Variable'
+      value: 'Value'
+      click_map: 'Click object on map to see data values'

@@ -1,0 +1,27 @@
+{
+  "geoblacklight_version": "1.0",
+  "dc_identifier_s": "ark:/88435/tt44pr350",
+  "layer_slug_s": "princeton-tt44pr350",
+  "uuid": "princeton-tt44pr350",
+  "dc_title_s": "上海新地圖",
+  "solr_geom": "ENVELOPE(121.39, 121.577, 31.305, 31.181)",
+  "dct_provenance_s": "Princeton",
+  "dc_rights_s": "Public",
+  "dc_description_s": "[Published by Japanese bookstore of Shanghai]. Inset: \"Panorama of Shanghai\" = [Sahnghai quan jing].",
+  "dc_language_s": "eng",
+  "dc_publisher_s": "上海 : 上海日本堂書店, 昭和3年[1928]",
+  "dc_subject_sm": [
+    "Shanghai (China)—Maps"
+  ],
+  "dct_spatial_sm": [
+    "Shanghai (China)"
+  ],
+  "layer_modified_dt": "2018-06-07T01:07:48Z",
+  "layer_id_s": "public-figgy:b9e6e6b0-9c61-48df-97ab-7f9580f8a3a4",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://catalog.princeton.edu/catalog/6830380\",\"http://schema.org/downloadUrl\":\"https://figgy.princeton.edu/downloads/b9e6e6b0-9c61-48df-97ab-7f9580f8a3a4/file/4407ee5c-5c98-4ce7-a8ce-e102fcbc309a\",\"http://schema.org/thumbnailUrl\":\"https://figgy.princeton.edu/downloads/b9e6e6b0-9c61-48df-97ab-7f9580f8a3a4/file/a8274666-60c9-4905-abce-feeaa8390ff6\",\"http://iiif.io/api/image\":\"https://libimages1.princeton.edu/loris/figgy_prod/99%2Fac%2Ff3%2F99acf3f100404124b7992ffd6d6bea8b%2Fintermediate_file.jp2/info.json\",\"http://iiif.io/api/presentation#manifest\":\"https://figgy.princeton.edu/concern/scanned_maps/a04e0a08-452c-4120-a245-cb24c97e93f4/manifest\"}",
+  "layer_geom_type_s": "Image",
+  "dc_format_s": "TIFF",
+  "nyu_addl_format_sm": [
+    "TIFF"
+  ]
+}

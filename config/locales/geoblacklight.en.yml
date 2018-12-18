@@ -5,3 +5,16 @@ en:
       search_heading: 'Get started here'
       category_heading: 'Browse by category'
       map_heading: 'Browse by location'
+    formats:
+      arcgrid: 'ArcGRID'
+      geojson: 'GeoJSON'
+      tiff: 'TIFF'
+      geotiff: 'GeoTIFF'
+      kmz: 'KMZ'
+      shapefile: 'Shapefile'
+      jpg: 'JPG'
+      esri_geodatabase: 'ESRI Geodatabase'
+      sqlite_database: 'SQLite Database'
+    download:
+      export_formats: 'Other Formats'
+      export_link: 'Export'

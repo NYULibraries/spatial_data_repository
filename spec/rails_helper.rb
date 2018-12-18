@@ -28,6 +28,8 @@ ActiveRecord::Migration.maintain_test_schema!
 
 Dir[Rails.root.join("spec", "support", "**", "*.rb")].sort.each { |file| require file }
 
+#require_relative 'support/controller_macros'
+
 ActiveJob::Base.queue_adapter = :inline
 
 RSpec.configure do |config|
@@ -38,6 +40,9 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+
+  # Turn on "test mode" for OmniAuth
+  OmniAuth.config.test_mode = true
 
   config.before(:suite) do
     begin
@@ -50,9 +55,9 @@ RSpec.configure do |config|
   config.include Capybara::DSL
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::ControllerHelpers, type: :view
+  config.include Devise::Test::IntegrationHelpers, type: :request
   config.include Warden::Test::Helpers, type: :feature
   config.include FactoryBot::Syntax::Methods
-  config.include Features::SessionHelpers, type: :feature
 
   config.infer_spec_type_from_file_location!
 end

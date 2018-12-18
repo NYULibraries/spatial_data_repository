@@ -20,6 +20,14 @@ describe 'Show page' do
     end
   end
 
+  context 'Restricted NYU result - nyu-2451-34626 - Signed In' do
+    it 'does display download' do
+      sign_in
+      visit solr_document_path 'nyu-2451-34626'
+      expect(page).to have_content 'Download'
+    end
+  end
+
   context 'Suppressed download - nyu-2451-38684' do
     it 'includes warning' do
       visit solr_document_path 'nyu-2451-38684'

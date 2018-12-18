@@ -30,3 +30,4 @@
 # Ignore Vagrant
 /.vagrant
 /sdr.box
+.byebug_history

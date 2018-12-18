@@ -7,8 +7,6 @@ require 'capybara/rspec'
 require 'capybara/rails'
 require 'capybara-screenshot/rspec'
 require 'selenium-webdriver'
-require 'devise'
-require 'factory_bot'
 
 Capybara.register_driver(:headless_chrome) do |app|
   capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
@@ -25,8 +23,6 @@ Capybara.default_max_wait_time = 15
 
 
 ActiveRecord::Migration.maintain_test_schema!
-
-Dir[Rails.root.join("spec", "support", "**", "*.rb")].sort.each { |file| require file }
 
 ActiveJob::Base.queue_adapter = :inline
 
@@ -48,11 +44,6 @@ RSpec.configure do |config|
   end
 
   config.include Capybara::DSL
-  config.include Devise::Test::ControllerHelpers, type: :controller
-  config.include Devise::Test::ControllerHelpers, type: :view
-  config.include Warden::Test::Helpers, type: :feature
-  config.include FactoryBot::Syntax::Methods
-  config.include Features::SessionHelpers, type: :feature
 
   config.infer_spec_type_from_file_location!
 end

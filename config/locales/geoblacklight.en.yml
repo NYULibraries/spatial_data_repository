@@ -10,7 +10,7 @@ en:
       download_link: '%{download_format}'
       export_formats: 'Other Formats'
       export_link: 'Download'
-      export_shapefile_link: 'Generated Shapefile'
+      export_shapefile_link: 'Derived Shapefile'
     show:
       attribute: 'Variable'
       value: 'Value'

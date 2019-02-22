@@ -127,7 +127,7 @@ class CatalogController < ApplicationController
     config.add_show_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Place(s)', itemprop: 'spatial', link_to_search: true, separator: '; '
     config.add_show_field Settings.FIELDS.SUBJECT, label: 'Subject(s)', itemprop: 'keywords', link_to_search: true
     config.add_show_field Settings.FIELDS.FILE_FORMAT, label: 'Format(s)', itemprop: 'formats', link_to_search: true
-    config.add_show_field Settings.FIELDS.TEMPORAL, label: 'Year', itemprop: 'temporal'
+    config.add_show_field Settings.FIELDS.TEMPORAL, label: 'Year(s)', itemprop: 'temporal'
     config.add_show_field Settings.FIELDS.PROVENANCE, label: 'Held by', link_to_search: true
 
     # "fielded" search configuration. Used by pulldown among other places.
@@ -220,13 +220,10 @@ class CatalogController < ApplicationController
     config.show.document_actions.delete(:sms)
     config.show.document_actions.delete(:citation)
 
-    # Configure basemap provider for GeoBlacklight maps (uses https only basemap
+    # Us this menu to configure basemap provider for GeoBlacklight maps (uses https only basemap
     # providers with open licenses)
-    # Valid basemaps include:
-    # 'mapquest' http://developer.mapquest.com/web/products/open/map
-    # 'positron' http://cartodb.com/basemaps/
-    # 'darkMatter' http://cartodb.com/basemaps/
-    config.basemap_provider = 'positron'
+    
+    config.basemap_provider = 'positronLite'
 
 
     # Configuration for autocomplete suggestor

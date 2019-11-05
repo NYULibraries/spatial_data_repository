@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/xenial64"
   config.vm.hostname = "sdr-geoblacklight"
   config.vm.synced_folder ".", "/vagrant/sdr"
 
@@ -49,13 +49,13 @@ Vagrant.configure(2) do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  # config.vm.provider "virtualbox" do |vb|
-  #   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
-  #
-  #   # Customize the amount of memory on the VM:
-  #   vb.memory = "1024"
-  # end
+  config.vm.provider "virtualbox" do |vb|
+    # Display the VirtualBox GUI when booting the machine
+    # vb.gui = true
+
+    # Customize the amount of memory on the VM:
+    vb.memory = "1024"
+  end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
@@ -71,19 +71,27 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    # sudo apt-get update
-    # sudo apt-get install -y apache2 curl git default-jre nodejs gcc bzip2 dkms software-properties-common
-    # sudo apt-get -y autoremove
+    sudo apt-get update
+    sudo apt-get install -y apache2 curl git default-jre nodejs gcc bzip2 dkms software-properties-common libmysqlclient-dev
+
+    # install mysql
+    sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password rootpass'
+    sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password rootpass'
+    sudo apt-get -y install mysql-server
+
+    sudo apt-get -y autoremove
 
     # install + load rvm
-    # gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-    # \curl -sSL https://get.rvm.io | sudo bash -s stable
-    # source /etc/profile
+    gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    curl -sSL https://get.rvm.io | bash -s stable
+    source $HOME/.rvm/scripts/rvm || source /etc/profile.d/rvm.sh
+    rvm group add rvm $USER
+    sudo chown -R $USER /usr/local/
 
     # install ruby + gems
-    # rvm install 2.5
-    # gem install bundler
-    # cd /vagrant/sdr && bundle install
+    rvm use --default --install 2.5
+    gem install --user-install bundler
+    cd /vagrant/sdr && bundle install
   SHELL
 
   # config.vm.provision "shell", path: "provision.sh"

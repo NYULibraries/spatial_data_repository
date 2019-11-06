@@ -31,3 +31,4 @@
 /.vagrant
 /sdr.box
 .byebug_history
+*cloudimg-console.log

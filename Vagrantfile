@@ -78,7 +78,6 @@ Vagrant.configure(2) do |config|
     sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password rootpass'
     sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password rootpass'
     sudo apt-get -y install mysql-server
-
     sudo apt-get -y autoremove
 
     # install + load rvm
@@ -93,6 +92,4 @@ Vagrant.configure(2) do |config|
     gem install --user-install bundler
     cd /vagrant/sdr && bundle install
   SHELL
-
-  # config.vm.provision "shell", path: "provision.sh"
 end

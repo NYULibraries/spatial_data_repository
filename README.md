@@ -1,5 +1,7 @@
 # NYU Spatial Data Repository
 
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/NYULibraries/spatial_data_repository)
+
 This repository tracks the implementation of GeoBlacklight used to power the front-end of NYU Libraries [Spatial Data Repository](https://geo.nyu.edu)
 
 Check out the [wiki](https://github.com/NYULibraries/spatial_data_repository/wiki) for details about local modifications, as well as a detailed overview of the service architecture. The information here is designed to allow you to deploy a test instance of GeoBlacklight via a virtual machine (VM).

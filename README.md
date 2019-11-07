@@ -1,6 +1,6 @@
-# NYU Spatial Data Repository
+# NYU Spatial Data Repository 🗺️
 
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/NYULibraries/spatial_data_repository)](https://libraries.io/github/NYULibraries/spatial_data_repository)
+[![Maintainability](https://api.codeclimate.com/v1/badges/080a26a69fcbdb0e6286/maintainability)](https://codeclimate.com/github/NYULibraries/spatial_data_repository/maintainability) [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/NYULibraries/spatial_data_repository)](https://libraries.io/github/NYULibraries/spatial_data_repository)
 
 This repository tracks the implementation of GeoBlacklight used to power the front-end of NYU Libraries [Spatial Data Repository](https://geo.nyu.edu)
 

@@ -16,14 +16,14 @@ gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'figs'
 
 # Loads NYU Libaries omniauth strategy
-gem 'omniauth-nyulibraries', github: 'NYULibraries/omniauth-nyulibraries', tag: 'v2.1.2'
+gem 'omniauth-nyulibraries', git: 'https://github.com/NYULibraries/omniauth-nyulibraries', tag: 'v2.1.2'
 gem 'devise', '>= 3.4.1'
 
 gem 'rsolr'
-gem 'solr_wrapper', '~> 2.0'
+gem 'solr_wrapper', '~> 2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0'
+gem 'rails', '5.0.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -63,9 +63,9 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'spring'
-  gem 'sqlite3'
 end
 
+<<<<<<< HEAD
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -76,3 +76,7 @@ group :production do
   # MySQL for Rails backend dbter
   gem 'mysql2', '~> 0.3.20'
 end
+=======
+gem 'sqlite3', '~> 1.3.6'
+gem 'mysql2', '~> 0.3.20'
+>>>>>>> sprint/master

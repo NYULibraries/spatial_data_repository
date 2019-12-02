@@ -34,6 +34,9 @@
   "layer_slug_s": "4669301e-b4b2-4c8b-bf40-01b968a2865b",
   "layer_geom_type_s": "Point",
   "layer_modified_dt": "2018-08-02T17:05:54Z",
+  "nyu_addl_format_sm": [
+    "Shapefile"
+  ],
   "solr_geom": "ENVELOPE(-87.9324, -86.2569, 39.8521, 37.8626)",
   "solr_year_i": 2003,
   "geoblacklight_version": "1.0"

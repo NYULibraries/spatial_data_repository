@@ -15,7 +15,7 @@ module NyuGeoblacklight
     def CuratedCollections.recent
       [
           {title: "2015 Dublin LiDAR", description: "High-density LiDAR datasets of Dublin, from Debra Laefer (NYU) and collaborators", f: {"dct_isPartOf_sm" => ["2015 Dublin LiDAR"]}},
-          {title: "Mexico Encuesta Intercensal 2015", description: "Layers from the 2015 Mexican Intercensal Survey", f: {"dct_isPartOf_sm" => ["Encuesta Intercensal 2015"]}},
+          {title: "2004 New York State Tax Parcels", description: "Point data on property ownership and land value", f: {"dct_isPartOf_sm" => ["NYS GIS Clearinghouse"]}},
           {title: "Soviet Topographic Maps of the Arabian Peninsula", description: "Raster scans of Soviet military topographic maps produced in the late 1970s", f: { "dc_publisher_s" => ["Omni Resources (Firm)"]}}
       ]
     end

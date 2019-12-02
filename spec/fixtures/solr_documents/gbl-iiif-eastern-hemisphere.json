@@ -24,6 +24,9 @@
   "layer_slug_s": "57f0f116-b64e-4773-8684-96ba09afb549",
   "layer_geom_type_s": "Image",
   "layer_modified_dt": "2018-08-02T16:28:36Z",
+  "nyu_addl_format_sm": [
+    "TIFF"
+  ],
   "solr_geom": "ENVELOPE(25, -168.35, 81.66, -12.93)",
   "solr_year_i": 1750,
   "geoblacklight_version": "1.0"

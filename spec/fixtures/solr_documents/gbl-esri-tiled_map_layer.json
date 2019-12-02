@@ -16,6 +16,9 @@
   "layer_slug_s": "nyu-test-soil-survey-map",
   "layer_id_s": "test-soil-survey_map",
   "layer_geom_type_s": "Raster",
+  "nyu_addl_format_sm": [
+    "Raster"
+  ],
   "layer_modified_dt": "2015-06-16T00:59:49Z",
   "solr_geom": "ENVELOPE(-129.4956, -64.4393, 48.6336, 21.8079)",
   "solr_year_i": 2010

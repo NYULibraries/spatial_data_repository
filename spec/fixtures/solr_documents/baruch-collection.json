@@ -32,5 +32,8 @@
   ],
   "solr_geom": "ENVELOPE(-74.2555913638125, -73.7000090638712, 40.9155327760001, 40.4961153952116)",
   "solr_year_i": 2016,
+  "nyu_addl_format_sm": [
+    "Shapefile"
+  ],
   "geoblacklight_version": "1.0"
 }

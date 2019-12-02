@@ -25,6 +25,9 @@
   ],
   "dct_temporal_sm": "1972-1997",
   "layer_geom_type_s": "Mixed",
+  "nyu_addl_format_sm": [
+    "Shapefile"
+  ],
   "layer_id_s": "0",
   "layer_modified_dt": "2016-06-20T16:17:36Z",
   "layer_slug_s": "purdue-urn-f082acb1-b01e-4a08-9126-fd62a23fd9aa",

@@ -31,7 +31,4 @@
 /.vagrant
 /sdr.box
 .byebug_history
-<<<<<<< HEAD
-=======
 *cloudimg-console.log
->>>>>>> sprint/master

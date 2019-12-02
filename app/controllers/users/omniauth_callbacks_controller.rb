@@ -74,6 +74,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def omniauth_identities
+    #byebug
     @omniauth_identities ||= omniauth.extra.identities
   end
 

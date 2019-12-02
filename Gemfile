@@ -65,5 +65,18 @@ group :development, :test do
   gem 'spring'
 end
 
+<<<<<<< HEAD
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end
+
+group :production do
+  # MySQL for Rails backend dbter
+  gem 'mysql2', '~> 0.3.20'
+end
+=======
 gem 'sqlite3', '~> 1.3.6'
 gem 'mysql2', '~> 0.3.20'
+>>>>>>> sprint/master

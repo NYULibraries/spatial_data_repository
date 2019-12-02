@@ -28,6 +28,9 @@ vagrant up
 vagrant ssh
 cd /vagrant/sdr
 
+# Bundle - Install project gem dependencies
+bundle
+
 # FIGS - Set Dev/Test ENV variables
 cp config/vars.yml.example config/vars.yml
 

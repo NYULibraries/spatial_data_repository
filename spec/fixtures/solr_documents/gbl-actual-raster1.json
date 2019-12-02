@@ -33,9 +33,6 @@
   ],
   "solr_geom": "ENVELOPE(-121.7948738, -121.7389503, 36.8606925, 36.8085911)",
   "solr_year_i": 2005,
-  "nyu_addl_format_sm": [
-    "Raster"
-  ],
   "stanford_rights_metadata_s": "<?xml version=\"1.0\"?>\n<rightsMetadata>\n  <access type=\"discover\">\n    <machine>\n      <world/>\n    </machine>\n  </access>\n  <access type=\"read\">\n    <machine>\n      <group>Stanford</group>\n    </machine>\n  </access>\n  <use>\n    <human type=\"useAndReproduction\">These data are licensed by Stanford Libraries and are available to Stanford University affiliates only. Affiliates are limited to current faculty, staff and students. These data may not be reproduced or used for any purpose without permission. For more information please contact brannerlibrary@stanford.edu.</human>\n    <human type=\"creativeCommons\"/>\n    <machine type=\"creativeCommons\"/>\n  </use>\n  <copyright>\n    <human>Copyright ownership resides with the originator.</human>\n  </copyright>\n</rightsMetadata>\n",
   "geoblacklight_version": "1.0"
 }

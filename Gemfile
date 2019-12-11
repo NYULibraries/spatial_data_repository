@@ -54,10 +54,10 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'web-console'
-  # gem 'capybara' # capybara requires ruby >=2.4
-  # gem 'capybara-screenshot'
+  gem 'capybara' # capybara requires ruby >=2.4
+  gem 'capybara-screenshot'
   gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.5'
@@ -65,4 +65,4 @@ group :development, :test do
 end
 
 gem 'sqlite3', '~> 1.3.6'
-gem 'mysql2', '~> 0.3.20'
+gem 'mysql2', '~> 0.4'

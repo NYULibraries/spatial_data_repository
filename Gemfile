@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 gem 'blacklight'
 gem 'geoblacklight', '~> 1.9.0'
-#gem 'geoblacklight', '~> 1.4.0'
 
 
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
@@ -23,7 +22,7 @@ gem 'rsolr'
 gem 'solr_wrapper', '~> 2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0'
+gem 'rails', '5.0.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,18 +54,15 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'web-console'
-  gem 'capybara'
+  gem 'capybara' # capybara requires ruby >=2.4
   gem 'capybara-screenshot'
   gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'spring'
-  gem 'sqlite3'
 end
 
-group :production do
-  # MySQL for Rails backend dbter
-  gem 'mysql2', '~> 0.3.20'
-end
+gem 'sqlite3', '~> 1.3.6'
+gem 'mysql2', '~> 0.4'

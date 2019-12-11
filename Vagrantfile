@@ -56,7 +56,6 @@ Vagrant.configure(2) do |config|
     cd /vagrant/sdr && bundle install
   SCRIPT
 
-
   config.vm.provision :shell, inline: $apt_script
   config.vm.provision :shell, privileged: false, inline: $rbenv_script
 end

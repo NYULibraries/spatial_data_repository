@@ -1,20 +1,20 @@
-# Contributing
-NYU's Spatial Data Repository (SDR) is a collaborative open source project where contributions are :sparkles:welcome:sparkles:.
+# Contributing:sparkles:
+NYU's Spatial Data Repository (SDR) is a collaborative open source project where contributions are welcome.  
 This contributing guide is borrowed in part from [Geoblacklight](https://github.com/geoblacklight/geoblacklight/blob/master/CONTRIBUTING.md).
 
 ## Who can contribute?
 Anyone is welcome to contribute to the SDR, though the core group at NYU will need to discuss and vet pull requests.
-We follow a set of contribution practices to maintain a technically sustainable and stable software project.
+We follow a set of contribution practices to maintain a socially inclusive and technically sustainable software project. For more information, please visit our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## What kinds of contributions are wanted?
-- Requesting bug fixes ❓🐛 (submitted as [GitHub issues](#adding-github-issues))
-- Requesting features ❓🎉 (submitted as [GitHub issues](#adding-github-issues))
-- Requesting documentation ❓📄 (submitted as [GitHub issues](#adding-github-issues))
+- Requesting bug fixes ⁉️🐛 (submitted as [GitHub issues](#adding-github-issues))
+- Requesting features ⁉️🎉 (submitted as [GitHub issues](#adding-github-issues))
+- Requesting documentation ⁉️📄 (submitted as [GitHub issues](#adding-github-issues))
 - Committing bug fixes ➕🐛(submitted as [pull requests](#submitting-pull-requests))
 - Committing features ➕🎉 (submitted as [pull requests](#submitting-pull-requests))
 - Committing documentation ➕📄 (submitted as [pull requests](#submitting-pull-requests))
 
-## Adding GitHub issues
+## How to add a GitHub issue 
 Did you find a bug in the SDR or interested in a new feature? Make sure to add an issue for it in the [issue tracker](https://github.com/NYULibraries/spatial_data_repository/issues).
 
  - Make sure you have a [GitHub account](https://github.com/signup/free)
@@ -28,7 +28,7 @@ Did you find a bug in the SDR or interested in a new feature? Make sure to add a
 When proposing major new features or changes that may introduce an API or schema change, please make sure to communicate this so the full implications are understood.
 Likely there are ways to introduce these changes in a backwards compatible way that others may be able to help with.
 
-## Submitting Pull Requests
+## How to submit a pull request
 
 Do you have software fixes or documentation changes to contribute to the codebase directly? If so, you'll need to create a pull request by:
 

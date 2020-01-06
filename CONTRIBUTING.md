@@ -14,7 +14,7 @@ We follow a set of contribution practices to maintain a technically sustainable 
 - Committing documentation updates (submitted as pull requests)
 
 ## Adding GitHub issues
-Did you find a bug in GeoBlacklight or interested in a new feature? Make sure to add an issue for it in the [issue tracker](https://github.com/geoblacklight/geoblacklight/issues).
+Did you find a bug in the SDR or interested in a new feature? Make sure to add an issue for it in the [issue tracker](https://github.com/NYULibraries/spatial_data_repository/issues).
 
  - Make sure you have a [GitHub account](https://github.com/signup/free)
  - Submit a [GitHub issue](./issues) by:
@@ -24,12 +24,28 @@ Did you find a bug in GeoBlacklight or interested in a new feature? Make sure to
     - Explain the actual behavior
     - Provide steps to reproduce the actual behavior
 
-When proposing major new features or changes that may introduce an API or schema change, please make sure to communicate with the community so the full implications are understood.
+When proposing major new features or changes that may introduce an API or schema change, please make sure to communicate this so the full implications are understood.
 Likely there are ways to introduce these changes in a backwards compatible way that others may be able to help with.
 
 ## Submitting Pull Requests
+
+Do you have software fixes or documentation changes to contribute to the codebase directly? If so, you'll need to create a pull request by:
+
+ - Making sure you have a [GitHub account](https://github.com/signup/free)
+ - Cloning the `spatial_data_repository` repo
+ - Checking out a new branch with a name that describes your discrete change
+ - Making your changes
+ - Committing your changes
+ - Pushing your changes + the branch that they're on
+ - Opening a [pull request](https://github.com/NYULibraries/spatial_data_repository/pulls) with clear description of changes, referencing open issues they address where possible
+ 
+For more robust information about the above steps, see Development Guide below.
 
 
 ## Software Versioning
 The SDR follows the practice of [Semantic Versioning](https://semver.org/) for software releases, tracking the versioning for Geoblacklight where possible.
 The version for a given release is recorded in the `VERSION` file in the project root.
+
+## Development Guide
+
+

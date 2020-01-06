@@ -1,4 +1,4 @@
-# Contributing:sparkles:
+# :sparkles:Contributing:sparkles:
 NYU's Spatial Data Repository (SDR) is a collaborative open source project where contributions are welcome.  
 This contributing guide is borrowed in part from [Geoblacklight](https://github.com/geoblacklight/geoblacklight/blob/master/CONTRIBUTING.md).
 
@@ -57,5 +57,29 @@ The SDR follows the practice of [Semantic Versioning](https://semver.org/) for s
 The version for a given release is recorded in the `VERSION` file in the project root.
 
 ## Development Guide
+
+- Install [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) on your local machine. If you are on Mac and have [Homebrew](https://brew.sh/) installed, `brew cask install virtualbox && brew cask install vagrant` should be sufficent. If not, submit an [issue](https://github.com/NYULibraries/spatial_data_repository/issues)!
+
+- Clone the master branch of the SDR to your desktop with  `cd ~/Desktop && git clone https://github.com/NYULibraries/spatial_data_repository.git`
+
+- Change directory into the local SDR `cd ~/Desktop/spatial_data_repository`
+
+- Start the virtual machine with `vagrant up`, then enter it with `vagrant ssh`
+
+- Within the VM, change directory with `cd /vagrant/sdr`
+
+- Load the database schema with `bundle exec rake db:schema:load`
+
+- Start the Solr + SDR servers with `bundle exec rake sdr:server`
+- Open the development SDR running locally in your browser at http://localhost:3000
+
+- Test your changes by editing the project files using your favorite text editor, e.g., [Atom](https://atom.io/)
+
+- When you are done:
+  + quit the webserver with `Ctl-C`
+  + exit the virtual machine by typing the command `exit`
+  + stop the virtual machine with the command `vagrant halt`
+  
+- If you have changes to contribute, submit a pull request (see [above](#how-to-submit-a-pull-request))
 
 

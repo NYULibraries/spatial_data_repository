@@ -6,7 +6,9 @@ This repository tracks the implementation of GeoBlacklight used to power the fro
 
 Check out the [wiki](https://github.com/NYULibraries/spatial_data_repository/wiki) for details about local modifications, as well as a detailed overview of the service architecture. The information here is designed to allow you to deploy a test instance of GeoBlacklight via a virtual machine (VM).
 
-## Development
+## Quickstart Guide
+
+Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](CONTRIBUTING.md). 
 
 ### Vagrant / Virtualbox
 

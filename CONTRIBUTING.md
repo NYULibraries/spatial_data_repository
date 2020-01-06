@@ -7,11 +7,12 @@ Anyone is welcome to contribute to the SDR, though the core group at NYU will ne
 We follow a set of contribution practices to maintain a technically sustainable and stable software project.
 
 ## What kinds of contributions are wanted?
-- Requesting bug fixes (submitted as GitHub issues)
-- Requesting features (submitted as GitHub issues)
-- Requesting documentation (submitted as GitHub issues)
-- Committing bug fixes (submitted as pull requests)
-- Committing documentation updates (submitted as pull requests)
+- Requesting bug fixes ❓🐛 (submitted as [GitHub issues](#adding-github-issues))
+- Requesting features ❓🎉 (submitted as [GitHub issues](#adding-github-issues))
+- Requesting documentation ❓📄 (submitted as [GitHub issues](#adding-github-issues))
+- Committing bug fixes ➕🐛(submitted as [pull requests](#submitting-pull-requests))
+- Committing features ➕🎉 (submitted as [pull requests](#submitting-pull-requests))
+- Committing documentation ➕📄 (submitted as [pull requests](#submitting-pull-requests))
 
 ## Adding GitHub issues
 Did you find a bug in the SDR or interested in a new feature? Make sure to add an issue for it in the [issue tracker](https://github.com/NYULibraries/spatial_data_repository/issues).

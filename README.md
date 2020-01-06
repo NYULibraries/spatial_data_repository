@@ -4,21 +4,19 @@
 
 This repository tracks the implementation of GeoBlacklight used to power the front-end of NYU Libraries [Spatial Data Repository](https://geo.nyu.edu)
 
-Check out the [wiki](https://github.com/NYULibraries/spatial_data_repository/wiki) for details about local modifications, as well as a detailed overview of the service architecture. The information here is designed to allow you to deploy a test instance of GeoBlacklight via a virtual machine (VM).
+## Links
 
-## Quickstart Guide
+- [Wiki](https://github.com/NYULibraries/spatial_data_repository/wiki)
+- [Code of Conduct](docs/CODE_OF_CONDUCT.md)
+- [Contributing Guide](docs/CONTRIBUTING.md)
 
-Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](docs/CONTRIBUTING.md). 
 
-### Vagrant / Virtualbox
+## Development Quickstart
 
-It is required to install Vagrant and VirtualBox one time on your local machine.
+Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](docs/CONTRIBUTING.md#development-guide). 
 
-* Install Vagrant: https://www.vagrantup.com/downloads.html
-* Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
-
-#### Run app via these commands in order specified
-
+- Make sure you have Git, Vagrant, and VirtualBox installed. 
+- Run the commands below in order specified:
 ```bash
 
 cd <project-root>
@@ -30,9 +28,6 @@ vagrant up
 vagrant ssh
 cd /vagrant/sdr
 
-# Bundle - Install project gem dependencies
-bundle
-
 # FIGS - Set Dev/Test ENV variables
 cp config/vars.yml.example config/vars.yml
 
@@ -43,7 +38,5 @@ bundle exec rake db:schema:load
 bundle exec rake sdr:server
 ```
 
-The application should now be running.
-
-* To view to test environment Solr admin panel, go to: http://localhost:8983/
-* To view the operating GeoBlacklight Rails app, go to: http://localhost:3000
+- View to test environment Solr admin panel: http://localhost:8983/
+- View the operating GeoBlacklight Rails app: http://localhost:3000

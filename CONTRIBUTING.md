@@ -2,6 +2,15 @@
 NYU's Spatial Data Repository (SDR) is a collaborative open source project where contributions are welcome.  
 This contributing guide is borrowed in part from [Geoblacklight](https://github.com/geoblacklight/geoblacklight/blob/master/CONTRIBUTING.md).
 
+Contents:
+- [Who can contribute?](#who-can-contribute)
+- [What kinds of contributions are wanted?](#what-kinds-of-contributions-are-wanted)
+- [How to add a GitHub issue](#how-to-add-a-github-issue)
+- [How to submit a pull request](#how-to-submit-a-pull-request)
+- [Software Versioning](#software-versioning)
+- [Development Guide](#development-guide)
+
+
 ## Who can contribute?
 Anyone is welcome to contribute to the SDR, though the core group at NYU will need to discuss and vet pull requests.
 We follow a set of contribution practices to maintain a socially inclusive and technically sustainable software project. For more information, please visit our [Code of Conduct](CODE_OF_CONDUCT.md).
@@ -40,7 +49,7 @@ Do you have software fixes or documentation changes to contribute to the codebas
  - Pushing your changes + the branch that they're on
  - Opening a [pull request](https://github.com/NYULibraries/spatial_data_repository/pulls) with clear description of changes, referencing open issues they address where possible
  
-For more robust information about the above steps, see Development Guide below.
+For more robust information about the above steps, see the [Development Guide](#development-guide) below.
 
 
 ## Software Versioning

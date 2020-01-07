@@ -1,6 +1,6 @@
-# GeoBlacklight Code of Conduct
+# NYU SDR Code of Conduct
 
-GeoBlacklight is a collaborative project that welcomes participation from anyone interested in contributing to an open source discovery platform for GIS data.  Involvement need not be in the form of contributing code. Members from across the geospatial professional spectrum are welcome to become involved in a way that fits their interests and expertise.  Diversity of backgrounds is an asset to the project, as it is to many open source projects. Consequently, GeoBlacklight adheres to the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/) as guiding principles for our work together.
+NYU's Spatial Data Repository (SDR) is a collaborative project that welcomes participation from anyone interested in contributing to an open source discovery platform for GIS data.  Involvement need not be in the form of contributing code. Members from across the geospatial professional spectrum are welcome to become involved in a way that fits their interests and expertise.  Diversity of backgrounds is an asset to the project, as it is to many open source projects. Consequently, the SDR adheres to the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/) as guiding principles for our work together.
 
 ## Contributor Covenant Code of Conduct
 

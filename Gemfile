@@ -31,6 +31,7 @@ group :development, :test do
   gem 'capybara-screenshot'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
+  gem 'geckodriver-helper'
   gem 'puma'
   gem 'rspec-rails', '~> 3.5'
   gem 'selenium-webdriver'

@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe 'Show page' do
   context 'Restricted NYU result - nyu-2451-34626' do
     it 'the displays warning message' do

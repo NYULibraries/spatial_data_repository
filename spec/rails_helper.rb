@@ -10,18 +10,15 @@ require 'selenium-webdriver'
 require 'devise'
 require 'factory_bot'
 
-Capybara.register_driver(:headless_chrome) do |app|
-  capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
-    chromeOptions: { args: %w(headless disable-gpu window-size=1280,1024) }
-  )
-
-  Capybara::Selenium::Driver.new(app,
-                                 browser: :chrome,
-                                 desired_capabilities: capabilities)
+Capybara.register_driver :firefox_headless do |app|
+  options = ::Selenium::WebDriver::Firefox::Options.new
+  options.args << '--headless'
+  Capybara::Selenium::Driver.new(app, browser: :firefox, options: options)
 end
 
-Capybara.default_driver = :headless_chrome
-Capybara.javascript_driver = :headless_chrome
+Capybara.javascript_driver = :firefox_headless
+Capybara.current_driver = Capybara.javascript_driver
+Capybara.server = :puma
 Capybara.default_max_wait_time = 15
 
 ActiveRecord::Migration.maintain_test_schema!

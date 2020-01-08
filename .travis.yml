@@ -1,7 +1,6 @@
 dist: trusty
 sudo: required
 language: ruby
-cache: bundler
 addons:
   chrome: stable
 global_env:
@@ -9,7 +8,7 @@ global_env:
 before_install:
   - gem update --system
   - gem install bundler
-  - google-chrome-stable --headless --disable-gpu --no-sandbox --remote-debugging-port=9222 http://localhost &
+  - google-chrome-stable --headless --disable-gpu --no-sandbox --disable-dev-shm-usage --remote-debugging-port=9222 http://localhost &
 script:
   - cp config/vars.yml.example config/vars.yml
   - bundle exec rake db:schema:load

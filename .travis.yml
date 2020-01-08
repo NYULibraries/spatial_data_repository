@@ -3,12 +3,16 @@ language: ruby
 rvm:
   - 2.5
   - 2.6
-before_install:
-  - gem update --system
-  - gem install bundler
 addons:
   chrome: stable
 git:
   depth: 1
+before_install:
+  - docker pull solr:7
+  - docker run -d -p 8983:8983 -v $PWD/lib/generators/blacklight/templates/solr/conf:/myconfig solr:7 solr-create -c blacklight-core -d /myconfig
+  - docker ps -a
+  - google-chrome-stable --headless --disable-gpu --no-sandbox --remote-debugging-port=9222 http://localhost &
+  - gem update --system
+  - gem install bundler
 script:
   - bundle exec rake ci

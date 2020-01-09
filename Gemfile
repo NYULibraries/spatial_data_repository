@@ -36,6 +36,5 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'selenium-webdriver'
   gem 'spring'
-  gem 'webdrivers'
   gem 'web-console'
 end

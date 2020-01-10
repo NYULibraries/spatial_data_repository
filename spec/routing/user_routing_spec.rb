@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe 'routes for users' do
   describe 'GET /users/auth/nyulibraries' do
     subject { get('/users/auth/nyulibraries') }

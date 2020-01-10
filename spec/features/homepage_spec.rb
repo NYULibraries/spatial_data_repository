@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe 'Homepage' do
   describe 'DOM' do
     it 'has Featured Collections' do

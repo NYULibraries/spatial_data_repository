@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe 'Search' do
   describe 'Spelling suggestions' do
     it 'are turned on' do

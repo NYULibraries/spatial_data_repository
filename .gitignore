@@ -32,3 +32,6 @@
 /sdr.box
 .byebug_history
 *cloudimg-console.log
+
+# Ingore mac junk
+.DS_Store

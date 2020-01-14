@@ -1,4 +1,4 @@
-# NYU Spatial Data Repository 🗺️
+# NYU Spatial Data Repository
 
 [![Build Status](https://travis-ci.org/NYULibraries/spatial_data_repository.svg?branch=master)](https://travis-ci.org/NYULibraries/spatial_data_repository) ![Supported Ruby Version](https://img.shields.io/badge/ruby%20version-2.5.7-green?style=flat-square) [![Maintainability](https://api.codeclimate.com/v1/badges/080a26a69fcbdb0e6286/maintainability?style=flat-square)](https://codeclimate.com/github/NYULibraries/spatial_data_repository/maintainability) [![Depfu](https://badges.depfu.com/badges/87261b603e6941c0578dd5de1225650f/count.svg)](https://depfu.com/github/NYULibraries/spatial_data_repository?project_id=10547)
 
@@ -17,26 +17,15 @@ Below are barebones steps for getting started in development for the SDR. For mo
 
 - Make sure you have Git, Vagrant, and VirtualBox installed. 
 - Run the commands below in order specified:
-```bash
-
-cd <project-root>
-
-# If you have never run vagrant, run "up" command to provision VM
-vagrant up
-
-# If you have previously run vagrant "up", just run "ssh"
-vagrant ssh
-cd /vagrant/sdr
-
-# FIGS - Set Dev/Test ENV variables
-cp config/vars.yml.example config/vars.yml
-
-# Load database schema
-bundle exec rake db:schema:load
-
-# Run Solr and Rails App server
-bundle exec rake sdr:server
-```
+  ```sh
+  $ git clone https://github.com/NYULibraries/spatial_data_repository.git && cd spatial_data_repository
+  $ vagrant up
+  $ vagrant ssh
+  $ cd /vagrant/sdr
+  $ cp config/vars.yml.example config/vars.yml
+  $ bundle exec rake db:schema:load
+  $ bundle exec rake sdr:server
+  ```
 
 - View to test environment Solr admin panel: http://localhost:8983/
 - View the operating GeoBlacklight Rails app: http://localhost:3000

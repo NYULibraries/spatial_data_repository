@@ -9,7 +9,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'mysql2', '~> 0.4'
 gem 'omniauth-nyulibraries', git: 'https://github.com/NYULibraries/omniauth-nyulibraries', tag: 'v2.1.2'
-gem 'rails', '5.0.7'
+gem 'rails', '5.0.7.2'
 gem 'rsolr'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc

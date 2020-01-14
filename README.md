@@ -1,6 +1,6 @@
 # NYU Spatial Data Repository 🗺️
 
-[![Build Status](https://travis-ci.org/NYULibraries/spatial_data_repository.svg?branch=master)](https://travis-ci.org/NYULibraries/spatial_data_repository) ![Supported Ruby Version](https://img.shields.io/badge/ruby%20version-2.5.7-green?style=flat-square) [![Maintainability](https://api.codeclimate.com/v1/badges/080a26a69fcbdb0e6286/maintainability?style=flat-square)](https://codeclimate.com/github/NYULibraries/spatial_data_repository/maintainability)  [![Dependencies](https://img.shields.io/librariesio/github/NYULibraries/spatial_data_repository?style=flat-square)](https://libraries.io/github/NYULibraries/spatial_data_repository)
+[![Build Status](https://travis-ci.org/NYULibraries/spatial_data_repository.svg?branch=master)](https://travis-ci.org/NYULibraries/spatial_data_repository) ![Supported Ruby Version](https://img.shields.io/badge/ruby%20version-2.5.7-green?style=flat-square) [![Maintainability](https://api.codeclimate.com/v1/badges/080a26a69fcbdb0e6286/maintainability?style=flat-square)](https://codeclimate.com/github/NYULibraries/spatial_data_repository/maintainability) [![Depfu](https://badges.depfu.com/badges/87261b603e6941c0578dd5de1225650f/count.svg)](https://depfu.com/github/NYULibraries/spatial_data_repository?project_id=10547)
 
 This repository tracks the implementation of GeoBlacklight used to power the front-end of NYU Libraries [Spatial Data Repository](https://geo.nyu.edu)
 

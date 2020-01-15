@@ -1,4 +1,13 @@
-// basemaps
+//= require handlebars.runtime
+//= require geoblacklight/geoblacklight
+//= require geoblacklight/controls
+//= require geoblacklight/viewers
+//= require geoblacklight/modules
+//= require geoblacklight/downloaders
+//= require leaflet-iiif
+//= require esri-leaflet
+//= require readmore.min
+//= require Leaflet.fullscreen.js
 
 GeoBlacklight.Basemaps = {
   darkMatter: L.tileLayer(

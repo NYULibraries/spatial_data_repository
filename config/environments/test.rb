@@ -42,4 +42,6 @@ Rails.application.configure do
 
   # Enable Web console
   config.web_console.development_only = false
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
 end

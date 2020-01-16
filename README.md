@@ -7,6 +7,7 @@ This repository tracks the implementation of GeoBlacklight used to power the fro
 ## Links
 
 - [Wiki](https://github.com/NYULibraries/spatial_data_repository/wiki)
+- [Documentation Repo](https://github.com/NYULibraries/sdr-documentation)
 - [Code of Conduct](docs/CODE_OF_CONDUCT.md)
 - [Contributing Guide](docs/CONTRIBUTING.md)
 

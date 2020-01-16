@@ -35,3 +35,6 @@
 
 # Ingore mac junk
 .DS_Store
+
+# Ignore test coverage
+/coverage

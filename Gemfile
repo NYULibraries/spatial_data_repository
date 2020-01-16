@@ -31,7 +31,9 @@ group :development, :test do
   gem 'geckodriver-helper'
   gem 'puma'
   gem 'rspec-rails'
+  gem 'rubocop'
   gem 'selenium-webdriver'
+  gem 'simplecov'
   gem 'spring'
   gem 'web-console'
 end

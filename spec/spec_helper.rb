@@ -2,13 +2,18 @@
 ENV['RAILS_ENV'] ||= 'test'
 
 require File.expand_path('../../config/environment', __FILE__)
-require 'rspec/rails'
 require 'capybara/rspec'
 require 'capybara/rails'
 require 'capybara-screenshot/rspec'
-require 'selenium-webdriver'
 require 'devise'
 require 'factory_bot'
+require 'rspec/rails'
+require 'selenium-webdriver'
+require 'simplecov'
+
+SimpleCov.start do
+  add_filter 'spec'
+end
 
 Capybara.register_driver :firefox_headless do |app|
   options = ::Selenium::WebDriver::Firefox::Options.new

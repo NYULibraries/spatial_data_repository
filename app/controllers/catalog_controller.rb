@@ -222,8 +222,8 @@ class CatalogController < ApplicationController
 
     # Us this menu to configure basemap provider for GeoBlacklight maps (uses https only basemap
     # providers with open licenses)
-    
-    config.basemap_provider = 'positronLite'
+
+    config.basemap_provider = 'positron'
 
 
     # Configuration for autocomplete suggestor

@@ -45,7 +45,7 @@
     </div>
     <div class='col-md-6 text-center'>
       <%= content_tag :h3, t('geoblacklight.home.map_heading') %>
-      <%= content_tag :div, '', id: 'map', data: {map: 'home', 'catalog-path' => search_catalog_path, 'map-bbox' => params[:bbox], basemap: geoblacklight_basemap, leaflet_options: leaflet_options} %>
+      <%= content_tag :div, '', id: 'map', data: {map: 'home', 'catalog-path' => search_catalog_path, 'map-bbox' => '-73.8 40.6 -74.4 41.1', basemap: geoblacklight_basemap, leaflet_options: leaflet_options} %>
     </div>
   </div>
 

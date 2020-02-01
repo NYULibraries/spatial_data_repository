@@ -93,7 +93,7 @@ GEM
       deep_merge (~> 1.2, >= 1.2.1)
       dry-validation (~> 1.0, >= 1.0.0)
     crass (1.0.6)
-    database_cleaner (1.7.0)
+    database_cleaner (1.8.1)
     deep_merge (1.2.1)
     deprecation (1.0.0)
       activesupport

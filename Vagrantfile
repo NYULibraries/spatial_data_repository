@@ -12,18 +12,21 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest: 8983, host: 8983, auto_correct: true
   config.vm.network "forwarded_port", guest: 3000, host: 3000, auto_correct: true
 
+  config.vm.network :private_network, ip: "192.168.50.50",
+    virtualbox__hostonly: true
+
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"
   end
 
+  # Run ansible provisioning
+  config.vm.provision :ansible do |ansible|
+    ansible.config_file = "./ansible/ansible.cfg"
+    ansible.playbook = "./ansible/playbook.yml"
+    #ansible.start_at_task = "Task name"
+  end
+
   $apt_script = <<-SCRIPT
-    sudo apt-get update
-    sudo apt-get install -y apache2 curl git nodejs gcc bzip2 dkms software-properties-common libmysqlclient-dev g++ firefox libsqlite3-dev
-
-    sudo add-apt-repository -y ppa:openjdk-r/ppa
-    sudo apt-get update
-    sudo apt-get install -y openjdk-8-jdk
-
     sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password rootpass'
     sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password rootpass'
     sudo apt-get -y install mysql-server
@@ -58,4 +61,5 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :shell, inline: $apt_script
   config.vm.provision :shell, privileged: false, inline: $rbenv_script
+
 end

@@ -1,0 +1,39 @@
+---
+- name: "Vagrant Ansible SDR"
+  hosts: all
+  become: True
+  vars:
+    - var_example: "Marii"
+  tasks:
+    - name: Set motd
+      copy:
+        content: "Welcome to SDR, {{ var_example }}"
+        dest: /etc/motd
+        mode: 0644
+
+    - name: Add openjdk repo
+      apt_repository:
+        repo: ppa:openjdk-r/ppa
+
+    - name: Install packages
+      apt:
+        name:
+          - apache2
+          - curl
+          - git
+          - nodejs
+          - gcc
+          - bzip2
+          - dkms
+          - software-properties-common
+          - libmysqlclient-dev
+          - g++
+          - firefox
+          - libsqlite3-dev
+          - openjdk-8-jdk
+        state: present
+
+    - name: Update all packages
+      apt:
+        name: "*"
+        state: latest

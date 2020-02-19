@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
   $apt_script = <<-SCRIPT
     sudo apt-get update
-    sudo apt-get install -y apache2 curl git nodejs gcc bzip2 dkms software-properties-common libmysqlclient-dev g++ firefox libsqlite3-dev
+    sudo apt-get install -y apache2 curl git nodejs gcc bzip2 dkms software-properties-common libreadline-dev libmysqlclient-dev g++ firefox libsqlite3-dev
 
     sudo add-apt-repository -y ppa:openjdk-r/ppa
     sudo apt-get update

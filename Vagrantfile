@@ -44,7 +44,7 @@ Vagrant.configure(2) do |config|
     export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
     eval "$(rbenv init -)"
     if [ ! -e .rbenv/versions/#{RUBY_V} ]; then
-      rbenv install #{RUBY_V}
+      RUBY_CONFIGURE_OPTS=--disable-install-doc rbenv install #{RUBY_V}
       rbenv global #{RUBY_V}
     fi
     cd /vagrant

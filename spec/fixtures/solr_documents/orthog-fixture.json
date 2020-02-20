@@ -3,9 +3,9 @@
     "Debra F. Laefer",
     "Anh-Vu Vo"
   ],
-  "dc_description_s": "This collection record provides a way to consume parts of the 2019 LiDAR Dataset for Sunset Park, Brooklyn NY. It is an index of the Diagonal flight paths",
+  "dc_description_s": "This collection record provides a way to consume parts of the 2019 LiDAR Dataset for Sunset Park, Brooklyn NY. It is an index to the Orthogonal flight paths",
   "dc_format_s": "GeoJSON",
-  "dc_identifier_s": "http://hdl.handle.net/2451/60459",
+  "dc_identifier_s": "http://hdl.handle.net/2451/60460",
   "dc_language_s": "English",
   "dc_publisher_s": "New York University. Center for Urban Science and Progress",
   "dc_rights_s": "Public",
@@ -16,9 +16,9 @@
     "Cities and towns--United States",
     "Remote Sensing",
     "Community development, Urban",
-    "Land use, urban"
+    "Land use, Urban"
   ],
-  "dc_title_s": "Index of Diagonal Flight Paths for LiDAR Data Collection in Sunset Park, Brooklyn, NY, 2019",
+  "dc_title_s": "Index of Orthogonal Flight Paths for LiDAR Data Collection in Sunset Park, Brooklyn, NY, 2019",
   "dc_type_s": "Dataset",
   "dct_isPartOf_sm": [
     "NYU Research Data",
@@ -26,7 +26,7 @@
   ],
   "dct_issued_s": "2019",
   "dct_provenance_s": "NYU",
-  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/60459\",\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"https://maps-public.geo.nyu.edu.geoserver/sdr/wms\", \"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenIndexMaps/edu.nyu/master/nyu-2451-60459.geojson\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/60460\",\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"https://maps-public.geo.nyu.edu/geoserver/sdr/wfs\",\"http://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenIndexMaps/edu.nyu/master/nyu-2451-60459.geojson\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
   "dct_source_sm": [
 
   ],
@@ -34,17 +34,15 @@
     "Sunset Park, Kings County, New York, United States",
     "Brooklyn, Kings County, New York, United States",
     "New York City, New York, United States"
-
   ],
   "dct_temporal_sm": [
     "2019"
   ],
   "geoblacklight_version": "1.0",
   "layer_geom_type_s": "Mixed",
-  "layer_id_s": "sdr:nyu_2451_60459",
   "layer_modified_dt": "2019-12-19T14:28:18Z",
-  "layer_slug_s": "nyu-2451-60459",
-  "nyu_addl_dspace_s": "61433",
+  "layer_slug_s": "nyu-2451-60460",
+  "nyu_addl_dspace_s": "61434",
   "nyu_addl_format_sm": [
     "GeoJSON"
   ],

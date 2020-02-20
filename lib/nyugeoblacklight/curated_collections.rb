@@ -14,15 +14,16 @@ module NyuGeoblacklight
 
     def CuratedCollections.recent
       [
-          {title: "2015 Dublin LiDAR", description: "High-density LiDAR datasets of Dublin, from Debra Laefer (NYU) and collaborators", f: {"dct_isPartOf_sm" => ["2015 Dublin LiDAR"]}},
+          {title: "2019 Sunset Park LiDAR", description: "High-density LiDAR datasets of Sunset Park, Brooklyn, from Debra Laefer (NYU) and collaborators", f: {"dct_isPartOf_sm" => ["2019 Sunset Park LiDAR"]}},
           {title: "2004 New York State Tax Parcels", description: "Point data on property ownership and land value", f: {"dct_isPartOf_sm" => ["NYS GIS Clearinghouse"]}},
-          {title: "Soviet Topographic Maps of the Arabian Peninsula", description: "Raster scans of Soviet military topographic maps produced in the late 1970s", f: { "dc_publisher_s" => ["Omni Resources (Firm)"]}}
+          {title: "2011 India Census Data", description: "Vector village-level demographic data from the 2011 India Census", f: { "dc_publisher_s" => ["ML InfoMap (Firm)"]}}
       ]
     end
 
     def CuratedCollections.maps
       [
           {title: "2015 Aerial Laser and Photogrammetry Survey of Dublin", slug: "nyu-2451-38684"},
+          {title: "2019 Aerial Lasar and Photogrammetry Survey of Sunset Park, Brooklyn", slug: "nyu-2451-60458"},
           {title: "China: Ch'ang-sha Region", slug: "harvard-ams7810-s250-u54-nh49-16"},
           {title: "1967 Communist China Agriculture", slug: "nyu-2451-36739"},
           {title: "2015 New York City Real Estate Sales", slug: "nyu-2451-34678"},

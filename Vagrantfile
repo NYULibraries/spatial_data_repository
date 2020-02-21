@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
   $apt_script = <<-SCRIPT
     sudo apt-get update
-    sudo apt-get install -y apache2 curl git nodejs gcc bzip2 dkms software-properties-common libmysqlclient-dev g++ firefox libsqlite3-dev
+    sudo apt-get install -y apache2 curl git nodejs gcc bzip2 dkms software-properties-common libreadline-dev libmysqlclient-dev g++ firefox libsqlite3-dev
 
     sudo add-apt-repository -y ppa:openjdk-r/ppa
     sudo apt-get update
@@ -44,7 +44,7 @@ Vagrant.configure(2) do |config|
     export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
     eval "$(rbenv init -)"
     if [ ! -e .rbenv/versions/#{RUBY_V} ]; then
-      rbenv install #{RUBY_V}
+      RUBY_CONFIGURE_OPTS=--disable-install-doc rbenv install #{RUBY_V}
       rbenv global #{RUBY_V}
     fi
     cd /vagrant

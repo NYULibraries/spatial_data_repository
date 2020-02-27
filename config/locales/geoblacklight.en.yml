@@ -4,7 +4,7 @@ en:
       headline: 'Find maps and data through NYU'
       search_heading: 'Get started here'
       category_heading: 'Browse by category'
-      map_heading: 'Search an area like NYC or zoom out to explore global results'
+      map_heading: 'Search or zoom out for global results'
     formats:
       arcgrid: 'ArcGRID'
       geojson: 'GeoJSON'

@@ -94,3 +94,21 @@ LEAFLET:
       <<: *opacity_control
     IMAGEMAPLAYER:
       <<: *opacity_control
+
+REQUIRED_ENVS:
+  development:
+    - SECRET_KEY_BASE
+    - DEVISE_SECRET_TOKEN
+    - SOLR_URL
+  production:
+    - SECRET_KEY_BASE
+    - DEVISE_SECRET_TOKEN
+    - SOLR_URL
+    - SQL_HOST
+    - SQL_PORT
+    - SQL_DB
+    - SQL_USER
+    - SQL_PASS
+    - APP_ID
+    - APP_SECRET
+    - LOGIN_URL

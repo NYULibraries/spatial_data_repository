@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'mysql2'
 gem 'omniauth-nyulibraries', git: 'https://github.com/NYULibraries/omniauth-nyulibraries', tag: 'v2.1.2'
 gem 'rails'
+gem 'rainbow'
 gem 'rsolr'
 gem 'sass-rails'
 gem 'sdoc', group: :doc

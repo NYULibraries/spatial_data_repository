@@ -1,0 +1,51 @@
+{
+  "dc_creator_sm": [
+    "Debra F. Laefer",
+    "Anh-Vu Vo"
+  ],
+  "dc_description_s": "This record serves as a point of entry into the aerial laser scanning (ALS) and photogrammetry data collection, which covers an area of about 0.5 km² in Sunset Park, Brooklyn, NY and was collected in April, 2019. The entire collection contains 242 data packages that correspond to 45 diagonal flights, 40 orthogonal flights, and 157 tiles that represent a LiDAR Point Cloud file in LAZ format. Future data releases will include 16 hyperspectral data files. In this 2019 Sunset Park collection, billions of laser points were acquired (inclusive of partially covered areas). ALS was carried out by contractors using a RIEGL LMS-Q680i LiDAR Scanner and an ITRES MicroCASI 1920 Hyperspectral Camera. The average flying altitude was approximately 1000 feet above ground level with a total of 85 flight paths (45 diagonal, 40 orthogonal). This data was harvested to obtain high accuracy models of the urban environment that can be used as a basis for urban informatics research and various practical applications, including digital mapping for auto navigation, pedestrian wind modeling, disability access optimization, and disaster mitigation. For full information on this data, consult the documentation and metadata. See the related datasets to access all parts of the collection. A collection-level manifest of SHA-256 checksums is available within the preservation record. Users may also find a stable link to this collection at https://doi.org/10.17609/4cpx-2h33/ and may download the collection in bulk via an NYU-provisioned Globus endpoint (see instructions in the metadata). This data is released with an Attribution 4.0 International (CC BY 4.0) license.",
+  "dc_format_s": "Mixed",
+  "dc_identifier_s": "http://hdl.handle.net/2451/60458",
+  "dc_language_s": "English",
+  "dc_publisher_s": "New York University. Center for Urban Science and Progress",
+  "dc_rights_s": "Public",
+  "dc_subject_sm": [
+    "Cities and towns",
+    "Urban density",
+    "Urban development",
+    "Cities and towns--United States",
+    "Remote Sensing",
+    "Community development, Urban",
+    "Land use, Urban"
+  ],
+  "dc_title_s": "Aerial Laser and Photogrammetry Survey of Sunset Park, Brooklyn, NY, Collection Record, 2019",
+  "dc_type_s": "Dataset",
+  "dct_isPartOf_sm": [
+    "NYU Research Data",
+    "2019 Sunset Park LiDAR"
+  ],
+  "dct_issued_s": "03/16/2020",
+  "dct_provenance_s": "NYU",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/60461\",\"http://schema.org/downloadUrl\":\"https://app.globus.org/file-manager?origin_id=73419098-207a-11ea-ab45-0a7959ea6081&origin_path=%2F\",\"https://www.oembed.com\":\"https://oembed.com\":\"https://sketchfab.com/oembed?url=https://sketchfab.com/3d-models/sp00074s-49754c6a6f08418da340ebfd44ac1ee3\",\"http://www.w3.org/1999/xhtml\":\"https://gitlab.cusp.nyu.edu/umg/www-projects/blob/master/1908-sunset/README.md\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
+    "dct_spatial_sm": [
+    "Sunset Park, Kings County, New York, United States",
+    "Brooklyn, Kings County, New York, United States",
+    "New York City, New York, United States"
+  ],
+  "dct_temporal_sm": [
+    "2019"
+  ],
+  "geoblacklight_version": "1.0",
+  "layer_geom_type_s": "Mixed",
+  "layer_modified_dt": "2019-12-19T14:28:18Z",
+  "layer_slug_s": "nyu-2451-60458",
+  "layer_id_s": "sdr:nyu_2451_60458",
+  "nyu_addl_dspace_s": "61432",
+  "nyu_addl_license_s": "Attribution 4.0 International (CC BY 4.0)",
+  "nyu_addl_id_s": "DOI: 10.17609/4cpx-2h33",
+  "nyu_addl_format_sm": [
+    "Mixed"
+  ],
+  "solr_geom": "ENVELOPE(-74.0395867889, -74.0102522224, 40.6508411236, 40.6284819074)",
+  "solr_year_i": 2019
+}

@@ -86,6 +86,7 @@ GEM
       capybara (>= 1.0, < 4)
       launchy
     childprocess (3.0.0)
+    chronic (0.10.2)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
     config (2.2.1)
@@ -392,6 +393,8 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -430,6 +433,7 @@ DEPENDENCIES
   twitter-typeahead-rails
   uglifier
   web-console
+  whenever
 
 BUNDLED WITH
    2.1.4

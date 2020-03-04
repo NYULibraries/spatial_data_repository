@@ -18,6 +18,7 @@ gem 'sqlite3'
 gem 'turbolinks'
 gem 'twitter-typeahead-rails'
 gem 'uglifier'
+gem 'whenever'
 
 # Range limit gem for slider on Solr integer fields (year)
 # Currently broken (9/2/2016)

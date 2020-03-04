@@ -415,7 +415,7 @@ DEPENDENCIES
   omniauth-nyulibraries!
   puma
   rails
-  rake
+  rainbow
   rsolr
   rspec-rails
   rubocop

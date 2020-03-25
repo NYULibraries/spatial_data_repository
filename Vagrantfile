@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
   $apt_script = <<-SCRIPT
     sudo apt-get update
-    sudo apt-get install -y apache2 curl git nodejs gcc bzip2 dkms software-properties-common libreadline-dev libmysqlclient-dev g++ firefox libsqlite3-dev
+    sudo apt-get install -y apache2 curl git gcc bzip2 dkms software-properties-common libreadline-dev libmysqlclient-dev g++ firefox libsqlite3-dev
 
     sudo add-apt-repository -y ppa:openjdk-r/ppa
     sudo apt-get update
@@ -28,6 +28,13 @@ Vagrant.configure(2) do |config|
     sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password rootpass'
     sudo apt-get -y install mysql-server
     sudo apt-get -y autoremove
+  SCRIPT
+
+  $nvm_script = <<-SCRIPT
+    curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+    source $HOME/.nvm/nvm.sh
+    nvm install stable
+    nvm alias default stable
   SCRIPT
 
   $rbenv_script = <<-SCRIPT
@@ -57,5 +64,6 @@ Vagrant.configure(2) do |config|
   SCRIPT
 
   config.vm.provision :shell, inline: $apt_script
+  config.vm.provision :shell, privileged: false, inline: $nvm_script
   config.vm.provision :shell, privileged: false, inline: $rbenv_script
 end

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'blacklight'
+gem 'bootstrap', '~> 4.0'
 gem 'devise'
 gem 'figs'
 gem 'geoblacklight', '~> 1.9.0'

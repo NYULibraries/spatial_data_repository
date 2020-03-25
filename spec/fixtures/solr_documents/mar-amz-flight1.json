@@ -17,7 +17,7 @@
   ],
   "dct_issued_s": "3/15/2020",
   "dct_provenance_s": "NYU",
-  "dct_references_s": "{\"http://www.w3.org/1999/xhtml\":\"https://sdr-metadata-codebooks.s3.amazonaws.com/sunset-park-collection-introduction.html\",\"http://schema.org/url\":\"http://hdl.handle.net/2451/60462\",\"http://schema.org/downloadUrl\":\"http://hdl.handle.net/2451/60462\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
+  "dct_references_s": "{\"http://www.w3.org/1999/xhtml\":\"https://sdr-metadata-codebooks.s3.amazonaws.com/sunset-park-collection-introduction.html\",\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenIndexMaps/edu.nyu/master/sunset-diag/nyu-2451-60462.geojson\",\"http://schema.org/url\":\"http://hdl.handle.net/2451/60462\",\"http://schema.org/downloadUrl\":\"http://hdl.handle.net/2451/60462\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
   "dct_source_sm": [
     "nyu-2451-60459"
   ],
@@ -32,9 +32,9 @@
   "geoblacklight_version": "1.0",
   "layer_geom_type_s": "Mixed",
   "layer_id_s": "sdr:nyu_2451_60462",
-  "layer_modifed_dt": "2020-03-04T07:23:16Z",
+  "layer_modifed_dt": "2020-03-24T10:42:30Z",
   "layer_slug_s": "nyu-2451-60462",
-  "nyu_addl_downloads_s": "{\"PulseWaves (Full-waveform)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_fwf_plswvs_FD_190511_161348.zip\",\"GeoTIFF (RGBI Nadir Imagery)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_cir_FD_190511_161348.zip\",\"LAS (Full-waveform)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_fwf_las_FD_190511_161348.zip\",\"LAZ (Point-cloud)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_pc_FD_190511_161348.zip\",\"Globus (bulk download)\":\"https://app.globus.org/file-manager?origin_id=73419098-207a-11ea-ab45-0a7959ea6081&origin_path=%2F\"}",
+  "nyu_addl_downloads_s": "{\"PulseWaves (Full-waveform)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_fwf_plswvs_FD_190511_161348.zip\",\"GeoTIFF (RGBI Nadir Imagery)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_cir_FD_190511_161348.zip\",\"LAS (Full-waveform)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_fwf_las_FD_190511_161348.zip\",\"LAZ (Point-cloud)\":\"https://s3.amazonaws.com/nyu.dataservices/sunsetpark2019/nyu_2451_60462_pc_FD_190511_161348.zip\",\"Globus endpoint\":\"https://app.globus.org/file-manager?origin_id=73419098-207a-11ea-ab45-0a7959ea6081&origin_path=%2F\"}",
   "nyu_addl_dspace_s": "61436",
   "nyu_addl_format_sm": [
     "LAZ (Point-cloud)",

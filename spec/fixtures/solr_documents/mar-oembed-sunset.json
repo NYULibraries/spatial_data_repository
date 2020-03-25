@@ -26,7 +26,7 @@
   ],
   "dct_issued_s": "03/16/2020",
   "dct_provenance_s": "NYU",
-  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/60458\",\"http://schema.org/downloadUrl\":\"http://hdl.handle.net/2451/60458\",\"https://www.oembed.com\":\"https://sketchfab.com/oembed?url=https://sketchfab.com/3d-models/sp00074s-49754c6a6f08418da340ebfd44ac1ee3\",\"http://www.w3.org/1999/xhtml\":\"https://sdr-metadata-codebooks.s3.amazonaws.com/sunset-park-collection-introduction.html\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/60458\",\"http://schema.org/downloadUrl\":\"http://hdl.handle.net/2451/60458\",\"https://www.oembed.com\":\"https://sketchfab.com/oembed?url=https://sketchfab.com/3d-models/sp00074s-49754c6a6f08418da340ebfd44ac1ee3\",\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenIndexMaps/edu.nyu/master/nyu-2451-60459.geojson\",\"http://www.w3.org/1999/xhtml\":\"https://sdr-metadata-codebooks.s3.amazonaws.com/sunset-park-collection-introduction.html\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
     "dct_spatial_sm": [
     "Sunset Park, Kings County, New York, United States",
     "Brooklyn, Kings County, New York, United States",

@@ -14,15 +14,16 @@ This repository tracks the implementation of GeoBlacklight used to power the fro
 
 ## Development Quickstart
 
-Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](docs/CONTRIBUTING.md#development-guide). 
+Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](docs/CONTRIBUTING.md#development-guide).
 
-- Make sure you have Git, Vagrant, and VirtualBox installed. 
+- Make sure you have Git, Vagrant, and VirtualBox installed.
 - Run the commands below in order specified:
   ```sh
   $ git clone https://github.com/NYULibraries/spatial_data_repository.git && cd spatial_data_repository
   $ vagrant up
   $ vagrant ssh
   $ cd /vagrant/sdr
+  $ bundle install
   $ cp config/vars.yml.example config/vars.yml
   $ bundle exec rake db:schema:load
   $ bundle exec rake sdr:server

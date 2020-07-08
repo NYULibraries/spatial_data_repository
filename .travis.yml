@@ -19,5 +19,6 @@ script:
   - cp config/vars.yml.example config/vars.yml
   - bundle exec rake db:schema:load
   - bundle exec rake ci
+  - bundle exec bundle-audit check --ignore CVE-2015-9284 # tempoarily ignore omniauth vulnerability
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

@@ -22,7 +22,7 @@ namespace :sdr do
 
     SolrWrapper.wrap(shared_solr_opts.merge(port: 8983, instance_dir: 'tmp/sdr-core-development')) do |solr|
       solr.with_collection(name: "sdr-core-development", dir: Rails.root.join("solr", "conf").to_s) do
-        puts "Solr running at http://localhost:8983/solr/sdr-core-development/, ^C to exit"
+        puts "Solr running at http://0.0.0.0:8983, ^C to exit"
         puts ' '
         begin
           Rake::Task['geoblacklight:solr:seed'].invoke

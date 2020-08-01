@@ -14,9 +14,28 @@ This repository tracks the implementation of GeoBlacklight used to power the fro
 
 ## Development Quickstart
 
-Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](docs/CONTRIBUTING.md#development-guide). 
+Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](docs/CONTRIBUTING.md#development-guide).
 
-- Make sure you have Git, Vagrant, and VirtualBox installed. 
+### Option 1: Docker
+
+- Make sure you have Git and Docker installed.
+- Run the commands below in order specified:
+  ```sh
+  $ git clone https://github.com/NYULibraries/spatial_data_repository.git && cd spatial_data_repository
+  $ docker build -t gbl .
+  $ docker run -it -v "$PWD":/app --user sdr-admin --name sdr -p 3000:3000 -p 8983:8983 gbl
+  ```
+  (It will take ~30seconds to receive output)
+
+- View to test environment Solr admin panel: http://0.0.0.0:8983
+- View the operating GeoBlacklight Rails app: http://0.0.0.0:3000
+
+- You can restart (rather than rebuild) with `docker start sdr`
+
+
+### Option 2: Vagrant
+
+- Make sure you have Git, Vagrant, and VirtualBox installed.
 - Run the commands below in order specified:
   ```sh
   $ git clone https://github.com/NYULibraries/spatial_data_repository.git && cd spatial_data_repository

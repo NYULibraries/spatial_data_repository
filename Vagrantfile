@@ -23,10 +23,6 @@ Vagrant.configure(2) do |config|
     sudo add-apt-repository -y ppa:openjdk-r/ppa
     sudo apt-get update
     sudo apt-get install -y openjdk-8-jdk
-
-    sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password rootpass'
-    sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password rootpass'
-    sudo apt-get -y install mysql-server
     sudo apt-get -y autoremove
   SCRIPT
 

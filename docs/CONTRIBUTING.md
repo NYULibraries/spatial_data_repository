@@ -1,8 +1,9 @@
 ---
 layout: default
 permalink: '/contributing'
+title: Contributor Guide
 ---
-## :sparkles:Contributing:sparkles:
+## :sparkles: Contributing :sparkles:
 NYU's Spatial Data Repository (SDR) is a collaborative open source project where contributions are welcome.  
 This contributing guide is borrowed in part from [Geoblacklight](https://github.com/geoblacklight/geoblacklight/blob/master/CONTRIBUTING.md).
 

@@ -1,13 +1,17 @@
-dist: trusty
+dist: xenial
 sudo: required
 language: ruby
 cache: bundler
 addons:
-  firefox: latest
+  firefox: '79.0'
+  apt:
+    packages:
+      firefox-geckodriver
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     - CC_TEST_REPORTER_ID=f0d2e58efd0ddc833f4ffae5c34ce3f034ba4b425bea0f0902952c907156cbba
+    - MOZ_HEADLESS=1
 before_install:
   - gem update --system
   - gem install bundler

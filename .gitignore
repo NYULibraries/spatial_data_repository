@@ -18,6 +18,7 @@
 /log/*
 !/log/.keep
 /tmp
+
 # Ignore application configuration
 /config/vars.yml
 
@@ -38,3 +39,6 @@
 
 # Ignore test coverage
 /coverage
+
+# Ignore google verification
+/public/google*.html

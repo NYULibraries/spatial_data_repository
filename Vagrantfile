@@ -53,7 +53,9 @@ Vagrant.configure(2) do |config|
       gem install bundler
       rbenv rehash
     fi
-    cd /vagrant/sdr && bundle install
+    cd /vagrant/sdr
+    gem update bundler
+    bundle install
   SCRIPT
 
   config.vm.provision :shell, inline: $apt_script

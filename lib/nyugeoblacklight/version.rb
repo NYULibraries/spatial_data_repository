@@ -1,3 +1,3 @@
 module NyuGeoblacklight
-  VERSION = '1.9.5'.freeze
+  VERSION = '1.9.51'.freeze
 end

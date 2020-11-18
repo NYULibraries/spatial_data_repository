@@ -38,3 +38,6 @@
 
 # Ignore test coverage
 /coverage
+
+# Ignore google verification
+/public/google*.html

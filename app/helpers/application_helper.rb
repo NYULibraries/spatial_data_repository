@@ -3,15 +3,15 @@
 module ApplicationHelper
   def construct_curated_maps
     maps = NyuGeoblacklight::CuratedCollections.maps.sample(3)
-    toReturn = "<div class=\"curated-maps\">
+    to_return = "<div class=\"curated-maps\">
       <h4>Featured Maps</h4>
       <div class=\"row\">"
     maps.each do |map|
-      toReturn += create_map_portion(map)
+      to_return += create_map_portion(map)
     end
-    toReturn += "</div>
+    to_return += "</div>
                 </div>"
-    toReturn.html_safe
+    to_return.html_safe
   end
 
   def download_text_alt(format)
@@ -27,34 +27,34 @@ module ApplicationHelper
   end
 
   def create_map_portion(map)
-    toReturn = "<a class=\"curated-card\" style=\"display:block\" href=\"./catalog/#{map[:slug]}\">
+    to_return = "<a class=\"curated-card\" style=\"display:block\" href=\"./catalog/#{map[:slug]}\">
           <div class=\"col-md-4\">
             <div class=\"card-map\">"
-    toReturn += (image_tag "thumb/#{map[:slug]}.jpg", { class: 'card-img-top', "data-svg-fallback": image_path('real250.png').to_s, alt: 'NYU Spatial Data Repository' })
-    toReturn += "<div class=\"card-block\">
+    to_return += (image_tag "thumb/#{map[:slug]}.jpg", { class: 'card-img-top', "data-svg-fallback": image_path('real250.png').to_s, alt: 'NYU Spatial Data Repository' })
+    to_return += "<div class=\"card-block\">
                 <h4 class=\"card-title\">#{map[:title]}</h4>
               </div>
             </div>
           </div>
         </a>"
-    toReturn
+    to_return
   end
 
   def construct_curated_collections
     collections = NyuGeoblacklight::CuratedCollections.collections.sample(2)
-    toReturn = "<div class=\"curated-collections\">
+    to_return = "<div class=\"curated-collections\">
       <h4>Featured Collections</h4>
       <div class=\"row\">"
     collections.each do |collection|
-      toReturn += create_collection_portion(collection)
+      to_return += create_collection_portion(collection)
     end
-    toReturn += " </div>
+    to_return += " </div>
     </div>"
-    toReturn.html_safe
+    to_return.html_safe
   end
 
   def create_collection_portion(collection)
-    toReturn = link_to search_catalog_path({ f: collection[:f] }), { class: 'curated-card' } do
+    to_return = link_to search_catalog_path({ f: collection[:f] }), { class: 'curated-card' } do
       "
     <div class=\"col-md-6\">
           <div class=\"card-collection\">
@@ -66,24 +66,24 @@ module ApplicationHelper
         </div>
     ".html_safe
     end
-    toReturn.html_safe
+    to_return.html_safe
   end
 
   def construct_recent_collections
     collections = NyuGeoblacklight::CuratedCollections.recent[0..1]
-    toReturn = "<div class=\"curated-collections\">
+    to_return = "<div class=\"curated-collections\">
       <h4 class=\"collection-section-title\">Recently Updated</h4>
       <div class=\"row\">"
     collections.each do |collection|
-      toReturn += create_recent_portion(collection)
+      to_return += create_recent_portion(collection)
     end
-    toReturn += " </div>
+    to_return += " </div>
     </div>"
-    toReturn.html_safe
+    to_return.html_safe
   end
 
   def create_recent_portion(collection)
-    toReturn = link_to search_catalog_path({ f: collection[:f] }), { class: 'curated-card' } do
+    to_return = link_to search_catalog_path({ f: collection[:f] }), { class: 'curated-card' } do
       "
     <div class=\"col-md-6\">
           <div class=\"card-collection\">
@@ -95,6 +95,6 @@ module ApplicationHelper
         </div>
     ".html_safe
     end
-    toReturn.html_safe
+    to_return.html_safe
   end
 end

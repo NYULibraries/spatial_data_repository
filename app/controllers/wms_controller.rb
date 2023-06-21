@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WmsController < ApplicationController
   before_action :format_url
   def handle

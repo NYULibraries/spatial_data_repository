@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'Show page' do
   context 'Restricted NYU result - nyu-2451-34626' do
     it 'the displays warning message' do
@@ -35,7 +37,7 @@ describe 'Show page' do
     it 'includes survey link' do
       visit solr_document_path 'nyu-2451-38684'
       expect(page).to have_link(
-        "this brief survey", href: "https://nyu.qualtrics.com/jfe/form/SV_42ddIXjT0CtaqAR"
+        'this brief survey', href: 'https://nyu.qualtrics.com/jfe/form/SV_42ddIXjT0CtaqAR'
       )
     end
 
@@ -87,13 +89,11 @@ describe 'Show page' do
     end
   end
 
-=begin
-  context 'Parent/Child relationships - nyu-2451-34666' do
-    it 'to inlude relation links' do
-      visit solr_document_path 'nyu-2451-34666'
-      expect(page).to have_content("Data Relations")
-      expect(page).to have_content("Source Datasets")
-    end
-  end
-=end
+  #   context 'Parent/Child relationships - nyu-2451-34666' do
+  #     it 'to inlude relation links' do
+  #       visit solr_document_path 'nyu-2451-34666'
+  #       expect(page).to have_content("Data Relations")
+  #       expect(page).to have_content("Source Datasets")
+  #     end
+  #   end
 end

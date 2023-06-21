@@ -4,6 +4,7 @@ AllCops:
     - 'bin/*'
     - 'config/**/*'
     - 'vendor/**/*'
+
 Style/Documentation:
   Enabled: false
 

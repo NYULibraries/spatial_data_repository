@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'Homepage' do
   describe 'DOM' do
     it 'has Featured Collections' do

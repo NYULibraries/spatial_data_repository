@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
 
-require File.expand_path('../../config/environment', __FILE__)
+require File.expand_path('../config/environment', __dir__)
 require 'capybara/rspec'
 require 'capybara/rails'
 require 'capybara-screenshot/rspec'
@@ -31,9 +33,9 @@ Capybara.default_max_wait_time = 15
 
 ActiveRecord::Migration.maintain_test_schema!
 
-Dir[Rails.root.join("spec", "support", "**", "*.rb")].sort.each { |file| require file }
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |file| require file }
 
-#require_relative 'support/controller_macros'
+# require_relative 'support/controller_macros'
 
 ActiveJob::Base.queue_adapter = :inline
 
@@ -50,11 +52,9 @@ RSpec.configure do |config|
   OmniAuth.config.test_mode = true
 
   config.before(:suite) do
-    begin
-      DatabaseCleaner.start
-    ensure
-      DatabaseCleaner.clean
-    end
+    DatabaseCleaner.start
+  ensure
+    DatabaseCleaner.clean
   end
 
   config.include Capybara::DSL

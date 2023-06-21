@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 gem 'blacklight'
@@ -25,8 +27,8 @@ gem 'uglifier'
 # gem 'blacklight_range_limit'
 
 group :development, :test do
-  gem 'byebug'
   gem 'bundler-audit'
+  gem 'byebug'
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'database_cleaner'

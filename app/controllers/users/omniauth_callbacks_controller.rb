@@ -5,11 +5,7 @@ module Users
     before_action :require_valid_omniauth, only: :nyulibraries
 
     def nyulibraries
-      # Find existing or initialize new user,
-      # and save new attributes each time
-      @user = find_user_with_or_without_provider.first_or_initialize(attributes_from_omniauth)
-      @user.update_attributes(attributes_from_omniauth)
-
+      set_user
       if @user.persisted?
         sign_in_and_redirect @user, event: :authentication
         logger.info(find_message(:success, kind: 'NYU Libraries'))
@@ -19,8 +15,8 @@ module Users
       end
     end
 
-    def find_user_with_or_without_provider
-      @find_user_with_or_without_provider ||= find_user_with_provider.present? ? find_user_with_provider : find_user_without_provider
+    def find_user
+      @find_user ||= find_user_with_provider.present? ? find_user_with_provider : find_user_without_provider
     end
 
     def find_user_with_provider
@@ -97,6 +93,15 @@ module Users
 
     def failure
       redirect_to root_path
+    end
+
+    private
+
+    def set_user
+      # Find existing or initialize new user,
+      # and save new attributes each time
+      @user = find_user.first_or_initialize(attributes_from_omniauth)
+      @user.update_attributes(attributes_from_omniauth)
     end
   end
 end

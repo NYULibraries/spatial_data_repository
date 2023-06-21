@@ -4,14 +4,20 @@ AllCops:
     - 'bin/*'
     - 'config/**/*'
     - 'vendor/**/*'
+    - 'Vagrantfile'
 
 Style/Documentation:
+  Enabled: false
+
+# WE WANT TO BRING THESE BACK WHEN WE HAVE THE BANDWIDTH TO REFACTOR
+Layout/LineLength:
   Enabled: false
 
 Metrics/MethodLength:
   Enabled: false
 
-Layout/LineLength:
+Metrics/BlockLength:
   Enabled: false
 
-
+Style/FrozenStringLiteralComment:
+  Enabled: false

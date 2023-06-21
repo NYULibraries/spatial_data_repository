@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: test 
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+    - name: Install dependencies
+      run: bundle install
+    - name: Lint
+      run: bundle exec rubocop
+    - name: Run tests
+      run: |
+        cp config/vars.yml.example config/vars.yml
+        bundle exec rake db:schema:load
+        bundle exec rake ci
+    - name: Audit gems
+      run: bundle exec bundle-audit check

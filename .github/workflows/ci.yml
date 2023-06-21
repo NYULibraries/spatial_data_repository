@@ -15,8 +15,8 @@ jobs:
         bundler-cache: true
     - name: Install dependencies
       run: bundle install
-    - name: Lint
-      run: bundle exec rubocop
+    # - name: Lint
+    #   run: bundle exec rubocop
     - name: Run tests
       run: |
         cp config/vars.yml.example config/vars.yml

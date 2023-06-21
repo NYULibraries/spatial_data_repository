@@ -18,8 +18,8 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
-    # - name: Lint
-    #   run: bundle exec rubocop
+    - name: Lint
+      run: bundle exec rubocop
     - name: Run tests
       run: |
         cp config/vars.yml.example config/vars.yml

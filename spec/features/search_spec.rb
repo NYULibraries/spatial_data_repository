@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'Search' do
   describe 'Spelling suggestions' do
     it 'are turned on' do

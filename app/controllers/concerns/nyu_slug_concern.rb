@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module NyuSlugConcern
   extend Blacklight::Catalog
 
@@ -5,9 +7,7 @@ module NyuSlugConcern
   # NYU slugs ("nyu_2451_12345") and turn them into
   # new style ("nyu-2451-12345")
   def show
-    if /^nyu_\d{4}_\d{5}$/.match(params[:id])
-      params[:id] = params[:id].gsub("_","-")
-    end
+    params[:id] = params[:id].gsub('_', '-') if /^nyu_\d{4}_\d{5}$/.match(params[:id])
     @response, @document = fetch params[:id]
     respond_to do |format|
       format.html { setup_next_and_previous_documents }
@@ -15,5 +15,4 @@ module NyuSlugConcern
       additional_export_formats(@document, format)
     end
   end
-
 end

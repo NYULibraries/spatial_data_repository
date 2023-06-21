@@ -34,6 +34,8 @@ group :development, :test do
   gem 'geckodriver-helper'
   gem 'puma'
   gem 'rspec-rails'
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
   gem 'selenium-webdriver'
   gem 'simplecov'
   gem 'spring'

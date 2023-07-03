@@ -17,6 +17,6 @@ class WmsController < ApplicationController
   end
 
   def format_url
-    params['URL'] = Settings.RESTRICTED_URL if params['URL'].include? Settings.PROXY_URL
+    params['URL'] = Rails.application.credentials.restricted_url if params['URL'].include? Rails.application.credentials.PROXY_URL
   end
 end

@@ -30,7 +30,7 @@ class CatalogController < ApplicationController
     # config.index.show_link = 'title_display'
     # config.index.record_display_type = 'format'
 
-    config.index.title_field = Settings.FIELDS.TITLE
+    config.index.title_field = Rails.application.credentials.fields[:title]
 
     # solr field configuration for document/show views
 
@@ -71,19 +71,19 @@ class CatalogController < ApplicationController
     #    :years_25 => { :label => 'within 25 Years', :fq => "pub_date:[#{Time.now.year - 25 } TO *]" }
     # }
 
-    config.add_facet_field Settings.FIELDS.PROVENANCE, label: 'Institution', limit: 8, partial: 'icon_facet'
-    config.add_facet_field Settings.FIELDS.CREATOR, label: 'Author', limit: 8
-    config.add_facet_field Settings.FIELDS.PUBLISHER, label: 'Publisher', limit: 8
-    config.add_facet_field Settings.FIELDS.SUBJECT, label: 'Subject', limit: 8
-    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Place', limit: 8
-    config.add_facet_field Settings.FIELDS.PART_OF, label: 'Collection', limit: 8
-    config.add_facet_field Settings.FIELDS.SOURCE, label: 'Source Dataset', limit: 0
+    config.add_facet_field Rails.application.credentials.fields[:provenance], label: 'Institution', limit: 8, partial: 'icon_facet'
+    config.add_facet_field Rails.application.credentials.fields[:creator], label: 'Author', limit: 8
+    config.add_facet_field Rails.application.credentials.fields[:publisher], label: 'Publisher', limit: 8
+    config.add_facet_field Rails.application.credentials.fields[:subject], label: 'Subject', limit: 8
+    config.add_facet_field Rails.application.credentials.fields[:spatial_coverage], label: 'Place', limit: 8
+    config.add_facet_field Rails.application.credentials.fields[:part_of], label: 'Collection', limit: 8
+    config.add_facet_field Rails.application.credentials.fields[:source], label: 'Source Dataset', limit: 0
 
-    config.add_facet_field Settings.FIELDS.YEAR, label: 'Year', limit: 10
+    config.add_facet_field Rails.application.credentials.fields[:year], label: 'Year', limit: 10
 
-    config.add_facet_field Settings.FIELDS.RIGHTS, label: 'Access', limit: 8, partial: 'icon_facet'
-    config.add_facet_field Settings.FIELDS.GEOM_TYPE, label: 'Data type', limit: 8, partial: 'icon_facet'
-    config.add_facet_field Settings.FIELDS.FILE_FORMAT, label: 'Format', limit: 8
+    config.add_facet_field Rails.application.credentials.fields[:rights], label: 'Access', limit: 8, partial: 'icon_facet'
+    config.add_facet_field Rails.application.credentials.fields[:geom_type], label: 'Data type', limit: 8, partial: 'icon_facet'
+    config.add_facet_field Rails.application.credentials.fields[:file_format], label: 'Format', limit: 8
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -103,14 +103,14 @@ class CatalogController < ApplicationController
     # config.add_index_field 'lc_callnum_display', :label => 'Call number:'
 
     # config.add_index_field 'dc_title_t', :label => 'Display Name:'
-    # config.add_index_field Settings.FIELDS.PROVENANCE, :label => 'Institution:'
-    # config.add_index_field Settings.FIELDS.RIGHTS, :label => 'Access:'
+    # config.add_index_field Rails.application.credentials.fields.PROVENANCE, :label => 'Institution:'
+    # config.add_index_field Rails.application.credentials.fields.RIGHTS, :label => 'Access:'
     # # config.add_index_field 'Area', :label => 'Area:'
-    # config.add_index_field Settings.FIELDS.SUBJECT, :label => 'Keywords:'
-    config.add_index_field Settings.FIELDS.YEAR
-    config.add_index_field Settings.FIELDS.CREATOR
-    config.add_index_field Settings.FIELDS.DESCRIPTION, helper_method: :snippit
-    config.add_index_field Settings.FIELDS.PUBLISHER
+    # config.add_index_field Rails.application.credentials.fields.SUBJECT, :label => 'Keywords:'
+    config.add_index_field Rails.application.credentials.fields[:year]
+    config.add_index_field Rails.application.credentials.fields[:creator]
+    config.add_index_field Rails.application.credentials.fields[:description], helper_method: :snippit
+    config.add_index_field Rails.application.credentials.fields[:publisher]
 
     # solr fields to be displayed in the show (single result) view
     #  The ordering of the field names is the order of the display
@@ -118,15 +118,15 @@ class CatalogController < ApplicationController
     # item_prop: [String] property given to span with Schema.org item property
     # link_to_search: [Boolean] that can be passed to link to a facet search
     # helper_method: [Symbol] method that can be used to render the value
-    config.add_show_field Settings.FIELDS.CREATOR, label: 'Author(s)', itemprop: 'author', link_to_search: true
-    config.add_show_field Settings.FIELDS.DESCRIPTION, label: 'Description', itemprop: 'description', helper_method: :render_value_as_truncate_abstract
-    config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher', link_to_search: true
-    config.add_show_field Settings.FIELDS.PART_OF, label: 'Collection', itemprop: 'isPartOf', link_to_search: true
-    config.add_show_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Place(s)', itemprop: 'spatial', link_to_search: true, separator: '; '
-    config.add_show_field Settings.FIELDS.SUBJECT, label: 'Subject(s)', itemprop: 'keywords', link_to_search: true
-    config.add_show_field Settings.FIELDS.FILE_FORMAT, label: 'Format(s)', itemprop: 'formats', link_to_search: true
-    config.add_show_field Settings.FIELDS.TEMPORAL, label: 'Year(s)', itemprop: 'temporal'
-    config.add_show_field Settings.FIELDS.PROVENANCE, label: 'Held by', link_to_search: true
+    config.add_show_field Rails.application.credentials.fields[:creator], label: 'Author(s)', itemprop: 'author', link_to_search: true
+    config.add_show_field Rails.application.credentials.fields[:description], label: 'Description', itemprop: 'description', helper_method: :render_value_as_truncate_abstract
+    config.add_show_field Rails.application.credentials.fields[:publisher], label: 'Publisher', itemprop: 'publisher', link_to_search: true
+    config.add_show_field Rails.application.credentials.fields[:part_of], label: 'Collection', itemprop: 'isPartOf', link_to_search: true
+    config.add_show_field Rails.application.credentials.fields[:spatial_coverage], label: 'Place(s)', itemprop: 'spatial', link_to_search: true, separator: '; '
+    config.add_show_field Rails.application.credentials.fields[:subject], label: 'Subject(s)', itemprop: 'keywords', link_to_search: true
+    config.add_show_field Rails.application.credentials.fields[:file_format], label: 'Format(s)', itemprop: 'formats', link_to_search: true
+    config.add_show_field Rails.application.credentials.fields[:temporal], label: 'Year(s)', itemprop: 'temporal'
+    config.add_show_field Rails.application.credentials.fields[:provenance], label: 'Held by', link_to_search: true
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
@@ -201,8 +201,8 @@ class CatalogController < ApplicationController
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
     config.add_sort_field 'score desc, dc_title_sort asc', label: 'relevance'
-    config.add_sort_field "#{Settings.FIELDS.YEAR} desc, dc_title_sort asc", label: 'year'
-    config.add_sort_field "#{Settings.FIELDS.PUBLISHER} asc, dc_title_sort asc", label: 'publisher'
+    config.add_sort_field "#{Rails.application.credentials.fields[:year]} desc, dc_title_sort asc", label: 'year'
+    config.add_sort_field "#{Rails.application.credentials.fields[:publisher]} asc, dc_title_sort asc", label: 'publisher'
     config.add_sort_field 'dc_title_sort asc', label: 'title'
 
     # If there are more than this many search results, no spelling ("did you
@@ -210,8 +210,8 @@ class CatalogController < ApplicationController
     config.spell_max = 5
 
     # Custom tools for GeoBlacklight
-    config.add_show_tools_partial :web_services, if: proc { |_context, _config, options| options[:document] && (Settings.WEBSERVICES_SHOWN & options[:document].references.refs.map(&:type).map(&:to_s)).any? }
-    config.add_show_tools_partial :metadata, if: proc { |_context, _config, options| options[:document] && (Settings.METADATA_SHOWN & options[:document].references.refs.map(&:type).map(&:to_s)).any? }
+    config.add_show_tools_partial :web_services, if: proc { |_context, _config, options| options[:document] && (Rails.application.credentials.webservices_shown & options[:document].references.refs.map(&:type).map(&:to_s)).any? }
+    config.add_show_tools_partial :metadata, if: proc { |_context, _config, options| options[:document] && (Rails.application.credentials.metadata_shown & options[:document].references.refs.map(&:type).map(&:to_s)).any? }
     config.add_show_tools_partial :exports, partial: 'exports', if: proc { |_context, _config, options| options[:document] }
     config.add_show_tools_partial :data_dictionary, partial: 'data_dictionary', if: proc { |_context, _config, options| options[:document] }
     config.add_show_tools_partial :downloads, partial: 'downloads', if: proc { |_context, _config, options| options[:document] }

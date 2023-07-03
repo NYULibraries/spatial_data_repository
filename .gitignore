@@ -42,3 +42,6 @@
 
 # Ignore google verification
 /public/google*.html
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key

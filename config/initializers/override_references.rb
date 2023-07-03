@@ -7,7 +7,8 @@ module Geoblacklight
   # References is a geoblacklight-schema dct:references parser
   class References
     attr_reader :refs, :reference_field
-    def initialize(document, reference_field = Settings.FIELDS.REFERENCES)
+
+    def initialize(document, reference_field = Rails.application.credentials.fields[:references])
       @document = document
       @reference_field = reference_field
       @refs = parse_references.map { |ref| Reference.new(ref) }
@@ -17,10 +18,10 @@ module Geoblacklight
     # Accessor for a document's file format
     # @return [String] file format for the document
     def format
-      if @document[Settings.FIELDS.FILE_FORMAT].nil?
+      if @document[Rails.application.credentials.fields[:file_format]].nil?
         nil
       else
-        @document[Settings.FIELDS.FILE_FORMAT][0]
+        @document[Rails.application.credentials.fields[:file_format][0]]
       end
     end
 
@@ -43,12 +44,12 @@ module Geoblacklight
     # @return [Hash, nil]
     def downloads_by_format
       case format
-        when 'Shapefile'
-          vector_download_formats
-        when 'GeoTIFF'
-          geotiff_download_formats
-        when 'ArcGRID'
-          arcgrid_download_formats
+      when 'Shapefile'
+        vector_download_formats
+      when 'GeoTIFF'
+        geotiff_download_formats
+      when 'ArcGRID'
+        arcgrid_download_formats
       end
     end
 
@@ -84,9 +85,11 @@ module Geoblacklight
     # present
     # @return (see #downloads_by_format)
     def vector_download_formats
+      return unless wms.present? && wfs.present?
+
       { shapefile: wfs.to_hash,
         kmz: wms.to_hash,
-        geojson: wfs.to_hash } if wms.present? && wfs.present?
+        geojson: wfs.to_hash }
     end
 
     ##
@@ -105,9 +108,9 @@ module Geoblacklight
 
     ##
     # Adds a call to references for defined URI keys
-    def method_missing(m, *args, &b)
-      if Geoblacklight::Constants::URI.key?(m)
-        references m
+    def method_missing(method, *args, &block) # rubocop:disable Style/MissingRespondToMissing
+      if Geoblacklight::Constants::URI.key?(method)
+        references method
       else
         super
       end

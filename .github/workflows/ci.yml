@@ -7,11 +7,14 @@ on:
   pull_request:
     branches:
       - main
+env:
+  TEST_SOLR_URL: 'http://127.0.0.1:8985/solr/sdr-core-test'
+  SOLR_VERSION: 7.5.0
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: test 
+    name: test
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby
@@ -22,7 +25,6 @@ jobs:
       run: bundle exec rubocop
     - name: Run tests
       run: |
-        cp config/vars.yml.example config/vars.yml
         bundle exec rake db:schema:load
         bundle exec rake ci
     - name: Audit gems

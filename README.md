@@ -12,21 +12,44 @@ This repository tracks the implementation of GeoBlacklight used to power the fro
 - [Contributing Guide](docs/CONTRIBUTING.md)
 
 
-## Development Quickstart
+## Local Development Quickstart
 
 Below are barebones steps for getting started in development for the SDR. For more in depth instructions, see [CONTRIBUTING](docs/CONTRIBUTING.md#development-guide). 
 
-- Make sure you have Git, Vagrant, and VirtualBox installed. 
-- Run the commands below in order specified:
-  ```sh
-  $ git clone https://github.com/NYULibraries/spatial_data_repository.git && cd spatial_data_repository
-  $ vagrant up
-  $ vagrant ssh
-  $ cd /vagrant/sdr
-  $ cp config/vars.yml.example config/vars.yml
-  $ bundle exec rake db:schema:load
-  $ bundle exec rake sdr:server
-  ```
+### Using Vagrant
 
-- View to test environment Solr admin panel: http://localhost:8983/
-- View the operating GeoBlacklight Rails app: http://localhost:3000
+#### Prerequisites
+- Git
+- Vagrant
+- VirtualBox
+
+#### Steps
+
+1. Run the commands below in order specified:
+  - `git clone https://github.com/NYULibraries/spatial_data_repository.git && cd spatial_data_repository`
+  - `vagrant up`
+  - `vagrant ssh`
+  - `cd /vagrant/sdr`
+  - `cp config/vars.yml.example config/vars.yml`
+  - `bundle exec rake db:schema:load`
+  - `bundle exec rake sdr:server`
+2. View to test environment Solr admin panel: http://localhost:8983/
+3. View the operating GeoBlacklight Rails app: http://localhost:3000
+
+### On Mac (no virtualization)
+
+#### Prerequisites
+- Git (`brew install git`)
+- Ruby (via RVM or Rbenv)
+- Mysql (`brew install mysql`)
+- Java (`brew install openjdk@11` or [Oracle Downloads](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html))
+
+#### Steps
+
+1. Run the commands below in order specified:
+  - `git clone https://github.com/NYULibraries- spatial_data_repository.git && cd- spatial_data_repository`
+  - `cp config/vars.yml.example config/vars.yml`
+  - `bundle exec rake db:schema:load`
+  - `bundle exec rake sdr:server`
+2. View to test environment Solr admin panel: http://localhost:8983/
+3. View the operating GeoBlacklight Rails app: http://localhost:3000

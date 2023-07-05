@@ -45,3 +45,5 @@
 
 .env
 .env.*
+
+master.key

@@ -42,3 +42,6 @@
 
 # Ignore google verification
 /public/google*.html
+
+.env
+.env.*

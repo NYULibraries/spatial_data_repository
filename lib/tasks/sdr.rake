@@ -7,6 +7,7 @@ task :ci do
 
   SolrWrapper.wrap(shared_solr_opts.merge(port: 8985, instance_dir: 'tmp/sdr-core-test')) do |solr|
     solr.with_collection(name: 'sdr-core-test', dir: Rails.root.join('solr', 'conf').to_s) do
+      ENV['SOLR_URL'] = 'http://localhost:8985/solr/sdr-core-test'
       system 'RAILS_ENV=test rake geoblacklight:index:seed'
       Rake::Task['spec'].invoke
     end
@@ -45,6 +46,7 @@ namespace :sdr do
       SolrWrapper.wrap(shared_solr_opts.merge(port: 8985, instance_dir: 'tmp/sdr-core-test')) do |solr|
         solr.with_collection(name: 'sdr-core-test', dir: Rails.root.join('solr', 'conf').to_s) do
           puts 'Solr running at http://localhost:8985/solr/sdr-core-test/, ^C to exit'
+          ENV['SOLR_URL'] = 'http://localhost:8985/solr/sdr-core-test'
           begin
             Rake::Task['geoblacklight:solr:seed'].invoke
             sleep

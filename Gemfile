@@ -3,8 +3,8 @@
 source 'https://rubygems.org'
 
 gem 'blacklight'
+gem 'config'
 gem 'devise'
-gem 'figs'
 gem 'geoblacklight', '~> 1.9.0'
 gem 'jbuilder'
 gem 'jquery-rails'
@@ -32,6 +32,7 @@ group :development, :test do
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'database_cleaner'
+  gem 'dotenv-rails'
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
   gem 'puma'

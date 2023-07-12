@@ -3,7 +3,7 @@
 desc 'Run test suite'
 task :ci do
   shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
-  shared_solr_opts[:version] = ENV['SOLR_VERSION'] if ENV['SOLR_VERSION']
+  shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
   SolrWrapper.wrap(shared_solr_opts.merge(port: 8985, instance_dir: 'tmp/sdr-core-test')) do |solr|
     solr.with_collection(name: 'sdr-core-test', dir: Rails.root.join('solr', 'conf').to_s) do
@@ -20,7 +20,7 @@ namespace :sdr do
     require 'solr_wrapper'
 
     shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
-    shared_solr_opts[:version] = ENV['SOLR_VERSION'] if ENV['SOLR_VERSION']
+    shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
     SolrWrapper.wrap(shared_solr_opts.merge(port: 8983, instance_dir: 'tmp/sdr-core-development')) do |solr|
       solr.with_collection(name: 'sdr-core-development', dir: Rails.root.join('solr', 'conf').to_s) do
@@ -41,7 +41,7 @@ namespace :sdr do
   task :test do
     if Rails.env.test?
       shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
-      shared_solr_opts[:version] = ENV['SOLR_VERSION'] if ENV['SOLR_VERSION']
+      shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
       SolrWrapper.wrap(shared_solr_opts.merge(port: 8985, instance_dir: 'tmp/sdr-core-test')) do |solr|
         solr.with_collection(name: 'sdr-core-test', dir: Rails.root.join('solr', 'conf').to_s) do
@@ -63,7 +63,7 @@ namespace :sdr do
   desc 'Start solr server for development.'
   task :development do
     shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
-    shared_solr_opts[:version] = ENV['SOLR_VERSION'] if ENV['SOLR_VERSION']
+    shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
     SolrWrapper.wrap(shared_solr_opts.merge(port: 8983, instance_dir: 'tmp/sdr-core-development')) do |solr|
       solr.with_collection(name: 'sdr-core-development', dir: Rails.root.join('solr', 'conf').to_s) do

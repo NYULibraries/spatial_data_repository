@@ -27,7 +27,8 @@ namespace :sdr do
         puts 'Solr running at http://localhost:8983/solr/sdr-core-development/, ^C to exit'
         puts ' '
         begin
-          Rake::Task['geoblacklight:solr:seed'].invoke
+          ENV['SOLR_URL'] = 'http://localhost:8983/solr/sdr-core-development'
+          system 'rake geoblacklight:index:seed'
           system 'bundle exec rails s -b 0.0.0.0'
           sleep
         rescue Interrupt

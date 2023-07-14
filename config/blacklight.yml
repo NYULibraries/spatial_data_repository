@@ -12,13 +12,13 @@
 
 development:
   adapter: solr
-  url: <%= ENV['SOLR_URL'] %>
+  url: <%= Settings.SOLR_URL %>
 test: &test
   adapter: solr
-  url: <%= ENV['SOLR_URL'] %>
+  url: <%= Settings.SOLR_URL %>
 staging:
   adapter: solr
-  url: <%= ENV['SOLR_URL'] %>
+  url: <%= Settings.SOLR_URL %>
 production:
   adapter: solr
-  url: <%= ENV['SOLR_URL'] %>
+  url: <%= Settings.SOLR_URL %>

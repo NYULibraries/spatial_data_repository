@@ -2,11 +2,11 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  host: <%= ENV['SQL_HOST'] %>
-  port: <%= ENV['SQL_PORT'] %>
-  database: <%= ENV['SQL_DB'] %>
-  username: <%= ENV['SQL_USER'] %>
-  password: <%= ENV['SQL_PASS'] %>
+  host: <%= Settings.SQL_HOST %>
+  port: <%= Settings.SQL_PORT %>
+  database: <%= Settings.SQL_DB %>
+  username: <%= Settings.SQL_USER %>
+  password: <%= Settings.SQL_PASS %>
 
 development:
   adapter: sqlite3

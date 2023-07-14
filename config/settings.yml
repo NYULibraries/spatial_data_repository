@@ -1,5 +1,5 @@
 # Configurable Logo Used for CartoDB export
-APPLICATION_LOGO_URL: 'http://geoblacklight.org/images/geoblacklight-logo.png'
+APPLICATION_LOGO_URL: 'https://geo.nyu.edu/assets/real250-c393c31c117191fd87d686168c6784ecb75159bec4969597b4b0d56e6ddcbc11.png'
 
 # Carto OneClick Service https://carto.com/engine/open-in-carto/
 CARTO_ONECLICK_LINK: 'http://oneclick.carto.com/'
@@ -213,7 +213,7 @@ RELATIONSHIPS_SHOWN:
     inverse: :VERSION_OF_ANCESTORS
     label: geoblacklight.relations.version_of_descendants
     query_type: descendants
-    
+
 # WMS Parameters
 WMS_PARAMS:
   :SERVICE: 'WMS'

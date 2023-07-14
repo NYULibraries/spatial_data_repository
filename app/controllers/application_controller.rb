@@ -9,4 +9,35 @@ class ApplicationController < ActionController::Base
     # Blacklight::Parameters will pass these to params.permit
     blacklight_config.search_state_fields.append(Settings.GBL_PARAMS)
   end
+
+  # Alias new_session_path as login_path for default devise config
+  def new_session_path(_scope)
+    login_path
+  end
+
+  def after_sign_in_path_for(resource)
+    request.env['omniauth.origin'] || stored_location_for(resource) || root_path
+  end
+
+  def current_user_dev
+    @current_user_dev ||= User.find_by(username: 'admin') || User.new
+  end
+  alias current_user current_user_dev if Rails.env.development?
+
+  # After signing out from the local application,
+  # redirect to the logout path for the Login app
+  def after_sign_out_path_for(resource_or_scope)
+    if logout_path.present?
+      logout_path
+    else
+      super(resource_or_scope)
+    end
+  end
+
+  private
+
+  def logout_path
+    'https://login.library.nyu.edu/logout'
+  end
+
 end

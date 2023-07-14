@@ -542,6 +542,7 @@ DEPENDENCIES
   turbo-rails
   twitter-typeahead-rails (= 0.11.1.pre.corejavascript)
   tzinfo-data
+  view_component
   web-console
 
 RUBY VERSION

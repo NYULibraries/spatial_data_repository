@@ -8,7 +8,7 @@ CARTO_ONECLICK_LINK: 'http://oneclick.carto.com/'
 ARCGIS_BASE_URL: 'https://www.arcgis.com/home/webmap/viewer.html'
 
 # Download path can be configured using this setting
-#DOWNLOAD_PATH: "./tmp/cache/downloads"
+DOWNLOAD_PATH: "/blacklight_data/cache/downloads"
 
 # The bq boost value for spatial search matches within a bounding box
 BBOX_WITHIN_BOOST: '10'
@@ -88,7 +88,7 @@ FIELDS:
   :WXS_IDENTIFIER: 'gbl_wxsIdentifier_s'
 
 # Institution deployed at
-INSTITUTION: 'Stanford'
+INSTITUTION: 'NYU'
 
 # Metadata shown in tool panel
 METADATA_SHOWN:
@@ -98,7 +98,7 @@ METADATA_SHOWN:
   - 'html'
 
 # (For external Download) timeout and open_timeout parameters for Faraday
-TIMEOUT_DOWNLOAD: 16
+TIMEOUT_DOWNLOAD: 30
 
 # (For WMS inspection) timeout and open_timeout parameters for Faraday
 TIMEOUT_WMS: 4
@@ -225,6 +225,11 @@ WMS_PARAMS:
   :INFO_FORMAT: 'text/html'
 
 # Settings for leaflet
+OPACITY_CONTROL: &opacity_control
+  CONTROLS:
+    - 'Opacity'
+    - 'Fullscreen'
+
 LEAFLET:
   MAP:
   LAYERS:
@@ -242,31 +247,19 @@ LEAFLET:
         color: "#2C7FB8"
   VIEWERS:
     DYNAMICMAPLAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
+      <<: *opacity_control
     FEATURELAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
+      <<: *opacity_control
     IIIF:
-      CONTROLS:
-        - 'Fullscreen'
+      <<: *opacity_control
     IMAGEMAPLAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
+      <<: *opacity_control
     INDEXMAP:
-      CONTROLS:
-        - 'Fullscreen'
+      <<: *opacity_control
     TILEDMAPLAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
+      <<: *opacity_control
     WMS:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
+      <<: *opacity_control
 
 # Toggle the help text feature that offers users context
 HELP_TEXT:
@@ -286,3 +279,4 @@ HELP_TEXT:
 SIDEBAR_STATIC_MAP:
   - 'iiif'
   - 'iiif_manifest'
+

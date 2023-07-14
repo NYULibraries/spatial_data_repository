@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
-class CuratedCollections::CuratedCollectionComponent < ViewComponent::Base
-  def initialize(collection:)
-    @collection = collection
+module CuratedCollections
+  class CuratedCollectionComponent < ViewComponent::Base
+    def initialize(collection:)
+      super
+      @collection = collection
+    end
   end
-
 end

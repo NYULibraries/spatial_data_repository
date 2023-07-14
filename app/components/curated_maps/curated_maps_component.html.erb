@@ -1,1 +1,8 @@
-<div>Add CuratedMaps::CuratedMaps template here</div>
+<div class="curated-maps">
+  <h4>Featured Maps</h4>
+  <div class="row">
+    <% @maps.each do |map| %>
+      <%= render CuratedMaps::CuratedMapComponent.new(map: map) %>
+    <% end  %>
+  </div>
+</div>

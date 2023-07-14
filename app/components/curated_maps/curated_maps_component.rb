@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
-class CuratedMaps::CuratedMapsComponent < ViewComponent::Base
-  def initialize(maps:)
-    @maps = maps
+module CuratedMaps
+  class CuratedMapsComponent < ViewComponent::Base
+    def initialize(maps: ::NyuGeoblacklight::CuratedCollections.maps.sample(3))
+      super
+      @maps = maps
+    end
   end
-
 end

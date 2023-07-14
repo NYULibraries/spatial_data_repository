@@ -1,0 +1,25 @@
+[data-map="home"] {
+  height: 500px;
+}
+
+.home-search-area {
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  .input-group.search-input-group {
+    width: 100%;
+  }
+}
+
+.category-block {
+  @extend .col-md-6;
+  @extend .text-center;
+  min-height: 240px;
+
+  .category-icon {
+    font-size: 6em;
+  }
+}

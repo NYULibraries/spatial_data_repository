@@ -1,0 +1,75 @@
+{
+  "dct_title_s": "Climate-biome envelope model for the Western Great Lakes Region",
+  "dct_alternative_sm": [
+    "Climate-biome envelope model for the Western Great Lakes Region"
+  ],
+  "dct_description_sm": [
+    "Research Highlights: We modeled climate-biome envelopes at high resolution in the Western Great Lakes Region for recent and future time-periods. The projected biome shifts, in conjunction with heterogeneous distribution of protected land, may create both great challenges for conservation of particular ecosystems and novel conservation opportunities. Background and Objectives: Climate change this century will affect the distribution and relative abundance of ecological communities against a mostly static background of protected land. We developed a climate-biome envelope model using a priori climate-vegetation relationships for the Western Great Lakes Region (Minnesota, Wisconsin and Michigan USA and adjacent Ontario, Canada) to predict potential biomes and ecotones—boreal forest, mixed forest, temperate forest, prairie–forest border, and prairie—for a recent climate normal period (1979–2013) and future conditions (2061–2080). Materials and Methods: We analyzed six scenarios, two representative concentration pathways (RCP)—4.5 and 8.5, and three global climate models to represent cool, average, and warm scenarios to predict climate-biome envelopes for 2061–2080. To assess implications of the changes for conservation, we analyzed the amount of land with climate suited for each of the biomes and ecotones both region-wide and within protected areas, under current and future conditions. Results: Recent biome boundaries were accurately represented by the climate-biome envelope model. The modeled future conditions show at least a 96% loss in areas suitable for the boreal and mixed forest from the region, but likely gains in areas suitable for temperate forest, prairie–forest border, and prairie. The analysis also showed that protected areas in the region will most likely lose most or all of the area, 18,692 km2, currently climatically suitable for boreal forest. This would represent an enormous conservation loss. However, conversely, the area climatically suitable for prairie and prairie–forest border within protected areas would increase up to 12.5 times the currently suitable 1775 km2. Conclusions: These results suggest that retaining boreal forest in potential refugia where it currently exists and facilitating transition of some forests to prairie, oak savanna, and temperate forest should both be conservation priorities in the northern part of the region.",
+    "Data included here are the R code used to process the publicly available CHELSA data (see publications for citation) into the biome-climate envelope product (as .R files and .txt files) and the climate-biome envelope product itself (as .tif files)."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Toot, Ryan",
+    "Frelich, Lee E.",
+    "Butler, Ethan E.",
+    "Reich, Peter B."
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data",
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Climate"
+  ],
+  "dct_temporal_sm": [
+    "1979–2013",
+    "2061–2080"
+  ],
+  "dct_issued_s": "2021-02-16",
+  "gbl_indexYear_im": [
+    "1979"
+  ],
+  "gbl_dateRange_drsim": [
+    "[1979 TO 2013]"
+  ],
+  "dct_spatial_sm": [
+    "Minnesota",
+    "Wisconsin",
+    "Michigan",
+    "Ontario, Canada",
+    "Canada",
+    "Lake Superior",
+    "Lake Huron",
+    "Lake Michigan"
+  ],
+  "locn_geometry": "ENVELOPE(-96.08,-81.03,50.35,41.28)",
+  "dcat_bbox": "ENVELOPE(-96.08,-81.03,50.35,41.28)",
+  "dcat_centroid": "45.815,-88.555",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/s99e-s560\",\"http://schema.org/downloadUrl\":[{\"label\":\"study area shapefile (1.390Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/218536/region_cutout.zip\"},{\"label\":\"model rasters (7.968Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/218536/DRUM_Biome_model_rasters.zip\"}]}",
+  "id": "13020-s99e-s560",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/s99e-s560"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T02:58:17Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

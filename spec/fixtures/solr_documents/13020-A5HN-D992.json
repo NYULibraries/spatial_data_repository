@@ -1,0 +1,71 @@
+{
+  "dct_title_s": "Cover Types of the UMN Cloquet Forestry Center, 2021 {Cloquet, Minnesota}",
+  "dct_alternative_sm": [
+    "Cover Types of the UMN Cloquet Forestry Center, 2021"
+  ],
+  "dct_description_sm": [
+    "Cover Types of the UMN Cloquet Forestry Center, 2021 is a polygon representation of forest stands and other vegetation types across the 3400-acre research forest. Polygon attributes represent the current status of forest inventory records for the CFC at the end of 2021 based on episodic updates to an original 2005 cover type mapping product.",
+    "The University of Minnesota (UMN) Cloquet Forestry Center is a field research and instructional station associated with the College of Food, Agricultural, and Natural Resources Sciences (CFANS). The original dataset (shapefile) inventorying forest cover types at the University of Minnesota Cloquet Forestry Center was an outcome of a 2005 Covertype Mapping Project produced by Brian C. Loeffelholz and Guthrie Zimmerman on behalf of the UMN Department of Forest Resources (https://hdl.handle.net/11299/120191). The data provided here represents episodic updates to the 2005 covertype shapefile since that time. Forest stand boundaries, stand attributes, and attribute fields have been modified by Cloquet Forestry Center staff through 2021 to reflect spatial and temporal changes to cover types over time and from various management actions, predominately timber harvests."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Gill, Kyle G.",
+    "Johnson, Lane B",
+    "Olesiak, Rachael A"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data",
+    "Vector data"
+  ],
+  "dcat_keyword_sm": [
+    "forestry",
+    "forest types",
+    "silviculture",
+    "vegetation"
+  ],
+  "dct_temporal_sm": [
+    "2005-2022"
+  ],
+  "dct_issued_s": "2022-01-31",
+  "gbl_indexYear_im": [
+    "2005"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2005 TO 2022]"
+  ],
+  "dct_spatial_sm": [
+    "Cloquet, Minnesota",
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-92.55539,-92.420016,46.766071,46.67759)",
+  "dcat_bbox": "ENVELOPE(-92.55539,-92.420016,46.766071,46.67759)",
+  "dcat_centroid": "46.721830499999996,-92.48770300000001",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/licenses/by-nc-nd/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "6.936Kb",
+  "dct_references_s": "{\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/226188/CFC_CoverTypes2021_readme_20220124.txt\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/226188/CFC_CoverTypes_2021.zip\",\"http://schema.org/url\":\"https://doi.org/10.13020/A5HN-D992\"}",
+  "id": "13020-A5HN-D992",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/A5HN-D992"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T02:58:16Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

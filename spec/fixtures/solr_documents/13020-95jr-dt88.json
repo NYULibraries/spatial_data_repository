@@ -1,0 +1,76 @@
+{
+  "dct_title_s": "Block-level, non-work accessibility data for planned transitways in the Twin Cities [Minnesota]",
+  "dct_alternative_sm": [
+    "Block-level, non-work accessibility data for planned transitways in the Twin Cities"
+  ],
+  "dct_description_sm": [
+    "Accessibility to grocery stores, primary healthcare, elementary, middle, and high schools by transit is measured for the Twin Cities. Census block-level minimum travel times to the first, second, third,...,tenth destination are calculated before and after incorporating services changes to the transit network. The transit network baseline includes the Green Line extension and Orange Line. Five planned transitways are evaluated against the baseline including the B Line and local route 21 changes, the D Line and local route 5 changes, the E Line and local route 6 changes, the Gold Line, and the Rush Line. The analysis is completed for four departure windows during the weekday. The report associated with this data aggregates across the Twin Cities metropolitan worker population and disaggregates by worker demographics.",
+    "The data are organized by scenario then by departure window for a total of 28 scenarios. Each scenario has a Geopackage spatial file which is comprised of result layers for the five destination types studied. Travel times between blocks and X number of destinations are given in seconds. For example, this data answers the question \"What is the minimum travel time on transit needed to reach 3 different grocery stores?\""
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Carlson, Kristin",
+    "Owen, Andrew"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data",
+    "Point data",
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "Accessibility",
+    "Transitway",
+    "Demographics",
+    "Travel times",
+    "Grocery",
+    "Healthcare"
+  ],
+  "dct_temporal_sm": [
+    "2020"
+  ],
+  "dct_issued_s": "2021-01-12",
+  "gbl_indexYear_im": [
+    "2020"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2020 TO 2020]"
+  ],
+  "dct_spatial_sm": [
+    "Minneapolis, Minnesota",
+    "Saint Paul, Minnesota",
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-93.467353,-92.863105,45.215627,44.817609)",
+  "dcat_bbox": "ENVELOPE(-93.467353,-92.863105,45.215627,44.817609)",
+  "dcat_centroid": "45.016617999999994,-93.16522900000001",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Geopackage",
+  "dct_references_s": "{\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/README.txt\",\"http://schema.org/url\":\"https://doi.org/10.13020/95jr-dt88\",\"http://schema.org/downloadUrl\":[{\"label\":\"b line geopackage (355.0Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/b_line_scenarios.zip\"},{\"label\":\"d line geopackage (358.3Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/d_line_scenarios.zip\"},{\"label\":\"e line geopackage (355.3Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/e_line_scenarios.zip\"},{\"label\":\"bde line geopackage (364.5Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/bde_line_scenarios.zip\"},{\"label\":\"gold line geopackage (331.1Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/gold_line_scenarios.zip\"},{\"label\":\"goldrush line geopackage (333.0Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/goldrush_line_scenarios.zip\"},{\"label\":\"rush line geopackage (331.5Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/217707/rush_line_scenarios.zip\"}]}",
+  "id": "13020-95jr-dt88",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/95jr-dt88"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T02:58:16Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

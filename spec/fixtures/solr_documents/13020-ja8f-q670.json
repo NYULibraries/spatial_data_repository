@@ -1,0 +1,72 @@
+{
+  "dct_title_s": "Winter and summer zooplankton community and environmental parameters data of thirteen lakes located in Minnesota and Wisconsin",
+  "dct_alternative_sm": [
+    "Winter and summer zooplankton community and environmental parameters data of thirteen lakes located in Minnesota and Wisconsin"
+  ],
+  "dct_description_sm": [
+    "This data set contains the results of a study on taxonomic and functional differences between winter and summer zooplankton communities in lakes across a trophic gradient. Thirteen lakes ('Sites.csv') were sampled across a large trophic status gradient for zooplankton abundance, taxonomic and functional community composition, and Carbon/Nitrogen (C/N) stable isotopes in relation to environmental parameters. Zooplankton abundance and taxonomic identification were made for all stations ('Zooplankton_abundance.csv'); nutrients and C/N stable isotopes values in file 'Environmental_parameters'; lakes light conditions in summer and winter are presented in file 'Light.csv'; bulk zooplankton C/N stable isotopes are in 'Zooplankton_sia.csv' file."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Shchapov, Kirill",
+    "Ozersky, Ted",
+    "Wilburn, Paul"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Table data"
+  ],
+  "dcat_theme_sm": [
+    "Biology"
+  ],
+  "dcat_keyword_sm": [
+    "Zooplankton",
+    "seston",
+    "winter limnology",
+    "northern lakes",
+    "seasonality"
+  ],
+  "dct_temporal_sm": [
+    "2015-2018"
+  ],
+  "dct_issued_s": "2021-05-26",
+  "gbl_indexYear_im": [
+    "2015"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2015 TO 2018]"
+  ],
+  "dct_spatial_sm": [
+    "Minnesota",
+    "Wisconsin"
+  ],
+  "locn_geometry": "ENVELOPE(-95.61,-89.48,47.83,44.75)",
+  "dcat_bbox": "ENVELOPE(-95.61,-89.48,47.83,44.75)",
+  "dcat_centroid": "46.29,-92.545",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "CSV",
+  "dct_references_s": "{\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/Readme.txt\",\"http://schema.org/url\":\"https://doi.org/10.13020/ja8f-q670\",\"http://schema.org/downloadUrl\":[{\"label\":\"Zooplankton_abundance.csv (4.275Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/Zooplankton_abundance.csv\"},{\"label\":\"Sites.csv (653bytes)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/Sites.csv\"},{\"label\":\"Environmental_parameters.csv (5.412Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/Environmental_parameters.csv\"},{\"label\":\"Light.csv (535bytes)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/Light.csv\"},{\"label\":\"Zooplankton_sia.csv (874bytes)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/Zooplankton_sia.csv\"},{\"label\":\"Methods.pdf (721.0Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/Methods.pdf\"},{\"label\":\"YSI_profiles.csv (412.8Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/220234/YSI_profiles.csv\"}]}",
+  "id": "13020-ja8f-q670",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/ja8f-q670"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T02:58:17Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

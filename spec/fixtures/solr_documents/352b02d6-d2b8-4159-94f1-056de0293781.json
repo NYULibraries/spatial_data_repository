@@ -1,0 +1,77 @@
+{
+  "dct_title_s": "Solar Insolation, Minnesota] (2006-2012)",
+  "dct_description_sm": [
+    "The Minnesota Solar Suitability Analysis attempts to provide solar insolation analysis for the entire State of Minnesota. As far as we are aware, it is the only project of its scale in existence; similar studies have been limited to metro areas or focus on rooftop insolation. The project's existence is feasible because of statewide, freely available aerial lidar coverage. And the commitment of the team to work long hours on this unfunded project. The project finds itself at the intersection of renewable energy, big data analysis, geospatial technology, and open data availability. This data provides a measure of incedent solar radiation as it is intercepted by the earth surface, or features (such as vegetation and buildings) standing above the earth surface. The data is intended to be used to assess the suitability of a site for solar panel (photovoltaic cell) installations. The analysis used to produce this dataset looks at geographic location, surface slope, surface aspect, and the effects of shading based on local topography and adjacent structures. A digital surface model was generated from raw LiDAR data. Then, using this DSM, an individual locations on a grid surface were assessed for the amount of direct and indirect radiation that reaches the surface. This analysis was conducted at a 1m resolution for the entire state of Minnesota."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Brink, Christopher",
+    "Gosack, Benjamin",
+    "Kne, Len",
+    "Luo, Yuanyuan",
+    "Martin, Christopher",
+    "McDonald, Molly",
+    "Moore, Michael",
+    "Munsch, Andrew",
+    "Palka, Stephen",
+    "Piernot, Devon",
+    "Thiede, Dan",
+    "Xie, Yiquan",
+    "Walz, Andrew"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "LiDAR"
+  ],
+  "dcat_theme_sm": [
+    "Imagery"
+  ],
+  "dcat_keyword_sm": [
+    "Lidar",
+    "Alternative Energy",
+    "Solar"
+  ],
+  "dct_temporal_sm": [
+    "2006-2012"
+  ],
+  "dct_issued_s": "2015-09-24",
+  "gbl_indexYear_im": [
+    "2006"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2006 TO 2006]"
+  ],
+  "dct_spatial_sm": [
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-97.5,-89,49.5,43)",
+  "dcat_bbox": "ENVELOPE(-97.5,-89,49.5,43)",
+  "dcat_centroid": "46.25,-93.25",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Files",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://dx.doi.org/10.13020/D6X59X\",\"http://schema.org/downloadUrl\":\"http://hdl.handle.net/11299/172642\",\"http://www.opengis.net/cat/csw/csdgm\":\"https://conservancy.umn.edu/bitstream/handle/11299/172642/solar_metadata_MGMG.xml\",\"http://www.w3.org/1999/xhtml\":\"https://conservancy.umn.edu/bitstream/handle/11299/172642/solar_metadata_MGMG.html\"}",
+  "id": "352b02d6-d2b8-4159-94f1-056de0293781",
+  "dct_identifier_sm": [
+    "http://dx.doi.org/10.13020/D6X59X",
+    "http://hdl.handle.net/11299/172642"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:49Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

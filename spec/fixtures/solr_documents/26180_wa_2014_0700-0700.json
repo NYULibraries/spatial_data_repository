@@ -1,0 +1,75 @@
+{
+  "dct_title_s": "Access Across America Walk Data [Honolulu, HI] (2014)",
+  "dct_alternative_sm": [
+    "Honolulu, HI"
+  ],
+  "dct_description_sm": [
+    "This data was created as part of a study that examined the accessibility to jobs by walking in the 53 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by walking, and it allows for a direct comparison of the walking accessibility performance of America's largest metropolitan areas. Downloads are available for individual metropolitan regions in CSV or Shapefile format. Combined ZIP files containing the data for all metropolitan regions are also available in CSV and Shapefile format, and are labeled as 'All Metropolitan Regions'."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Murphy, Brendan",
+    "Levinson, David M",
+    "Owen, Andrew"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data"
+  ],
+  "dct_subject_sm": [
+    "Pedestrians"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "Pedestrian",
+    "Walking"
+  ],
+  "dct_temporal_sm": [
+    "2014"
+  ],
+  "dct_issued_s": "2015-08-21",
+  "gbl_indexYear_im": [
+    "2014"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2014 TO 2014]"
+  ],
+  "dct_spatial_sm": [
+    "Honolulu, Hawaii",
+    "Hawaii"
+  ],
+  "locn_geometry": "ENVELOPE(-178.4,-157.6,28.5,21.2)",
+  "dcat_bbox": "ENVELOPE(-178.4,-157.6,28.5,21.2)",
+  "dcat_centroid": "24.85,-168.0",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03",
+    "ccf016e8-001d-4e12-a2c5-f757574c7134"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "8.083Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://dx.doi.org/10.13020/D6D598\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/173991/2014DataDoc.pdf\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/173991/26180_wa_2014_0700-0700.zip\"}",
+  "id": "26180_wa_2014_0700-0700",
+  "dct_identifier_sm": [
+    "http://dx.doi.org/10.13020/D6D598",
+    "http://hdl.handle.net/11299/173991"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:47Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

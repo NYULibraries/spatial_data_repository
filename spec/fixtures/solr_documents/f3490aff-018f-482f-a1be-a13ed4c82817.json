@@ -1,0 +1,73 @@
+{
+  "dct_title_s": "Duluth 1-Meter Land Cover Classification (Urban Focused)] (2016)",
+  "dct_description_sm": [
+    "A high-resolution (1-meter) land cover classification raster dataset was completed for three different geographic areas in Minnesota: Duluth, Rochester, and the seven-county Twin Cities Metropolitan area. This classification was created using high-resolution multispectral National Agriculture Imagery Program (NAIP) leaf-on imagery (2015), spring leaf-off imagery (2011- 2014), Multispectral derived indices, LiDAR data, LiDAR derived products, and other thematic ancillary data including the updated National Wetlands Inventory, LiDAR building footprints, airport, OpenStreetMap roads and railroads centerlines. These data sets were integrated using an Object-Based Image Analysis (OBIA) approach to classify 12 land cover classes: Deciduous Tree Canopy, Coniferous Tree Canopy, Buildings, Bare Soil, other Paved surface, Extraction, Row Crop, Grass/Shrub, Lakes, Rivers, Emergent Wetland, Forest and Shrub Wetland.  We mapped the 12 classes by using an OBIA approach through the creation of customized rule sets for each area. We used the Cognition Network Language (CNL) within the software eCognition Developer to develop the customized rule sets. The eCognition Server was used to execute a batch and parallel processing which greatly reduced the amount of time to produce the classification. The classification results were evaluated for each area using independent stratified randomly generated points. Accuracy assessment estimators included overall accuracies, producers accuracy, users accuracy, and kappa coefficient. The combination of spectral data and LiDAR through an OBIA method helped to improve the overall accuracy results providing more aesthetically pleasing maps of land cover classes with highly accurate results."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Host, Trevor K.",
+    "Rampi, Lian P.",
+    "Knight, Joe F."
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Raster data",
+    "LiDAR"
+  ],
+  "dct_subject_sm": [
+    "Railroads"
+  ],
+  "dcat_theme_sm": [
+    "Imagery"
+  ],
+  "dcat_keyword_sm": [
+    "Lidar",
+    "Land cover",
+    "NAIP"
+  ],
+  "dct_temporal_sm": [
+    "2011-2015"
+  ],
+  "dct_issued_s": "2016-08-01",
+  "gbl_indexYear_im": [
+    "2011"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2011 TO 2015]"
+  ],
+  "dct_spatial_sm": [
+    "Duluth, Minnesota",
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-92.31,-91.91,46.91,46.65)",
+  "dcat_bbox": "ENVELOPE(-92.31,-91.91,46.91,46.65)",
+  "dcat_centroid": "46.78,-92.11",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "GeoTIFF",
+  "gbl_fileSize_s": "16.30Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://doi.org/10.13020/D6PC72\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/181533/Classification%20scheme%20for%20Level%201%20and%202%20land%20cover%20classes.pdf\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/181533/Duluth.zip\",\"http://www.opengis.net/cat/csw/csdgm\":\"https://conservancy.umn.edu/bitstream/handle/11299/181533/Duluth_1m_LandCover_Metadata.xml\",\"http://www.w3.org/1999/xhtml\":\"https://conservancy.umn.edu/bitstream/handle/11299/181533/Duluth_1m_LandCover_Metadata.html\"}",
+  "id": "f3490aff-018f-482f-a1be-a13ed4c82817",
+  "dct_identifier_sm": [
+    "http://doi.org/10.13020/D6PC72",
+    "http://hdl.handle.net/11299/181533"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T00:17:54Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

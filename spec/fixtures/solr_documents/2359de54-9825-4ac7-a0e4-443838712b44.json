@@ -1,0 +1,73 @@
+{
+  "dct_title_s": "Block-level accessibility data for managed lanes in the Twin Cities] (2019)",
+  "dct_description_sm": [
+    "The data are provided in 4 ESRI shapefiles. The shapefiles are segmented by the analysis day of the week and departure time. The fields include the Census block-level 15-digit identifier (GEOID10), baseline accessibility, tier 1 managed lane scenario accessibility, their absolute difference, their percent difference. CRS EPSG: 4326 - WGS 84. Users should be able to map the cumulative job accessibility by automobile for 4 comparisons between baseline (general purpose lanes) and managed lanes (tier 1 corridors)."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Carlson, Kristin, M",
+    "Owen, Andrew"
+  ],
+  "dct_publisher_sm": [
+    "University of Minnesota, Center for Transportation Studies, Accessibility Observatory"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Line data",
+    "Vector data"
+  ],
+  "dct_subject_sm": [
+    "Census"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "accessibility"
+  ],
+  "dct_temporal_sm": [
+    "2019"
+  ],
+  "dct_issued_s": "2020-03-24",
+  "gbl_indexYear_im": [
+    "2019"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2019 TO 2019]"
+  ],
+  "dct_spatial_sm": [
+    "Minneapolis-St. Paul, Minnesota",
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-93.3292,-93.0143,45.0513,44.8902)",
+  "dcat_bbox": "ENVELOPE(-93.3292,-93.0143,45.0513,44.8902)",
+  "dcat_centroid": "44.970749999999995,-93.17175",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "116.3Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/24pw-ve70\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/212245/README.txt\",\"http://schema.org/downloadUrl\":[{\"label\":\"Shapefiles\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/212245/MANAGEDLANE_ACCESSIBILITY_EVALUATION_SHAPEFILES.zip\"}]}",
+  "id": "2359de54-9825-4ac7-a0e4-443838712b44",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/24pw-ve70",
+    "http://hdl.handle.net/11299/212245"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:53:57Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

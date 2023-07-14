@@ -1,0 +1,64 @@
+{
+  "dct_title_s": "Distribution Maps and Models for 13 Invasive Plants in Minnesota",
+  "dct_description_sm": [
+    "This dataset consists of raster (.tif) and map (.png) files for 13 invasive plants in Minnesota. Species included consist of: common buckthorn, glossy buckthorn, multiflora rose, garlic mustard, Canada thistle, common tansy, leafy spurge, spotted knapweed, wild parsnip, purple loosestrife, Japanese knotweed, narrowleaf bittercress, and plumeless thistle. The rasters (.tif files) included here consist of the output of species distribution modeling (SDM) conducted for each species; these files depict the mean cross-model and cross-assumption distribution estimates for each species, on a scale of 0 to 1. Values near 0 indicate low likelihood of finding the species there, or low habitat suitability, and values near 1 represent a high likelihood of finding the species. The maps (.png files) included here depict the same information, but in a static non-GIS compatible format."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Reinhardt, Jason R",
+    "Russell, Matthew B"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Raster data"
+  ],
+  "dcat_theme_sm": [
+    "Biology"
+  ],
+  "dcat_keyword_sm": [
+    "invasive plants"
+  ],
+  "dct_temporal_sm": [
+    "2019"
+  ],
+  "dct_issued_s": "2019-10-17",
+  "gbl_indexYear_im": [
+    "2019"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2019 TO 2019]"
+  ],
+  "dct_spatial_sm": [
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-97.24,-89.48,49.38,43.5)",
+  "dcat_bbox": "ENVELOPE(-97.24,-89.48,49.38,43.5)",
+  "dcat_centroid": "46.44,-93.36",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "GeoTIFF",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/bgg5-kk86\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/208549/data_description.txt\",\"http://schema.org/downloadUrl\":[{\"label\":\"TIFFs (19.08Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/208549/invasive_plant_rasters_2019.zip\"},{\"label\":\"PNGs (4.826Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/208549/invasive_plant_maps_2019.zip\"}]}",
+  "id": "f6d58f9b-600f-4bf3-8691-951a2435f9fa",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/D6G68V",
+    "http://hdl.handle.net/11299/208549"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T00:13:51Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

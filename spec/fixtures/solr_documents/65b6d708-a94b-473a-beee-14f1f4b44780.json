@@ -1,0 +1,64 @@
+{
+  "dct_title_s": "Minnesota Synagogues: A History Map",
+  "dct_description_sm": [
+    "Two files are included -- one for synagogues and one for cemeteries. The synagogue file includes the dates that the synagogue was at that location. Cemeteries do not have date ranges because they do not move over time in the same way as synagogues do. Cemeteries were included because they too tell a story of where Jewish community members were living."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Dietrick, Kate"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Society"
+  ],
+  "dcat_keyword_sm": [
+    "Synagogues"
+  ],
+  "dct_temporal_sm": [
+    "1856-2020"
+  ],
+  "dct_issued_s": "2020-04-01",
+  "gbl_indexYear_im": [
+    "1856"
+  ],
+  "gbl_dateRange_drsim": [
+    "[1856 TO 2020]"
+  ],
+  "dct_spatial_sm": [
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-97.24,-89.48,49.38,43.5)",
+  "dcat_bbox": "ENVELOPE(-97.24,-89.48,49.38,43.5)",
+  "dcat_centroid": "46.44,-93.36",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Files",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/yngk-mh80\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/212297/Readme_UMJA_Synagogues_Map.txt\",\"http://schema.org/downloadUrl\":[{\"label\":\"cemeteries CSV (3.389Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/212297/UMJA_Cemetery_map_data.csv\"},{\"label\":\"synagogues CSV (33.30Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/212297/UMJA_Synagogue_map_data.csv\"}]}",
+  "id": "65b6d708-a94b-473a-beee-14f1f4b44780",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/yngk-mh80",
+    "http://hdl.handle.net/11299/212297"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:50Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

@@ -1,0 +1,78 @@
+{
+  "dct_title_s": "Access Across America Bike Data [Austin-Round Rock-San Marcos, TX] (2017)",
+  "dct_alternative_sm": [
+    "Austin-Round Rock-San Marcos, TX"
+  ],
+  "dct_description_sm": [
+    "This data was created as part of a study that examined the accessibility to jobs by biking in the 50 largest (by population) metropolitan areas in the United States, on low-stress and higher-stress streets via a Level of Traffic Stress analysis process. It is the most detailed evaluation to date of access to jobs by bike nationally, and it allows for a direct comparison of the bicycle accessibility performance of America's largest metropolitan areas. This data are part of a longitudinal study.",
+    "Downloads are available for individual metropolitan regions, as well as states, in Geopackage format. Each individual ZIP file for a metropolitan area or state contains four ZIP-compressed Geopackage files of accessibility data, one for each of the four Level of Traffic Stress levels 1-4. A combined ZIP file containing the data for all metropolitan regions is also available in Geopackage format, and is labeled as \"All Metropolitan Regions.\""
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Murphy, Brendan",
+    "Owen, Andrew"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data"
+  ],
+  "dct_subject_sm": [
+    "Bicycles"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "accessibility",
+    "networks",
+    "bicycle"
+  ],
+  "dct_temporal_sm": [
+    "2017"
+  ],
+  "dct_issued_s": "2020-02-03",
+  "gbl_indexYear_im": [
+    "2017"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2017 TO 2017]"
+  ],
+  "dct_spatial_sm": [
+    "Austin, Texas",
+    "Round Rock, Texas",
+    "San Marcos, Texas",
+    "Texas"
+  ],
+  "locn_geometry": "ENVELOPE(-98.3,-97,30.9,29.6)",
+  "dcat_bbox": "ENVELOPE(-98.3,-97,30.9,29.6)",
+  "dcat_centroid": "30.25,-97.65",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03",
+    "99ae16c7-cf47-41a7-a41b-6086c4e83dae"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "155.1Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/vebr-4a83\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/211418/2018DataDoc_all_LEHD.pdf\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/211418/12420_bike_accessibility_data_2017.zip\"}",
+  "id": "12420_bike_accessibility_data_2017",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/vebr-4a83",
+    "http://hdl.handle.net/11299/211418"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:43Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

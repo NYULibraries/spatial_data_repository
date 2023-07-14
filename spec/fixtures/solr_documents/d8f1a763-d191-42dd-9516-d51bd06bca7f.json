@@ -1,0 +1,61 @@
+{
+  "dct_title_s": "Reconstruction of North American Drainage Basins and River Discharge Since the Last Glacial Maximum)",
+  "dct_description_sm": [
+    "Drainage basins and river discharges since the Last Glacial Maximum; released along with the article \"Reconstruction of North American drainage basins and river discharge since the Last Glacial Maximum\" to appear in the journal \"Earth Surface Dynamics\".",
+    "Changes in major drainage basins and river discharges across North American since the Last Glacial Maximum from calculations based on five different reconstructions of past ice sheets and glacial-isostatic adjustment. River discharges are stored as Numpy binary files. Drainage basins are stored as shapefiles. Images and videos are available for each ice-sheet and glaical-isostatic adjustment model tested. These images show past topography and sea level, drainage basin extents as black lines, rivers with local flow greater than 1000 cubic meters per second as blue lines, and the footprint of the ice-sheet as a semitransparent light-colored region. Ages are in the folder and file names for the drainage basins and the images, and take the form, \"0XXXXX', where this is the number of years before present (i.e. before 1950) that the rivers of North America are simulated to be structured as shown."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Wickert, Andrew D"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data",
+    "Vector data"
+  ],
+  "dcat_theme_sm": [
+    "Geology"
+  ],
+  "dcat_keyword_sm": [
+    "Drainage basins",
+    "Deglaciation",
+    "Paleohydrology"
+  ],
+  "dct_temporal_sm": [
+    "21000 Before Present"
+  ],
+  "dct_issued_s": "2016-09-13",
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "locn_geometry": "ENVELOPE(-179.9,-64.4,71.6,-14.8)",
+  "dcat_bbox": "ENVELOPE(-179.9,-64.4,71.6,-14.8)",
+  "dcat_centroid": "28.4,-122.15",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/licenses/by-sa/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://doi.org/10.13020/D6D01H\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/182076/readme.txt\",\"http://schema.org/downloadUrl\":[{\"label\":\"numpy binary files (58.28Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/182076/discharge_histories_2016.tar.gz\"},{\"label\":\"PNGs and MOVs (217.1Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/182076/NA_Figures_and_Movies_2016.tar.gz\"},{\"label\":\"shapefiles (76.13Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/182076/drainage_basin_histories_2016.tar.gz\"}]}",
+  "id": "d8f1a763-d191-42dd-9516-d51bd06bca7f",
+  "dct_identifier_sm": [
+    "http://doi.org/10.13020/D6D01H",
+    "http://hdl.handle.net/11299/182076"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T00:40:46Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

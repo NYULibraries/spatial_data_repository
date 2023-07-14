@@ -1,0 +1,75 @@
+{
+  "dct_title_s": "Springer Lab UAV Maize Phenotyping Project at UMN Saint Paul: 2018 and 2019 {Minnesota}",
+  "dct_alternative_sm": [
+    "Springer Lab UAV Maize Phenotyping Project at UMN StPaul: 2018 and 2019"
+  ],
+  "dct_description_sm": [
+    "This dataset provides a valuable resource for evaluating the utility of unmanned aerial vehicles to collect phenotypic data in agricultural fields. Many flights throughout the growing season of a maize experiment were conducted and this dataset includes digital elevation models generated from images within these flights, the plot boundary shapefiles for plot identification, plant height values extracted following Tirado et al., 2019 procedure, hand measurement height values conducted following flights, and yield data for each plot. This maize experiment consisted of twelve hybrids planted at three different planting densities (low, medium and high) and two planting dates (early and late) across two years and therefore provides a valuable resource for evaluating how temporal data collected from UAVs can aid in assessing plant productivity. It can also be utilized to develop and test different protocols for plant height extraction from DEMs at different growth stages as the hand measurements can be used to test the accuracy.",
+    "Files include digital elevation models for all flights of our maize field in the summer of 2018 and 2019, the plot boundary shapefiles, information on each plot including planting date and density and stand counts, yield data for all plots, and weather station data for both summers. More detailed info can be found in the readme file."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Tirado, Sara B",
+    "Hirsch, Candice N",
+    "Springer, Nathan M"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Raster data",
+    "Table data",
+    "Vector data",
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Agriculture"
+  ],
+  "dcat_keyword_sm": [
+    "maize",
+    "UAV",
+    "phenotyping",
+    "plant height"
+  ],
+  "dct_temporal_sm": [
+    "2018-2019"
+  ],
+  "dct_issued_s": "2020-05-05",
+  "gbl_indexYear_im": [
+    "2018"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2018 TO 2019]"
+  ],
+  "dct_spatial_sm": [
+    "Saint Paul, Minnesota",
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-93.187231,-93.160752,45.002151,44.984215)",
+  "dcat_bbox": "ENVELOPE(-93.187231,-93.160752,45.002151,44.984215)",
+  "dcat_centroid": "44.993183,-93.1739915",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Mixed",
+  "dct_references_s": "{\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/Readme_UAVPhenotypingProject_StPaul_2018and2019.txt\",\"http://schema.org/url\":\"https://doi.org/10.13020/j01t-wq81\",\"http://schema.org/downloadUrl\":[{\"label\":\"GDUcum_2018.csv (370bytes)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/GDUcum_2018.csv\"},{\"label\":\"GDUcum_2019.csv (573bytes)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/GDUcum_2019.csv\"},{\"label\":\"HandHeight_2018.csv (6.413Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/HandHeight_2018.csv\"},{\"label\":\"HandHeight_2019.csv (10.43Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/HandHeight_2019.csv\"},{\"label\":\"HarvestData_2018.csv (14.40Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/HarvestData_2018.csv\"},{\"label\":\"HarvestData_2019.csv (7.874Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/HarvestData_2019.csv\"},{\"label\":\"PlotBoundaryNames_2018_PlantingDate1.csv (652bytes)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/PlotBoundaryNames_2018_PlantingDate1.csv\"},{\"label\":\"PlotBoundaryNames_2018_PlantingDate2.csv (652bytes)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/PlotBoundaryNames_2018_PlantingDate2.csv\"},{\"label\":\"PlotBoundaryNames_2019_PlantingDate1.csv (5.046Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/PlotBoundaryNames_2019_PlantingDate1.csv\"},{\"label\":\"PlotBoundaryNames_2019_PlantingDate2.csv (3.660Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/PlotBoundaryNames_2019_PlantingDate2.csv\"},{\"label\":\"PlotInfo_2018.csv (7.145Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/PlotInfo_2018.csv\"},{\"label\":\"PlotInfo_2019.csv (8.366Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/PlotInfo_2019.csv\"},{\"label\":\"UAVHeight_2018.csv (18.09Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/UAVHeight_2018.csv\"},{\"label\":\"UAVHeight_2019.csv (28.44Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/UAVHeight_2019.csv\"},{\"label\":\"WatchdogWeatherStationData_2018.csv (419.8Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/WatchdogWeatherStationData_2018.csv\"},{\"label\":\"WatchdogWeatherStationData_2019.csv (295.2Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/WatchdogWeatherStationData_2019.csv\"},{\"label\":\"05232018_geotiffDEM.tif (1.222Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/05232018_geotiffDEM.tif\"},{\"label\":\"06052018_geotiffDEM.tif (1.109Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06052018_geotiffDEM.tif\"},{\"label\":\"06132018_geotiffDEM.tif (984.1Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06132018_geotiffDEM.tif\"},{\"label\":\"06282018_geotiffDEM.tif (789.5Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06282018_geotiffDEM.tif\"},{\"label\":\"07022018_geotiffDEM.tif (835.0Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07022018_geotiffDEM.tif\"},{\"label\":\"07052018_geotiffDEM.tif (892.2Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07052018_geotiffDEM.tif\"},{\"label\":\"07092018_geotiffDEM.tif (986.4Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07092018_geotiffDEM.tif\"},{\"label\":\"07122018_geotiffDEM.tif (817.5Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07122018_geotiffDEM.tif\"},{\"label\":\"07172018_geotiffDEM.tif (1.050Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07172018_geotiffDEM.tif\"},{\"label\":\"07242018_geotiffDEM.tif (1.010Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07242018_geotiffDEM.tif\"},{\"label\":\"07312018_geotiffDEM.tif (1.086Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07312018_geotiffDEM.tif\"},{\"label\":\"08092018_geotiffDEM.tif (1.005Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/08092018_geotiffDEM.tif\"},{\"label\":\"08172018_geotiffDEM.tif (1.018Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/08172018_geotiffDEM.tif\"},{\"label\":\"09062018_geotiffDEM.tif (1.095Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/09062018_geotiffDEM.tif\"},{\"label\":\"05232019_geotiffDEM.tif (1.306Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/05232019_geotiffDEM.tif\"},{\"label\":\"06022019_geotiffDEM.tif (1.391Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06022019_geotiffDEM.tif\"},{\"label\":\"06062019_geotiffDEM.tif (1.302Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06062019_geotiffDEM.tif\"},{\"label\":\"06082019_geotiffDEM.tif (1.423Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06082019_geotiffDEM.tif\"},{\"label\":\"06102019_geotiffDEM.tif (1.223Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06102019_geotiffDEM.tif\"},{\"label\":\"06132019_geotiffDEM.tif (1.075Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06132019_geotiffDEM.tif\"},{\"label\":\"06172019_geotiffDEM.tif (1.173Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06172019_geotiffDEM.tif\"},{\"label\":\"06252019_geotiffDEM.tif (984.1Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06252019_geotiffDEM.tif\"},{\"label\":\"06282019_geotiffDEM.tif (741.1Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/06282019_geotiffDEM.tif\"},{\"label\":\"07022019_geotiffDEM.tif (883.6Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07022019_geotiffDEM.tif\"},{\"label\":\"07082019_geotiffDEM.tif (829.2Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07082019_geotiffDEM.tif\"},{\"label\":\"07102019_geotiffDEM.tif (802.9Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07102019_geotiffDEM.tif\"},{\"label\":\"07122019_geotiffDEM.tif (793.9Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07122019_geotiffDEM.tif\"},{\"label\":\"07152019_geotiffDEM.tif (1.056Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07152019_geotiffDEM.tif\"},{\"label\":\"07162019_geotiffDEM.tif (825.0Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07162019_geotiffDEM.tif\"},{\"label\":\"07172019_geotiffDEM.tif (829.3Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07172019_geotiffDEM.tif\"},{\"label\":\"07182019_geotiffDEM.tif (1.012Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07182019_geotiffDEM.tif\"},{\"label\":\"07192019_geotiffDEM.tif (828.2Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07192019_geotiffDEM.tif\"},{\"label\":\"07222019_geotiffDEM.tif (1.103Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07222019_geotiffDEM.tif\"},{\"label\":\"07252019_geotiffDEM.tif (835.2Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07252019_geotiffDEM.tif\"},{\"label\":\"07312019_geotiffDEM.tif (1.100Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/07312019_geotiffDEM.tif\"},{\"label\":\"08082019_geotiffDEM.tif (1.094Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/08082019_geotiffDEM.tif\"},{\"label\":\"08212019_geotiffDEM.tif (1.093Gb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/08212019_geotiffDEM.tif\"},{\"label\":\"2018_plotboundaries.zip (127.5Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/2018_plotboundaries.zip\"},{\"label\":\"2019_plotboundaries.zip (714.8Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/213218/2019_plotboundaries.zip\"}]}",
+  "id": "13020-j01t-wq81",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/j01t-wq81"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T02:58:16Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

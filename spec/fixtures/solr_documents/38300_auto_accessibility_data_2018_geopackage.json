@@ -1,0 +1,76 @@
+{
+  "dct_title_s": "Access Across America Auto Data [Pittsburgh, PA] (2018)",
+  "dct_alternative_sm": [
+    "Pittsburgh, PA"
+  ],
+  "dct_description_sm": [
+    "This data was created as part of a study that examined the accessibility to jobs by auto in the 50 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by auto, and it allows for a direct comparison of the auto accessibility performance of America's largest metropolitan areas. This data is part of a longitudinal study. The data available describe access to jobs by auto in the states of Arkansas, California, District of Columbia, Florida, Illinois, Iowa, Maryland, Massachusetts, Minnesota, North Carolina, Tennessee, Washington, and Virginia, and the metropolitan areas within these states.",
+    "Downloads are available for individual metropolitan regions, as well as states, in Geopackage format. A combined ZIP file containing the data for all metropolitan regions is available, and is labeled as \"All Metropolitan Regions.\""
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Murphy, Brendan",
+    "Owen, Andrew"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data"
+  ],
+  "dct_subject_sm": [
+    "Automobiles"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "accessibility",
+    "networks",
+    "auto"
+  ],
+  "dct_temporal_sm": [
+    "2018"
+  ],
+  "dct_issued_s": "2020-01-31",
+  "gbl_indexYear_im": [
+    "2018"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2018 TO 2018]"
+  ],
+  "dct_spatial_sm": [
+    "Pittsburgh, Pennsylvania",
+    "Pennsylvania"
+  ],
+  "locn_geometry": "ENVELOPE(-80.5,-79,41.2,39.7)",
+  "dcat_bbox": "ENVELOPE(-80.5,-79,41.2,39.7)",
+  "dcat_centroid": "40.45,-79.75",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03",
+    "f397d257-3587-4b8a-ab40-fdd06f865862"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Geopackage",
+  "gbl_fileSize_s": "328.3Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/qyh7-qy92\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/211408/2018DataDoc_all_LEHD.pdf\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/211408/38300_auto_accessibility_data_2018_geopackage.zip\"}",
+  "id": "38300_auto_accessibility_data_2018_geopackage",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/qyh7-qy92",
+    "http://hdl.handle.net/11299/211408"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:42Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

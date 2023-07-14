@@ -1,0 +1,80 @@
+{
+  "dct_title_s": "Access Across America Transit Data [Austin-Round Rock-San Marcos, TX] (2014)",
+  "dct_alternative_sm": [
+    "Austin-Round Rock-San Marcos, TX"
+  ],
+  "dct_description_sm": [
+    "This data was created as part of a study that examined the accessibility to jobs by transit in 46 of the 50 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by transit, and it allows for a direct comparison of the transit accessibility performance of America's largest metropolitan areas.",
+    "This data was created as part of a study that examined the accessibility to jobs by transit in 46 of the 50 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by transit, and it allows for a direct comparison of the transit accessibility performance of America's largest metropolitan areas. Downloads are available for individual metropolitan regions in CSV or Shapefile format. Combined ZIP files containing the data for all metropolitan regions are also available in CSV and Shapefile format, and are labeled as 'All Metropolitan Regions.'"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Owen, Andrew",
+    "Levinson, David M"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data",
+    "Vector data"
+  ],
+  "dct_subject_sm": [
+    "Local transit"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "Networks",
+    "Transit",
+    "Connectivity",
+    "Heat map"
+  ],
+  "dct_temporal_sm": [
+    "2014"
+  ],
+  "dct_issued_s": "2014-12-05",
+  "gbl_indexYear_im": [
+    "2014"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2014 TO 2014]"
+  ],
+  "dct_spatial_sm": [
+    "Austin, Texas",
+    "Round Rock, Texas",
+    "San Marcos, Texas",
+    "Texas"
+  ],
+  "locn_geometry": "ENVELOPE(-98.3,-97,30.9,29.6)",
+  "dcat_bbox": "ENVELOPE(-98.3,-97,30.9,29.6)",
+  "dcat_centroid": "30.25,-97.65",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03",
+    "13e1226f-13c8-4cde-b74b-17dc635e9f8b"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "21.06Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://dx.doi.org/10.13020/D6MW2Q\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/168064/AODataDoc2014.pdf\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/168064/12420_tr_2014_0700-0859.zip\"}",
+  "id": "12420_tr_2014_0700-0859",
+  "dct_identifier_sm": [
+    "http://dx.doi.org/10.13020/D6MW2Q",
+    "http://hdl.handle.net/11299/168064"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:45Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

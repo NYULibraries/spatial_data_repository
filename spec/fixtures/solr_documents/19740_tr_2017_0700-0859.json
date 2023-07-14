@@ -1,0 +1,78 @@
+{
+  "dct_title_s": "Access Across America Transit Data [Denver-Aurora-Broomfield, CO] (2017)",
+  "dct_alternative_sm": [
+    "Denver-Aurora-Broomfield, CO"
+  ],
+  "dct_description_sm": [
+    "This data was created as part of a study that examined the accessibility to jobs by transit in 46 of the 50 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by transit, and it allows for a direct comparison of the transit accessibility performance of America's largest metropolitan areas.",
+    "This data was created as part of a study that examined the accessibility to jobs by transit in 46 of the 50 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by transit, and it allows for a direct comparison of the transit accessibility performance of America's largest metropolitan areas. Downloads are available for individual metropolitan regions in CSV or Shapefile format. Combined ZIP files containing the data for all metropolitan regions are also available in CSV and Shapefile format, and are labeled as 'All Metropolitan Regions.'"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Murphy, Brendan",
+    "Owen, Andrew"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data"
+  ],
+  "dct_subject_sm": [
+    "Local transit"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "accessibility",
+    "networks",
+    "transit"
+  ],
+  "dct_temporal_sm": [
+    "2017"
+  ],
+  "dct_issued_s": "2018-10-08",
+  "gbl_indexYear_im": [
+    "2017"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2017 TO 2017]"
+  ],
+  "dct_spatial_sm": [
+    "Denver, Colorado",
+    "Aurora, Colorado",
+    "Broomfield, Colorado",
+    "Colorado"
+  ],
+  "locn_geometry": "ENVELOPE(-106.2,-103.7,40,38.7)",
+  "dcat_bbox": "ENVELOPE(-106.2,-103.7,40,38.7)",
+  "dcat_centroid": "39.35,-104.95",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03",
+    "7028e6cf-0419-4e8e-bec3-e490de1b6112"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "37.96Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/D6G68V\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/200508/2017DataDoc.pdf\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/200508/19740_tr_2017_0700-0859.zip\"}",
+  "id": "19740_tr_2017_0700-0859",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/D6G68V",
+    "http://hdl.handle.net/11299/200508"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:38Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

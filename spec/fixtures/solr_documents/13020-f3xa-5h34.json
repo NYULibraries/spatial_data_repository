@@ -1,0 +1,75 @@
+{
+  "dct_title_s": "Digitization of Minnesota and Wisconsin bathymetric maps resulting in hypsographic data",
+  "dct_alternative_sm": [
+    "Digitization of Minnesota and Wisconsin bathymetric maps resulting in hypsographic data"
+  ],
+  "dct_description_sm": [
+    "The data set includes hypsographic data (area-at-depth) for over 750 Minnesota and Wisconsin lakes throughout the states. The majority of these lakes (650+) did not have publicly available hypsography. The hypsography was derived by digitizing bathymetric DNR maps using ImageJ. One hundred Minnesota lakes were selected that had DNR hypsographic data (in the form of a DEM) available and a comparison between the hypsographic data derived from DEMs and ImageJ was completed. These results, as well as code and hypsographic data is all available. The purpose of this work was to release broad scale lake area-at-depth data for limnological and aquatic biology studies.",
+    "Minnesota_Hypsography is a folder containing csv files of hypsographic data from Minnesota lakes. Validation_Hypsography is a folder containing csv files of hypsographic data used for validation. Wisconsin_Hypsography is a folder containing csv files of hypsographic data from Wisconsin lakes. MN_bathy.rds is an R file with interpolated depth for a subset of lakes in Minnesota. Hypso_QC.r is an R file used for quality control purposes with hypsographic data that has been digitzed. Validation_report is an R file that has the comparisons between DNR derived hypsography and ImageJ derived hypsography."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Rounds, Christopher I",
+    "Hansen, Gretchen JA",
+    "Vitense, Kelsey",
+    "Van Pelt, Amanda"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Table data",
+    "Point data"
+  ],
+  "dcat_theme_sm": [
+    "Inland waters"
+  ],
+  "dcat_keyword_sm": [
+    "limnology",
+    "lakes",
+    "aquatic ecology",
+    "bathymetry",
+    "hypsography"
+  ],
+  "dct_temporal_sm": [
+    "2019-2022"
+  ],
+  "dct_issued_s": "2022-05-13",
+  "gbl_indexYear_im": [
+    "2019"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2019 TO 2022]"
+  ],
+  "dct_spatial_sm": [
+    "Minnesota",
+    "Wisconsin"
+  ],
+  "locn_geometry": "ENVELOPE(-97.24,-86.78,49.38,42.47)",
+  "dcat_bbox": "ENVELOPE(-97.24,-86.78,49.38,42.47)",
+  "dcat_centroid": "45.925,-92.00999999999999",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://conservancy.umn.edu/handle/11299/216182.2"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "CSV",
+  "dct_references_s": "{\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/Readme.txt\",\"http://schema.org/url\":\"https://doi.org/10.13020/f3xa-5h34\",\"http://schema.org/downloadUrl\":[{\"label\":\"Minnesota Hypsography ZIP of CSVs (126.1Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/Minnesota_Hypsography.zip\"},{\"label\":\"Wisconsin Hypsography ZIP of CSVs (79.94Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/Wisconsin_Hypsography.zip\"},{\"label\":\"South Dakota Hypsography ZIP of CSVs (32.28Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/SouthDakota_Hypsography.zip\"},{\"label\":\"Validation Hypsography AVP ZIP of CSVs (25.81Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/Validation_Hypsography_AVP.zip\"},{\"label\":\"Validation Hyspography CR ZIP of CSVs (24.38Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/Validation_Hyspography_CR.zip\"},{\"label\":\"MN areas CSV (11.44Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/MN_areas.csv\"},{\"label\":\"WI areas CSV (6.990Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/WI_areas.csv\"},{\"label\":\"SD areas CSV (7.103Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/216182/SD_areas.csv\"}]}",
+  "id": "13020-f3xa-5h34",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/f3xa-5h34"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T02:58:16Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

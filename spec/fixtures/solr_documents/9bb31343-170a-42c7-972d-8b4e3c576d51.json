@@ -1,0 +1,70 @@
+{
+  "dct_title_s": "Twin Cities Historical Surface Waters Based on Original Public Land Survey Maps (1848 - 1858)",
+  "dct_description_sm": [
+    "These shapefiles of lakes, streams, wetlands, river bottoms, and the Mississippi River represent the hydrological landscape of Minneapolis and St. Paul as recorded in the original public land survey conducted between 1848 and 1858. The features were digitized from scanned, georeferenced 1:24000 maps during the 2017 Faculty Research Sprint held at the University of Minnesota. Many streams and other hydrologic features that were present in the Twin Cities at the time of the original land survey were channelized, covered, or filled during the late 1800's. These features, however, still function as water conduits within the hydrology systems of urban water and have immense importance to the water regime in the Twin Cities. This data was generated as part of a larger \"Lost Waters\" research project - aiming to create a visible, physical representation of these waters in the current urban landscape."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Graves, Richard",
+    "Strong, Richard",
+    "Mattke, Ryan",
+    "Kne, Len",
+    "Shepard, Coleman",
+    "Kernik, Melinda"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data"
+  ],
+  "dcat_theme_sm": [
+    "Inland waters"
+  ],
+  "dcat_keyword_sm": [
+    "Hydrology",
+    "Sustainable land use"
+  ],
+  "dct_temporal_sm": [
+    "1848-1858"
+  ],
+  "dct_issued_s": "2017-09-13",
+  "gbl_indexYear_im": [
+    "1848"
+  ],
+  "gbl_dateRange_drsim": [
+    "[1848 TO 1858]"
+  ],
+  "dct_spatial_sm": [
+    "Minneapolis-St. Paul-Bloomington, Minnesota",
+    "Minnesota"
+  ],
+  "locn_geometry": "ENVELOPE(-93.3537,-92.964,45.0514,44.8608)",
+  "dcat_bbox": "ENVELOPE(-93.3537,-92.964,45.0514,44.8608)",
+  "dcat_centroid": "44.9561,-93.15885",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "http://creativecommons.org/licenses/by-nc/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Files",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/D6DH3F\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/Readme_Codebook_RichardStrong.txt\",\"http://www.opengis.net/cat/csw/csdgm\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/water_historic_landsurvey.xml\",\"http://www.w3.org/1999/xhtml\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/water_historic_landsurvey.html\",\"http://schema.org/downloadUrl\":[{\"label\":\"river bottoms shapefile (12.93Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/Original_Land_Survey_Bottoms.zip\"},{\"label\":\"lakes shapefile (42.84Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/Original_Land_Survey_Lakes.zip\"},{\"label\":\"Mississippi River shapefile (12.42Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/Original_Land_Survey_MississippiRiver.zip\"},{\"label\":\"streams shapefile (82.87Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/Original_Land_Survey_Streams.zip\"},{\"label\":\"wetlands shapefile (33.04Kb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/Original_Land_Survey_Wetlands.zip\"},{\"label\":\"PDF map (10.68Mb)\",\"url\":\"https://conservancy.umn.edu/bitstream/handle/11299/190187/LostWater-PrintMap.pdf\"}]}",
+  "id": "9bb31343-170a-42c7-972d-8b4e3c576d51",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/D6DH3F",
+    "http://hdl.handle.net/11299/190187"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T00:48:09Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

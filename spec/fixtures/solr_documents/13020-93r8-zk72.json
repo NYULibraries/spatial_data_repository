@@ -1,0 +1,68 @@
+{
+  "dct_title_s": "Data and Scripts for manuscript \"Improving predictions of range expansion for invasive species using joint species distribution models and surrogate co-occurring species\"",
+  "dct_alternative_sm": [
+    "Data and Scripts for manuscript \"Improving predictions of range expansion for invasive species using joint species distribution models and surrogate co-occurring species\""
+  ],
+  "dct_description_sm": [
+    "Click \"Visit Source\" to download CSV data.",
+    "This data can be used to replicate the results from the manuscript \"Improving predictions of range expansion for invasive species using joint species distribution models and surrogate co-occurring species\". Included are R scripts and occurence datasets for running Generalized Boosted Models (GBM) species distribution models for the invasive species Cardamine impatiens, Celastrus orbiculatus, and Humulus japonicus. Also included are R scripts for building spatially explicit species co-occurrence matrices used for running joint species distribution models (specifically gjam models) in for plant communities in Minnesota based on the MN DNR plant releve dataset with a focus on incorporating the invasive species Cardamine impatiens, Celastrus orbiculatus, and Humulus japonicus as well as a case study for the native species Smilacina racemosa. The exact spatial location of each releve has been changed to a gridded position in order to protect the exact location. Raw releve data must be obtained from the MN DNR.",
+    "The data includes occurrence records for Cardamine impatiens, Celastrus orbiculatus, Humulus japonicus, and Smilacina racemosa downloaded from EDDMaps on 7 Sept 2020. Also included are spatially explicit species co-occurrence presence/absences matrices for Cardamine impatiens, Celastrus orbiculatus, Humulus japonicus, and Smilacina racemosa."
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Briscoe Runquist, Ryan D.",
+    "Lake, Thomas A.",
+    "Moeller, David A"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Table data",
+    "Line data"
+  ],
+  "dcat_theme_sm": [
+    "Biology"
+  ],
+  "dct_temporal_sm": [
+    "2020"
+  ],
+  "dct_issued_s": "2021-01-20",
+  "gbl_indexYear_im": [
+    "2020"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2020 TO 2020]"
+  ],
+  "dct_spatial_sm": [
+    "United States"
+  ],
+  "locn_geometry": "ENVELOPE(-179.14734,179.77847,71.352561,-14.552549)",
+  "dcat_bbox": "ENVELOPE(-179.14734,179.77847,71.352561,-14.552549)",
+  "dcat_centroid": "28.400005999999998,0.3155649999999923",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "2.882Mb",
+  "dct_references_s": "{\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/218005/readme.txt\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/218005/State_Shapes.zip\",\"http://schema.org/url\":\"https://doi.org/10.13020/93r8-zk72\"}",
+  "id": "13020-93r8-zk72",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/93r8-zk72"
+  ],
+  "gbl_mdModified_dt": "2022-06-24T02:58:16Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

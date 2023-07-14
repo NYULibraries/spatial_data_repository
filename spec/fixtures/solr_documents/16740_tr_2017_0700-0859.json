@@ -1,0 +1,79 @@
+{
+  "dct_title_s": "Access Across America Transit Data [Charlotte-Gastonia-Rock Hill, NC-SC] (2017)",
+  "dct_alternative_sm": [
+    "Charlotte-Gastonia-Rock Hill, NC-SC"
+  ],
+  "dct_description_sm": [
+    "This data was created as part of a study that examined the accessibility to jobs by transit in 46 of the 50 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by transit, and it allows for a direct comparison of the transit accessibility performance of America's largest metropolitan areas.",
+    "This data was created as part of a study that examined the accessibility to jobs by transit in 46 of the 50 largest (by population) metropolitan areas in the United States. It is the most detailed evaluation to date of access to jobs by transit, and it allows for a direct comparison of the transit accessibility performance of America's largest metropolitan areas. Downloads are available for individual metropolitan regions in CSV or Shapefile format. Combined ZIP files containing the data for all metropolitan regions are also available in CSV and Shapefile format, and are labeled as 'All Metropolitan Regions.'"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "dct_creator_sm": [
+    "Murphy, Brendan",
+    "Owen, Andrew"
+  ],
+  "schema_provider_s": "University of Minnesota",
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Vector data"
+  ],
+  "dct_subject_sm": [
+    "Local transit"
+  ],
+  "dcat_theme_sm": [
+    "Transportation"
+  ],
+  "dcat_keyword_sm": [
+    "accessibility",
+    "networks",
+    "transit"
+  ],
+  "dct_temporal_sm": [
+    "2017"
+  ],
+  "dct_issued_s": "2018-10-08",
+  "gbl_indexYear_im": [
+    "2017"
+  ],
+  "gbl_dateRange_drsim": [
+    "[2017 TO 2017]"
+  ],
+  "dct_spatial_sm": [
+    "Charlotte, North Carolina",
+    "Gastonia, North Carolina",
+    "Rock Hill, South Carolina",
+    "North Carolina",
+    "South Carolina"
+  ],
+  "locn_geometry": "ENVELOPE(-81.5,-79.8,35.5,34.8)",
+  "dcat_bbox": "ENVELOPE(-81.5,-79.8,35.5,34.8)",
+  "dcat_centroid": "35.15,-80.65",
+  "pcdm_memberOf_sm": [
+    "dc8c18df-7d64-4ff4-a754-d18d0891187d"
+  ],
+  "dct_isPartOf_sm": [
+    "05d-03",
+    "13e1226f-13c8-4cde-b74b-17dc635e9f8b"
+  ],
+  "dct_rights_sm": [
+    "https://conservancy.umn.edu/pages/drum/policies/#terms-of-use"
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/licenses/by/3.0/us/"
+  ],
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_fileSize_s": "26.13Mb",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://doi.org/10.13020/D6G68V\",\"http://lccn.loc.gov/sh85035852\":\"https://conservancy.umn.edu/bitstream/handle/11299/200508/2017DataDoc.pdf\",\"http://schema.org/downloadUrl\":\"https://conservancy.umn.edu/bitstream/handle/11299/200508/16740_tr_2017_0700-0859.zip\"}",
+  "id": "16740_tr_2017_0700-0859",
+  "dct_identifier_sm": [
+    "https://doi.org/10.13020/D6G68V",
+    "http://hdl.handle.net/11299/200508"
+  ],
+  "gbl_mdModified_dt": "2022-06-23T22:23:38Z",
+  "gbl_mdVersion_s": "Aardvark"
+}

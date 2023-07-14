@@ -13,7 +13,7 @@ module Features
       extra = OpenStruct.new(identities: OpenStruct.new)
 
       OmniAuth.config.test_mode = true
-      OmniAuth.config.add_mock(:nyulibraries, uid: user, extra: extra)
+      OmniAuth.config.add_mock(:nyulibraries, uid: user, extra:)
       visit user_nyulibraries_omniauth_authorize_path
     end
   end

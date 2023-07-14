@@ -1,6 +1,6 @@
-require "blacklight/catalog"
+require 'blacklight/catalog'
 
-class CatalogController < ApplicationController
+class CatalogController < ApplicationController # rubocop:disable Metrics/ClassLength
   include Blacklight::Catalog
 
   configure_blacklight do |config|
@@ -14,7 +14,7 @@ class CatalogController < ApplicationController
     ## @see https://lucene.apache.org/solr/guide/6_6/the-dismax-query-parser.html#TheDisMaxQueryParser-Theq.altParameter
     config.default_solr_params = {
       :start => 0,
-      "q.alt" => "*:*"
+      'q.alt' => '*:*'
     }
 
     ## Default rows returned from Solr
@@ -25,14 +25,14 @@ class CatalogController < ApplicationController
     ## parameters included in the Blacklight-jetty document requestHandler.
     #
     config.default_document_solr_params = {
-      qt: "document",
+      qt: 'document',
       q: "{!raw f=#{Settings.FIELDS.ID} v=$id}"
     }
 
     # GeoBlacklight Defaults
     # * Adds the "map" split view for catalog#index
-    config.view.split(partials: ["index"])
-    config.view.delete_field("list")
+    config.view.split(partials: ['index'])
+    config.view.delete_field('list')
 
     # solr field configuration for search results/index views
     # config.index.show_link = 'title_display'
@@ -44,12 +44,12 @@ class CatalogController < ApplicationController
     # This sets the metadata to display below the map viewer.
     # To move metadata above the map viewer,
     # remove the lines deleting and re-adding the :show partial
-    config.show.display_type_field = "format"
+    config.show.display_type_field = 'format'
     config.show.partials.delete(:show)
-    config.show.partials << "show_default_display_note"
-    config.show.partials << "show_default_viewer_container"
-    config.show.partials << "show_default_attribute_table"
-    config.show.partials << "show_default_viewer_information"
+    config.show.partials << 'show_default_display_note'
+    config.show.partials << 'show_default_viewer_container'
+    config.show.partials << 'show_default_attribute_table'
+    config.show.partials << 'show_default_viewer_information'
     config.show.partials << :show
 
     ##
@@ -94,18 +94,18 @@ class CatalogController < ApplicationController
 
     # DEFAULT FACETS
     # to add additional facets, use the keys defined in the settings.yml file
-    config.add_facet_field Settings.FIELDS.INDEX_YEAR, label: "Year", limit: 10
-    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, label: "Place", limit: 8
-    config.add_facet_field Settings.FIELDS.ACCESS_RIGHTS, label: "Access", limit: 8, item_component: Geoblacklight::IconFacetItemComponent
-    config.add_facet_field Settings.FIELDS.RESOURCE_CLASS, label: "Resource Class", limit: 8
-    config.add_facet_field Settings.FIELDS.RESOURCE_TYPE, label: "Resource Type", limit: 8
-    config.add_facet_field Settings.FIELDS.FORMAT, label: "Format", limit: 8
-    config.add_facet_field Settings.FIELDS.SUBJECT, label: "Subject", limit: 8
-    config.add_facet_field Settings.FIELDS.THEME, label: "Theme", limit: 8
-    config.add_facet_field Settings.FIELDS.CREATOR, label: "Creator", limit: 8
-    config.add_facet_field Settings.FIELDS.PUBLISHER, label: "Publisher", limit: 8
-    config.add_facet_field Settings.FIELDS.PROVIDER, label: "Provider", limit: 8, item_component: Geoblacklight::IconFacetItemComponent
-    config.add_facet_field Settings.FIELDS.GEOREFERENCED, label: "Georeferenced", limit: 3
+    config.add_facet_field Settings.FIELDS.INDEX_YEAR, label: 'Year', limit: 10
+    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Place', limit: 8
+    config.add_facet_field Settings.FIELDS.ACCESS_RIGHTS, label: 'Access', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
+    config.add_facet_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', limit: 8
+    config.add_facet_field Settings.FIELDS.RESOURCE_TYPE, label: 'Resource Type', limit: 8
+    config.add_facet_field Settings.FIELDS.FORMAT, label: 'Format', limit: 8
+    config.add_facet_field Settings.FIELDS.SUBJECT, label: 'Subject', limit: 8
+    config.add_facet_field Settings.FIELDS.THEME, label: 'Theme', limit: 8
+    config.add_facet_field Settings.FIELDS.CREATOR, label: 'Creator', limit: 8
+    config.add_facet_field Settings.FIELDS.PUBLISHER, label: 'Publisher', limit: 8
+    config.add_facet_field Settings.FIELDS.PROVIDER, label: 'Provider', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
+    config.add_facet_field Settings.FIELDS.GEOREFERENCED, label: 'Georeferenced', limit: 3
 
     # GEOBLACKLIGHT APPLICATION FACETS
 
@@ -114,19 +114,19 @@ class CatalogController < ApplicationController
     # filter_query_builder - Defines the query generated for Solr
     # filter_class         - Defines how to add/remove facet from query
     # label                - Defines the label used in contstraints container
-    config.add_facet_field Settings.FIELDS.GEOMETRY, item_presenter: Geoblacklight::BboxItemPresenter, filter_class: Geoblacklight::BboxFilterField, filter_query_builder: Geoblacklight::BboxFilterQuery, within_boost: Settings.BBOX_WITHIN_BOOST, overlap_boost: Settings.OVERLAP_RATIO_BOOST, overlap_field: Settings.FIELDS.OVERLAP_FIELD, label: "Bounding Box"
+    config.add_facet_field Settings.FIELDS.GEOMETRY, item_presenter: Geoblacklight::BboxItemPresenter, filter_class: Geoblacklight::BboxFilterField, filter_query_builder: Geoblacklight::BboxFilterQuery, within_boost: Settings.BBOX_WITHIN_BOOST, overlap_boost: Settings.OVERLAP_RATIO_BOOST, overlap_field: Settings.FIELDS.OVERLAP_FIELD, label: 'Bounding Box'
 
     # Item Relationship Facets
     # * Not displayed to end user (show: false)
     # * Must be present for relationship "Browse all 4 records" links to work
     # * Label value becomes the search contraint filter name
-    config.add_facet_field Settings.FIELDS.MEMBER_OF, label: "Member Of", show: false
-    config.add_facet_field Settings.FIELDS.IS_PART_OF, label: "Is Part Of", show: false
-    config.add_facet_field Settings.FIELDS.RELATION, label: "Related", show: false
-    config.add_facet_field Settings.FIELDS.REPLACES, label: "Replaces", show: false
-    config.add_facet_field Settings.FIELDS.IS_REPLACED_BY, label: "Is Replaced By", show: false
-    config.add_facet_field Settings.FIELDS.SOURCE, label: "Source", show: false
-    config.add_facet_field Settings.FIELDS.VERSION, label: "Is Version Of", show: false
+    config.add_facet_field Settings.FIELDS.MEMBER_OF, label: 'Member Of', show: false
+    config.add_facet_field Settings.FIELDS.IS_PART_OF, label: 'Is Part Of', show: false
+    config.add_facet_field Settings.FIELDS.RELATION, label: 'Related', show: false
+    config.add_facet_field Settings.FIELDS.REPLACES, label: 'Replaces', show: false
+    config.add_facet_field Settings.FIELDS.IS_REPLACED_BY, label: 'Is Replaced By', show: false
+    config.add_facet_field Settings.FIELDS.SOURCE, label: 'Source', show: false
+    config.add_facet_field Settings.FIELDS.VERSION, label: 'Is Version Of', show: false
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -158,28 +158,28 @@ class CatalogController < ApplicationController
     # The following fields all feature string values. If there is a value present in the metadata, they fields will show up on the item show page.
     # The labels and order can be customed. Comment out fields to hide them.
 
-    config.add_show_field Settings.FIELDS.ALTERNATIVE_TITLE, label: "Alternative Title", itemprop: "alt_title"
-    config.add_show_field Settings.FIELDS.DESCRIPTION, label: "Description", itemprop: "description", helper_method: :render_value_as_truncate_abstract
-    config.add_show_field Settings.FIELDS.CREATOR, label: "Creator", itemprop: "creator"
-    config.add_show_field Settings.FIELDS.PUBLISHER, label: "Publisher", itemprop: "publisher"
-    config.add_show_field Settings.FIELDS.PROVIDER, label: "Provider", link_to_facet: true
-    config.add_show_field Settings.FIELDS.RESOURCE_CLASS, label: "Resource Class", itemprop: "class"
-    config.add_show_field Settings.FIELDS.RESOURCE_TYPE, label: "Resource Type", itemprop: "type"
-    config.add_show_field Settings.FIELDS.SUBJECT, label: "Subject", itemprop: "keywords", link_to_facet: true
-    config.add_show_field Settings.FIELDS.THEME, label: "Theme", itemprop: "theme"
-    config.add_show_field Settings.FIELDS.TEMPORAL_COVERAGE, label: "Temporal Coverage", itemprop: "temporal"
-    config.add_show_field Settings.FIELDS.DATE_ISSUED, label: "Date Issued", itemprop: "issued"
-    config.add_show_field Settings.FIELDS.SPATIAL_COVERAGE, label: "Spatial Coverage", itemprop: "spatial", link_to_facet: true
-    config.add_show_field Settings.FIELDS.RIGHTS, label: "Rights", itemprop: "rights"
-    config.add_show_field Settings.FIELDS.RIGHTS_HOLDER, label: "Rights Holder", itemprop: "rights_holder"
-    config.add_show_field Settings.FIELDS.LICENSE, label: "License", itemprop: "license"
-    config.add_show_field Settings.FIELDS.ACCESS_RIGHTS, label: "Access Rights", itemprop: "access_rights"
-    config.add_show_field Settings.FIELDS.FORMAT, label: "Format", itemprop: "format"
-    config.add_show_field Settings.FIELDS.FILE_SIZE, label: "File Size", itemprop: "file_size"
-    config.add_show_field Settings.FIELDS.GEOREFERENCED, label: "Georeferenced", itemprop: "georeferenced"
+    config.add_show_field Settings.FIELDS.ALTERNATIVE_TITLE, label: 'Alternative Title', itemprop: 'alt_title'
+    config.add_show_field Settings.FIELDS.DESCRIPTION, label: 'Description', itemprop: 'description', helper_method: :render_value_as_truncate_abstract
+    config.add_show_field Settings.FIELDS.CREATOR, label: 'Creator', itemprop: 'creator'
+    config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher'
+    config.add_show_field Settings.FIELDS.PROVIDER, label: 'Provider', link_to_facet: true
+    config.add_show_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', itemprop: 'class'
+    config.add_show_field Settings.FIELDS.RESOURCE_TYPE, label: 'Resource Type', itemprop: 'type'
+    config.add_show_field Settings.FIELDS.SUBJECT, label: 'Subject', itemprop: 'keywords', link_to_facet: true
+    config.add_show_field Settings.FIELDS.THEME, label: 'Theme', itemprop: 'theme'
+    config.add_show_field Settings.FIELDS.TEMPORAL_COVERAGE, label: 'Temporal Coverage', itemprop: 'temporal'
+    config.add_show_field Settings.FIELDS.DATE_ISSUED, label: 'Date Issued', itemprop: 'issued'
+    config.add_show_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Spatial Coverage', itemprop: 'spatial', link_to_facet: true
+    config.add_show_field Settings.FIELDS.RIGHTS, label: 'Rights', itemprop: 'rights'
+    config.add_show_field Settings.FIELDS.RIGHTS_HOLDER, label: 'Rights Holder', itemprop: 'rights_holder'
+    config.add_show_field Settings.FIELDS.LICENSE, label: 'License', itemprop: 'license'
+    config.add_show_field Settings.FIELDS.ACCESS_RIGHTS, label: 'Access Rights', itemprop: 'access_rights'
+    config.add_show_field Settings.FIELDS.FORMAT, label: 'Format', itemprop: 'format'
+    config.add_show_field Settings.FIELDS.FILE_SIZE, label: 'File Size', itemprop: 'file_size'
+    config.add_show_field Settings.FIELDS.GEOREFERENCED, label: 'Georeferenced', itemprop: 'georeferenced'
     config.add_show_field(
       Settings.FIELDS.REFERENCES,
-      label: "More details at",
+      label: 'More details at',
       accessor: [:external_url],
       if: proc { |_, _, doc| doc.external_url },
       helper_method: :render_references_url
@@ -231,7 +231,7 @@ class CatalogController < ApplicationController
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise.
 
-    config.add_search_field "all_fields", label: "All Fields"
+    config.add_search_field 'all_fields', label: 'All Fields'
     # config.add_search_field 'dct_title_ti', :label => 'Title'
     # config.add_search_field 'dct_description_ti', :label => 'Description'
 
@@ -285,33 +285,33 @@ class CatalogController < ApplicationController
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-    config.add_sort_field "score desc, dct_title_sort asc", label: "Relevance"
-    config.add_sort_field "#{Settings.FIELDS.INDEX_YEAR} desc, dct_title_sort asc", label: "Year (Newest first)"
-    config.add_sort_field "#{Settings.FIELDS.INDEX_YEAR} asc, dct_title_sort asc", label: "Year (Oldest first)"
-    config.add_sort_field "dct_title_sort asc", label: "Title (A-Z)"
-    config.add_sort_field "dct_title_sort desc", label: "Title (Z-A)"
+    config.add_sort_field 'score desc, dct_title_sort asc', label: 'Relevance'
+    config.add_sort_field "#{Settings.FIELDS.INDEX_YEAR} desc, dct_title_sort asc", label: 'Year (Newest first)'
+    config.add_sort_field "#{Settings.FIELDS.INDEX_YEAR} asc, dct_title_sort asc", label: 'Year (Oldest first)'
+    config.add_sort_field 'dct_title_sort asc', label: 'Title (A-Z)'
+    config.add_sort_field 'dct_title_sort desc', label: 'Title (Z-A)'
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
     config.spell_max = 5
 
     # Nav actions from Blacklight
-    config.add_nav_action(:bookmark, partial: "blacklight/nav/bookmark", if: :render_bookmarks_control?)
-    config.add_nav_action(:search_history, partial: "blacklight/nav/search_history")
+    config.add_nav_action(:bookmark, partial: 'blacklight/nav/bookmark', if: :render_bookmarks_control?)
+    config.add_nav_action(:search_history, partial: 'blacklight/nav/search_history')
 
     # Tools from Blacklight
     config.add_results_collection_tool(:sort_widget)
     config.add_results_collection_tool(:per_page_widget)
-    config.add_show_tools_partial(:bookmark, partial: "bookmark_control", if: :render_bookmarks_control?)
+    config.add_show_tools_partial(:bookmark, partial: 'bookmark_control', if: :render_bookmarks_control?)
     config.add_show_tools_partial(:citation)
     config.add_show_tools_partial(:email, callback: :email_action, validator: :validate_email_params)
     config.add_show_tools_partial(:sms, if: :render_sms_action?, callback: :sms_action, validator: :validate_sms_params)
 
     # Custom tools for GeoBlacklight
     config.add_show_tools_partial :metadata, if: proc { |_context, _config, options| options[:document] && (Settings.METADATA_SHOWN & options[:document].references.refs.map(&:type).map(&:to_s)).any? }
-    config.add_show_tools_partial :carto, partial: "carto", if: proc { |_context, _config, options| options[:document] && options[:document].carto_reference.present? }
-    config.add_show_tools_partial :arcgis, partial: "arcgis", if: proc { |_context, _config, options| options[:document] && options[:document].arcgis_urls.present? }
-    config.add_show_tools_partial :data_dictionary, partial: "data_dictionary", if: proc { |_context, _config, options| options[:document] && options[:document].data_dictionary_download.present? }
+    config.add_show_tools_partial :carto, partial: 'carto', if: proc { |_context, _config, options| options[:document] && options[:document].carto_reference.present? }
+    config.add_show_tools_partial :arcgis, partial: 'arcgis', if: proc { |_context, _config, options| options[:document] && options[:document].arcgis_urls.present? }
+    config.add_show_tools_partial :data_dictionary, partial: 'data_dictionary', if: proc { |_context, _config, options| options[:document] && options[:document].data_dictionary_download.present? }
 
     # Configure basemap provider for GeoBlacklight maps (uses https only basemap
     # providers with open licenses)
@@ -326,11 +326,11 @@ class CatalogController < ApplicationController
     # 'openstreetmapHot'
     # 'openstreetmapStandard'
 
-    config.basemap_provider = "positron"
+    config.basemap_provider = 'positron'
 
     # Configuration for autocomplete suggestor
     config.autocomplete_enabled = true
-    config.autocomplete_path = "suggest"
+    config.autocomplete_path = 'suggest'
   end
 
   def web_services

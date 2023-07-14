@@ -3,7 +3,7 @@
 # Represent a single document returned from Solr
 class SolrDocument
   include Blacklight::Solr::Document
- include Geoblacklight::SolrDocument
+  include Geoblacklight::SolrDocument
 
   # self.unique_key = 'id'
   self.unique_key = Settings.FIELDS.UNIQUE_KEY

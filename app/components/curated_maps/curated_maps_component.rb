@@ -2,7 +2,7 @@
 
 module CuratedMaps
   class CuratedMapsComponent < ViewComponent::Base
-    def initialize(maps: ::NyuGeoblacklight::CuratedCollections.maps.sample(3))
+    def initialize(maps: )
       super
       @maps = maps
     end

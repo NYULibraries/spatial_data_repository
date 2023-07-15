@@ -17,7 +17,7 @@
           <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.recent[0..1],
                                                                          header: 'Recently Updated') %>
         </div>
-        <%= render CuratedMaps::CuratedMapsComponent.new %>
+        <%= render CuratedMaps::CuratedMapsComponent.new(maps: ::NyuGeoblacklight::CuratedCollections.maps.sample(3)) %>
       </div>
     </section>
   <% end %>

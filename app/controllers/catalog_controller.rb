@@ -94,18 +94,19 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
 
     # DEFAULT FACETS
     # to add additional facets, use the keys defined in the settings.yml file
-    config.add_facet_field Settings.FIELDS.INDEX_YEAR, label: 'Year', limit: 10
-    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Place', limit: 8
-    config.add_facet_field Settings.FIELDS.ACCESS_RIGHTS, label: 'Access', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
-    config.add_facet_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', limit: 8
-    config.add_facet_field Settings.FIELDS.RESOURCE_TYPE, label: 'Resource Type', limit: 8
-    config.add_facet_field Settings.FIELDS.FORMAT, label: 'Format', limit: 8
+    config.add_facet_field Settings.FIELDS.PROVIDER, label: 'Institution', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
+    config.add_facet_field Settings.FIELDS.CREATOR, label: 'Author', limit: 8
     config.add_facet_field Settings.FIELDS.SUBJECT, label: 'Subject', limit: 8
-    config.add_facet_field Settings.FIELDS.THEME, label: 'Theme', limit: 8
-    config.add_facet_field Settings.FIELDS.CREATOR, label: 'Creator', limit: 8
-    config.add_facet_field Settings.FIELDS.PUBLISHER, label: 'Publisher', limit: 8
-    config.add_facet_field Settings.FIELDS.PROVIDER, label: 'Provider', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
-    config.add_facet_field Settings.FIELDS.GEOREFERENCED, label: 'Georeferenced', limit: 3
+    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Place', limit: 8
+    config.add_facet_field Settings.FIELDS.IS_PART_OF, label: 'Collection', show: true
+    config.add_facet_field Settings.FIELDS.INDEX_YEAR, label: 'Year', limit: 10
+    config.add_facet_field Settings.FIELDS.ACCESS_RIGHTS, label: 'Access', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
+    # config.add_facet_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', limit: 8
+    config.add_facet_field Settings.FIELDS.RESOURCE_TYPE, label: 'Data Type', limit: 8
+    config.add_facet_field Settings.FIELDS.FORMAT, label: 'Format', limit: 8
+    # config.add_facet_field Settings.FIELDS.THEME, label: 'Theme', limit: 8
+    # config.add_facet_field Settings.FIELDS.PUBLISHER, label: 'Publisher', limit: 8
+    # config.add_facet_field Settings.FIELDS.GEOREFERENCED, label: 'Georeferenced', limit: 3
 
     # GEOBLACKLIGHT APPLICATION FACETS
 
@@ -121,7 +122,6 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     # * Must be present for relationship "Browse all 4 records" links to work
     # * Label value becomes the search contraint filter name
     config.add_facet_field Settings.FIELDS.MEMBER_OF, label: 'Member Of', show: false
-    config.add_facet_field Settings.FIELDS.IS_PART_OF, label: 'Is Part Of', show: false
     config.add_facet_field Settings.FIELDS.RELATION, label: 'Related', show: false
     config.add_facet_field Settings.FIELDS.REPLACES, label: 'Replaces', show: false
     config.add_facet_field Settings.FIELDS.IS_REPLACED_BY, label: 'Is Replaced By', show: false

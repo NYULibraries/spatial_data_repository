@@ -9,19 +9,15 @@
     </section>
   <% else %>
     <section class="col-md-12">
-      <div id="nyu-all-site">
-        <div id="nyu-sdr-content">
-          <%= yield %>
-          <div class="curated">
-            <div class="row">
-              <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.collections.sample(2),
-                                                                             header: 'Featured Collections') %>
-              <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.recent[0..1],
-                                                                             header: 'Recently Updated') %>
-            </div>
-            <%= render CuratedMaps::CuratedMapsComponent.new %>
-          </div>
+      <%= yield %>
+      <div class="curated">
+        <div class="row">
+          <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.collections.sample(2),
+                                                                         header: 'Featured Collections') %>
+          <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.recent[0..1],
+                                                                         header: 'Recently Updated') %>
         </div>
+        <%= render CuratedMaps::CuratedMapsComponent.new %>
       </div>
     </section>
   <% end %>

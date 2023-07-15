@@ -1,4 +1,7 @@
 <ul class="navbar-nav">
+  <li class="nav-item">
+    <%= link_to 'Submit', 'http://metadata.geo.nyu.edu/deposit', class: 'nav-link'  %>
+  </li>
   <%= render_nav_actions do |config, action|%>
     <li class="nav-item"><%= action %></li>
   <% end %>

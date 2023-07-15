@@ -1,15 +1,20 @@
 # frozen_string_literal: true
 
-require "rails_helper"
+require 'spec_helper'
 
 RSpec.describe CuratedMaps::CuratedMapComponent, type: :component do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:map) { ::NyuGeoblacklight::CuratedCollections.maps.first }
 
-  # it "renders something useful" do
-  #   expect(
-  #     render_inline(described_class.new(attr: "value")) { "Hello, components!" }.css("p").to_html
-  #   ).to include(
-  #     "Hello, components!"
-  #   )
-  # end
+  it 'renders the map' do
+    render_inline(described_class.new(map:))
+
+    expect(page).to have_css('a.curated-card')
+  end
+
+  it 'renders the map title' do
+    render_inline(described_class.new(map:))
+
+    expect(page).to have_css('h4.card-title')
+    expect(page).to have_content(map[:title])
+  end
 end

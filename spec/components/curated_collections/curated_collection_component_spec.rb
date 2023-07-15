@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require "rails_helper"
+require 'spec_helper'
 
 RSpec.describe CuratedCollections::CuratedCollectionComponent, type: :component do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:collection) { NyuGeoblacklight::CuratedCollections.collections.first }
+  let(:component) { described_class.new(collection: collection) }
 
-  # it "renders something useful" do
-  #   expect(
-  #     render_inline(described_class.new(attr: "value")) { "Hello, components!" }.css("p").to_html
-  #   ).to include(
-  #     "Hello, components!"
-  #   )
-  # end
+  describe 'rendering the component' do
+    subject { render_inline(component) }
+
+    it { is_expected.to have_css('.card-title', text: collection[:title]) }
+    it { is_expected.to have_css('.card-text', text: collection[:description]) }
+  end
 end

@@ -12,6 +12,9 @@ require 'factory_bot'
 require 'rspec/rails'
 require 'selenium-webdriver'
 require 'simplecov'
+require "view_component/test_helpers"
+require "view_component/system_test_helpers"
+
 
 SimpleCov.start do
   add_filter 'spec'
@@ -65,4 +68,9 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 
   config.infer_spec_type_from_file_location!
+
+
+  config.include ViewComponent::TestHelpers, type: :component
+  config.include ViewComponent::SystemTestHelpers, type: :component
+  config.include Capybara::RSpecMatchers, type: :component
 end

@@ -4,7 +4,7 @@ require 'spec_helper'
 
 RSpec.describe CuratedCollections::CuratedCollectionComponent, type: :component do
   let(:collection) { NyuGeoblacklight::CuratedCollections.collections.first }
-  let(:component) { described_class.new(collection: collection) }
+  let(:component) { described_class.new(collection:) }
 
   describe 'rendering the component' do
     subject { render_inline(component) }

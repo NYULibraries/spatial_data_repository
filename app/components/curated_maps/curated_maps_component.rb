@@ -2,7 +2,7 @@
 
 module CuratedMaps
   class CuratedMapsComponent < ViewComponent::Base
-    def initialize(maps: )
+    def initialize(maps:)
       super
       @maps = maps
     end

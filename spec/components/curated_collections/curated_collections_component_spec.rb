@@ -7,8 +7,8 @@ RSpec.describe CuratedCollections::CuratedCollectionsComponent, type: :component
   let(:header) { 'Curated Collections' }
 
   subject do
-    render_inline(described_class.new(collections: collections,
-                                      header: header))
+    render_inline(described_class.new(collections:,
+                                      header:))
   end
 
   it 'renders the header' do

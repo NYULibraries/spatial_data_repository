@@ -1,0 +1,62 @@
+{
+  "dc_type_s": "Dataset",
+  "dct_isPartOf_sm": [
+    "NYU Research Data",
+    "2019 Sunset Park LiDAR"
+  ],
+  "dct_source_sm": [
+    "nyu-2451-60458"
+  ],
+  "layer_geom_type_s": "Mixed",
+  "nyu_addl_dspace_s": "61433",
+  "nyu_addl_downloads_s": "{\"Globus endpoint\":\"https://app.globus.org/file-manager?origin_id=73419098-207a-11ea-ab45-0a7959ea6081&origin_path=%2F\"}",
+  "nyu_addl_format_sm": [
+    "Mixed"
+  ],
+  "dct_title_s": "Index of Diagonal Flight Paths for LiDAR Data Collection in Sunset Park, Brooklyn, NY, 2019",
+  "dct_description_sm": [
+    "This record is an index to 45 diagonal flight paths taken during an aerial laser scanning (ALS) and photogrammetry data collection that represents an area of about 1.0 km\u00b2 in Sunset Park, Brooklyn, NY. The flights and data capture occured in April, 2019. In total, there are 85 flights (45 diagonal and 40 orthogonal paths) and 157 tiles. Each flight line package includes one LiDAR Point Cloud file in LAZ format, two LiDAR Full waveform files in PulseWaves format, two LiDAR Full waveform files in LAS format, and a series of RGBI Nadir Imagery files in TIFF format. Future data releases will include 16 hyperspectral data files. Each tile contains one Point Cloud file in LAZ format. In this 2019 Sunset Park collection, billions of laser points were acquired (inclusive of partially covered areas). ALS was carried out by contractors using a RIEGL LMS-Q680i LiDAR Scanner and an ITRES MicroCASI 1920 Hyperspectral Camera. The average flying altitude was approximately 1000 feet above ground level. This dataset was harvested to obtain high accuracy representations of the urban environment that can be used as a basis for urban informatics research and various practical applications, including digital mapping for auto navigation, pedestrian wind modeling, disability access optimization, solar modeling, and disaster mitigation. The data can also be used as a spatial skeleton for gaming, VR/AR, and special effects in films, as well as for understanding non-remote sensing data such as noise, pollution, and many classes of dynamic data. For full information on this data, consult the documentation and metadata. See the source dataset for a guide to the entire collection. A collection-level manifest of SHA-256 checksums is available in the nyu-2451-60458-manifest.json file, within the preservation record. Users may also find a stable link to this collection at https://doi.org/10.17609/4cpx-2h33/ and may download the collection in bulk via an NYU-provisioned Globus endpoint (see instructions in the metadata). This data is released with an Attribution 4.0 International (CC BY 4.0) license."
+  ],
+  "dct_language_sm": [
+    "English"
+  ],
+  "dct_creator_sm": [
+    "Debra F. Laefer",
+    "Anh-Vu Vo"
+  ],
+  "dct_publisher_sm": [
+    "New York University. Center for Urban Science and Progress"
+  ],
+  "schema_provider_s": "NYU",
+  "dct_subject_sm": [
+    "Cities and towns",
+    "Urban density",
+    "Urban development",
+    "Cities and towns--United States",
+    "Remote Sensing",
+    "Community development, Urban",
+    "Land use, Urban"
+  ],
+  "dct_temporal_sm": [
+    "2019"
+  ],
+  "dct_issued_s": "2019",
+  "gbl_indexYear_im": [
+    2019
+  ],
+  "dct_spatial_sm": [
+    "Sunset Park, Kings County, New York, United States",
+    "Brooklyn, Kings County, New York, United States",
+    "New York City, New York, United States"
+  ],
+  "locn_geometry": "ENVELOPE(-74.026614551, -74.0252445784, 40.6454431531, 40.6444611397)",
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Mixed",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/60459\",\"http://schema.org/downloadUrl\":\"http://hdl.handle.net/2451/60459\",\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenIndexMaps/edu.nyu/master/nyu-2451-60459.geojson\",\"http://www.w3.org/1999/xhtml\":\"https://sdr-metadata-codebooks.s3.amazonaws.com/sunset-park-collection-introduction.html\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/122246/nyu_2451_60458_doc.zip\"}",
+  "id": "nyu-2451-60459",
+  "dct_identifier_sm": [
+    "http://hdl.handle.net/2451/60459"
+  ],
+  "gbl_mdModified_dt": "2020-03-04T14:28:18Z",
+  "gbl_mdVersion_s": "1.0"
+}

@@ -1,0 +1,45 @@
+{
+  "dc_type_s": "Dataset",
+  "dct_isPartOf_sm": [
+    "Global Map"
+  ],
+  "layer_geom_type_s": "Polygon",
+  "nyu_addl_format_sm": [
+    "Shapefile"
+  ],
+  "dct_title_s": "Algeria Political Boundaries (polygons), 2006",
+  "dct_description_sm": [
+    "Algeria Political Boundaries is an area theme map representing administrative areas in Algeria. This layer is a component of the Global Map, a 1:1,000,000 scale framework dataset of the world. It consists of vector and raster layers of transport, administrative boundaries, drainage, elevation, vegetation, land use and land cover data. The data were prepared from information provided by national mapping and other organizations worldwide. The Global Map data had been managed by the Geospatial Information Authority of Japan, but that organization was terminated in August, 2016. The data has been transferred to the Geospatial Information Section in the United Nations. For the most recent documentation, refer to the Global Map Specifications at https://github.com/globalmaps/specifications/."
+  ],
+  "dct_language_sm": [
+    "English"
+  ],
+  "dct_publisher_sm": [
+    "International Steering Committee for Global Mapping"
+  ],
+  "schema_provider_s": "Columbia",
+  "dct_subject_sm": [
+    "Boundaries",
+    "Administrative and political divisions"
+  ],
+  "dct_temporal_sm": [
+    "2008"
+  ],
+  "gbl_indexYear_im": [
+    2008
+  ],
+  "dct_spatial_sm": [
+    "Algeria"
+  ],
+  "locn_geometry": "ENVELOPE(-8.66934, 11.99785, 37.08596, 18.95433)",
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Shapefile",
+  "gbl_wxsIdentifier_s": "sde:columbia.global_mapping_dzabound",
+  "dct_references_s": "{\"http://schema.org/url\":\"https://clio.columbia.edu/?q=urn:columbia.edu:Columbia.global_mapping_dzabound\",\"http://schema.org/downloadUrl\":\"http://www.columbia.edu/acis/eds/gis/images/dzaBound.zip\",\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"https://geoserver.cul.columbia.edu/geoserver/sde/ows\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"https://geoserver.cul.columbia.edu/geoserver/wms/sde\",\"http://lccn.loc.gov/sh85035852\":\"https://github.com/globalmaps/specifications/blob/master/gmspec-2.2.pdf\"}",
+  "id": "sde-columbia-global_mapping_dzabound",
+  "dct_identifier_sm": [
+    "urn:columbia.edu:Columbia.global_mapping_dzabound"
+  ],
+  "gbl_mdModified_dt": "2016-5-2T18:21:7Z",
+  "gbl_mdVersion_s": "1.0"
+}

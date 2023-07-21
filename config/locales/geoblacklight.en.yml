@@ -18,3 +18,4 @@ en:
     download:
       export_formats: 'Other Formats'
       export_link: 'Export'
+      export_shapefile_link: 'EPSG:4326 Shapefile'

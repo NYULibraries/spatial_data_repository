@@ -26,7 +26,7 @@ end
 #   Capybara::Selenium::Driver.new(app, browser: :firefox, options: options)
 # end
 #
-# Capybara.javascript_driver = :firefox_headless
+# Capybara.javascript_driver = :selenium_chrome_headless
 # Capybara.current_driver = Capybara.javascript_driver
 # Capybara.default_driver = Capybara.javascript_driver
 

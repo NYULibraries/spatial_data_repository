@@ -53,15 +53,21 @@ module GeoblacklightHelper
   end
 
   def download_link_generated(download_type, document)
-    link_to(export_format_label(download_type),
-            "",
-            data: {
-              download_path: download_path(document.id, type: download_type),
-              download: "trigger",
-              download_type: download_type,
-              download_id: document.id
-            }
+    link_to(
+      t(export_format_label(download_type),
+        download_format: export_format_label(download_type)),
+      "",
+      data: {
+        download_path: download_path(document.id, type: download_type),
+        download: "trigger",
+        download_type: download_type,
+        download_id: document.id
+      }
     )
+  end
+
+  def download_text_laefer_alt(format)
+    format.to_s.html_safe
   end
 
   ##
@@ -93,8 +99,7 @@ module GeoblacklightHelper
 
   # Format labels are customized for exports - look up the appropriate key.
   def export_format_label(format)
-    t("geoblacklight.download.export_#{format.to_s.parameterize(separator: "_")}_link",
-      default: t("geoblacklight.download.export_link"))
+    t("geoblacklight.download.export_#{format.to_s.parameterize(separator: "_")}_link")
   end
 
   ##

@@ -66,6 +66,7 @@ FIELDS:
   :LICENSE: 'dct_license_sm'
   :MEMBER_OF: 'pcdm_memberOf_sm'
   :METADATA_VERSION: 'gbl_mdVersion_s'
+  :MULTI_DOWNLOADS: 'nyu_addl_downloads_s'
   :MODIFIED: 'gbl_mdModified_dt'
   :OVERLAP_FIELD: 'solr_bboxtype'
   :PUBLISHER: 'dct_publisher_sm'

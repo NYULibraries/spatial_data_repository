@@ -9,14 +9,12 @@ describe 'Show page' do
 
     it 'does not display download' do
       visit solr_document_path 'nyu-2451-34626'
-      expect(page).to_not have_content 'Download'
+      expect(page).to_not have_content 'Export'
     end
 
     it 'includes link to login' do
       visit solr_document_path 'nyu-2451-34626'
-      expect(page).to have_link(
-        'Login to view and download', href: '/login'
-      )
+      expect(page).to have_link('Login to View and Download')
     end
   end
 
@@ -47,7 +45,7 @@ describe 'Show page' do
   context 'Multiple downloads - nyu-2451-38645' do
     it 'includes six download links' do
       visit solr_document_path 'nyu-2451-38645'
-      expect(page).to have_content 'Downloads'
+      expect(page).to have_content 'Download'
 
       expect(page).to have_content('LAZ (Point-cloud)')
       expect(page).to have_link(

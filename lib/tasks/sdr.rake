@@ -5,9 +5,9 @@ task :ci do
   shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
   shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
-  SolrWrapper.wrap(shared_solr_opts.merge(port: 8985, instance_dir: 'tmp/sdr-core-test')) do |solr|
+  SolrWrapper.wrap(shared_solr_opts.merge(port: 8983, instance_dir: 'tmp/sdr-core-test')) do |solr|
     solr.with_collection(name: 'sdr-core-test', dir: Rails.root.join('solr', 'conf').to_s) do
-      ENV['SOLR_URL'] = 'http://localhost:8985/solr/sdr-core-test'
+      ENV['SOLR_URL'] = 'http://localhost:8983/solr/sdr-core-test'
       system 'RAILS_ENV=test rake geoblacklight:index:seed'
       Rake::Task['spec'].invoke
     end
@@ -22,12 +22,12 @@ namespace :sdr do
     shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
     shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
-    SolrWrapper.wrap(shared_solr_opts.merge(port: 8983, instance_dir: 'tmp/sdr-core-development')) do |solr|
-      solr.with_collection(name: 'sdr-core-development', dir: Rails.root.join('solr', 'conf').to_s) do
-        puts 'Solr running at http://localhost:8983/solr/sdr-core-development/, ^C to exit'
+    SolrWrapper.wrap(shared_solr_opts.merge(port: Settings.SOLR_PORT, instance_dir: Settings.SOLR_INSTANCE_DIR)) do |solr|
+      solr.with_collection(name: Settings.SOLR_INSTANCE_NAME, dir: Rails.root.join('solr', 'conf').to_s) do
+        puts "Solr running at #{Settings.SOLR_URL}, ^C to exit"
         puts ' '
         begin
-          ENV['SOLR_URL'] = 'http://localhost:8983/solr/sdr-core-development'
+          ENV['SOLR_URL'] = Settings.SOLR_URL
           system 'rake geoblacklight:index:seed'
           system 'bundle exec rails s -b 0.0.0.0'
           sleep
@@ -44,10 +44,10 @@ namespace :sdr do
       shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
       shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
-      SolrWrapper.wrap(shared_solr_opts.merge(port: 8985, instance_dir: 'tmp/sdr-core-test')) do |solr|
-        solr.with_collection(name: 'sdr-core-test', dir: Rails.root.join('solr', 'conf').to_s) do
-          puts 'Solr running at http://localhost:8985/solr/sdr-core-test/, ^C to exit'
-          ENV['SOLR_URL'] = 'http://localhost:8985/solr/sdr-core-test'
+      SolrWrapper.wrap(shared_solr_opts.merge(port: Settings.SOLR_PORT, instance_dir: Settings.SOLR_INSTANCE_DIR)) do |solr|
+        solr.with_collection(name: Settings.SOLR_INSTANCE_NAME, dir: Rails.root.join('solr', 'conf').to_s) do
+          puts "Solr running at #{Settings.SOLR_URL}, ^C to exit"
+          ENV['SOLR_URL'] = Settings.SOLR_URL
           begin
             Rake::Task['geoblacklight:solr:seed'].invoke
             sleep
@@ -66,9 +66,9 @@ namespace :sdr do
     shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
     shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
 
-    SolrWrapper.wrap(shared_solr_opts.merge(port: 8983, instance_dir: 'tmp/sdr-core-development')) do |solr|
-      solr.with_collection(name: 'sdr-core-development', dir: Rails.root.join('solr', 'conf').to_s) do
-        puts 'Solr running at http://localhost:8983/solr/sdr-core-development/, ^C to exit'
+    SolrWrapper.wrap(shared_solr_opts.merge(port: Settings.SOLR_PORT, instance_dir: Settings.SOLR_INSTANCE_DIR)) do |solr|
+      solr.with_collection(name: Settings.SOLR_INSTANCE_NAME, dir: Rails.root.join('solr', 'conf').to_s) do
+        puts "Solr running at #{Settings.SOLR_URL}, ^C to exit"
         begin
           Rake::Task['geoblacklight:solr:seed'].invoke
           sleep

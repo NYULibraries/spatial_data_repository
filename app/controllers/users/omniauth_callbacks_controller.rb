@@ -2,18 +2,20 @@
 
 module Users
   class OmniauthCallbacksController < Devise::OmniauthCallbacksController
-    before_action :require_valid_omniauth, only: :nyulibraries
+    before_action :require_valid_omniauth, only: :shibboleth
 
-    def nyulibraries
+    def shibboleth
       set_user
       if @user.persisted?
         sign_in_and_redirect @user, event: :authentication
-        logger.info(find_message(:success, kind: 'NYU Libraries'))
+        logger.info(find_message(:success, kind: 'NYU Shibboleth'))
       else
         session['devise.nyulibraries_data'] = request.env['omniauth.auth']
         redirect_to root_path
       end
     end
+
+    private
 
     def find_user
       @find_user ||= find_user_with_provider.present? ? find_user_with_provider : find_user_without_provider
@@ -94,8 +96,6 @@ module Users
     def failure
       redirect_to root_path
     end
-
-    private
 
     def set_user
       # Find existing or initialize new user,

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {omniauth_callbacks: 'users/omniauth_callbacks'}
   devise_scope :user do
     get 'logout', to: 'devise/sessions#destroy', as: :logout
-    get 'login', to: redirect { |params, request| "#{Rails.application.config.relative_url_root}/users/auth/nyulibraries?#{request.query_string}" }, as: :login
+    get 'login', to: redirect { |params, request| "#{Rails.application.config.relative_url_root}/users/auth/shibboleth?#{request.query_string}" }, as: :login
 
     resources :suggest, only: :index, defaults: {format: 'json'}
 

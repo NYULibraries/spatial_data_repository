@@ -1,12 +1,4 @@
 GIT
-  remote: https://github.com/NYULibraries/omniauth-nyulibraries
-  revision: 2a77afefc346669e5a50ff5c84e48a012490dfbc
-  branch: v2.2.0
-  specs:
-    omniauth-nyulibraries (2.2.0)
-      omniauth-oauth2 (~> 1.2.0)
-
-GIT
   remote: https://github.com/mimemagicrb/mimemagic.git
   revision: 01f92d86d15d85cfd0f20dabd025dcbd36a8a60f
   ref: 01f92d86d15d85cfd0f20dabd025dcbd36a8a60f
@@ -434,7 +426,8 @@ DEPENDENCIES
   jquery-rails
   mimemagic!
   mysql2
-  omniauth-nyulibraries!
+  omniauth
+  omniauth-oauth2
   puma
   rails
   rainbow

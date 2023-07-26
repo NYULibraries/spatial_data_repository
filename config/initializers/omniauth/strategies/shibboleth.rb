@@ -15,14 +15,12 @@ module OmniAuth
       }
 
       uid do
-        raw_info["username"]
+        raw_info["sub"]
       end
 
       info do
         {
-          name: raw_info["username"],
-          nickname: raw_info["username"],
-          email: raw_info["email"],
+          email: raw_info["sub"],
           last_name: last_name,
           first_name: first_name
         }
@@ -36,29 +34,18 @@ module OmniAuth
       end
 
       def raw_info
-        response = access_token.get("/api/v1/user")
+        response = access_token.get("/oauth2/userinfo?schema=openid")
         @raw_info ||= response.parsed
-      end
-
-      # Pass querystring from client to provider
-      def authorize_params
-        querystring_hash = Rack::Utils.parse_nested_query(request.query_string[/institution=(\w+)/,0])
-        super.merge(querystring_hash)
-      end
-
-      # Get the provider's identity
-      def provider_identity
-        @provider_identity ||= raw_info["identities"].find {|id| id["provider"] == raw_info["provider"]}
       end
 
       # Extract Last Name from identity
       def last_name
-        @last_name ||= provider_identity["properties"]["last_name"] rescue nil
+        @last_name ||= raw_info["lastname"] rescue nil
       end
 
       # Extract First Name from identity
       def first_name
-        @first_name ||= provider_identity["properties"]["first_name"] rescue nil
+        @first_name ||= raw_info["firstname"] rescue nil
       end
     end
   end

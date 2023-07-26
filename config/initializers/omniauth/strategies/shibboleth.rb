@@ -10,7 +10,7 @@ module OmniAuth
       option :name, :shibboleth
 
       option :client_options, {
-        site: (ENV['LOGIN_URL'] || "https://qa.auth.nyu.edu:443"),
+        site: (Settings.LOGIN_URL || "https://qa.auth.nyu.edu:443"),
         authorize_path: "/oauth2/authorize"
       }
 

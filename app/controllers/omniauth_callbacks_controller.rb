@@ -9,6 +9,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       sign_in_and_redirect @user, event: :authentication
       logger.info(find_message(:success, kind: 'NYU Shibboleth'))
     else
+      logger.error(find_message(:failure, kind: 'NYU Shibboleth', reason: 'User not persisted'))
       session['devise.shibboleth_data'] = request.env['omniauth.auth']
       redirect_to root_path
     end

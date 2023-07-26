@@ -27,7 +27,9 @@ module OmniAuth
       end
 
       def raw_info
+        console
         response = access_token.get("/oauth2/userinfo?schema=openid")
+        Rails.logger.info("Shibboleth raw_info: #{response.parsed}")
         @raw_info ||= response.parsed
       end
 

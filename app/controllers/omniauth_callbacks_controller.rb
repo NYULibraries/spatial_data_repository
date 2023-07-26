@@ -14,6 +14,10 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
+  def failure
+    redirect_to root_path
+  end
+
   private
 
   def require_valid_omniauth
@@ -52,10 +56,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def omniauth_lastname
     @omniauth_lastname ||= omniauth.info.last_name
-  end
-
-  def failure
-    redirect_to root_path
   end
 
   def set_user

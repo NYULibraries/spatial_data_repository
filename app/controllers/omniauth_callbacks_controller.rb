@@ -16,6 +16,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def failure
+    logger.error("OmniAuth is failing for reasons? #{failure_message}")
     redirect_to root_path
   end
 

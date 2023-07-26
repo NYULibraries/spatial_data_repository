@@ -25,13 +25,6 @@ module OmniAuth
           first_name: first_name
         }
       end
-      extra do
-        {
-          provider: raw_info["provider"],
-          identities: raw_info["identities"],
-          institution_code: raw_info["institution_code"]
-        }
-      end
 
       def raw_info
         response = access_token.get("/oauth2/userinfo?schema=openid")

@@ -11,7 +11,7 @@ module OmniAuth
 
       option :client_options, {
         site: (Settings.LOGIN_URL || "https://qa.auth.nyu.edu:443"),
-        authorize_path: "/oauth2/authorize"
+        authorize_url: "/oauth2/authorize"
       }
 
       uid do

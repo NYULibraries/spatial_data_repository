@@ -15,4 +15,13 @@ class User < ActiveRecord::Base
   def to_s
     email
   end
+
+  def self.create_from_provider_data(provider_data)
+    where(provider: provider_data.provider,
+          username: provider_data.uid)
+      .first_or_create do |user|
+      user.email = provider_data.info.email
+      user.username = provider_data.uid
+    end
+  end
 end

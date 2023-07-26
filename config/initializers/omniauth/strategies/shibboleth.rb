@@ -9,11 +9,6 @@ module OmniAuth
       end
       option :name, :shibboleth
 
-      option :client_options, {
-        site: (Settings.LOGIN_URL || "https://qa.auth.nyu.edu:443"),
-        authorize_url: "/oauth2/authorize"
-      }
-
       uid do
         raw_info["sub"]
       end

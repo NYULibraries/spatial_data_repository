@@ -7,6 +7,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     set_user
     if @user.persisted?
       sign_in_and_redirect @user, event: :authentication
+      set_flash_message(:notice, :success, kind: 'NYU Shibboleth')
       logger.info(find_message(:success, kind: 'NYU Shibboleth'))
     else
       logger.error(find_message(:failure, kind: 'NYU Shibboleth', reason: 'User not persisted'))
@@ -16,7 +17,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def failure
-    logger.error("OmniAuth is failing for reasons? #{failure_message}")
+    logger.error("OmniAuth is failing - #{failure_message}")
     redirect_to root_path
   end
 
@@ -40,7 +41,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def attributes_from_omniauth
     {
-      provider: 'nyulibraries',
+      provider: omniauth.provider,
       username: omniauth.uid,
       email: omniauth_email,
       firstname: omniauth_firstname,
@@ -68,6 +69,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def find_user
-    @find_user ||= User.find_or_initialize_by(email: omniauth_email)
+    @find_user ||= User.create_from_provider_data(request.env['omniauth.auth'])
   end
 end

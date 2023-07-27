@@ -17,7 +17,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def failure
-    logger.error("OmniAuth is failing - #{request.env['omniauth.auth']}")
     redirect_to root_path
   end
 

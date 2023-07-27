@@ -8,7 +8,6 @@ module OmniAuth
         end
       end
       option :name, :shibboleth
-      option :token_params, { client_id: Settings.APP_ID, client_secret: Settings.APP_SECRET }
 
       uid do
         raw_info["sub"]

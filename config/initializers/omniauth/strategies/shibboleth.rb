@@ -8,6 +8,7 @@ module OmniAuth
         end
       end
       option :name, :shibboleth
+      option :authorize_params, { scope: "openid" }
 
       uid do
         raw_info["sub"]

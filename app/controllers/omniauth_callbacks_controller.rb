@@ -4,13 +4,14 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   before_action :require_valid_omniauth, only: :shibboleth
 
   def shibboleth
+    Rails.logger.info("OmniauthCallbacksController#shibboleth: #{omniauth.inspect}")
     set_user
     if @user.persisted?
       sign_in_and_redirect @user, event: :authentication
       set_flash_message(:notice, :success, kind: 'NYU Shibboleth')
       logger.info(find_message(:success, kind: 'NYU Shibboleth'))
     else
-      logger.error(find_message(:failure, kind: 'NYU Shibboleth', reason: 'User not persisted'))
+      Rails.logger.error(find_message(:failure, kind: 'NYU Shibboleth', reason: 'User not persisted'))
       session['devise.shibboleth_data'] = request.env['omniauth.auth']
       redirect_to root_path
     end

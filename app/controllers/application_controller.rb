@@ -35,7 +35,7 @@ class ApplicationController < ActionController::Base
   end
 
   def logout_path
-    'https://login.library.nyu.edu/logout'
+    Settings.LOGOUT_URL || 'https://qa.auth.it.nyu.edu/oidc/logout'
   end
   private :logout_path
 end

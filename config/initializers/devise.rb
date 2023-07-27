@@ -11,7 +11,7 @@ Devise.setup do |config|
   config.reset_password_within = 60.minutes
   config.sign_out_via = :get
   config.omniauth :shibboleth, Settings.APP_ID, Settings.APP_SECRET, client_options: {
-    site: (Settings.LOGIN_URL || "https://qa.auth.nyu.edu:443"),
+    site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
     authorize_url: "/oauth2/authorize",
     authorize_params: { scope: "openid", response_type: "code", client_id: Settings.APP_ID, redirect_uri: Settings.REDIRECT_URI },
     token_url: "/oauth2/token",

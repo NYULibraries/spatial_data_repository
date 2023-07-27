@@ -36,6 +36,10 @@ module OmniAuth
       def first_name
         @first_name ||= raw_info["firstname"] rescue nil
       end
+
+      def log(level, message)
+        Rails.logger.send(level, "(#{name}) #{message}")
+      end
     end
   end
 end

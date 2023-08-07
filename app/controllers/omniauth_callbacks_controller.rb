@@ -7,13 +7,9 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     Rails.logger.info("OmniauthCallbacksController#shibboleth: #{omniauth.inspect}")
     set_user
     if @user.persisted?
-      sign_in_and_redirect @user, event: :authentication
-      set_flash_message(:notice, :success, kind: 'NYU Shibboleth')
-      logger.info(find_message(:success, kind: 'NYU Shibboleth'))
+      log_in
     else
-      Rails.logger.error(find_message(:failure, kind: 'NYU Shibboleth', reason: 'User not persisted'))
-      session['devise.shibboleth_data'] = request.env['omniauth.auth']
-      redirect_to root_path
+      redirect_to_login
     end
   end
 
@@ -22,6 +18,18 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   private
+
+  def redirect_to_login
+    Rails.logger.error(find_message(:failure, kind: 'NYU Shibboleth', reason: 'User not persisted'))
+    session['devise.shibboleth_data'] = request.env['omniauth.auth']
+    redirect_to root_path
+  end
+
+  def log_in
+    sign_in_and_redirect @user, event: :authentication
+    set_flash_message(:notice, :success, kind: 'NYU Shibboleth')
+    logger.info(find_message(:success, kind: 'NYU Shibboleth'))
+  end
 
   def require_valid_omniauth
     head :bad_request unless valid_omniauth?
@@ -45,7 +53,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       username: omniauth.uid,
       email: omniauth_email,
       firstname: omniauth_firstname,
-      lastname: omniauth_lastname,
+      lastname: omniauth_lastname
     }
   end
 

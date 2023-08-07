@@ -10,8 +10,9 @@ Devise.setup do |config|
   config.password_length = 8..128
   config.reset_password_within = 60.minutes
   config.sign_out_via = :get
-  config.omniauth :nyulibraries, Settings.APP_ID, Settings.APP_SECRET, client_options: {
-    site: Settings.LOGIN_URL,
-    authorize_path: '/oauth/authorize'
+  config.omniauth :shibboleth, Settings.APP_ID, Settings.APP_SECRET, client_options: {
+    site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
+    authorize_url: "/oauth2/authorize",
+    token_url: "/oauth2/token",
   }
 end

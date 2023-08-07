@@ -1,33 +1,33 @@
 # frozen_string_literal: true
 
 describe 'routes for users' do
-  describe 'GET /users/auth/nyulibraries' do
-    subject { get('/users/auth/nyulibraries') }
+  describe 'GET /auth/shibboleth' do
+    subject { get('/auth/shibboleth') }
     it do
       should route_to({
-                        controller: 'users/omniauth_callbacks',
+                        controller: 'omniauth_callbacks',
                         action: 'passthru'
                       })
     end
   end
 
-  describe 'POST /users/auth/nyulibraries' do
-    subject { post('/users/auth/nyulibraries') }
+  describe 'POST /auth/shibboleth' do
+    subject { post('/auth/shibboleth') }
     it do
       should route_to({
-                        controller: 'users/omniauth_callbacks',
+                        controller: 'omniauth_callbacks',
                         action: 'passthru'
                       })
     end
   end
 
-  describe 'GET /users/auth/nyulibraries/callback' do
-    subject { get('/users/auth/nyulibraries/callback') }
-    it { should route_to({ controller: 'users/omniauth_callbacks', action: 'nyulibraries' }) }
+  describe 'GET /auth/shibboleth/callback' do
+    subject { get('/auth/shibboleth/callback') }
+    it { should route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
   end
 
-  describe 'POST /users/auth/nyulibraries/callback' do
-    subject { post('/users/auth/nyulibraries/callback') }
-    it { should route_to({ controller: 'users/omniauth_callbacks', action: 'nyulibraries' }) }
+  describe 'POST /auth/shibboleth/callback' do
+    subject { post('/auth/shibboleth/callback') }
+    it { should route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
   end
 end

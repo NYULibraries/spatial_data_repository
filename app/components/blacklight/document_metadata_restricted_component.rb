@@ -2,7 +2,7 @@
 
 module Blacklight
   class DocumentMetadataRestrictedComponent < Blacklight::Component
-    def initialize(document: )
+    def initialize(document:)
       super
       @document = document
     end

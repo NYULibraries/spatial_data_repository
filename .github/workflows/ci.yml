@@ -22,7 +22,6 @@ jobs:
       run: bundle exec rubocop
     - name: Run tests
       run: |
-        cp config/vars.yml.example config/vars.yml
         bundle exec rake db:schema:load
         bundle exec rake ci
     - name: Audit gems

@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user_dev
-    @current_user_dev ||= User.find_by(username: 'admin') || User.create!(guest_user_params)
+    @current_user_dev ||= User.find_by(username: 'admin', provider: 'nyulibraries') || User.create!(guest_user_params)
   end
   # alias current_user current_user_dev if Rails.env.development?
 
@@ -41,8 +41,8 @@ class ApplicationController < ActionController::Base
   end
 
   def guest_user_params
-    { provider: 'guest',
+    { provider: 'nyulibraries',
       email: "anon_guest#{SecureRandom.random_number(8)}@example.com",
-      username: 'guest' }
+      username: "guest#{SecureRandom.random_number(8)}" }
   end
 end

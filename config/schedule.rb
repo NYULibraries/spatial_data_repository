@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.week do
+every :wednesday, at: '3PM' do
   rake 'vacate_searches:vacate'
 end

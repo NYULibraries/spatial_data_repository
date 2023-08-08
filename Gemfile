@@ -27,6 +27,7 @@ gem 'turbo-rails'
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component'
+gem 'whenever'
 
 group :development, :test do
   gem 'bundler-audit'
@@ -45,4 +46,6 @@ group :development, :test do
   gem 'solr_wrapper'
   gem 'spring'
   gem 'sqlite3'
+  gem 'timecop'
+  gem 'whenever-test'
 end

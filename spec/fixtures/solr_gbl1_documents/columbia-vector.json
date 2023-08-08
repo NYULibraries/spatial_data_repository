@@ -1,0 +1,35 @@
+{
+   "dc_description_s": "Algeria Political Boundaries is an area theme map representing administrative areas in Algeria. This layer is a component of the Global Map, a 1:1,000,000 scale framework dataset of the world. It consists of vector and raster layers of transport, administrative boundaries, drainage, elevation, vegetation, land use and land cover data. The data were prepared from information provided by national mapping and other organizations worldwide. The Global Map data had been managed by the Geospatial Information Authority of Japan, but that organization was terminated in August, 2016. The data has been transferred to the Geospatial Information Section in the United Nations. For the most recent documentation, refer to the Global Map Specifications at https://github.com/globalmaps/specifications/.",
+   "dc_format_s": "Shapefile",
+   "dc_identifier_s": "urn:columbia.edu:Columbia.global_mapping_dzabound",
+   "dc_language_s": "English",
+   "dc_publisher_s": "International Steering Committee for Global Mapping",
+   "dc_rights_s": "Public",
+   "dc_subject_sm": [
+     "Boundaries",
+     "Administrative and political divisions"
+   ],
+   "dc_title_s": "Algeria Political Boundaries (polygons), 2006",
+   "dc_type_s": "Dataset",
+   "dct_isPartOf_sm": [
+     "Global Map"
+   ],
+   "dct_provenance_s": "Columbia",
+   "dct_references_s": "{\"http://schema.org/url\":\"https://clio.columbia.edu/?q=urn:columbia.edu:Columbia.global_mapping_dzabound\",\"http://schema.org/downloadUrl\":\"http://www.columbia.edu/acis/eds/gis/images/dzaBound.zip\",\"http://www.opengis.net/def/serviceType/ogc/wfs\":\"https://geoserver.cul.columbia.edu/geoserver/sde/ows\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"https://geoserver.cul.columbia.edu/geoserver/wms/sde\",\"http://lccn.loc.gov/sh85035852\":\"https://github.com/globalmaps/specifications/blob/master/gmspec-2.2.pdf\"}",
+   "dct_spatial_sm": [
+     "Algeria"
+   ],
+   "dct_temporal_sm": [
+     "2008"
+   ],
+   "geoblacklight_version": "1.0",
+   "layer_geom_type_s": "Polygon",
+   "layer_id_s": "sde:columbia.global_mapping_dzabound",
+   "layer_modified_dt": "2016-5-2T18:21:7Z",
+   "layer_slug_s": "sde-columbia-global_mapping_dzabound",
+   "nyu_addl_format_sm": [
+     "Shapefile"
+   ],
+   "solr_geom": "ENVELOPE(-8.66934, 11.99785, 37.08596, 18.95433)",
+   "solr_year_i": 2008
+ }

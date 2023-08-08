@@ -1,41 +1,6 @@
 {
-  "dc_identifier_s": "http://hdl.handle.net/2451/38684",
-  "dc_title_s": "2015 Aerial Laser and Photogrammetry Survey of Dublin City Collection Record",
-  "dc_description_s": "This record serves as an index to a suite of high density, aerial remote sensing data for a 2km\u00b2 area of Dublin, Ireland obtained at an average flying altitude of 300m. Collected in March 2015, the data include aerial laser scanning (ALS) from 41 flight paths in the form of a 3D point-cloud (LAZ) and 3D full waveform ALS (LAS and Pulsewave), and imagery data including ortho-rectified 2D rasters (RGBi) and oblique images. The ALS data consist of over 1.4 billion points (inclusive of partially covered areas) and were acquired by a TopEye system S\/N 443. Imagery data were captured using a Phase One camera system. In this data offering, the ALS and imagery data are structured both by flight paths and by 500 \u00d7 500 m rectangular tiles. Miscellaneous data including video records and instrument parameters are available in the preservation record. For more information on these data including related publications, reports, and bulk-download instructions, please consult the documentation. For a visualization of the data as compared to standard LiDAR data density, please consult the video flythrough available at https:\/\/youtu.be\/qEi2Wo7Bcuk. This dataset was collected with funding from European Research Council Consolidator project RETURN \u2013 Rethinking Tunnelling in Urban Neighbourhoods [ERC-2012- StG-307836] and additional funding from Science Foundation Ireland [12\/ERC\/I2534]. These data were released with an Attribution 4.0 International (CC BY 4.0) license.",
-  "dc_rights_s": "Public",
-  "dct_provenance_s": "NYU",
-  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/38684\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"https://maps-public.geo.nyu.edu/geoserver/sdr/wms\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/81335/nyu_2451_38684_doc.zip\"}",
-  "layer_id_s": "sdr:nyu_2451_38684",
-  "layer_slug_s": "nyu-2451-38684",
   "layer_geom_type_s": "Mixed",
-  "layer_modified_dt": "2017-06-06T15:21:27Z",
-  "dc_format_s": "Mixed",
-  "dc_language_s": "English",
   "dc_type_s": "Dataset",
-  "dc_publisher_s": "New York University. Center for Urban Science and Progress",
-  "dc_creator_sm": [
-    "Debra F. Laefer",
-    "Saleh Abuwarda",
-    "Anh-Vu Vo",
-    "Linh Truong-Hong",
-    "Hamid Gharibi"
-  ],
-  "dc_subject_sm": [
-    "Cities and towns",
-    "Urban density",
-    "Urban development"
-  ],
-  "dct_issued_s": "2017",
-  "dct_temporal_sm": [
-    "2015"
-  ],
-  "dct_spatial_sm": [
-    "Dublin City, Leinster, Ireland",
-    "Dublin, Leinster, Ireland"
-  ],
-  "solr_geom": "ENVELOPE(-6.284507, -6.236363, 53.360669, 53.331333)",
-  "solr_year_i": 2015,
-  "geoblacklight_version": "1.0",
   "nyu_addl_format_sm": [
     "Mixed"
   ],
@@ -44,5 +9,50 @@
   "dct_isPartOf_sm": [
     "2015 Dublin LiDAR",
     "NYU Research Data"
-  ]
+  ],
+  "dct_title_s": "2015 Aerial Laser and Photogrammetry Survey of Dublin City Collection Record",
+  "dct_description_sm": [
+    "This record serves as an index to a suite of high density, aerial remote sensing data for a 2km\u00b2 area of Dublin, Ireland obtained at an average flying altitude of 300m. Collected in March 2015, the data include aerial laser scanning (ALS) from 41 flight paths in the form of a 3D point-cloud (LAZ) and 3D full waveform ALS (LAS and Pulsewave), and imagery data including ortho-rectified 2D rasters (RGBi) and oblique images. The ALS data consist of over 1.4 billion points (inclusive of partially covered areas) and were acquired by a TopEye system S/N 443. Imagery data were captured using a Phase One camera system. In this data offering, the ALS and imagery data are structured both by flight paths and by 500 \u00d7 500 m rectangular tiles. Miscellaneous data including video records and instrument parameters are available in the preservation record. For more information on these data including related publications, reports, and bulk-download instructions, please consult the documentation. For a visualization of the data as compared to standard LiDAR data density, please consult the video flythrough available at https://youtu.be/qEi2Wo7Bcuk. This dataset was collected with funding from European Research Council Consolidator project RETURN \u2013 Rethinking Tunnelling in Urban Neighbourhoods [ERC-2012- StG-307836] and additional funding from Science Foundation Ireland [12/ERC/I2534]. These data were released with an Attribution 4.0 International (CC BY 4.0) license."
+  ],
+  "dct_language_sm": [
+    "English"
+  ],
+  "dct_creator_sm": [
+    "Debra F. Laefer",
+    "Saleh Abuwarda",
+    "Anh-Vu Vo",
+    "Linh Truong-Hong",
+    "Hamid Gharibi"
+  ],
+  "dct_publisher_sm": [
+    "New York University. Center for Urban Science and Progress"
+  ],
+  "schema_provider_s": "NYU",
+  "dct_subject_sm": [
+    "Cities and towns",
+    "Urban density",
+    "Urban development"
+  ],
+  "dct_temporal_sm": [
+    "2015"
+  ],
+  "dct_issued_s": "2017",
+  "gbl_indexYear_im": [
+    2015
+  ],
+  "dct_spatial_sm": [
+    "Dublin City, Leinster, Ireland",
+    "Dublin, Leinster, Ireland"
+  ],
+  "locn_geometry": "ENVELOPE(-6.284507, -6.236363, 53.360669, 53.331333)",
+  "dct_accessRights_s": "Public",
+  "dct_format_s": "Mixed",
+  "gbl_wxsIdentifier_s": "sdr:nyu_2451_38684",
+  "dct_references_s": "{\"http://schema.org/url\":\"http://hdl.handle.net/2451/38684\",\"http://www.opengis.net/def/serviceType/ogc/wms\":\"https://maps-public.geo.nyu.edu/geoserver/sdr/wms\",\"http://lccn.loc.gov/sh85035852\":\"https://archive.nyu.edu/retrieve/81335/nyu_2451_38684_doc.zip\"}",
+  "id": "nyu-2451-38684",
+  "dct_identifier_sm": [
+    "http://hdl.handle.net/2451/38684"
+  ],
+  "gbl_mdModified_dt": "2017-06-06T15:21:27Z",
+  "gbl_mdVersion_s": "1.0"
 }

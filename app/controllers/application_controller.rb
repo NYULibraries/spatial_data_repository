@@ -1,14 +1,14 @@
-# frozen_string_literal: true
-
 class ApplicationController < ActionController::Base
   # Adds a few additional behaviors into the application controller
   include Blacklight::Controller
-  skip_after_action :discard_flash_if_xhr
-  layout 'blacklight'
+  layout :determine_layout if respond_to? :layout
 
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
-  protect_from_forgery with: :exception
+  before_action :allow_geoblacklight_params
+
+  def allow_geoblacklight_params
+    # Blacklight::Parameters will pass these to params.permit
+    blacklight_config.search_state_fields.append(Settings.GBL_PARAMS)
+  end
 
   # Alias new_session_path as login_path for default devise config
   def new_session_path(_scope)
@@ -20,8 +20,9 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user_dev
-    @current_user_dev ||= User.find_by_username('admin') || User.new
+    @current_user_dev ||= User.find_by(username: 'admin', provider: 'nyulibraries') || User.create!(guest_user_params)
   end
+
   alias current_user current_user_dev if Rails.env.development?
 
   # After signing out from the local application,
@@ -31,8 +32,15 @@ class ApplicationController < ActionController::Base
     super(resource_or_scope)
   end
 
+  private
+
   def logout_path
     Settings.LOGOUT_URL || 'https://qa.auth.it.nyu.edu/oidc/logout'
   end
-  private :logout_path
+
+  def guest_user_params
+    { provider: 'nyulibraries',
+      email: "anon_guest#{SecureRandom.random_number(8)}@example.com",
+      username: "guest#{SecureRandom.random_number(8)}" }
+  end
 end

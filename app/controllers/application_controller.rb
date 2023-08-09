@@ -27,11 +27,8 @@ class ApplicationController < ActionController::Base
   # After signing out from the local application,
   # redirect to the logout path for the Login app
   def after_sign_out_path_for(resource_or_scope)
-    if logout_path.present?
-      logout_path
-    else
-      super(resource_or_scope)
-    end
+    Faraday.get(logout_path) if logout_path.present?
+    super(resource_or_scope)
   end
 
   def logout_path

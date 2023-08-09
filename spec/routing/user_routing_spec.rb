@@ -36,7 +36,7 @@ describe 'routes for users' do
   describe 'Logging out' do
     describe 'GET /logout' do
       subject { get('/logout') }
-      it { should route_to({ controller: 'sessions', action: 'destroy' }) }
+      it { should route_to({ controller: 'devise/sessions', action: 'destroy' }) }
     end
   end
 end

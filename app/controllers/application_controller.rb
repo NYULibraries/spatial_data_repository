@@ -41,6 +41,6 @@ class ApplicationController < ActionController::Base
   def guest_user_params
     { provider: 'nyulibraries',
       email: "anon_guest#{SecureRandom.random_number(8)}@example.com",
-      username: "admin" }
+      username: 'admin' }
   end
 end

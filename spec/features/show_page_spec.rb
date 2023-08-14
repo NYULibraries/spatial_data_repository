@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 describe 'Show page' do
-  context 'Restricted NYU result - nyu-2451-34626' do
+  context 'with restricted NYU result - nyu-2451-34626' do
     it 'the displays warning message' do
       visit solr_document_path 'nyu-2451-34626'
       expect(page).to have_content 'This dataset is only available to members of the New York University community'
@@ -9,7 +9,7 @@ describe 'Show page' do
 
     it 'does not display download' do
       visit solr_document_path 'nyu-2451-34626'
-      expect(page).to_not have_content 'Export'
+      expect(page).not_to have_content 'Export'
     end
 
     it 'includes link to login' do
@@ -18,7 +18,7 @@ describe 'Show page' do
     end
   end
 
-  context 'Suppressed download - nyu-2451-38684' do
+  context 'with suppressed download - nyu-2451-38684' do
     it 'includes warning' do
       visit solr_document_path 'nyu-2451-38684'
       expect(page).to have_selector 'div.alert.alert-warning'
@@ -33,7 +33,7 @@ describe 'Show page' do
 
     it 'does not display download' do
       visit solr_document_path 'nyu-2451-38684'
-      expect(page).to_not have_content 'Download'
+      expect(page).not_to have_content 'Download'
     end
 
     it 'includes DOI for citation' do
@@ -42,7 +42,9 @@ describe 'Show page' do
     end
   end
 
-  context 'Multiple downloads - nyu-2451-38645' do
+  # TODO: Refactor this to play nice with Rubocop
+  # rubocop:disable RSpec/ExampleLength, RSpec/MultipleExpectations
+  context 'with multiple downloads - nyu-2451-38645' do #
     it 'includes six download links' do
       visit solr_document_path 'nyu-2451-38645'
       expect(page).to have_content 'Download'
@@ -78,4 +80,5 @@ describe 'Show page' do
       )
     end
   end
+  # rubocop:enable RSpec/ExampleLength, RSpec/MultipleExpectations
 end

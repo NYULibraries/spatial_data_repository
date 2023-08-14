@@ -73,7 +73,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     # Find existing or initialize new user,
     # and save new attributes each time
     @user = find_user
-    @user.update_attributes(attributes_from_omniauth)
+    @user.update(attributes_from_omniauth)
   end
 
   def find_user

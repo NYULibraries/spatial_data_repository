@@ -8,6 +8,6 @@ module RightsConcern
   end
 
   def nyu?
-    fetch(:schema_provider_s).downcase == 'nyu'
+    fetch(:schema_provider_s).casecmp('nyu').zero?
   end
 end

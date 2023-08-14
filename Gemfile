@@ -36,7 +36,6 @@ group :development, :test do
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'database_cleaner'
-  gem 'dotenv-rails'
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
   gem 'rspec-rails'

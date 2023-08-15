@@ -526,7 +526,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   omniauth (~> 1.9)
-  omniauth-oauth2
+  omniauth-oauth2 (~> 1.4)
   puma (~> 5.0)
   rails (~> 7.0.6)
   rsolr (>= 1.0, < 3)

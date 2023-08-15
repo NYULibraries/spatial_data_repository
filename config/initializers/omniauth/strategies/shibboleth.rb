@@ -1,6 +1,5 @@
 module OmniAuth
   module Strategies
-    require 'omniauth-oauth2'
     class Shibboleth < OmniAuth::Strategies::OAuth2
       if defined?(::Rails) && ::Rails.env.development?
         silence_warnings do

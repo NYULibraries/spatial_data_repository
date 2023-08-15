@@ -317,6 +317,9 @@ GEM
     omniauth-oauth2 (1.8.0)
       oauth2 (>= 1.4, < 3)
       omniauth (~> 2.0)
+    omniauth-rails_csrf_protection (1.0.1)
+      actionpack (>= 4.2)
+      omniauth (~> 2.0)
     orm_adapter (0.5.0)
     ostruct (0.5.5)
     parallel (1.23.0)
@@ -531,6 +534,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   omniauth-oauth2
+  omniauth-rails_csrf_protection
   puma (~> 5.0)
   rails (~> 7.0.6)
   rsolr (>= 1.0, < 3)

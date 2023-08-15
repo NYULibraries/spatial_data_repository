@@ -42,7 +42,6 @@ Rails.application.routes.draw do
 
     # NYU Routes
     get 'logout', to: 'devise/sessions#destroy', as: :logout
-    get 'login', to: redirect { |params, request| "#{Rails.application.config.relative_url_root}/auth/shibboleth?#{request.query_string}" }, as: :login
 
     resources :suggest, only: :index, defaults: {format: 'json'}
 

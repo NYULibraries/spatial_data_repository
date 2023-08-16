@@ -77,6 +77,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def find_user
-    @find_user ||= User.create_from_provider_data(request.env['omniauth.auth'])
+    @find_user ||= User.from_omniauth(request.env['omniauth.auth'])
   end
 end

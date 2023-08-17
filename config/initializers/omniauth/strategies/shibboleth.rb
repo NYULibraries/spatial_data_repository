@@ -7,11 +7,8 @@ module OmniAuth
         end
       end
 
+      option :name, :shibboleth
       option :authorize_params, { scope: "openid" }
-      option :client_options, { site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
-                                authorize_url: "/oauth2/authorize",
-                                token_url: "/oauth2/token",
-                                redirect_uri: Settings.REDIRECT_URI }
 
       uid do
         raw_info["sub"]

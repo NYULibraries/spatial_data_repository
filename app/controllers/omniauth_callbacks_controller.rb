@@ -2,6 +2,7 @@
 
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   before_action :require_valid_omniauth, only: :shibboleth
+  skip_before_action :verify_authenticity_token, only: :shibboleth
 
   def shibboleth
     Rails.logger.info("OmniauthCallbacksController#shibboleth: #{omniauth.inspect}")

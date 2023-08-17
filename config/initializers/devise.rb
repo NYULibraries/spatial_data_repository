@@ -10,5 +10,9 @@ Devise.setup do |config|
   config.password_length = 8..128
   config.reset_password_within = 60.minutes
   config.sign_out_via = :get
-  config.omniauth :shibboleth, Settings.APP_ID, Settings.APP_SECRET, token_params: { parse: :json }, provider_ignores_state: true
+  config.omniauth :shibboleth,
+                  Settings.APP_ID,
+                  Settings.APP_SECRET,
+                  token_params: { parse: :json },
+                  provider_ignores_state: true
 end

@@ -13,12 +13,10 @@ Devise.setup do |config|
   config.omniauth :shibboleth,
                   Settings.APP_ID,
                   Settings.APP_SECRET,
-                  token_params: { parse: :json },
                   provider_ignores_state: true,
                   authorize_params: { scope: "openid" },
                   client_options: { site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
                                     authorize_url: "/oauth2/authorize",
-                                    token_url: "/oauth2/token",
-                                    response_type: 'code'}
+                                    token_url: "/oauth2/token"}
 
 end

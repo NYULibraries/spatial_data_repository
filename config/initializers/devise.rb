@@ -12,11 +12,6 @@ Devise.setup do |config|
   config.sign_out_via = :get
   config.omniauth :shibboleth,
                   Settings.APP_ID,
-                  Settings.APP_SECRET,
-                  provider_ignores_state: true,
-                  authorize_options: { scope: "openid" },
-                  client_options: { site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
-                                    authorize_url: "/oauth2/authorize",
-                                    token_url: "/oauth2/token"}
+                  Settings.APP_SECRET
 
 end

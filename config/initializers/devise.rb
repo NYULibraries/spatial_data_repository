@@ -14,7 +14,7 @@ Devise.setup do |config|
                   Settings.APP_ID,
                   Settings.APP_SECRET,
                   provider_ignores_state: true,
-                  authorize_params: { scope: "openid" },
+                  authorize_options: { scope: "openid" },
                   client_options: { site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
                                     authorize_url: "/oauth2/authorize",
                                     token_url: "/oauth2/token"}

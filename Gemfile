@@ -8,7 +8,6 @@ gem 'bootsnap', require: false
 gem 'bootstrap', '~> 4.0'
 gem 'config'
 gem 'devise'
-gem 'devise-guests', '~> 0.8'
 gem 'geoblacklight', '~> 4.0'
 gem 'importmap-rails'
 gem 'jbuilder'
@@ -29,7 +28,7 @@ gem 'turbo-rails'
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component'
-gem 'whenever'
+gem 'whenever', require: false
 
 group :development, :test do
   gem 'bundler-audit'
@@ -50,5 +49,5 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
   gem 'timecop'
-  gem 'whenever-test'
+  gem 'whenever-test', require: false
 end

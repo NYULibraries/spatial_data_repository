@@ -519,7 +519,8 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   mysql2
-  omniauth-oauth2 (<= 1.6.0)
+  omniauth (= 1.9.2)
+  omniauth-oauth2
   omniauth-rails_csrf_protection
   puma (~> 5.0)
   rails (~> 7.0.6)

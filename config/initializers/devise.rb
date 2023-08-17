@@ -19,6 +19,6 @@ Devise.setup do |config|
                   client_options: { site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
                                     authorize_url: "/oauth2/authorize",
                                     token_url: "/oauth2/token",
-                                    response_type: 'authorization_code'}
+                                    response_type: 'code'}
 
 end

@@ -50,5 +50,5 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
   gem 'timecop'
-  gem 'whenever-test', require: false
+  gem 'whenever-test'
 end

@@ -22,6 +22,10 @@ module OmniAuth
         }
       end
 
+      def callback_url
+        full_host + script_name + callback_path
+      end
+
       def raw_info
         response = access_token.get("/oauth2/userinfo?schema=openid")
         Rails.logger.info("Shibboleth raw_info: #{response.parsed}")

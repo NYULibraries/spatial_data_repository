@@ -10,7 +10,8 @@ class User < ApplicationRecord
   # the account.
 
   def self.from_omniauth(auth)
-    find_or_create_by(provider: auth.provider, email: "#{auth.info['email']}@nyu.edu") do |user|
+    find_or_create_by(provider: auth.provider, username: auth.uid) do |user|
+      user.email = "#{auth.uid}@nyu.edu"
       user.firstname = auth.info['first_name']
       user.lastname = auth.info['last_name']
     end

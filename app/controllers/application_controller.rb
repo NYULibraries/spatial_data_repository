@@ -20,10 +20,10 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user_dev
-    # @current_user_dev ||= User.find_by(username: 'admin', provider: 'nyulibraries') || User.create!(guest_user_params)
+    @current_user_dev ||= User.find_by(username: 'admin', provider: 'nyulibraries') || User.find_or_create_by!(guest_user_params)
   end
 
-  # alias current_user current_user_dev if Rails.env.development?
+  alias current_user current_user_dev if Rails.env.development?
 
   # After signing out from the local application,
   # redirect to the logout path for the Login app
@@ -41,6 +41,8 @@ class ApplicationController < ActionController::Base
   def guest_user_params
     { provider: 'nyulibraries',
       email: "anon_guest@example.com",
-      username: 'admin' }
+      username: 'admin',
+      firstname: 'Anon',
+      lastname: 'Guest' }
   end
 end

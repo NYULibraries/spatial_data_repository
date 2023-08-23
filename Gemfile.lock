@@ -1,11 +1,10 @@
 GIT
   remote: https://github.com/NYULibraries/sdr-cli.git
-  revision: e89772b4313f602760d71d4736e2228a09bc7134
+  revision: 62a60ccf34fb7fd0f8bc6dcf64fea09e039ac5a4
   specs:
     sdr_cli (0.1.0)
       dotenv (~> 2.7)
       faraday (~> 2.7)
-      geo_combine (~> 0.8.0)
       thor (~> 1.2.2)
 
 GEM

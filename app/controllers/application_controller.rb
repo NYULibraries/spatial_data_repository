@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
 
   # Alias new_session_path as login_path for default devise config
   def new_session_path(_scope)
-    login_path
+    user_shibboleth_omniauth_authorize_path
   end
 
   def after_sign_in_path_for(resource)

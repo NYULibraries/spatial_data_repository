@@ -1,0 +1,21 @@
+<div class='container'>
+  <div class='row text-center'>
+    <div class='col-sm'>
+      <%= content_tag :h3, t('geoblacklight.home.category_heading') %>
+      <div class='row'>
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'home', label: 'geoblacklight.home.institution', facet_field: Settings.FIELDS.PROVIDER, response: @response)) %>
+
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'arrow-circle-down', label: 'geoblacklight.home.data_type', facet_field: Settings.FIELDS.RESOURCE_TYPE, response: @response)) %>
+      </div>
+      <div class='row'>
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'globe', label: 'geoblacklight.home.placename', facet_field: Settings.FIELDS.SPATIAL_COVERAGE, response: @response)) %>
+
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'tags', label: 'geoblacklight.home.subject', facet_field: Settings.FIELDS.SUBJECT, response: @response)) %>
+      </div>
+    </div>
+    <div class='col-sm'>
+      <%= content_tag :h3, t('geoblacklight.home.map_heading') %>
+      <%= content_tag :div, '', id: 'map', aria: { label: t('geoblacklight.map.label') }, data: { map: 'home', 'catalog-path'=> search_catalog_path , 'map-geom' => Settings.HOMEPAGE_MAP_GEOM, basemap: geoblacklight_basemap, leaflet_options: leaflet_options } %>
+    </div>
+  </div>
+</div>

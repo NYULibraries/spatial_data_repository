@@ -4,39 +4,44 @@ describe 'routes for users' do
   describe 'Logging in' do
     describe 'GET /auth/shibboleth' do
       subject { get('/auth/shibboleth') }
+
       it do
-        should route_to({
-                          controller: 'omniauth_callbacks',
-                          action: 'passthru'
-                        })
+        expect(subject).to route_to({
+                                      controller: 'omniauth_callbacks',
+                                      action: 'passthru'
+                                    })
       end
     end
 
     describe 'POST /auth/shibboleth' do
       subject { post('/auth/shibboleth') }
+
       it do
-        should route_to({
-                          controller: 'omniauth_callbacks',
-                          action: 'passthru'
-                        })
+        expect(subject).to route_to({
+                                      controller: 'omniauth_callbacks',
+                                      action: 'passthru'
+                                    })
       end
     end
 
     describe 'GET /auth/shibboleth/callback' do
       subject { get('/auth/shibboleth/callback') }
-      it { should route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
+
+      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
     end
 
     describe 'POST /auth/shibboleth/callback' do
       subject { post('/auth/shibboleth/callback') }
-      it { should route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
+
+      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
     end
   end
 
   describe 'Logging out' do
     describe 'GET /logout' do
       subject { get('/logout') }
-      it { should route_to({ controller: 'devise/sessions', action: 'destroy' }) }
+
+      it { is_expected.to route_to({ controller: 'devise/sessions', action: 'destroy' }) }
     end
   end
 end

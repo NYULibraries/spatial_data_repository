@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
 
   def guest_user_params
     { provider: 'nyulibraries',
-      email: "anon_guest@example.com",
+      email: 'anon_guest@example.com',
       username: 'admin',
       firstname: 'Anon',
       lastname: 'Guest' }

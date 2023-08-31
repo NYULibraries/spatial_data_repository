@@ -12,6 +12,7 @@ describe 'Homepage' do
       expect(page).to have_content 'Featured Maps'
     end
   end
+
   describe 'Accessibility' do
     it 'has no accessibility errors' do
       visit root_path

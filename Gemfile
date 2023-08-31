@@ -32,6 +32,7 @@ gem 'view_component'
 gem 'whenever', require: false
 
 group :development, :test do
+  gem 'axe-core-rspec'
   gem 'bundler-audit'
   gem 'byebug'
   gem 'capybara'

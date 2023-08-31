@@ -4,6 +4,7 @@
 ENV['RAILS_ENV'] ||= 'test'
 
 require File.expand_path('../config/environment', __dir__)
+require 'axe-rspec'
 require 'capybara/rspec'
 require 'capybara/rails'
 require 'capybara-screenshot/rspec'
@@ -19,16 +20,16 @@ SimpleCov.start do
   add_filter 'spec'
 end
 
-# Capybara.register_driver :firefox_headless do |app|
-#   options = ::Selenium::WebDriver::Firefox::Options.new
-#   options.args << '--headless'
-#
-#   Capybara::Selenium::Driver.new(app, browser: :firefox, options: options)
-# end
-#
-# Capybara.javascript_driver = :selenium_chrome_headless
-# Capybara.current_driver = Capybara.javascript_driver
-# Capybara.default_driver = Capybara.javascript_driver
+Capybara.register_driver :firefox_headless do |app|
+  options = ::Selenium::WebDriver::Firefox::Options.new
+  options.args << '--headless'
+
+  Capybara::Selenium::Driver.new(app, browser: :firefox, options: options)
+end
+
+Capybara.javascript_driver = :selenium_chrome_headless
+Capybara.current_driver = Capybara.javascript_driver
+Capybara.default_driver = Capybara.javascript_driver
 
 Capybara.server = :puma
 Capybara.default_max_wait_time = 15

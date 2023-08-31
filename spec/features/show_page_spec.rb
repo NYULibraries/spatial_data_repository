@@ -48,6 +48,7 @@ describe 'Show page' do
     it 'includes six download links' do
       visit solr_document_path 'nyu-2451-38645'
       expect(page).to have_content 'Download'
+      click_on 'Download'
 
       expect(page).to have_content('LAZ (Point-cloud)')
       expect(page).to have_link(

@@ -45,6 +45,7 @@ GBL_PARAMS:
 FIELDS:
   :ACCESS_RIGHTS: 'dct_accessRights_s'
   :ALTERNATIVE_TITLE: 'dct_alternative_sm'
+  :BBOX: 'dcat_bbox'
   :CENTROID: 'dcat_centroid'
   :CREATOR: 'dct_creator_sm'
   :DATE_ISSUED: 'dct_issued_s'

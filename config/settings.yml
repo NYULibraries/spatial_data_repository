@@ -45,7 +45,6 @@ GBL_PARAMS:
 FIELDS:
   :ACCESS_RIGHTS: 'dct_accessRights_s'
   :ALTERNATIVE_TITLE: 'dct_alternative_sm'
-  :BBOX: 'dcat_bbox'
   :CENTROID: 'dcat_centroid'
   :CREATOR: 'dct_creator_sm'
   :DATE_ISSUED: 'dct_issued_s'
@@ -81,7 +80,7 @@ FIELDS:
   :RIGHTS_HOLDER: 'dct_rightsHolder_sm'
   :SOURCE: 'dct_source_sm'
   :SPATIAL_COVERAGE: 'dct_spatial_sm'
-  :GEOMETRY: 'locn_geometry'
+  :GEOMETRY: 'dcat_bbox'
   :SUBJECT: 'dct_subject_sm'
   :SUPPRESSED: 'gbl_suppressed_b'
   :TEMPORAL_COVERAGE: 'dct_temporal_sm'

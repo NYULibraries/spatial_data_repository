@@ -6,10 +6,11 @@ describe 'routes for users' do
       subject { get('/auth/shibboleth') }
 
       it do
-        expect(subject).to route_to({
-                                      controller: 'omniauth_callbacks',
-                                      action: 'passthru'
-                                    })
+        response = subject
+        expect(response).to route_to({
+                                       controller: 'omniauth_callbacks',
+                                       action: 'passthru'
+                                     })
       end
     end
 
@@ -17,10 +18,11 @@ describe 'routes for users' do
       subject { post('/auth/shibboleth') }
 
       it do
-        expect(subject).to route_to({
-                                      controller: 'omniauth_callbacks',
-                                      action: 'passthru'
-                                    })
+        response = subject
+        expect(response).to route_to({
+                                       controller: 'omniauth_callbacks',
+                                       action: 'passthru'
+                                     })
       end
     end
 

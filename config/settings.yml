@@ -66,7 +66,6 @@ FIELDS:
   :LICENSE: 'dct_license_sm'
   :MEMBER_OF: 'pcdm_memberOf_sm'
   :METADATA_VERSION: 'gbl_mdVersion_s'
-  :MULTI_DOWNLOADS: 'nyu_addl_downloads_s'
   :MODIFIED: 'gbl_mdModified_dt'
   :OVERLAP_FIELD: 'solr_bboxtype'
   :PUBLISHER: 'dct_publisher_sm'
@@ -80,7 +79,7 @@ FIELDS:
   :RIGHTS_HOLDER: 'dct_rightsHolder_sm'
   :SOURCE: 'dct_source_sm'
   :SPATIAL_COVERAGE: 'dct_spatial_sm'
-  :GEOMETRY: 'dcat_bbox'
+  :GEOMETRY: 'locn_geometry'
   :SUBJECT: 'dct_subject_sm'
   :SUPPRESSED: 'gbl_suppressed_b'
   :TEMPORAL_COVERAGE: 'dct_temporal_sm'
@@ -89,7 +88,7 @@ FIELDS:
   :WXS_IDENTIFIER: 'gbl_wxsIdentifier_s'
 
 # Institution deployed at
-INSTITUTION: 'NYU'
+INSTITUTION: 'Stanford'
 
 # Metadata shown in tool panel
 METADATA_SHOWN:
@@ -99,7 +98,7 @@ METADATA_SHOWN:
   - 'html'
 
 # (For external Download) timeout and open_timeout parameters for Faraday
-TIMEOUT_DOWNLOAD: 30
+TIMEOUT_DOWNLOAD: 16
 
 # (For WMS inspection) timeout and open_timeout parameters for Faraday
 TIMEOUT_WMS: 4
@@ -226,11 +225,6 @@ WMS_PARAMS:
   :INFO_FORMAT: 'text/html'
 
 # Settings for leaflet
-OPACITY_CONTROL: &opacity_control
-  CONTROLS:
-    - 'Opacity'
-    - 'Fullscreen'
-
 LEAFLET:
   MAP:
   LAYERS:
@@ -248,36 +242,47 @@ LEAFLET:
         color: "#2C7FB8"
   VIEWERS:
     DYNAMICMAPLAYER:
-      <<: *opacity_control
+      CONTROLS:
+        - 'Opacity'
+        - 'Fullscreen'
     FEATURELAYER:
-      <<: *opacity_control
+      CONTROLS:
+        - 'Opacity'
+        - 'Fullscreen'
     IIIF:
-      <<: *opacity_control
+      CONTROLS:
+        - 'Fullscreen'
     IMAGEMAPLAYER:
-      <<: *opacity_control
+      CONTROLS:
+        - 'Opacity'
+        - 'Fullscreen'
     INDEXMAP:
-      <<: *opacity_control
+      CONTROLS:
+        - 'Fullscreen'
     TILEDMAPLAYER:
-      <<: *opacity_control
+      CONTROLS:
+        - 'Opacity'
+        - 'Fullscreen'
     WMS:
-      <<: *opacity_control
+      CONTROLS:
+        - 'Opacity'
+        - 'Fullscreen'
 
 # Toggle the help text feature that offers users context
 HELP_TEXT:
   viewer_protocol:
-      - 'dynamic_map_layer'
-      - 'feature_layer'
-      - 'iiif'
-      - 'iiif_manifest'
-      - 'image_map_layer'
-      - 'index_map'
-      - 'tiled_map_layer'
-      - 'wms'
-      - 'tms'
-      - 'oembed'
+    - 'dynamic_map_layer'
+    - 'feature_layer'
+    - 'iiif'
+    - 'iiif_manifest'
+    - 'image_map_layer'
+    - 'index_map'
+    - 'tiled_map_layer'
+    - 'wms'
+    - 'tms'
+    - 'oembed'
 
 # Enable catalog#show sidebar static map for items with the following viewer protocols
 SIDEBAR_STATIC_MAP:
   - 'iiif'
   - 'iiif_manifest'
-

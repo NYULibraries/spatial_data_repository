@@ -5,25 +5,13 @@ describe 'routes for users' do
     describe 'GET /auth/shibboleth' do
       subject { get('/auth/shibboleth') }
 
-      it do
-        response = subject
-        expect(response).to route_to({
-                                       controller: 'omniauth_callbacks',
-                                       action: 'passthru'
-                                     })
-      end
+      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'passthru' }) }
     end
 
     describe 'POST /auth/shibboleth' do
       subject { post('/auth/shibboleth') }
 
-      it do
-        response = subject
-        expect(response).to route_to({
-                                       controller: 'omniauth_callbacks',
-                                       action: 'passthru'
-                                     })
-      end
+      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'passthru' }) }
     end
 
     describe 'GET /auth/shibboleth/callback' do

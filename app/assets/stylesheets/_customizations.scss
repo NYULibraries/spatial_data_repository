@@ -15,3 +15,10 @@ a {
 .btn-primary {
   background-color: $nyu-ultra-violet;
 }
+
+dd.col-md-9.blacklight-dct_description_sm > button {
+  color: $nyu-ultra-violet;
+  &:hover {
+    color: $nyu-dark-violet;
+  }
+}

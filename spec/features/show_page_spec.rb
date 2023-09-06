@@ -82,4 +82,11 @@ describe 'Show page' do
     end
   end
   # rubocop:enable RSpec/ExampleLength, RSpec/MultipleExpectations
+
+  describe 'Accessibility' do
+    it 'has no accessibility errors' do
+      visit solr_document_path 'nyu-2451-38684'
+      expect(page).to be_axe_clean.within('body')
+    end
+  end
 end

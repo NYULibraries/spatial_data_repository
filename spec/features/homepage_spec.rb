@@ -16,7 +16,7 @@ describe 'Homepage' do
   describe 'Accessibility' do
     it 'has no accessibility errors' do
       visit root_path
-      expect(page).to be_axe_clean.within '.blacklight-catalog-index'
+      expect(page).to be_axe_clean.within '#main-container'
     end
   end
 end

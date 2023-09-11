@@ -86,7 +86,7 @@ describe 'Show page' do
   describe 'Accessibility' do
     it 'has no accessibility errors' do
       visit solr_document_path 'nyu-2451-38684'
-      expect(page).to be_axe_clean.within('#main-container')
+      expect(page).to be_axe_clean.within('.show-document')
     end
   end
 end

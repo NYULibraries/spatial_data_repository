@@ -22,3 +22,11 @@ dd.col-md-9.blacklight-dct_description_sm > button {
     color: $nyu-dark-violet;
   }
 }
+
+#main-container > div > section.page-sidebar.col-lg-3 > div:nth-child(3) > div > ul > li > a {
+  color: $nyu-ultra-violet;
+  &:hover {
+      color: $nyu-dark-violet;
+  }
+  font-weight: 600;
+}

@@ -31,6 +31,10 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component'
 gem 'whenever', require: false
 
+group :test do
+  gem 'whenever-test'
+end
+
 group :development, :test do
   gem 'axe-core-rspec'
   gem 'bundler-audit'
@@ -51,5 +55,4 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
   gem 'timecop'
-  gem 'whenever-test', require: false
 end

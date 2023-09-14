@@ -25,6 +25,7 @@ set :keep_releases, 5
 # Linked files and directories (e.g., for database.yml, storage folders)
 # append :linked_files, 'config/database.yml', 'config/master.key'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'public/uploads'
+append :linked_files, 'config/credentials/production.key'
 
 # Passenger settings
 namespace :deploy do

@@ -6,10 +6,10 @@ ruby '3.2.2'
 gem 'blacklight', '~> 7.0'
 gem 'bootsnap', require: false
 gem 'bootstrap', '~> 4.0'
-gem "capistrano", "~> 3.17"
-gem "capistrano-passenger", "~> 0.2.1"
-gem "capistrano-rails", "~> 1.6"
-gem "capistrano-rbenv", "~> 2.2"
+gem 'capistrano', '~> 3.17'
+gem 'capistrano-passenger', '~> 0.2.1'
+gem 'capistrano-rails', '~> 1.6'
+gem 'capistrano-rbenv', '~> 2.2'
 gem 'config'
 gem 'devise'
 gem 'geoblacklight', '~> 4.0'

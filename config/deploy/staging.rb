@@ -50,6 +50,10 @@ server "54.158.233.148", user: "ubuntu", roles: %w{app db web}
 
 set :branch, "update-geoblacklight"
 
+set :default_env, {
+  RAILS_ENV: 'production'
+}
+
 # The server-based syntax can be used to override options:
 # ------------------------------------
 # server "example.com",

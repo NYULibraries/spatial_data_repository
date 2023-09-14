@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "geo-stage.library.nyu.edu", user: "ubuntu", roles: %w{app db web}
+server "54.158.233.148", user: "ubuntu", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
@@ -43,10 +43,12 @@ server "geo-stage.library.nyu.edu", user: "ubuntu", roles: %w{app db web}
 # --------------
  set :ssh_options, {
    auth_methods: %w(publickey),
-   forward_agent: false,
-   keys: %W(/home/#{ENV['USER']}/.ssh/key-1-jun24-2015.pem),
+   forward_agent: true,
+   keys: %W(~/.ssh/key-1-jun24-2015.pem),
    user: 'ubuntu'
  }
+
+set :branch, "update-geoblacklight"
 
 # The server-based syntax can be used to override options:
 # ------------------------------------

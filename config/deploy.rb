@@ -2,12 +2,12 @@
 lock "~> 3.17.3"
 
 # Replace 'your_app_name' with your actual application name
-set :application, 'spatial_data_repository'
+set :application, 'nyu_geoblacklight'
 
 # Replace 'your_server_ip' with your server's IP address
 set :deploy_to, "/home/ubuntu/#{fetch(:application)}"
 set :user, 'ubuntu'
-set :repo_url, 'git@github.com:yourusername/your_app_name.git'
+set :repo_url, 'git@github.com:NYULibraries/spatial_data_repository.git'
 set :branch, :main
 
 # Use rbenv for Ruby version management
@@ -23,8 +23,8 @@ set :default_env, {
 set :keep_releases, 5
 
 # Linked files and directories (e.g., for database.yml, storage folders)
-append :linked_files, 'config/database.yml', 'config/master.key'
-# append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'public/uploads'
+# append :linked_files, 'config/database.yml', 'config/master.key'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'public/uploads'
 
 # Passenger settings
 namespace :deploy do

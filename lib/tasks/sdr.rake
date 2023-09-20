@@ -16,7 +16,7 @@ end
 
 namespace :sdr do
   desc 'Run Solr and GeoBlacklight for interactive development'
-  task server: %i[environment rails_server_args] do |_t, _args|
+  task server: %i[environment] do |_t, _args|
     require 'solr_wrapper'
 
     shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }

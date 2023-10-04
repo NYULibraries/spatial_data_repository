@@ -26,7 +26,7 @@ set :keep_releases, 5
 
 # Linked files and directories (e.g., for database.yml, storage folders)
 # append :linked_files, 'config/database.yml', 'config/master.key'
-append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'config/settings'
 append :linked_files, 'config/master.key', 'config/credentials.yml.enc'
 
 # Passenger settings

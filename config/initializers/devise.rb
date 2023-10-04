@@ -14,5 +14,6 @@ Devise.setup do |config|
     site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
     authorize_url: "/oauth2/authorize",
     token_url: "/oauth2/token",
+    provider_ignores_state: true
   }
 end

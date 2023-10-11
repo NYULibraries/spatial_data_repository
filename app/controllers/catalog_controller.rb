@@ -103,9 +103,9 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_facet_field Settings.FIELDS.ACCESS_RIGHTS, label: 'Access', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
     # config.add_facet_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', limit: 8
     config.add_facet_field Settings.FIELDS.RESOURCE_TYPE, label: 'Data Type', limit: 8
-    config.add_facet_field Settings.FIELDS.FORMAT, label: 'Format', limit: 8
+    config.add_facet_field Settings.FIELDS.FORMAT, label: 'File Format', limit: 8
     # config.add_facet_field Settings.FIELDS.THEME, label: 'Theme', limit: 8
-    # config.add_facet_field Settings.FIELDS.PUBLISHER, label: 'Publisher', limit: 8
+    config.add_facet_field Settings.FIELDS.PUBLISHER, label: 'Publisher', limit: 8
     # config.add_facet_field Settings.FIELDS.GEOREFERENCED, label: 'Georeferenced', limit: 3
 
     # GEOBLACKLIGHT APPLICATION FACETS

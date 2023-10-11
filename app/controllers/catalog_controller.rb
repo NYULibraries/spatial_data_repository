@@ -163,6 +163,7 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_show_field Settings.FIELDS.CREATOR, label: 'Creator', itemprop: 'creator'
     config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher'
     config.add_show_field Settings.FIELDS.PROVIDER, label: 'Provider', link_to_facet: true
+    config.add_show_field Settings.FIELDS.IS_PART_OF, label: 'Collection',link_to_facet: true
     config.add_show_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', itemprop: 'class'
     config.add_show_field Settings.FIELDS.RESOURCE_TYPE, label: 'Resource Type', itemprop: 'type'
     config.add_show_field Settings.FIELDS.SUBJECT, label: 'Subject', itemprop: 'keywords', link_to_facet: true

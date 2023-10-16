@@ -9,6 +9,6 @@ describe 'Schedule' do
   it 'has a rake task that runs every week' do
     schedule = Whenever::Test::Schedule.new(file: 'config/schedule.rb')
     task_name = schedule.jobs[:rake].first[:task]
-    task_name.should include('vacate_searches:vacate')
+    expect(task_name).to include('vacate_searches:vacate')
   end
 end

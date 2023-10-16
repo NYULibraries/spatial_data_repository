@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 RSpec.describe CuratedMaps::CuratedMapComponent, type: :component do
-  let(:map) { ::NyuGeoblacklight::CuratedCollections.maps.first }
+  let(:map) { NyuGeoblacklight::CuratedCollections.maps.first }
 
   it 'renders the map' do
     render_inline(described_class.new(map:))

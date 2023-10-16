@@ -1,4 +1,4 @@
-describe 'Accessibility', type: :feature do
+describe 'Accessibility' do
   before do
     login_as(create(:user), scope: :user)
   end

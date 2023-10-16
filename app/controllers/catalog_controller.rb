@@ -163,7 +163,7 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_show_field Settings.FIELDS.CREATOR, label: 'Creator', itemprop: 'creator'
     config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher'
     config.add_show_field Settings.FIELDS.PROVIDER, label: 'Provider', link_to_facet: true
-    config.add_show_field Settings.FIELDS.IS_PART_OF, label: 'Collection',link_to_facet: true
+    config.add_show_field Settings.FIELDS.IS_PART_OF, label: 'Collection', link_to_facet: true
     config.add_show_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', itemprop: 'class'
     config.add_show_field Settings.FIELDS.RESOURCE_TYPE, label: 'Resource Type', itemprop: 'type'
     config.add_show_field Settings.FIELDS.SUBJECT, label: 'Subject', itemprop: 'keywords', link_to_facet: true
@@ -309,7 +309,7 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_show_tools_partial(:sms, if: :render_sms_action?, callback: :sms_action, validator: :validate_sms_params)
 
     # Custom tools for GeoBlacklight
-    config.add_show_tools_partial :metadata, if: proc { |_context, _config, options| options[:document] && (Settings.METADATA_SHOWN & options[:document].references.refs.map(&:type).map(&:to_s)).any? }
+    config.add_show_tools_partial :metadata, if: proc { |_context, _config, options| options[:document] && Settings.METADATA_SHOWN.intersect?(options[:document].references.refs.map(&:type).map(&:to_s)) }
     config.add_show_tools_partial :carto, partial: 'carto', if: proc { |_context, _config, options| options[:document] && options[:document].carto_reference.present? }
     config.add_show_tools_partial :arcgis, partial: 'arcgis', if: proc { |_context, _config, options| options[:document] && options[:document].arcgis_urls.present? }
     config.add_show_tools_partial :data_dictionary, partial: 'data_dictionary', if: proc { |_context, _config, options| options[:document] && options[:document].data_dictionary_download.present? }

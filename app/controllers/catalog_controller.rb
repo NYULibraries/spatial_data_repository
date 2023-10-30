@@ -101,7 +101,7 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_facet_field Settings.FIELDS.IS_PART_OF, label: 'Collection', show: true
     config.add_facet_field Settings.FIELDS.INDEX_YEAR, label: 'Year', limit: 10
     config.add_facet_field Settings.FIELDS.ACCESS_RIGHTS, label: 'Access', limit: 8, item_component: Geoblacklight::IconFacetItemComponent
-    # config.add_facet_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', limit: 8
+    config.add_facet_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', limit: 8
     config.add_facet_field Settings.FIELDS.RESOURCE_TYPE, label: 'Data Type', limit: 8
     config.add_facet_field Settings.FIELDS.FORMAT, label: 'File Format', limit: 8
     # config.add_facet_field Settings.FIELDS.THEME, label: 'Theme', limit: 8
@@ -160,8 +160,8 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
 
     config.add_show_field Settings.FIELDS.ALTERNATIVE_TITLE, label: 'Alternative Title', itemprop: 'alt_title'
     config.add_show_field Settings.FIELDS.DESCRIPTION, label: 'Description', itemprop: 'description', helper_method: :render_value_as_truncate_abstract
-    config.add_show_field Settings.FIELDS.CREATOR, label: 'Creator', itemprop: 'creator'
-    config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher'
+    config.add_show_field Settings.FIELDS.CREATOR, label: 'Creator', itemprop: 'creator', link_to_facet: true
+    config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher', link_to_facet: true
     config.add_show_field Settings.FIELDS.PROVIDER, label: 'Provider', link_to_facet: true
     config.add_show_field Settings.FIELDS.IS_PART_OF, label: 'Collection', link_to_facet: true
     config.add_show_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', itemprop: 'class'

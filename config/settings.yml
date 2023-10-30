@@ -8,7 +8,7 @@ CARTO_ONECLICK_LINK: 'http://oneclick.carto.com/'
 ARCGIS_BASE_URL: 'https://www.arcgis.com/home/webmap/viewer.html'
 
 # Download path can be configured using this setting
-DOWNLOAD_PATH: "/blacklight_data/cache/downloads"
+#DOWNLOAD_PATH: "/blacklight_data/cache/downloads"
 
 PROXY_URL: 'http://proxy.library.nyu.edu/login?url=https://maps-restricted.geo.nyu.edu'
 RESTRICTED_URL: 'https://maps-restricted.geo.nyu.edu/geoserver/wms'

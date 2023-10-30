@@ -2,16 +2,13 @@
 APPLICATION_LOGO_URL: 'https://geo.nyu.edu/assets/real250-c393c31c117191fd87d686168c6784ecb75159bec4969597b4b0d56e6ddcbc11.png'
 
 # Carto OneClick Service https://carto.com/engine/open-in-carto/
-CARTO_ONECLICK_LINK: 'http://oneclick.carto.com/'
+CARTO_ONECLICK_LINK: 'https://oneclick.carto.com/'
 
 # ArcGIS Online Base URL
 ARCGIS_BASE_URL: 'https://www.arcgis.com/home/webmap/viewer.html'
 
 # Download path can be configured using this setting
-#DOWNLOAD_PATH: "/blacklight_data/cache/downloads"
-
-PROXY_URL: 'http://proxy.library.nyu.edu/login?url=https://maps-restricted.geo.nyu.edu'
-RESTRICTED_URL: 'https://maps-restricted.geo.nyu.edu/geoserver/wms'
+DOWNLOAD_PATH: "/blacklight_data/cache/downloads"
 
 # The bq boost value for spatial search matches within a bounding box
 BBOX_WITHIN_BOOST: '10'
@@ -228,49 +225,26 @@ WMS_PARAMS:
   :EXCEPTIONS: 'application/json'
   :INFO_FORMAT: 'text/html'
 
+OPACITY_CONTROL: &opacity_control
+  CONTROLS:
+    - 'Opacity'
+    - 'Fullscreen'
 # Settings for leaflet
 LEAFLET:
   MAP:
   LAYERS:
     DETECT_RETINA: true
-    INDEX:
-      DEFAULT: &default
-        color: "#7FCDBB"
-        weight: "1"
-        radius: "4"
-      UNAVAILABLE:
-        <<: *default
-        color: "#EDF8B1"
-      SELECTED:
-        <<: *default
-        color: "#2C7FB8"
   VIEWERS:
-    DYNAMICMAPLAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
-    FEATURELAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
-    IIIF:
-      CONTROLS:
-        - 'Fullscreen'
-    IMAGEMAPLAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
-    INDEXMAP:
-      CONTROLS:
-        - 'Fullscreen'
-    TILEDMAPLAYER:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
     WMS:
-      CONTROLS:
-        - 'Opacity'
-        - 'Fullscreen'
+      <<: *opacity_control
+    TILEDMAPLAYER:
+      <<: *opacity_control
+    FEATURELAYER:
+      <<: *opacity_control
+    DYNAMICMAPLAYER:
+      <<: *opacity_control
+    IMAGEMAPLAYER:
+      <<: *opacity_control
 
 # Toggle the help text feature that offers users context
 HELP_TEXT:

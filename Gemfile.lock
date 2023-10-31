@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/NYULibraries/sdr-cli.git
-  revision: bf84c65f88f2a27e9aa89340a5468ee1542a508c
+  revision: 45cbc9e648a6ad3ce7071b84adf6e2d0168cae77
   specs:
     sdr_cli (0.1.0)
       dotenv (~> 2.7)

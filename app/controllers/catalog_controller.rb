@@ -164,8 +164,8 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher', link_to_facet: true
     config.add_show_field Settings.FIELDS.PROVIDER, label: 'Provider', link_to_facet: true
     config.add_show_field Settings.FIELDS.IS_PART_OF, label: 'Collection', link_to_facet: true
-    config.add_show_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', itemprop: 'class'
-    config.add_show_field Settings.FIELDS.RESOURCE_TYPE, label: 'Resource Type', itemprop: 'type'
+    config.add_show_field Settings.FIELDS.RESOURCE_CLASS, label: 'Resource Class', itemprop: 'class', link_to_facet: true
+    config.add_show_field Settings.FIELDS.RESOURCE_TYPE, label: 'Resource Type', itemprop: 'type', link_to_facet: true
     config.add_show_field Settings.FIELDS.SUBJECT, label: 'Subject', itemprop: 'keywords', link_to_facet: true
     config.add_show_field Settings.FIELDS.THEME, label: 'Theme', itemprop: 'theme'
     config.add_show_field Settings.FIELDS.TEMPORAL_COVERAGE, label: 'Temporal Coverage', itemprop: 'temporal'
@@ -175,7 +175,7 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_show_field Settings.FIELDS.RIGHTS_HOLDER, label: 'Rights Holder', itemprop: 'rights_holder'
     config.add_show_field Settings.FIELDS.LICENSE, label: 'License', itemprop: 'license'
     config.add_show_field Settings.FIELDS.ACCESS_RIGHTS, label: 'Access Rights', itemprop: 'access_rights'
-    config.add_show_field Settings.FIELDS.FORMAT, label: 'Format', itemprop: 'format'
+    config.add_show_field Settings.FIELDS.FORMAT, label: 'Format', itemprop: 'format', link_to_facet: true
     config.add_show_field Settings.FIELDS.FILE_SIZE, label: 'File Size', itemprop: 'file_size'
     config.add_show_field Settings.FIELDS.GEOREFERENCED, label: 'Georeferenced', itemprop: 'georeferenced'
     config.add_show_field(

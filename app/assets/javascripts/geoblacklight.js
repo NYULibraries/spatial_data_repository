@@ -7,6 +7,7 @@
 //= require geoblacklight/downloaders
 //= require leaflet-iiif
 //= require esri-leaflet
+//= require readmore.min.js
 
 //= require Leaflet.fullscreen.js
 

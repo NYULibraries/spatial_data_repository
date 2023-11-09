@@ -233,6 +233,17 @@ OPACITY_CONTROL: &opacity_control
 LEAFLET:
   MAP:
   LAYERS:
+    INDEX:
+      DEFAULT: &default
+        color: "#7FCDBB"
+        weight: "1"
+        radius: "4"
+      UNAVAILABLE:
+        <<: *default
+        color: "#EDF8B1"
+      SELECTED:
+        <<: *default
+        color: "#2C7FB8"
   DETECT_RETINA: true
   VIEWERS:
     WMS:

@@ -56,7 +56,6 @@ describe 'Show page' do
       expect(page).to have_content('GeoTIFF (Geo-referenced RGB)')
       expect(page).to have_content('GeoTIFF (Geo-referenced CIR)')
       expect(page).to have_content('JPG (Oblique photos)')
-
     end
   end
   # rubocop:enable RSpec/ExampleLength, RSpec/MultipleExpectations

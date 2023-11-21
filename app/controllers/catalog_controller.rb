@@ -309,7 +309,7 @@ class CatalogController < ApplicationController # rubocop:disable Metrics/ClassL
     config.add_show_tools_partial(:sms, if: :render_sms_action?, callback: :sms_action, validator: :validate_sms_params)
 
     # Custom tools for GeoBlacklight
-    config.add_show_tools_partial :metadata, if: proc { |_context, _config, options| options[:document] && Settings.METADATA_SHOWN.intersect?(options[:document].references.refs.map(&:type).map(&:to_s)) }
+    config.add_show_tools_partial :metadata, if: proc { |_context, _config, options| options[:document] && Settings.METADATA_SHOWN.intersect?(options[:document].references.refs.map(&:type).map(&:to_s)) } # rubocop:disable Performance/MapMethodChain:
     config.add_show_tools_partial :carto, partial: 'carto', if: proc { |_context, _config, options| options[:document] && options[:document].carto_reference.present? }
     config.add_show_tools_partial :arcgis, partial: 'arcgis', if: proc { |_context, _config, options| options[:document] && options[:document].arcgis_urls.present? }
     config.add_show_tools_partial :data_dictionary, partial: 'data_dictionary', if: proc { |_context, _config, options| options[:document] && options[:document].data_dictionary_download.present? }

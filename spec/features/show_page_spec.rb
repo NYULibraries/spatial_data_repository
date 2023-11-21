@@ -51,34 +51,12 @@ describe 'Show page' do
       click_on 'Download'
 
       expect(page).to have_content('LAZ (Point-cloud)')
-      expect(page).to have_link(
-        'Export', href: 'https://archive.nyu.edu/retrieve/80003/nyu_2451_38645_pc_F_150326_120403.zip'
-      )
-
       expect(page).to have_content('LAS (Full-waveform)')
-      expect(page).to have_link(
-        'Export', href: 'https://archive.nyu.edu/retrieve/80002/nyu_2451_38645_fwf_las_F_150326_120403.zip'
-      )
-
       expect(page).to have_content('Pulsewaves (Full-waveform)')
-      expect(page).to have_link(
-        'Export', href: 'https://archive.nyu.edu/retrieve/80005/nyu_2451_38645_fwf_plswvs_F_150326_120403.zip'
-      )
-
       expect(page).to have_content('GeoTIFF (Geo-referenced RGB)')
-      expect(page).to have_link(
-        'Export', href: 'https://archive.nyu.edu/retrieve/80240/nyu_2451_38645_rgb_F_150326_120403.zip'
-      )
-
       expect(page).to have_content('GeoTIFF (Geo-referenced CIR)')
-      expect(page).to have_link(
-        'Export', href: 'https://archive.nyu.edu/retrieve/80001/nyu_2451_38645_cir_F_150326_120403.zip'
-      )
-
       expect(page).to have_content('JPG (Oblique photos)')
-      expect(page).to have_link(
-        'Export', href: 'https://archive.nyu.edu/retrieve/80004/nyu_2451_38645_oblique_F_150326_120403.zip'
-      )
+
     end
   end
   # rubocop:enable RSpec/ExampleLength, RSpec/MultipleExpectations

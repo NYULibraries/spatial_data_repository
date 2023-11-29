@@ -49,6 +49,7 @@ Below are barebones steps for getting started in development for the SDR. For mo
 1. Run the commands below in order specified:
   - `git clone https://github.com/NYULibraries- spatial_data_repository.git && cd- spatial_data_repository`
   - `cp config/vars.yml.example config/vars.yml`
+  - `bundle install`
   - `bundle exec rake db:schema:load`
   - `bundle exec rake sdr:server`
 2. View to test environment Solr admin panel: http://localhost:8983/

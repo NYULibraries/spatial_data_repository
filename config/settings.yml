@@ -275,3 +275,6 @@ HELP_TEXT:
 SIDEBAR_STATIC_MAP:
   - 'iiif'
   - 'iiif_manifest'
+
+# GOOGLE ANALYTICS HANDLING
+analytics_debug: true

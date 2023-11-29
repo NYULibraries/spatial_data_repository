@@ -1,3 +1,9 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-capybara
+
 AllCops:
   Exclude:
     - 'db/**/*'
@@ -5,6 +11,8 @@ AllCops:
     - 'config/**/*'
     - 'vendor/**/*'
     - 'Vagrantfile'
+    - 'app/helpers/geoblacklight_helper.rb'
+  NewCops: enable
 
 Style/Documentation:
   Enabled: false

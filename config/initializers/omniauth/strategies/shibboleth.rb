@@ -1,12 +1,12 @@
 module OmniAuth
   module Strategies
-    require 'omniauth-oauth2'
     class Shibboleth < OmniAuth::Strategies::OAuth2
       if defined?(::Rails) && ::Rails.env.development?
         silence_warnings do
           OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
         end
       end
+
       option :name, :shibboleth
       option :authorize_params, { scope: "openid" }
 
@@ -20,6 +20,10 @@ module OmniAuth
           last_name: last_name,
           first_name: first_name
         }
+      end
+
+      def callback_url
+        full_host + script_name + callback_path
       end
 
       def raw_info

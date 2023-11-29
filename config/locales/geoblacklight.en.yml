@@ -18,3 +18,11 @@ en:
     download:
       export_formats: 'Other Formats'
       export_link: 'Export'
+      export_shapefile_link: 'EPSG:4326 Shapefile'
+      export_geojson_link: 'GeoJSON'
+      export_kml_link: 'KML'
+      export_arcgrid_link: 'ArcGRID'
+      export_tiff_link: 'TIFF'
+      export_geotiff_link: 'GeoTIFF'
+      export_wms_link: 'WMS'
+

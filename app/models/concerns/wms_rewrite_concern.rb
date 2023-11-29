@@ -17,6 +17,6 @@ module WmsRewriteConcern
   end
 
   def nyu?
-    fetch(:dct_provenance_s).downcase == 'nyu'
+    fetch(:schema_provider_s).casecmp('nyu').zero?
   end
 end

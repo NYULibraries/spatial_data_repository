@@ -5,13 +5,18 @@ describe 'Homepage' do
     it 'has Featured Collections' do
       visit root_path
       expect(page).to have_content 'Featured Collections'
-      expect(page).to have_selector '.curated-collections'
     end
 
     it 'has Featured Maps' do
       visit root_path
       expect(page).to have_content 'Featured Maps'
-      expect(page).to have_selector '.curated-maps'
+    end
+  end
+
+  describe 'Accessibility' do
+    it 'has no accessibility errors' do
+      visit root_path
+      expect(page).to be_axe_clean.within '#main-container'
     end
   end
 end

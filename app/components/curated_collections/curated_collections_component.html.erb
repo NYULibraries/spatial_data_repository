@@ -1,0 +1,8 @@
+<div class="curated-collections col-6">
+  <h3><%= @header %></h3>
+  <div class="row">
+    <% @collections.each do |collection| %>
+      <%= render CuratedCollections::CuratedCollectionComponent.new(collection: collection) %>
+    <% end %>
+  </div>
+</div>

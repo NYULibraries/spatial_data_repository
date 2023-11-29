@@ -1,70 +1,21 @@
-<div class='jumbotron'>
-  <div class='home-search-area'>
-    <%= content_tag :h2, t('geoblacklight.home.headline') %>
-    <%= content_tag :h3, t('geoblacklight.home.search_heading') %>
-    <div class='col-md-6 col-md-offset-3'>
-      <%= render_search_form_no_navbar %>
-    </div>
-  </div>
-</div>
-
 <div class='container'>
+  <div class='row text-center'>
+    <div class='col-sm'>
+      <%= content_tag :h3, t('geoblacklight.home.category_heading') %>
+      <div class='row'>
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'home', label: 'geoblacklight.home.institution', facet_field: Settings.FIELDS.PROVIDER, response: @response)) %>
 
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'arrow-circle-down', label: 'geoblacklight.home.data_type', facet_field: Settings.FIELDS.RESOURCE_TYPE, response: @response)) %>
+      </div>
+      <div class='row'>
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'globe', label: 'geoblacklight.home.placename', facet_field: Settings.FIELDS.SPATIAL_COVERAGE, response: @response)) %>
 
-  <div class='row'>
-    <div class='col-md-6'>
-      <%= content_tag :h3, t('geoblacklight.home.category_heading'), class: 'text-center' %>
-      <div class='category-block'>
-        <div class='category-icon'>
-          <span class='glyphicon glyphicon-home'></span>
-        </div>
-        <h4>Institution</h4>
-        <%= render_facet_tags [Settings.FIELDS.PROVENANCE] %>
-      </div>
-      <div class='category-block'>
-        <div class='category-icon'>
-          <span class='glyphicon glyphicon-download'></span>
-        </div>
-        <h4>Data type</h4>
-        <%= render_facet_tags [Settings.FIELDS.GEOM_TYPE] %>
-      </div>
-      <div class='category-block'>
-        <div class='category-icon'>
-          <span class='glyphicon glyphicon-globe'></span>
-        </div>
-        <h4>Placename</h4>
-        <%= render_facet_tags [Settings.FIELDS.SPATIAL_COVERAGE] %>
-      </div>
-      <div class='category-block'>
-        <div class='category-icon'>
-          <span class='glyphicon glyphicon-tags'></span>
-        </div>
-        <h4>Subject</h4>
-        <%= render_facet_tags [Settings.FIELDS.SUBJECT] %>
+        <%= render(Geoblacklight::HomepageFeatureFacetComponent.new(icon: 'tags', label: 'geoblacklight.home.subject', facet_field: Settings.FIELDS.SUBJECT, response: @response)) %>
       </div>
     </div>
-    <div class='col-md-6 text-center'>
+    <div class='col-sm'>
       <%= content_tag :h3, t('geoblacklight.home.map_heading') %>
-      <%= content_tag :div, '', id: 'map', data: {map: 'home', 'catalog-path' => search_catalog_path, 'map-bbox' => '-74.349498 40.531859 -73.491191 41.051707', basemap: geoblacklight_basemap, leaflet_options: leaflet_options} %>
+      <%= content_tag :div, '', id: 'map', aria: { label: t('geoblacklight.map.label') }, data: { map: 'home', 'catalog-path'=> search_catalog_path , 'map-geom' => Settings.HOMEPAGE_MAP_GEOM, basemap: geoblacklight_basemap, leaflet_options: leaflet_options } %>
     </div>
   </div>
-
-  <div class="curated">
-
-    <div class="row">
-
-      <div class="col-md-6">
-        <%= construct_curated_collections %>
-      </div>
-      <div class="col-md-6">
-        <%= construct_recent_collections %>
-      </div>
-    </div>
-
-    <%= construct_curated_maps %>
-
-
-  </div>
-
-
 </div>

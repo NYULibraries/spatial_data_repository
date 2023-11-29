@@ -1,0 +1,13 @@
+<div class="col-md-4">
+  <a class="curated-card" style="display:block" href=<%= "./catalog/#{@map[:slug]}" %>>
+    <div class="card-map">
+      <%= image_tag "thumb/#{@map[:slug]}.jpg",
+                    { class: 'card-img-top',
+                      "data-svg-fallback": image_path('real250.png').to_s,
+                      alt: 'NYU Spatial Data Repository' } %>
+      <div class="card-block">
+        <h4 class="card-title"><%= @map[:title] %></h4>
+      </div>
+    </div>
+  </a>
+</div>

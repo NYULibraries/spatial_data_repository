@@ -1,50 +1,62 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'blacklight'
+ruby '3.2.2'
+
+gem 'blacklight', '~> 7.0'
+gem 'bootsnap', require: false
+gem 'bootstrap', '~> 4.0'
+gem 'capistrano', '~> 3.17'
+gem 'capistrano-passenger', '~> 0.2.1'
+gem 'capistrano-rails', '~> 1.6'
+gem 'capistrano-rbenv', '~> 2.2'
 gem 'config'
 gem 'devise'
-gem 'geoblacklight', '~> 1.9.0'
+gem 'geoblacklight', '~> 4.0'
+gem 'importmap-rails'
 gem 'jbuilder'
 gem 'jquery-rails'
-gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 gem 'mysql2'
-gem 'omniauth'
+gem 'omniauth', '1.9.2'
 gem 'omniauth-oauth2'
-gem 'rails'
-gem 'rainbow'
-gem 'rsolr'
-gem 'sass-rails'
+gem 'omniauth-rails_csrf_protection'
+gem 'puma', '~> 5.0'
+gem 'rails', '~> 7.0.6'
+gem 'rsolr', '>= 1.0', '< 3'
+gem 'sassc-rails', '~> 2.1'
 gem 'sdoc', group: :doc
-gem 'solr_wrapper'
-gem 'sqlite3'
-gem 'turbolinks'
-gem 'twitter-typeahead-rails'
-gem 'uglifier'
-gem 'whenever'
+gem 'sdr_cli', github: 'NYULibraries/sdr-cli'
+gem 'sprockets', '< 4.0'
+gem 'sprockets-rails'
+gem 'stimulus-rails'
+gem 'turbo-rails'
+gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'view_component'
+gem 'whenever', require: false
 
-# Range limit gem for slider on Solr integer fields (year)
-# Currently broken (9/2/2016)
-# gem 'blacklight_range_limit'
+group :test do
+  gem 'whenever-test'
+end
 
 group :development, :test do
+  gem 'axe-core-rspec'
   gem 'bundler-audit'
   gem 'byebug'
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'database_cleaner'
-  gem 'dotenv-rails'
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
-  gem 'puma'
   gem 'rspec-rails'
   gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
   gem 'selenium-webdriver'
   gem 'simplecov'
+  gem 'solr_wrapper'
   gem 'spring'
+  gem 'sqlite3'
   gem 'timecop'
-  gem 'web-console'
-  gem 'whenever-test'
 end

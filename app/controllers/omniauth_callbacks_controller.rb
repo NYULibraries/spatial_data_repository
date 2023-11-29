@@ -2,6 +2,7 @@
 
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   before_action :require_valid_omniauth, only: :shibboleth
+  skip_before_action :verify_authenticity_token, only: :shibboleth
 
   def shibboleth
     Rails.logger.info("OmniauthCallbacksController#shibboleth: #{omniauth.inspect}")
@@ -73,10 +74,10 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     # Find existing or initialize new user,
     # and save new attributes each time
     @user = find_user
-    @user.update_attributes(attributes_from_omniauth)
+    @user.update(attributes_from_omniauth)
   end
 
   def find_user
-    @find_user ||= User.create_from_provider_data(request.env['omniauth.auth'])
+    @find_user ||= User.from_omniauth(request.env['omniauth.auth'])
   end
 end

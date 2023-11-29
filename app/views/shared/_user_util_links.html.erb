@@ -1,0 +1,23 @@
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <%= link_to 'Submit', 'http://metadata.geo.nyu.edu/deposit', class: 'nav-link'  %>
+  </li>
+  <%= render_nav_actions do |config, action|%>
+    <li class="nav-item"><%= action %></li>
+  <% end %>
+
+  <% if has_user_authentication_provider? %>
+    <% if current_user %>
+      <li class="nav-item">
+        <%= link_to t('blacklight.header_links.logout'), logout_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to current_user.to_s, bookmarks_path, class: 'nav-link' %>
+      </li>
+    <% else %>
+      <li class="nav-item">
+        <%= link_to t('blacklight.header_links.login'), user_shibboleth_omniauth_authorize_path, method: :post, class: 'nav-link' %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

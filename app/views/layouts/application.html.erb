@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>NYU Spatial Data Repository</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<html aria-label="application">
+  <head>
+    <title>NYU Spatial Data Repository</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_tag '$.fx.off = true;' if Rails.env.test? %>
+    <%= javascript_importmap_tags %>
 </head>
-<body>
 
-<%= yield %>
-
-</body>
+  <body>
+    <%= yield %>
+  </body>
 </html>

@@ -6,12 +6,13 @@
 //= require geoblacklight/modules
 //= require geoblacklight/downloaders
 //= require leaflet-iiif
-//= require esri-leaflet
-//= require readmore.min
+//= require esri-leaflet-debug
+//= require readmore.min.js
+
 //= require Leaflet.fullscreen.js
 
 GeoBlacklight.Controls.Fullscreen = function() {
-    this.map.addControl(new L.Control.Fullscreen({
-        position: 'topright'
-    }));
+  this.map.addControl(new L.Control.Fullscreen({
+    position: 'topright'
+  }));
 };

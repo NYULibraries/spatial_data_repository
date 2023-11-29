@@ -9,6 +9,20 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_tag '$.fx.off = true;' if Rails.env.test? %>
     <%= javascript_importmap_tags %>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWGGYRXL2K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    
+    const config = {};
+    <% if Settings.analytics_debug %>
+      config.debug_mode = true
+    <% end %>
+        
+    gtag('config', 'G-JWGGYRXL2K', config)
+  </script>
 </head>
 
   <body>

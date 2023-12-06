@@ -48,7 +48,7 @@ server "54.158.233.148", user: "ubuntu", roles: %w{app db web}
    user: 'ubuntu'
  }
 
-set :branch, "update-geoblacklight"
+set :branch, "main"
 
 set :rails_env, 'production'
 # The server-based syntax can be used to override options:

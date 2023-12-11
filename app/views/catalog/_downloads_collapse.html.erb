@@ -27,6 +27,7 @@
 
 <% if document.download_types.present? %>
   <% document.download_types.each do |type| %>
+    <% next if type.first == :kmz %>
     <%= download_link_generated(type.first, document) %>
   <% end %>
 <% end %>

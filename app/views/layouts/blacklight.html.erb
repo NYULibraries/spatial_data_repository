@@ -12,10 +12,8 @@
       <%= yield %>
       <div class="curated">
         <div class="row">
-          <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.collections.sample(2),
+          <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.collections.sample(4),
                                                                          header: 'Featured Collections') %>
-          <%= render CuratedCollections::CuratedCollectionsComponent.new(collections: ::NyuGeoblacklight::CuratedCollections.recent[0..1],
-                                                                         header: 'Recently Updated') %>
         </div>
         <%= render CuratedMaps::CuratedMapsComponent.new(maps: ::NyuGeoblacklight::CuratedCollections.maps.sample(3)) %>
       </div>

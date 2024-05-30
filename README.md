@@ -42,7 +42,7 @@ Below are barebones steps for getting started in development for the SDR.
 - Git (`brew install git`)
 - Ruby 3.2.2 (not 3.3.1) + Rails (many options; GBL recommends this [Go Rails install list](https://gorails.com/setup/macos/14-sonoma#ruby), especially for Apple M1, M2; use `asdf` install manager and install Ruby + Nodejs + Rails)
 - Mysql (`brew install mysql`)
-- Java (`brew install openjdk@11` or [Oracle Downloads](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html); if needing help to add Java to PATH, see [this help](https://stackoverflow.com/questions/71059252/mac-the-operation-couldn-t-be-completed-unable-to-locate-a-java-runtime-that-su))
+- Java (`brew install openjdk@11`); if needing help to add Java to PATH, see [this help](https://stackoverflow.com/questions/71059252/mac-the-operation-couldn-t-be-completed-unable-to-locate-a-java-runtime-that-su))
 
 #### Steps
 

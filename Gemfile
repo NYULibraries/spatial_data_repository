@@ -32,7 +32,7 @@ gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'view_component'
+gem 'view_component', '~> 2.83.0'
 gem 'whenever', require: false
 
 group :test do

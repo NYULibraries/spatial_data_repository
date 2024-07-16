@@ -54,3 +54,11 @@ Below are barebones steps for getting started in development for the SDR.
   - `bundle exec rake sdr:server`
 2. View to test environment Solr admin panel: http://localhost:8989/solr
 3. View the operating GeoBlacklight Rails app: http://localhost:3000
+
+### Setup Gotchas
+
+If the `mysql2` gem fails to install and complains about not finding `zstd` you may need to do the following:
+
+```bash
+gem install mysql2 -v '0.5.6' -- --with-opt-dir=$(brew --prefix openssl) --with-ldflags=-L/opt/homebrew/opt/zstd/lib
+```

@@ -31,9 +31,7 @@ server "54.158.233.148", user: "ubuntu", roles: %w{app db web}
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-set :default_env, {
-  'NEW_RELIC_ENV' => 'staging'
-}
+
 
 # Custom SSH Options
 # ==================

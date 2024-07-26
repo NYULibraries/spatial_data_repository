@@ -1,1 +1,122 @@
-# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+User-agent: *
+Disallow: /?q=
+Disallow: /*?q=*
+Disallow: /?f
+Disallow: /*?f*
+Disallow: /?_
+Disallow: /?bbox
+Disallow: /?page=
+Disallow: /bookmarks
+Disallow: /catalog.html?f
+Disallow: /catalog.html?_
+Disallow: /catalog.atom
+Disallow: /catalog.rss
+Disallow: /catalog/*/relations
+Disallow: /catalog/facet/*
+Disallow: /catalog/*/web_services
+Disallow: /catalog/email
+Disallow: /catalog/opensearch
+Disallow: /catalog/range_limit
+Disallow: /catalog/sms
+Disallow: /saved_searches
+Disallow: /search_history
+Disallow: /suggest
+Disallow: /users
+Disallow: /404
+Disallow: /422
+Disallow: /500
+
+# Block Specific Crawlers & Bots
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: DOC
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Download Ninja
+Disallow: /
+
+User-agent: fast
+Disallow: /
+
+User-agent: Fetch
+Disallow: /
+
+User-agent: grub-client
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: k2spider
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: Mediapartners-Google*
+Disallow: /
+
+User-agent: Microsoft.URL.Control
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: NPBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: ZyBORG
+Disallow: /
+
+User-agent: Zao
+Disallow: /

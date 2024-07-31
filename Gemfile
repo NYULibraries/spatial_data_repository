@@ -13,7 +13,7 @@ gem 'capistrano-rbenv', '~> 2.2'
 gem 'config'
 gem 'dalli'
 gem 'devise'
-gem 'geoblacklight', '~> 4.0'
+gem 'geoblacklight', '~> 4.4.0'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'jquery-rails'
@@ -36,6 +36,7 @@ gem 'turbo-rails'
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component', '~> 2.83.0'
+gem 'vite_rails', '~> 3.0'
 gem 'whenever', require: false
 
 group :test do

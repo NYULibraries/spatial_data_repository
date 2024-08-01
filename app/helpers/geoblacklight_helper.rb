@@ -285,4 +285,9 @@ module GeoblacklightHelper # rubocop:disable Metrics/ModuleLength
               :leaflet_options => leaflet_options
             })
   end
+
+  def iiif_manifest_container?
+    return false unless @document
+    @document&.item_viewer&.viewer_preference&.key?(:iiif_manifest)
+  end
 end

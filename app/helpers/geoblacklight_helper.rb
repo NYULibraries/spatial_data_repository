@@ -13,7 +13,7 @@ module GeoblacklightHelper # rubocop:disable Metrics/ModuleLength
     @document.references.iiif.endpoint.sub! 'info.json', 'full/full/0/default.jpg'
   end
 
-  def download_link_file(label, id, url)
+  def download_link_file(label, id, url, target = nil)
     link_to(
       label,
       url,
@@ -22,7 +22,8 @@ module GeoblacklightHelper # rubocop:disable Metrics/ModuleLength
         download: 'trigger',
         download_type: 'direct',
         download_id: id
-      }
+      },
+      target: target
     )
   end
 

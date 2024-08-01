@@ -2,19 +2,41 @@
 
 describe 'Show page' do
   context 'with restricted NYU result - nyu-2451-34626' do
-    it 'the displays warning message' do
-      visit solr_document_path 'nyu-2451-34626'
-      expect(page).to have_content 'This dataset is only available to members of the New York University community'
+    context 'when signed out' do
+      it 'the displays warning message' do
+        visit solr_document_path 'nyu-2451-34626'
+        expect(page).to have_content 'This dataset is only available to members of the New York University community'
+      end
+
+      it 'does not display download' do
+        visit solr_document_path 'nyu-2451-34626'
+        expect(page).not_to have_content 'Export'
+      end
+
+      it 'includes link to login' do
+        visit solr_document_path 'nyu-2451-34626'
+        expect(page).to have_link('Login to View and Download')
+      end
     end
 
-    it 'does not display download' do
-      visit solr_document_path 'nyu-2451-34626'
-      expect(page).not_to have_content 'Export'
-    end
+    context 'when signed in' do
+      before do
+        login_as(create(:user), scope: :user)
+      end
 
-    it 'includes link to login' do
-      visit solr_document_path 'nyu-2451-34626'
-      expect(page).to have_link('Login to View and Download')
+      it 'shows a download button' do
+        visit solr_document_path 'nyu-2451-34626'
+        expect(page).to have_button('Download')
+      end
+
+      it 'opens download links in a new tab' do
+        visit solr_document_path 'nyu-2451-34626'
+        click_button('Download')
+
+        within_window(window_opened_by { click_link('Original Shapefile') }) do
+          expect(page.title).not_to include('NYU Spatial Data Repository')
+        end
+      end
     end
   end
 
@@ -44,7 +66,7 @@ describe 'Show page' do
 
   # TODO: Refactor this to play nice with Rubocop
   # rubocop:disable RSpec/ExampleLength, RSpec/MultipleExpectations
-  context 'with multiple downloads - nyu-2451-38645' do #
+  context 'with multiple downloads - nyu-2451-38645' do
     it 'includes six download links' do
       visit solr_document_path 'nyu-2451-38645'
       expect(page).to have_content 'Download'

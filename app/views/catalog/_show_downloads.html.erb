@@ -9,7 +9,7 @@
       </button>
       <div class="collapse" id="downloads-collapse">
         <div class="card card-body">
-          <%= render 'downloads_collapse' %>
+          <%= render Catalog::DownloadsCollapseComponent.new(document: @document) %>
         </div>
       </div>
     </div>

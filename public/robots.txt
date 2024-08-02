@@ -11,6 +11,7 @@ Disallow: /catalog.html?f
 Disallow: /catalog.html?_
 Disallow: /catalog.atom
 Disallow: /catalog.rss
+Disallow: /catalog/*/catalog/*
 Disallow: /catalog/*/relations
 Disallow: /catalog/facet/*
 Disallow: /catalog/*/web_services

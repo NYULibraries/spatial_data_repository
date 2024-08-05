@@ -1,0 +1,4 @@
+---
+ignore:
+  - CVE-2015-9284 # Temporarily ignore Omniauth vulnerability
+  - CVE-2024-6531 # No fix for this yet

@@ -60,3 +60,29 @@ If the `mysql2` gem fails to install and complains about not finding `zstd` you 
 ```bash
 gem install mysql2 -v '0.5.6' -- --with-opt-dir=$(brew --prefix openssl) --with-ldflags=-L/opt/homebrew/opt/zstd/lib
 ```
+
+### Running the Test Suite
+
+To run the full test suite use the following command:
+
+```bash
+$ bundle exec rake ci
+```
+
+This command will start up Solr with a `sdr-core-test` core and then run the full test suite.
+
+#### Running Individual Specs
+
+Some specs (like feature specs) require a `sdr-core-test` core set up in Solr. This is automatically done when running the full test suite using the command above, but for running individual specs you'll need to start it up manually. You can do that using the following command:
+
+```bash
+$ bundle exec rake sdr:test
+```
+
+Then, in another terminal window (or your IDE), run the individual spec.
+
+Note: You'll know this step is necessary if an individual spec fails with an error like the following:
+
+```plaintext
+Blacklight::Exceptions::ECONNREFUSED: Connection refused - Unable to connect to Solr instance using #<RSolr::Client:0x0000000117d5e1a8 @uri=#<URI::HTTP http://127.0.0.1:8983/solr/sdr-core-test/>
+```

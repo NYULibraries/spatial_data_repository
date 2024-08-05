@@ -28,7 +28,7 @@ gem 'rails', '~> 7.0.6'
 gem 'rsolr', '>= 1.0', '< 3'
 gem 'sassc-rails', '~> 2.1'
 gem 'sdoc', group: :doc
-gem 'sdr_cli', github: 'NYULibraries/sdr-cli'
+gem 'sdr_cli', github: 'NYULibraries/sdr-cli', branch: "upgrade-to-geocombine-0.9.1"
 gem 'sprockets', '< 4.0'
 gem 'sprockets-rails'
 gem 'stimulus-rails'

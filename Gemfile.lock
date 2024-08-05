@@ -1,10 +1,11 @@
 GIT
   remote: https://github.com/NYULibraries/sdr-cli.git
-  revision: 45cbc9e648a6ad3ce7071b84adf6e2d0168cae77
+  revision: 4cc25da9cc874c07bee28db2d48ff5b9d949c4ad
+  branch: upgrade-to-geocombine-0.9.1
   specs:
     sdr_cli (0.1.0)
       dotenv (~> 2.7)
-      faraday (~> 2.7)
+      faraday (~> 2.10.1)
       thor (~> 1.2.2)
 
 GEM
@@ -220,10 +221,9 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faraday (2.7.11)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
+    faraday (2.10.1)
+      faraday-net_http (>= 2.0, < 3.2)
+      logger
     faraday-net_http (3.0.2)
     faraday-net_http_persistent (2.1.0)
       faraday (~> 2.5)
@@ -316,6 +316,7 @@ GEM
     llhttp-ffi (0.4.0)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
+    logger (1.6.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -488,7 +489,6 @@ GEM
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
     ruby-progressbar (1.13.0)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sanitize (6.1.2)
       crass (~> 1.0.2)

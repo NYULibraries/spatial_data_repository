@@ -88,3 +88,21 @@ Note: You'll know this step is necessary if an individual spec fails with an err
 ```plaintext
 Blacklight::Exceptions::ECONNREFUSED: Connection refused - Unable to connect to Solr instance using #<RSolr::Client:0x0000000117d5e1a8 @uri=#<URI::HTTP http://127.0.0.1:8983/solr/sdr-core-test/>
 ```
+
+### Loading NYU Data Locally
+
+First, start up the Rails app if it's not already running:
+
+```bash
+$ bundle exec rake sdr:server
+```
+
+This will ensure Solr is up and running.
+
+Then in another terminal run the following Rake task:
+
+```bash
+$ bundle exec rake sdr:load_nyu_data
+```
+
+Once completed, head to <http://localhost:3000/?search_field=all_fields> and you should have a lot more data to work with.

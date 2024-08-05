@@ -78,4 +78,24 @@ namespace :sdr do
       end
     end
   end
+
+  desc 'Clone and index NYU data for local development'
+  task load_nyu_data: :environment do
+    exit unless Rails.env.development?
+
+    puts 'Removing existing edu.nyu repo...'
+    FileUtils.rm_rf('tmp/opengeometadata/edu.nyu')
+
+    puts 'Cloning edu.nyu repository...'
+    system 'bundle exec sdr-cli clone --repo=edu.nyu'
+
+    puts 'Deleting Solr index...'
+    Blacklight.default_index.connection.delete_by_query '*:*'
+    Blacklight.default_index.connection.commit
+
+    puts 'Indexing edu.nyu Aardvark files...'
+    system "bundle exec sdr-cli index --directory=\"tmp/opengeometadata/edu.nyu/metadata-aardvark/**/*.json\" --solr_url=\"#{Settings.SOLR_URL}\""
+
+    puts 'Done!'
+  end
 end

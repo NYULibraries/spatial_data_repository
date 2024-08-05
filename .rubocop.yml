@@ -12,6 +12,9 @@ AllCops:
     - 'vendor/**/*'
     - 'Vagrantfile'
     - 'app/helpers/geoblacklight_helper.rb'
+    - 'coverage/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
   NewCops: enable
 
 Style/Documentation:

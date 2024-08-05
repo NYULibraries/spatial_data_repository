@@ -29,4 +29,4 @@ jobs:
         bundle exec rake db:schema:load
         bundle exec rake ci
     - name: Audit gems
-      run: bundle exec bundle-audit check --ignore CVE-2015-9284 # tempoarily ignore omniauth vulnerability
+      run: bundle exec bundle-audit check

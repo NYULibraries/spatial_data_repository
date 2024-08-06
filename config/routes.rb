@@ -4,21 +4,6 @@ Rails.application.routes.draw do
     mount Blacklight::Engine => '/'
     mount Geoblacklight::Engine => 'geoblacklight'
 
-    concern :gbl_exportable, Geoblacklight::Routes::Exportable.new
-    resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
-      concerns :gbl_exportable
-    end
-    concern :gbl_wms, Geoblacklight::Routes::Wms.new
-    namespace :wms do
-      concerns :gbl_wms
-    end
-    concern :gbl_downloadable, Geoblacklight::Routes::Downloadable.new
-    namespace :download do
-      concerns :gbl_downloadable
-    end
-    resources :download, only: [:show]
-
-
     root to: "catalog#index"
     concern :searchable, Blacklight::Routes::Searchable.new
 
@@ -40,6 +25,20 @@ Rails.application.routes.draw do
       end
     end
 
+    concern :gbl_exportable, Geoblacklight::Routes::Exportable.new
+    resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
+      concerns :gbl_exportable
+    end
+    concern :gbl_wms, Geoblacklight::Routes::Wms.new
+    namespace :wms do
+      concerns :gbl_wms
+    end
+    concern :gbl_downloadable, Geoblacklight::Routes::Downloadable.new
+    namespace :download do
+      concerns :gbl_downloadable
+    end
+    resources :download, only: [:show]
+    
     # NYU Routes
     get 'logout', to: 'devise/sessions#destroy', as: :logout
 

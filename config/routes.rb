@@ -43,9 +43,6 @@ Rails.application.routes.draw do
     get 'logout', to: 'devise/sessions#destroy', as: :logout
 
     resources :suggest, only: :index, defaults: {format: 'json'}
-
-    resource :feedback_form, path: 'feedback', only: [:new, :create]
-    get 'feedback' => 'feedback_forms#new'
   end
 end
 

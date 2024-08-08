@@ -41,9 +41,6 @@ Rails.application.routes.draw do
     
     # NYU Routes
     get 'logout', to: 'devise/sessions#destroy', as: :logout
-
-    resource :feedback_form, path: 'feedback', only: [:new, :create]
-    get 'feedback' => 'feedback_forms#new'
   end
 end
 

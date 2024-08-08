@@ -15,7 +15,7 @@ gem 'dalli'
 gem 'devise'
 gem 'geoblacklight', '~> 4.4.0'
 # Override geo_combine version defined by geoblacklight gem
-gem "geo_combine", github: "OpenGeoMetadata/GeoCombine", ref: "bd6a122c569636355f9fa64a9a62df7cbb7482ab"
+gem 'geo_combine', github: 'OpenGeoMetadata/GeoCombine', ref: 'bd6a122c569636355f9fa64a9a62df7cbb7482ab'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'jquery-rails'

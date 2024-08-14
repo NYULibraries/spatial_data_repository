@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/NYULibraries/sdr-cli.git
-  revision: b27651cdf74ceda174326cc08c249df956fd89fc
-  branch: upgrade-to-geocombine-0.9.1
+  revision: cad1a7ae386027da91e9064910c7f3b672700ac0
+  branch: upgrade-to-geocombine-0.9.2
   specs:
     sdr_cli (0.1.0)
       dotenv (~> 2.7)

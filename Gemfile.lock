@@ -582,7 +582,6 @@ DEPENDENCIES
   devise
   factory_bot_rails
   geckodriver-helper
-  geo_combine
   geoblacklight (~> 4.4.1)
   importmap-rails
   jbuilder

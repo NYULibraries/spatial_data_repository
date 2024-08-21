@@ -25,9 +25,6 @@
 # Ignore assets
 /public/assets/*
 
-# Ignore Vagrant
-/.vagrant
-/sdr.box
 .byebug_history
 *cloudimg-console.log
 

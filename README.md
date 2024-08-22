@@ -24,8 +24,11 @@ If you don't already have the prerequisites installed on your Mac laptop you can
 $ brew install git
 $ brew install mysql
 $ brew install asdf
-$ echo '. "$HOME/.asdf/asdf.sh"' >> ~/.zshrc
-$ source ~/.zshrc
+```
+
+You'll need to [set up asdf for your chosen shell](https://asdf-vm.com/guide/getting-started.html#_3-install-asdf) and then you'll be able to install the required language versions:
+
+```bash
 $ asdf plugin add ruby
 $ asdf install ruby 3.2.2
 $ asdf plugin add java

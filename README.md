@@ -16,7 +16,9 @@ You will need the following installed:
 - NodeJS 20+
 - Java 11+
 
-On macOS you can use [Homebrew](https://brew.sh) and [asdf](https://asdf-vm.com) to install everything you need:
+#### Installing Prerequisites with Homebrew & asdf
+
+If you don't already have the prerequisites installed on your Mac laptop you can use [Homebrew](https://brew.sh) and [asdf](https://asdf-vm.com) to install everything you need:
 
 ```bash
 $ brew install git
@@ -26,13 +28,10 @@ $ echo '. "$HOME/.asdf/asdf.sh"' >> ~/.zshrc
 $ source ~/.zshrc
 $ asdf plugin add ruby
 $ asdf install ruby 3.2.2
-$ asdf global ruby 3.2.2
 $ asdf plugin add java
 $ asdf install java openjdk-17
-$ asdf global java openjdk-17
 $ asdf plugin add nodejs
 $ asdf install nodejs 22.6.0
-$ asdf global nodejs 22.6.0
 ```
 
 ### Running a Development Server

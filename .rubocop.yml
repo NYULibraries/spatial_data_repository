@@ -10,7 +10,6 @@ AllCops:
     - 'bin/*'
     - 'config/**/*'
     - 'vendor/**/*'
-    - 'Vagrantfile'
     - 'app/helpers/geoblacklight_helper.rb'
     - 'coverage/**/*'
     - 'log/**/*'

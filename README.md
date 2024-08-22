@@ -16,34 +16,37 @@ You will need the following installed:
 - NodeJS 20+
 - Java 11+
 
+(Check specific versions in [.tool-versions](./.tool-versions))
 #### Installing Prerequisites with Homebrew & asdf
 
 If you don't already have the prerequisites installed on your Mac laptop you can use [Homebrew](https://brew.sh) and [asdf](https://asdf-vm.com) to install everything you need:
 
 ```bash
-$ brew install git
-$ brew install mysql
-$ brew install asdf
+$ brew install git mysql asdf
 ```
-
-You'll need to [set up asdf for your chosen shell](https://asdf-vm.com/guide/getting-started.html#_3-install-asdf) and then you'll be able to install the required language versions:
+You'll need to [set up asdf for your chosen shell](https://asdf-vm.com/guide/getting-started.html#_3-install-asdf) and then you'll be able to install the required language plugins:
 
 ```bash
 $ asdf plugin add ruby
-$ asdf install ruby 3.2.2
 $ asdf plugin add java
-$ asdf install java openjdk-17
 $ asdf plugin add nodejs
-$ asdf install nodejs 22.6.0
 ```
 
 ### Running a Development Server
 
-To checkout the project and standup a development server:
+Checkout the project repo:
 
 ```bash
 $ git clone https://github.com/NYULibraries/spatial_data_repository.git
 $ cd spatial_data_repository
+```
+Next, load the correct Ruby, Node, and Java versions using your version managers. If you're using `asdf`, you can do this with:
+
+``` sh
+$ asdf install
+```
+Finally, install the ruby gems and node modules, load the data, and start the server:
+```
 $ bundle install
 $ npm install
 $ bundle exec rake db:schema:load

@@ -266,6 +266,7 @@ module GeoblacklightHelper # rubocop:disable Metrics/ModuleLength
               "map-geom" => @document.geometry.geojson,
               "catalog-path" => search_catalog_path,
               :available => document_available?,
+              :inspect => show_attribute_table?,
               :basemap => geoblacklight_basemap,
               :leaflet_options => leaflet_options
             })
@@ -281,6 +282,7 @@ module GeoblacklightHelper # rubocop:disable Metrics/ModuleLength
               "map-geom" => @document.geometry.geojson,
               "catalog-path" => search_catalog_path,
               :available => document_available?,
+              :inspect => show_attribute_table?,
               :basemap => geoblacklight_basemap,
               :leaflet_options => leaflet_options
             })

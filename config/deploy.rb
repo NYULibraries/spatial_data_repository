@@ -13,12 +13,12 @@ set :branch, :main
 # Use rbenv for Ruby version management
 set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
-set :node_version, '16.20.2'
+set :node_version, '22.7.0'
 
 # Pass additional environment variables to the server
 set :default_env, {
   RAILS_ENV: 'production',
-  PATH: "/home/ubuntu/.nvm/versions/node/v16.20.2/bin:/home/ubuntu/.rbenv/plugins/ruby-build/bin:/home/ubuntu/.rbenv/shims:/home/ubuntu/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+  PATH: "/home/ubuntu/.nvm/versions/node/v22.7.0/bin:/home/ubuntu/.rbenv/plugins/ruby-build/bin:/home/ubuntu/.rbenv/shims:/home/ubuntu/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 }
 
 # Number of versions to keep (for rollback)

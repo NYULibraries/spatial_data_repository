@@ -12,4 +12,3 @@
 
 // Required by GeoBlacklight
 //= require geoblacklight
-//= require geoblacklight/basemaps

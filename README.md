@@ -109,6 +109,32 @@ Note: You'll know this step is necessary if an individual spec fails with an err
 Blacklight::Exceptions::ECONNREFUSED: Connection refused - Unable to connect to Solr instance using #<RSolr::Client:0x0000000117d5e1a8 @uri=#<URI::HTTP http://127.0.0.1:8983/solr/sdr-core-test/>
 ```
 
+## Deployment
+
+We use [Capistrano](https://capistranorb.com) to manage deployments.
+
+To deploy to an environment, use the following command:
+
+```bash
+$ bundle exec cap staging deploy
+```
+
+### Deployment Dry Run
+
+To do a dry-run of a deployment, add the `-n` flag:
+
+```bash
+$ bundle exec cap staging deploy -n
+```
+
+### Override Staging Branch
+
+To deploy a specific branch to the deployment environment, set a `BRANCH` environment variable:
+
+```bash
+$ BRANCH=foobar bundle exec cap staging deploy
+```
+
 ## Resources
 
 - [Documentation Repo](https://github.com/NYULibraries/sdr-documentation)

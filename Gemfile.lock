@@ -82,7 +82,7 @@ GEM
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
     ast (2.4.2)
-    autoprefixer-rails (10.4.15.0)
+    autoprefixer-rails (10.4.19.0)
       execjs (~> 2)
     axe-core-api (4.7.0)
       dumb_delegator
@@ -109,10 +109,9 @@ GEM
       view_component (>= 2.66, < 4)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
-    bootstrap (4.6.2)
+    bootstrap (4.6.2.1)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 1.16.1, < 2)
-      sassc-rails (>= 2.0.0)
     builder (3.3.0)
     bundler-audit (0.9.1)
       bundler (>= 1.2.0, < 3)
@@ -197,7 +196,8 @@ GEM
       net-http-persistent (~> 4.0)
     faraday-retry (2.2.1)
       faraday (~> 2.0)
-    ffi (1.15.5)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -556,7 +556,7 @@ GEM
       whenever
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.17)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   arm64-darwin-22
@@ -567,7 +567,7 @@ DEPENDENCIES
   axe-core-rspec
   blacklight (~> 7.0)
   bootsnap
-  bootstrap (~> 4.0)
+  bootstrap (~> 4.6)
   bundler-audit
   byebug
   capistrano (~> 3.17)

@@ -46,13 +46,6 @@ describe 'Show page' do
       expect(page).to have_selector 'div.alert.alert-warning'
     end
 
-    it 'includes survey link' do
-      visit solr_document_path 'nyu-2451-38684'
-      expect(page).to have_link(
-        'this brief survey', href: 'https://nyu.qualtrics.com/jfe/form/SV_42ddIXjT0CtaqAR'
-      )
-    end
-
     it 'does not display download' do
       visit solr_document_path 'nyu-2451-38684'
       expect(page).not_to have_content 'Download'
@@ -60,7 +53,9 @@ describe 'Show page' do
 
     it 'includes DOI for citation' do
       visit solr_document_path 'nyu-2451-38684'
-      expect(page).to have_content 'Please cite this study using the DOI'
+      expect(page).to have_link(
+        'doi:10.17609/N8MQ0N', href: 'https://doi.org/10.17609/N8MQ0N'
+      )
     end
   end
 

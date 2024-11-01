@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'fileutils'
+
 desc 'Run test suite'
 task ci: :environment do
   shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
@@ -17,10 +19,10 @@ end
 namespace :sdr do
   desc 'Run Solr and GeoBlacklight for interactive development'
   task server: %i[environment] do |_t, _args|
-    require 'solr_wrapper'
-
     shared_solr_opts = { managed: true, verbose: true, persist: false, download_dir: 'tmp' }
     shared_solr_opts[:version] = Settings.SOLR_VERSION if Settings.SOLR_VERSION
+
+    FileUtils.rm_rf Settings.SOLR_INSTANCE_DIR
 
     SolrWrapper.wrap(shared_solr_opts.merge(port: Settings.SOLR_PORT, instance_dir: Settings.SOLR_INSTANCE_DIR)) do |solr|
       solr.with_collection(name: Settings.SOLR_INSTANCE_NAME, dir: Rails.root.join('solr/conf').to_s) do

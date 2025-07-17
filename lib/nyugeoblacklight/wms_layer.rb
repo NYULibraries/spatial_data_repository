@@ -6,7 +6,7 @@ module NyuGeoblacklight
       # Overriding to strip proxy from WMS requests made by Rails app
       params['URL'].gsub!('http://proxy.library.nyu.edu/login?url=', '')
 
-      super(params)
+      super
     end
   end
 end

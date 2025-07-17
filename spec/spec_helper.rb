@@ -36,7 +36,7 @@ Capybara.default_max_wait_time = 15
 
 ActiveRecord::Migration.maintain_test_schema!
 
-Dir[Rails.root.join('spec/support/**/*.rb')].each { |file| require file }
+Rails.root.glob('spec/support/**/*.rb').each { |file| require file }
 
 # require_relative 'support/controller_macros'
 

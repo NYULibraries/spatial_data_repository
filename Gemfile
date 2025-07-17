@@ -64,3 +64,5 @@ group :development, :test do
   gem 'sqlite3'
   gem 'timecop'
 end
+
+gem "concurrent-ruby", "= 1.3.4"

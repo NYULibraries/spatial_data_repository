@@ -24,7 +24,7 @@ gem 'omniauth-oauth2'
 gem 'omniauth-rails_csrf_protection'
 gem 'puma', '~> 5.0'
 gem 'rack-attack'
-gem 'rails', '~> 7.0.6'
+gem 'rails', '~> 7'
 gem 'rsolr', '>= 1.0', '< 3'
 gem 'sassc-rails', '~> 2.1'
 gem 'sdoc', group: :doc
@@ -64,5 +64,3 @@ group :development, :test do
   gem 'sqlite3'
   gem 'timecop'
 end
-
-gem "concurrent-ruby", "= 1.3.4"

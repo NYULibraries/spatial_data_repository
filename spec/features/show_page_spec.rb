@@ -45,7 +45,7 @@ describe 'Show page' do
   context 'with suppressed download - nyu-2451-38684' do
     it 'includes warning' do
       visit solr_document_path 'nyu-2451-38684'
-      expect(page).to have_css 'div.alert.alert-warning'
+      expect(page).to have_css 'div.alert.alert-info'
     end
 
     it 'does not display download' do

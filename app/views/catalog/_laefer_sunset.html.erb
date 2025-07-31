@@ -1,5 +1,5 @@
 <% document ||= @document %>
-<div class="alert alert-warning alert-dismissible" role="alert">
+<div class="alert alert-info alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
   </button>
   Thank you for your interest in data from the <%= link_to search_catalog_path({f: {"#{Settings.FIELDS.PART_OF}" => ['2019 Sunset Park LiDAR']}}) do %><b>2019 Sunset Park LiDAR</b><% end %> project.<br><br>

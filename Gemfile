@@ -24,11 +24,11 @@ gem 'omniauth-oauth2'
 gem 'omniauth-rails_csrf_protection'
 gem 'puma', '~> 5.0'
 gem 'rack-attack'
-gem 'rails', '~> 7.0.6'
+gem 'rails', '~> 7'
 gem 'rsolr', '>= 1.0', '< 3'
 gem 'sassc-rails', '~> 2.1'
 gem 'sdoc', group: :doc
-gem 'sdr_cli', github: 'NYULibraries/sdr-cli', tag: 'v0.2.0'
+gem 'sdr_cli', github: 'NYULibraries/sdr-cli', tag: 'v0.2.1'
 gem 'sprockets', '< 4.0'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
@@ -54,9 +54,12 @@ group :development, :test do
   gem 'geckodriver-helper'
   gem 'rspec-rails'
   gem 'rubocop', require: false
+  gem 'rubocop-capybara', require: false
+  gem 'rubocop-factory_bot', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec_rails', require: false
   gem 'selenium-webdriver'
   gem 'simplecov'
   gem 'solr_wrapper'

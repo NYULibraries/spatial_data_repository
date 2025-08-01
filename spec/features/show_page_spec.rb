@@ -10,7 +10,9 @@ describe 'Show page' do
 
       it 'does not display download' do
         visit solr_document_path 'nyu-2451-34626'
-        expect(page).not_to have_content 'Export'
+        # rubocop:disable Capybara/NegationMatcherAfterVisit
+        expect(page).to have_no_content 'Export'
+        # rubocop:enable Capybara/NegationMatcherAfterVisit
       end
 
       it 'includes link to login' do
@@ -43,12 +45,14 @@ describe 'Show page' do
   context 'with suppressed download - nyu-2451-38684' do
     it 'includes warning' do
       visit solr_document_path 'nyu-2451-38684'
-      expect(page).to have_selector 'div.alert.alert-warning'
+      expect(page).to have_css 'div.alert.alert-info'
     end
 
     it 'does not display download' do
       visit solr_document_path 'nyu-2451-38684'
-      expect(page).not_to have_content 'Download'
+      # rubocop:disable Capybara/NegationMatcherAfterVisit
+      expect(page).to have_no_content 'Download'
+      # rubocop:enable Capybara/NegationMatcherAfterVisit
     end
 
     it 'includes DOI for citation' do

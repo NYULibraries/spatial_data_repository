@@ -28,7 +28,7 @@ gem 'rails', '~> 7'
 gem 'rsolr', '>= 1.0', '< 3'
 gem 'sassc-rails', '~> 2.1'
 gem 'sdoc', group: :doc
-gem 'sdr_cli', github: 'NYULibraries/sdr-cli', tag: 'v0.2.0'
+gem 'sdr_cli', github: 'NYULibraries/sdr-cli', tag: 'v0.2.1'
 gem 'sprockets', '< 4.0'
 gem 'sprockets-rails'
 gem 'stimulus-rails'

@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/NYULibraries/sdr-cli.git
-  revision: 9807e7ac14ac060d6d27456103745834406c3527
-  tag: v0.2.0
+  revision: f3a62e3846633d1fb570d7d45412019a0b66cbc4
+  tag: v0.2.1
   specs:
-    sdr_cli (0.2.0)
+    sdr_cli (0.2.1)
       dotenv (~> 2.7)
       faraday (~> 2.10.1)
-      thor (~> 1.2.2)
+      thor (~> 1.4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -558,7 +558,7 @@ GEM
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.7)
-    thor (1.2.2)
+    thor (1.4.0)
     thread_safe (0.3.6)
     tilt (2.6.1)
     timecop (0.9.10)

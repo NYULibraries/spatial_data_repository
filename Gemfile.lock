@@ -513,7 +513,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (2.6.2)
+    sdoc (2.6.3)
       rdoc (>= 5.0)
     securerandom (0.4.1)
     selenium-webdriver (4.35.0)

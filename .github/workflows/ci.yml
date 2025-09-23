@@ -29,6 +29,13 @@ jobs:
         bundler-cache: true
     - name: Lint
       run: bundle exec rubocop
+    - name: Cache Solr Download
+      uses: actions/cache@v4
+      with:
+        path: |
+          ./tmp/solr-9.2.1.tgz
+          ./tmp/solr-9.2.1.tgz.sha512
+        key: solr-wrapper-${{ runner.os }}-${{ hashFiles('.solr_wrapper.yml') }}
     - name: Run tests
       run: |
         bundle exec rake db:schema:load

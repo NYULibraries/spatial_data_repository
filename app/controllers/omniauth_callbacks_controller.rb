@@ -1,19 +1,6 @@
 # frozen_string_literal: true
 
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
-  before_action :require_valid_omniauth, only: :shibboleth
-  skip_before_action :verify_authenticity_token, only: :shibboleth
-
-  def shibboleth
-    Rails.logger.info("OmniauthCallbacksController#shibboleth: #{omniauth.inspect}")
-    set_user
-    if @user.persisted?
-      log_in
-    else
-      redirect_to_login
-    end
-  end
-
   def failure
     redirect_to root_path
   end
@@ -21,15 +8,15 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   private
 
   def redirect_to_login
-    Rails.logger.error(find_message(:failure, kind: 'NYU Shibboleth', reason: 'User not persisted'))
-    session['devise.shibboleth_data'] = request.env['omniauth.auth']
+    Rails.logger.error(find_message(:failure, kind: 'NYU Entra ID', reason: 'User not persisted'))
+    session['devise.entra_id_data'] = request.env['omniauth.auth']
     redirect_to root_path
   end
 
   def log_in
     sign_in_and_redirect @user, event: :authentication
-    set_flash_message(:notice, :success, kind: 'NYU Shibboleth')
-    logger.info(find_message(:success, kind: 'NYU Shibboleth'))
+    set_flash_message(:notice, :success, kind: 'NYU Entra ID')
+    logger.info(find_message(:success, kind: 'NYU Entra ID'))
   end
 
   def require_valid_omniauth

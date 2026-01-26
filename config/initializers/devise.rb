@@ -10,10 +10,8 @@ Devise.setup do |config|
   config.password_length = 8..128
   config.reset_password_within = 60.minutes
   config.sign_out_via = :get
-  config.omniauth :shibboleth, Settings.APP_ID, Settings.APP_SECRET, client_options: {
-    site: (Settings.LOGIN_URL || "https://qa.auth.it.nyu.edu"),
-    authorize_url: "/oauth2/authorize",
-    token_url: "/oauth2/token",
-    provider_ignores_state: true
+  config.omniauth :entra_id, {
+    client_id: ENV['ENTRA_CLIENT_ID'],
+    client_secret: ENV['ENTRA_CLIENT_SECRET'],
   }
 end

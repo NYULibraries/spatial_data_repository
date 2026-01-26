@@ -2,28 +2,28 @@
 
 describe 'routes for users' do
   describe 'Logging in' do
-    describe 'GET /auth/shibboleth' do
-      subject { get('/auth/shibboleth') }
+    describe 'GET /auth/entra_id' do
+      subject { get('/auth/entra_id') }
 
       it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'passthru' }) }
     end
 
-    describe 'POST /auth/shibboleth' do
-      subject { post('/auth/shibboleth') }
+    describe 'POST /auth/entra_id' do
+      subject { post('/auth/entra_id') }
 
       it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'passthru' }) }
     end
 
-    describe 'GET /auth/shibboleth/callback' do
-      subject { get('/auth/shibboleth/callback') }
+    describe 'GET /auth/entra_id/callback' do
+      subject { get('/auth/entra_id/callback') }
 
-      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
+      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'entra_id' }) }
     end
 
-    describe 'POST /auth/shibboleth/callback' do
-      subject { post('/auth/shibboleth/callback') }
+    describe 'POST /auth/entra_id/callback' do
+      subject { post('/auth/entra_id/callback') }
 
-      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'shibboleth' }) }
+      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'entra_id' }) }
     end
   end
 

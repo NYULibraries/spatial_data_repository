@@ -96,7 +96,7 @@ namespace :sdr do
     Blacklight.default_index.connection.commit
 
     puts 'Indexing edu.nyu Aardvark files...'
-    system "bundle exec sdr-cli index --directory=\"tmp/opengeometadata/edu.nyu/metadata-aardvark/**/*.json\" --solr_url=\"#{Settings.SOLR_URL}\""
+    system "bundle exec sdr-cli index --directory=\"tmp/opengeometadata/edu.nyu/metadata-aardvark\" --solr_url=\"#{Settings.SOLR_URL}\""
 
     puts 'Done!'
   end

@@ -677,9 +677,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   newrelic_rpm
-  omniauth
   omniauth-entra-id
-  omniauth-oauth2
   omniauth-rails_csrf_protection
   openssl (~> 3.3.1)
   puma (~> 5.0)

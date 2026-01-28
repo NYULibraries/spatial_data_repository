@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  before_action :require_valid_omniauth, only: :entra_id
   skip_before_action :verify_authenticity_token, only: :entra_id
 
   def entra_id

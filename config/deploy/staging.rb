@@ -44,7 +44,7 @@ server "54.158.233.148", user: "ubuntu", roles: %w{app db web}
  set :ssh_options, {
    auth_methods: %w(publickey),
    forward_agent: true,
-   keys: %W(~/.ssh/dlts-aws-sdr2.pem),
+   keys: %W(~/.ssh/key-1-jun24-2015.pem),
    user: 'ubuntu'
  }
 

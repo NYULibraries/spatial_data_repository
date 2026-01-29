@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.19.2"
+lock "~> 3.17.3"
 
 # Replace 'your_app_name' with your actual application name
 set :application, 'nyu_geoblacklight'
@@ -7,7 +7,7 @@ set :application, 'nyu_geoblacklight'
 # Replace 'your_server_ip' with your server's IP address
 set :deploy_to, "/home/ubuntu/#{fetch(:application)}"
 set :user, 'ubuntu'
-set :repo_url, 'https://github.com/NYULibraries/spatial_data_repository.git'
+set :repo_url, 'git@github.com:NYULibraries/spatial_data_repository.git'
 set :branch, :main
 
 # Use rbenv for Ruby version management

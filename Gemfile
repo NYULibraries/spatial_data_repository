@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
-gem 'bcrypt_pbkdf'
 gem 'blacklight', '~> 7.0'
 gem 'bootsnap', require: false
 gem 'bootstrap', '~> 4.6'
@@ -14,7 +13,6 @@ gem 'capistrano-rbenv', '~> 2.2'
 gem 'config'
 gem 'dalli'
 gem 'devise'
-gem 'ed25519'
 gem 'geoblacklight', '~> 4.4.2'
 gem 'importmap-rails'
 gem 'jbuilder'

@@ -3,9 +3,14 @@
 describe 'Show page' do
   context 'with restricted NYU result - nyu-2451-34626' do
     context 'when signed out' do
-      it 'the displays warning message' do
+      it 'displays the warning message' do
         visit solr_document_path 'nyu-2451-34626'
         expect(page).to have_content 'This dataset is only available to members of the New York University community'
+      end
+
+      it 'displays the download message' do
+        visit solr_document_path 'nyu-2451-34626'
+        expect(page).to have_content 'In order to download the data'
       end
 
       it 'does not display download' do
@@ -13,11 +18,6 @@ describe 'Show page' do
         # rubocop:disable Capybara/NegationMatcherAfterVisit
         expect(page).to have_no_content 'Export'
         # rubocop:enable Capybara/NegationMatcherAfterVisit
-      end
-
-      it 'includes link to login' do
-        visit solr_document_path 'nyu-2451-34626'
-        expect(page).to have_link('Login to View and Download')
       end
     end
 

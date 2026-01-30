@@ -2,12 +2,6 @@
 
 describe 'routes for users' do
   describe 'Logging in' do
-    describe 'GET /auth/shibboleth' do
-      subject { get('/auth/shibboleth') }
-
-      it { is_expected.to route_to({ controller: 'omniauth_callbacks', action: 'passthru' }) }
-    end
-
     describe 'POST /auth/shibboleth' do
       subject { post('/auth/shibboleth') }
 

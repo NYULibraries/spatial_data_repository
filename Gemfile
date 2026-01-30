@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
+gem 'base64', '0.3.0'
 gem 'blacklight', '~> 7.0'
 gem 'bootsnap', require: false
 gem 'bootstrap', '~> 4.6'
@@ -46,11 +47,13 @@ end
 
 group :development, :test do
   gem 'axe-core-rspec'
+  gem 'bcrypt_pbkdf'
   gem 'bundler-audit'
   gem 'byebug'
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'database_cleaner'
+  gem 'ed25519'
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
   gem 'rspec-rails'

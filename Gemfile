@@ -46,11 +46,13 @@ end
 
 group :development, :test do
   gem 'axe-core-rspec'
+  gem 'bcrypt_pbkdf'
   gem 'bundler-audit'
   gem 'byebug'
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'database_cleaner'
+  gem 'ed25519'
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
   gem 'rspec-rails'

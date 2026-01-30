@@ -104,8 +104,10 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    base64 (0.3.0)
+    base64 (0.1.1)
     bcrypt (3.1.20)
+    bcrypt_pbkdf (1.1.2)
+    bcrypt_pbkdf (1.1.2-arm64-darwin)
     benchmark (0.4.1)
     bigdecimal (3.3.1)
     blacklight (7.41.0)
@@ -193,6 +195,7 @@ GEM
     drb (2.2.3)
     dry-cli (1.3.0)
     dumb_delegator (1.1.0)
+    ed25519 (1.4.0)
     erb (5.1.1)
     erubi (1.13.1)
     execjs (2.10.0)
@@ -296,6 +299,9 @@ GEM
       addressable (~> 2.8)
       childprocess (~> 5.0)
       logger (~> 1.6)
+    libwebsocket (0.1.8)
+      addressable
+      websocket
     lint_roller (1.1.0)
     logger (1.7.0)
     loofah (2.24.1)
@@ -440,7 +446,6 @@ GEM
       actionpack (>= 7.0)
       railties (>= 7.0)
     retriable (3.1.2)
-    rexml (3.4.4)
     rgeo (3.0.1)
     rgeo-geojson (2.2.0)
       multi_json (~> 1.15)
@@ -518,12 +523,11 @@ GEM
     sdoc (2.6.4)
       rdoc (>= 5.0)
     securerandom (0.4.1)
-    selenium-webdriver (4.35.0)
-      base64 (~> 0.2)
-      logger (~> 1.4)
-      rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 4.0)
-      websocket (~> 1.0)
+    selenium-webdriver (2.27.2)
+      childprocess (>= 0.2.5)
+      libwebsocket (~> 0.1.3)
+      multi_json (~> 1.0)
+      rubyzip
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -625,6 +629,7 @@ PLATFORMS
 
 DEPENDENCIES
   axe-core-rspec
+  bcrypt_pbkdf
   blacklight (~> 7.0)
   bootsnap
   bootstrap (~> 4.6)
@@ -640,6 +645,7 @@ DEPENDENCIES
   dalli
   database_cleaner
   devise
+  ed25519
   factory_bot_rails
   geckodriver-helper
   geoblacklight (~> 4.4.2)

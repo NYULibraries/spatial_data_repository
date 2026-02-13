@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.19.2"
+lock "~> 3.20.0"
 
 # Replace 'your_app_name' with your actual application name
 set :application, 'nyu_geoblacklight'

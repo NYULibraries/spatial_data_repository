@@ -172,7 +172,7 @@ GEM
     config (5.6.1)
       deep_merge (~> 1.2, >= 1.2.1)
       ostruct
-    connection_pool (3.0.2)
+    connection_pool (2.5.5)
     crass (1.0.6)
     dalli (4.3.2)
       logger
@@ -655,6 +655,7 @@ DEPENDENCIES
   capybara
   capybara-screenshot
   config
+  connection_pool (~> 2.5)
   dalli
   database_cleaner
   devise

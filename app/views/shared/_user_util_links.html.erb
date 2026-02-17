@@ -15,6 +15,9 @@
       <li class="nav-item">
         <%= link_to t('blacklight.header_links.login'), user_entra_id_omniauth_authorize_path, method: :post, class: 'nav-link' %>
       </li>
+      <li>
+        <%= button_to t('blacklight.header_links.login'), user_entra_id_omniauth_authorize_path, class: 'nav-link', data: { turbo: false } %>
+      </li>
     <% end %>
   <% end %>
 </ul>

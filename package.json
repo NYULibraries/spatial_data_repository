@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@geoblacklight/frontend": "^4.4"
+    "@geoblacklight/frontend": "^5.2"
   },
   "devDependencies": {
     "vite": "^7.0.5",

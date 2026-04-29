@@ -28,7 +28,7 @@ gem 'omniauth-rails_csrf_protection'
 gem 'openssl', '~> 3.3.1'
 gem 'puma', '~> 5.0'
 gem 'rack-attack'
-gem 'rails', '~> 7'
+gem 'rails', '~> 7.2.3.1'
 gem 'rsolr', '>= 1.0', '< 3'
 gem 'sassc-rails', '~> 2.1'
 gem 'sdoc', group: :doc

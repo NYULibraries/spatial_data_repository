@@ -14,6 +14,6 @@ RSpec.describe CuratedMaps::CuratedMapsComponent, type: :component do
   it 'renders the maps title' do
     render_inline(described_class.new(maps:))
 
-    expect(page).to have_content('Featured Maps')
+    expect(page).to have_text('Featured Maps')
   end
 end

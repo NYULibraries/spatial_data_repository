@@ -17,8 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     name: test
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/checkout@v6
+    - uses: actions/setup-node@v6
       with:
         node-version: 22.12.0
     - name: Install NodeJS Dependencies
@@ -30,7 +30,7 @@ jobs:
     - name: Lint
       run: bundle exec rubocop
     - name: Cache Solr Download
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: |
           ./tmp/solr-9.2.1.tgz

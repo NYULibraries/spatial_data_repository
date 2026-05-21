@@ -5,18 +5,18 @@ describe 'Show page' do
     context 'when signed out' do
       it 'displays warning message' do
         visit solr_document_path 'nyu-2451-34626'
-        expect(page).to have_content 'This dataset is only available to members of the New York University community'
+        expect(page).to have_text 'This dataset is only available to members of the New York University community'
       end
 
       it 'displays the download message' do
         visit solr_document_path 'nyu-2451-34626'
-        expect(page).to have_content 'In order to download the data'
+        expect(page).to have_text 'In order to download the data'
       end
 
       it 'does not display download' do
         visit solr_document_path 'nyu-2451-34626'
         # rubocop:disable Capybara/NegationMatcherAfterVisit
-        expect(page).to have_no_content 'Export'
+        expect(page).to have_no_text 'Export'
         # rubocop:enable Capybara/NegationMatcherAfterVisit
       end
     end
@@ -51,7 +51,7 @@ describe 'Show page' do
     it 'does not display download' do
       visit solr_document_path 'nyu-2451-38684'
       # rubocop:disable Capybara/NegationMatcherAfterVisit
-      expect(page).to have_no_content 'Download'
+      expect(page).to have_no_text 'Download'
       # rubocop:enable Capybara/NegationMatcherAfterVisit
     end
 
@@ -68,15 +68,15 @@ describe 'Show page' do
   context 'with multiple downloads - nyu-2451-38645' do
     it 'includes six download links' do
       visit solr_document_path 'nyu-2451-38645'
-      expect(page).to have_content 'Download'
+      expect(page).to have_text 'Download'
       click_on 'Download'
 
-      expect(page).to have_content('LAZ (Point-cloud)')
-      expect(page).to have_content('LAS (Full-waveform)')
-      expect(page).to have_content('Pulsewaves (Full-waveform)')
-      expect(page).to have_content('GeoTIFF (Geo-referenced RGB)')
-      expect(page).to have_content('GeoTIFF (Geo-referenced CIR)')
-      expect(page).to have_content('JPG (Oblique photos)')
+      expect(page).to have_text('LAZ (Point-cloud)')
+      expect(page).to have_text('LAS (Full-waveform)')
+      expect(page).to have_text('Pulsewaves (Full-waveform)')
+      expect(page).to have_text('GeoTIFF (Geo-referenced RGB)')
+      expect(page).to have_text('GeoTIFF (Geo-referenced CIR)')
+      expect(page).to have_text('JPG (Oblique photos)')
     end
   end
   # rubocop:enable RSpec/ExampleLength, RSpec/MultipleExpectations

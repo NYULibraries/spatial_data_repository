@@ -14,6 +14,6 @@ RSpec.describe CuratedMaps::CuratedMapComponent, type: :component do
   it 'renders the map title' do
     render_inline(described_class.new(map:))
 
-    expect(page).to have_content(map[:title])
+    expect(page).to have_text(map[:title])
   end
 end

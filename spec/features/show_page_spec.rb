@@ -16,7 +16,7 @@ describe 'Show page' do
       it 'does not display download' do
         visit solr_document_path 'nyu-2451-34626'
         # rubocop:disable Capybara/NegationMatcherAfterVisit
-        expect(page).to have_no_content 'Export'
+        expect(page).to have_no_text 'Export'
         # rubocop:enable Capybara/NegationMatcherAfterVisit
       end
     end
@@ -51,7 +51,7 @@ describe 'Show page' do
     it 'does not display download' do
       visit solr_document_path 'nyu-2451-38684'
       # rubocop:disable Capybara/NegationMatcherAfterVisit
-      expect(page).to have_no_content 'Download'
+      expect(page).to have_no_text 'Download'
       # rubocop:enable Capybara/NegationMatcherAfterVisit
     end
 
